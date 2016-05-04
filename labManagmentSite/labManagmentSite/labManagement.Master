@@ -16,6 +16,7 @@
             <ul>
                 <li>lol</li>
                 <li>hi</li>
+                <li>Rekt</li>
             </ul>
         </nav>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
