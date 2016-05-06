@@ -16,7 +16,7 @@
             <ul>
                 <li><a href="default.aspx">Home</a></li>
                 <li><a href="userEquipment.aspx">User Equipment</a></li>
-                <li><a href="researchEquipment.aspx"</li>
+                <li><a href="researchEquipment.aspx">Research Equipment</a></li>
                 <li><a href="laboratoryStores.aspx">Labroatory Equipment</a></li>
             </ul>
         </nav>
