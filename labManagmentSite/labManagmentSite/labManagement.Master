@@ -8,7 +8,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
-    <link href="Styles/bootstrap.min.css" rel="stylesheet" /><!--boostrap CSS-->
+    <link href="Styles/bootstrap.css" rel="stylesheet" /><!--boostrap CSS-->
     
     
 
@@ -17,14 +17,45 @@
     <form id="form1" runat="server">
     <div>
 
-        <nav>
-            <ul>
+       
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+                <a class="navbar-brand" href="#">
+                    <!-- NEED TO ADD NAME -->
+
+                </a>
+
+
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
                 <li><a href="default.aspx">Home</a></li>
                 <li><a href="userEquipment.aspx">User Equipment</a></li>
                 <li><a href="researchEquipment.aspx">Research Equipment</a></li>
                 <li><a href="laboratoryStores.aspx">Labroatory Equipment</a></li>
             </ul>
-        </nav>
+                </div>
+        </div>
+              
+                </nav>
+          </div>
+        </div>
+       
+
+
+
+
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
