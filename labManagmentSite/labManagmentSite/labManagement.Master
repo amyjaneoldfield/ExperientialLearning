@@ -14,13 +14,21 @@
 
         <nav>
             <ul>
-                <li>lol</li>
-                <li>hi</li>
+                <li><a href="default.aspx">Home</a></li>
+                <li><a href="userEquipment.aspx">User Equipment</a></li>
+                <li><a href="researchEquipment.aspx"</li>
+                <li><a href="laboratoryStores.aspx">Labroatory Equipment</a></li>
             </ul>
         </nav>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
+        <footer>
+            <ul>
+                <li><a href="admin.aspx">Admin</a></li>
+                <li><a href="contact.aspx">Contact</li>
+            </ul>
+        </footer>
     </div>
     </form>
 </body>
