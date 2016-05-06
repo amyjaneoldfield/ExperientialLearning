@@ -68,9 +68,16 @@
   <ItemGroup>
     <Content Include="admin.aspx" />
     <Content Include="contact.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
     <Content Include="laboratoryStores.aspx" />
     <Content Include="packages.config" />
     <Content Include="labManagement.Master" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -82,6 +89,8 @@
     <Content Include="default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="researchEquipment.aspx" />
+    <Content Include="Styles\bootstrap.css" />
+    <Content Include="Styles\bootstrap.min.css" />
     <Content Include="userEquipment.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -142,6 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
