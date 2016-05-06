@@ -7,6 +7,11 @@
     <title>Lab Management System</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+
+    <link href="Styles/bootstrap.min.css" rel="stylesheet" /><!--boostrap CSS-->
+    
+    
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -30,6 +35,10 @@
             </ul>
         </footer>
     </div>
+        
+        <script src="js/bootstrap.js"></script>
+    
+    
     </form>
 </body>
 </html>
