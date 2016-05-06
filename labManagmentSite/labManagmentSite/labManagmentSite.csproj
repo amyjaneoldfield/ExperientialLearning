@@ -68,9 +68,12 @@
   <ItemGroup>
     <Content Include="admin.aspx" />
     <Content Include="contact.aspx" />
+    <Content Include="JS\jquery-2.2.3.js" />
+    <Content Include="JS\jquery-2.2.3.min.js" />
     <Content Include="laboratoryStores.aspx" />
     <Content Include="packages.config" />
     <Content Include="labManagement.Master" />
+    <Content Include="JS\jquery-2.2.3.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
