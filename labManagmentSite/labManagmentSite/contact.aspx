@@ -6,7 +6,7 @@
 
 
     <h1>Contact </h1>
-                                <!--basic contact form, structure will be amended to fit its purpose once we have spoken to james-->
+<div id="contactForm">                              <!--basic contact form, structure will be amended to fit its purpose once we have spoken to james-->
     <div id="nameContact">
         
         <div id="nameLabel">
@@ -74,6 +74,7 @@
         </div>
 
     </div>
+</div>  
 
     <div id="buttonContact">
         <asp:Button ID="btnSubmit" runat="server" Text="Send" OnClick="btnSubmit_Click" />
