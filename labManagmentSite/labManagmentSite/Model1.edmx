@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="db_1421049_LabManagementModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Custodians">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Location" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar(max)" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Lab_Stores">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Location" Type="nvarchar" MaxLength="50" />
+          <Property Name="Custodian" Type="nvarchar" MaxLength="50" />
+          <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Quantity" Type="int" Nullable="false" />
+          <Property Name="UserGuide" Type="nvarchar(max)" />
+          <Property Name="RiskAssessment" Type="nvarchar(max)" />
+          <Property Name="MaterialSpecific" Type="nvarchar(max)" />
+          <Property Name="ManuelHandling" Type="nchar" MaxLength="10" />
+          <Property Name="ApprovedSuppliers" Type="nvarchar(max)" />
+          <Property Name="OrderRequestProcedure" Type="nvarchar(max)" />
+          <Property Name="Category" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="User_Research_Equip">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Location" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Specifications" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="QuickUserGuide" Type="nvarchar(max)" />
+          <Property Name="FullUserManual" Type="nvarchar(max)" />
+          <Property Name="CurrentRiskAssessment" Type="nvarchar(max)" />
+          <Property Name="LocalRules" Type="nvarchar(max)" />
+          <Property Name="HardwareFixes" Type="nvarchar(max)" />
+          <Property Name="SoftwareFixes" Type="nvarchar(max)" />
+          <Property Name="Maintenance" Type="nvarchar(max)" />
+          <Property Name="QuartzyLink" Type="nvarchar(max)" />
+          <Property Name="ResearchEquipment" Type="bit" />
+          <Property Name="Custodian" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="db_1421049_LabManagementModelStoreContainer">
+          <EntitySet Name="Custodians" EntityType="Self.Custodians" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Lab_Stores" EntityType="Self.Lab_Stores" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User_Research_Equip" EntityType="Self.User_Research_Equip" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="db_1421049_LabManagementModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Custodian">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Lab_Stores">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Custodian" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
+          <Property Name="UserGuide" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="RiskAssessment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MaterialSpecific" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ManuelHandling" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="ApprovedSuppliers" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OrderRequestProcedure" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Category" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="User_Research_Equip">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Specifications" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="QuickUserGuide" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FullUserManual" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CurrentRiskAssessment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="LocalRules" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="HardwareFixes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SoftwareFixes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Maintenance" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="QuartzyLink" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ResearchEquipment" Type="Boolean" />
+          <Property Name="Custodian" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="db_1421049_LabManagementEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Custodians" EntityType="Self.Custodian" />
+          <EntitySet Name="Lab_Stores" EntityType="Self.Lab_Stores" />
+          <EntitySet Name="User_Research_Equip" EntityType="Self.User_Research_Equip" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="db_1421049_LabManagementModelStoreContainer" CdmEntityContainer="db_1421049_LabManagementEntities">
+          <EntitySetMapping Name="Custodians">
+            <EntityTypeMapping TypeName="db_1421049_LabManagementModel.Custodian">
+              <MappingFragment StoreEntitySet="Custodians">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lab_Stores">
+            <EntityTypeMapping TypeName="db_1421049_LabManagementModel.Lab_Stores">
+              <MappingFragment StoreEntitySet="Lab_Stores">
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Custodian" ColumnName="Custodian" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+                <ScalarProperty Name="UserGuide" ColumnName="UserGuide" />
+                <ScalarProperty Name="RiskAssessment" ColumnName="RiskAssessment" />
+                <ScalarProperty Name="MaterialSpecific" ColumnName="MaterialSpecific" />
+                <ScalarProperty Name="ManuelHandling" ColumnName="ManuelHandling" />
+                <ScalarProperty Name="ApprovedSuppliers" ColumnName="ApprovedSuppliers" />
+                <ScalarProperty Name="OrderRequestProcedure" ColumnName="OrderRequestProcedure" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="User_Research_Equip">
+            <EntityTypeMapping TypeName="db_1421049_LabManagementModel.User_Research_Equip">
+              <MappingFragment StoreEntitySet="User_Research_Equip">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Specifications" ColumnName="Specifications" />
+                <ScalarProperty Name="QuickUserGuide" ColumnName="QuickUserGuide" />
+                <ScalarProperty Name="FullUserManual" ColumnName="FullUserManual" />
+                <ScalarProperty Name="CurrentRiskAssessment" ColumnName="CurrentRiskAssessment" />
+                <ScalarProperty Name="LocalRules" ColumnName="LocalRules" />
+                <ScalarProperty Name="HardwareFixes" ColumnName="HardwareFixes" />
+                <ScalarProperty Name="SoftwareFixes" ColumnName="SoftwareFixes" />
+                <ScalarProperty Name="Maintenance" ColumnName="Maintenance" />
+                <ScalarProperty Name="QuartzyLink" ColumnName="QuartzyLink" />
+                <ScalarProperty Name="ResearchEquipment" ColumnName="ResearchEquipment" />
+                <ScalarProperty Name="Custodian" ColumnName="Custodian" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
