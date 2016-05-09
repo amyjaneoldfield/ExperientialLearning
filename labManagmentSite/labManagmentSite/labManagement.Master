@@ -11,7 +11,7 @@
     <link href="Styles/bootstrap.css" rel="stylesheet" />
     <link href="Styles/Styles.css" rel="stylesheet" /> 
      <link href="Styles/test.css" rel="stylesheet" />
-
+    
 </head>
 <body>
     <form id="form1" runat="server">
@@ -19,15 +19,15 @@
           <div class="throntonImage">
           <img src="Images/logo.png"  alt="" width="200" height="200"/></div>  
         <div class="site-wrapper">
-
+       
       <div class="site-wrapper-inner">
 
         <div class="cover-container">
-
+              
           <div class="masthead clearfix">
             <div class="inner">
 
-                   <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#">
                     <!-- NEED TO ADD NAME 
                         possibly use h3 tag
                 </a> -->
@@ -38,17 +38,17 @@
                 <li><a href="userEquipment.aspx">User Equipment</a></li>
                 <li><a href="researchEquipment.aspx">Research Equipment</a></li>
                 <li><a href="laboratoryStores.aspx">Labroatory Equipment</a></li>
-                </ul>
+            </ul>
               </nav>
-            </div>
-          </div>
+                </div>
+        </div>
+              
+       
 
 
 
 
-
-
-             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
 
@@ -63,6 +63,28 @@
         <p>&copy; 2016. &middot; <a href="admin.aspx">Admin</a> &middot; <a href="contact.aspx">Contact</a></p>
 
 
+
+        <footer>
+
+
+
+           
+                <ul>
+                    <li><a href="admin.aspx">Admin</a></li>
+                    <li><a href="contact.aspx">Contact</a></li>
+                </ul>
+            
+            
+                <p>&copy 2016 The Constabulary</p>
+            
+                <ul>
+                    <li><a href="www.facebook.com">Facebook</a></li>
+                    <li><a href="www.twitter.com">Twitter</a></li>
+                    <li><a href="www.throntonsciencepark.co.uk">Thornton</a></li>
+                    <li><a href="www.portal.chester.ac.uk">Moodle</a></li>
+                    <li><a href="www.1409891.studentwebserver.co.uk">Site Map</a></li>
+                </ul>
+
         </footer>
 
             </div>
@@ -70,8 +92,8 @@
         </div>
       </div>
     </div>
-
-          <script src="js/bootstrap.js"></script>
+        
+        <script src="js/bootstrap.js"></script>
     
     
     </form>
