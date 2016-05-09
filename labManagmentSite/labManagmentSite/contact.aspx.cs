@@ -21,8 +21,9 @@ namespace labManagmentSite
             if (Page.IsValid)
             {
                 //sendMail();
-                clear();
                 returnLiteral();
+                clear();
+               
             }
         }
 
