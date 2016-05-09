@@ -64,8 +64,21 @@
         <p> <a href="admin.aspx">Admin</a> &middot; <a href="contact.aspx">Contact</a></p>
 
                 <div id="footLinks">
-        <p><a href="www.facebook.com">Facebook</a> &middot; <a href="www.twitter.com">Twitter</a> &middot; <a href="www.throntonsciencepark.co.uk">Thornton</a> &middot; <a href="www.portal.chester.ac.uk">Moodle</a> &middot; <a href="www.1409891.studentwebserver.co.uk">Site Map</a> </p>
-        <p>&copy; 2016 The Constabulary</p>
+                    
+
+                <div id="social">
+        <p>
+            <a class="facebook" href="www.facebook.com">
+            <img src="Images/facebook.png"  alt="" width="30" height="30"/></a>
+             &middot;
+            <a class="twitter"  href="www.twitter.com">
+            <img src="Images/twitter.png"  alt="" width="30" height="30"/></a>
+
+            
+             &middot; <a href="www.throntonsciencepark.co.uk">Thornton</a> &middot; <a href="www.portal.chester.ac.uk">Moodle</a> &middot; <a href="www.1409891.studentwebserver.co.uk">Site Map</a> 
+        </p></div>     
+
+        <p class="copyright">&copy; 2016 The Constabulary</p>
  <p class="pull-right"><a href="#">Back to top</a></p>
                     </div>
 

@@ -7,6 +7,21 @@
     
 }
 
+.copyright{
+   margin-left: 50%;
+   margin-right: 50%;
+   display: inline-block;
+   width: 100px;
+}
+
+
+#social{
+    float: left;
+    margin-left: 550px;
+    margin-top: 50px;
+}
+
+
 
 /*contact form styles*/
 
