@@ -22,7 +22,14 @@ namespace labManagmentSite
             {
                 //sendMail();
                 clear();
+                returnLiteral();
             }
+        }
+
+        private void returnLiteral()
+        {
+            receivedLiteral.Text = "<p>Thank you " + txtName.Text + "! We have received your message and will get back to you as soon as possible!</p>";
+
         }
 
         private void clear()

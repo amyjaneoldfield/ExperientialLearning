@@ -67,6 +67,15 @@ namespace labManagmentSite {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValEmail;
         
         /// <summary>
+        /// regValEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regValEmail;
+        
+        /// <summary>
         /// lblRe control.
         /// </summary>
         /// <remarks>
@@ -112,13 +121,13 @@ namespace labManagmentSite {
         protected global::System.Web.UI.WebControls.TextBox txtComment;
         
         /// <summary>
-        /// reqValComment  control.
+        /// reqValComment control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValComment ;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValComment;
         
         /// <summary>
         /// btnSubmit control.
@@ -128,5 +137,14 @@ namespace labManagmentSite {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSubmit;
+        
+        /// <summary>
+        /// receivedLiteral control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal receivedLiteral;
     }
 }
