@@ -1,8 +1,10 @@
 ﻿.throntonImage{
    float: left;
+   margin-left: 550px;      
+} /*for logo image*/
  
+.footer{
     
-     margin-left: 550px;      
 }
 
 
