@@ -13,21 +13,21 @@ namespace labManagmentSite {
     public partial class researchEquipment {
         
         /// <summary>
-        /// rptrResearchEquip control.
+        /// rptrResearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptrResearchEquip;
+        protected global::System.Web.UI.WebControls.Repeater rptrResearch;
         
         /// <summary>
-        /// SqlDataSourceResearchEquip control.
+        /// SqlDataSourceResearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceResearchEquip;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceResearch;
     }
 }
