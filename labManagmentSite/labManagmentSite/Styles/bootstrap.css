@@ -11,6 +11,7 @@ html {
 }
 body {
   margin: 0;
+
 }
 article,
 aside,
@@ -6522,6 +6523,7 @@ button.close {
   margin-left: auto;
 }
 .pull-right {
+    position: relative;
   float: right !important;
 }
 .pull-left {

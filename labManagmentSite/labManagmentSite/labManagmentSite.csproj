@@ -69,6 +69,7 @@
     <Content Include="admin.aspx" />
     <Content Include="contact.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\logo.png" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="JS\jquery-2.2.3.js" />
@@ -94,6 +95,8 @@
     <Content Include="researchEquipment.aspx" />
     <Content Include="Styles\bootstrap.css" />
     <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Styles\Styles.css" />
+    <Content Include="Styles\test.css" />
     <Content Include="userEquipment.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -154,7 +157,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

@@ -8,66 +8,70 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
-    <link href="Styles/bootstrap.css" rel="stylesheet" /><!--boostrap CSS-->
-    
-    
+    <link href="Styles/bootstrap.css" rel="stylesheet" />
+    <link href="Styles/Styles.css" rel="stylesheet" /> 
+     <link href="Styles/test.css" rel="stylesheet" />
 
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
 
-       
-    <div class="navbar-wrapper">
-      <div class="container">
+          <div class="throntonImage">
+          <img src="Images/logo.png"  alt="" width="200" height="200"/></div>  
+        <div class="site-wrapper">
 
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              
-                <a class="navbar-brand" href="#">
-                    <!-- NEED TO ADD NAME -->
+      <div class="site-wrapper-inner">
 
-                </a>
+        <div class="cover-container">
 
+          <div class="masthead clearfix">
+            <div class="inner">
 
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="default.aspx">Home</a></li>
+                   <a class="navbar-brand" href="#">
+                    <!-- NEED TO ADD NAME 
+                        possibly use h3 tag
+                </a> -->
+
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="default.aspx">Home</a></li>
                 <li><a href="userEquipment.aspx">User Equipment</a></li>
                 <li><a href="researchEquipment.aspx">Research Equipment</a></li>
                 <li><a href="laboratoryStores.aspx">Labroatory Equipment</a></li>
-            </ul>
-                </div>
-        </div>
-              
-                </nav>
+                </ul>
+              </nav>
+            </div>
           </div>
-        </div>
-       
 
 
 
 
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
-        <footer>
-            <ul>
-                <li><a href="admin.aspx">Admin</a></li>
-                <li><a href="contact.aspx">Contact</a></li>
-            </ul>
+
+
+
+
+
+          <div class="mastfoot">
+            <div class="inner">
+                <footer class="foot">
+            <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2016. &middot; <a href="admin.aspx">Admin</a> &middot; <a href="contact.aspx">Contact</a></p>
+
+
         </footer>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-        
-        <script src="js/bootstrap.js"></script>
+
+          <script src="js/bootstrap.js"></script>
     
     
     </form>
