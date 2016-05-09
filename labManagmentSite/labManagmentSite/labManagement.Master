@@ -17,7 +17,8 @@
     <form id="form1" runat="server">
 
           <div class="throntonImage">
-          <img src="Images/logo.png"  alt="" width="200" height="200"/></div>  
+          <img src="Images/logo.png"  alt="" width="200" height="200"/>
+</div>  
         <div class="site-wrapper">
        
       <div class="site-wrapper-inner">
@@ -60,30 +61,15 @@
             <div class="inner">
                 <footer class="foot">
             <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2016. &middot; <a href="admin.aspx">Admin</a> &middot; <a href="contact.aspx">Contact</a></p>
+        <p> <a href="admin.aspx">Admin</a> &middot; <a href="contact.aspx">Contact</a></p>
+        <p><a href="www.facebook.com">Facebook</a> &middot; <a href="www.twitter.com">Twitter</a> &middot; <a href="www.throntonsciencepark.co.uk">Thornton</a> &middot; <a href="www.portal.chester.ac.uk">Moodle</a> &middot; <a href="www.1409891.studentwebserver.co.uk">Site Map</a> </p>
+        <p>&copy; 2016 The Constabulary</p>
+
+
+        
 
 
 
-        <footer>
-
-
-
-           
-                <ul>
-                    <li><a href="admin.aspx">Admin</a></li>
-                    <li><a href="contact.aspx">Contact</a></li>
-                </ul>
-            
-            
-                <p>&copy 2016 The Constabulary</p>
-            
-                <ul>
-                    <li><a href="www.facebook.com">Facebook</a></li>
-                    <li><a href="www.twitter.com">Twitter</a></li>
-                    <li><a href="www.throntonsciencepark.co.uk">Thornton</a></li>
-                    <li><a href="www.portal.chester.ac.uk">Moodle</a></li>
-                    <li><a href="www.1409891.studentwebserver.co.uk">Site Map</a></li>
-                </ul>
 
         </footer>
 
