@@ -2,5 +2,29 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1>lab stores</h1>
+    <h1>Lab Stores</h1>
+    <asp:Repeater ID="rptrLabStore" runat="server" DataSourceID="SqlDataSourceLab">
+        <HeaderTemplate><h2>Gases</h2></HeaderTemplate>
+        <ItemTemplate><p><%#Eval("Name") %></p></ItemTemplate>
+        <FooterTemplate></FooterTemplate>
+
+    </asp:Repeater>
+    <asp:Repeater ID="rptrSolv" runat="server" DataSourceID="SqlDataSourceSolv">
+        <HeaderTemplate><h2>Solvents</h2></HeaderTemplate>
+<ItemTemplate><p><%#Eval("Name") %></p></ItemTemplate>
+        <FooterTemplate></FooterTemplate>
+
+        </asp:Repeater>
+        <asp:SqlDataSource ID="SqlDataSourceSolv" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [Name] FROM [Lab_Stores] WHERE ([Category] = @Category)">
+            <SelectParameters>
+                <asp:Parameter DefaultValue="Solvent" Name="Category" Type="String" />
+            </SelectParameters>
+    </asp:SqlDataSource>
+       
+<asp:SqlDataSource ID="SqlDataSourceLab" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [Name] FROM [Lab_Stores] WHERE ([Category] = @Category)">
+    <SelectParameters>
+        <asp:Parameter DefaultValue="Gas" Name="Category" Type="String" />
+    </SelectParameters>
+    </asp:SqlDataSource>
+
 </asp:Content>

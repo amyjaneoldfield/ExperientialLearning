@@ -16,6 +16,7 @@
     <asp:SqlDataSource ID="SqlDataSourceResearch" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [Name] FROM [User_Research_Equip] WHERE ([ResearchEquipment] = @ResearchEquipment)">
         <SelectParameters>
             <asp:Parameter DefaultValue="True" Name="ResearchEquipment" Type="Boolean" />
+
         </SelectParameters>
     </asp:SqlDataSource>
 </asp:Content>
