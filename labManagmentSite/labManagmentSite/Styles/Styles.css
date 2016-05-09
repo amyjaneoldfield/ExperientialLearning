@@ -4,3 +4,28 @@
     
      margin-left: 550px;      
 }
+
+
+/*contact form styles*/
+
+.contactFields{
+    font-family:Arial, Helvetica, sans-serif;
+    color:black;
+    width:400px;
+}
+.contactVal{
+    color:red;
+}
+
+.messageField{
+    height:300px;
+    width:400px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:black;
+}
+
+.contactLabels{
+    padding-right:360px;
+    
+}
+

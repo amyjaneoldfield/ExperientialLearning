@@ -10,15 +10,15 @@
     <div id="nameContact">
         
         <div id="nameLabel">
-            <asp:Label ID="lblName" runat="server" Text="Name" AssociatedControlID="txtName"></asp:Label>
+            <asp:Label ID="lblName" runat="server" Text="Name" AssociatedControlID="txtName" CssClass="contactLabels"></asp:Label>
         </div>
 
         <div id="nameField">
-            <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtName" runat="server" CssClass="contactFields"></asp:TextBox>
         </div>
 
-        <div id="nameVal" class="contactVal">
-            <asp:RequiredFieldValidator ID="reqValName" runat="server" ErrorMessage="*This field cannot be left blank" ControlToValidate="txtName" Display="Dynamic"></asp:RequiredFieldValidator>
+        <div id="nameVal">
+            <asp:RequiredFieldValidator ID="reqValName" runat="server" ErrorMessage="*This field cannot be left blank" ControlToValidate="txtName" Display="Dynamic" CssClass="contactVal"></asp:RequiredFieldValidator>
         </div>
 
     </div>
@@ -26,19 +26,19 @@
     <div id="emailContact">
         
         <div id="emailLabel">
-            <asp:Label ID="lblEmail" runat="server" Text="Your Email" AssociatedControlID="txtEmail"></asp:Label>
+            <asp:Label ID="lblEmail" runat="server" Text="Your Email" AssociatedControlID="txtEmail" CssClass="contactLabels"></asp:Label>
         </div>
         
         <div id="emailField">
-            <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtEmail" runat="server" CssClass="contactFields"></asp:TextBox>
         </div>
 
-        <div id="emailReqVal" class="contactVal">
-            <asp:RequiredFieldValidator ID="reqValEmail" runat="server" ErrorMessage="*This field cannot be left blank" ControlToValidate="txtEmail" Display="Dynamic"></asp:RequiredFieldValidator>
+        <div id="emailReqVal">
+            <asp:RequiredFieldValidator ID="reqValEmail" runat="server" ErrorMessage="*This field cannot be left blank" ControlToValidate="txtEmail" Display="Dynamic" CssClass="contactVal"></asp:RequiredFieldValidator>
         </div>
 
-        <div id="emailRegVal" class="contactVal">
-            <asp:RegularExpressionValidator ID="regValEmail" runat="server" ErrorMessage="*You have not entered a valid email address" ControlToValidate="txtEmail" Display="Dynamic" ValidationExpression="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"></asp:RegularExpressionValidator>
+        <div id="emailRegVal">
+            <asp:RegularExpressionValidator ID="regValEmail" runat="server" ErrorMessage="*You have not entered a valid email address" ControlToValidate="txtEmail" Display="Dynamic" ValidationExpression="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" CssClass="contactVal"></asp:RegularExpressionValidator>
         </div>
    
     </div>
@@ -46,15 +46,15 @@
     <div id="reContact">
         
         <div id="reLabel">
-            <asp:Label ID="lblRe" runat="server" Text="Regarding" AssociatedControlID="txtRe"></asp:Label>
+            <asp:Label ID="lblRe" runat="server" Text="Regarding" AssociatedControlID="txtRe" CssClass="contactLabels"></asp:Label>
         </div>
         
         <div id="reField">
-            <asp:TextBox ID="txtRe" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtRe" runat="server" CssClass="contactFields"></asp:TextBox>
         </div>
         
-        <div id="reVal" class="contactVal">
-            <asp:RequiredFieldValidator ID="reqValRe" runat="server" ErrorMessage="*This field cannot be left blank" ControlToValidate="txtRe" Display="Dynamic"></asp:RequiredFieldValidator>
+        <div id="reVal">
+            <asp:RequiredFieldValidator ID="reqValRe" runat="server" ErrorMessage="*This field cannot be left blank" ControlToValidate="txtRe" Display="Dynamic" CssClass="contactVal"></asp:RequiredFieldValidator>
         </div>
 
     </div>
@@ -62,15 +62,15 @@
     <div id="messageContact">
 
         <div id="messageLabel">
-            <asp:Label ID="lblComment" runat="server" Text="Comment" AssociatedControlID="txtComment"></asp:Label>
+            <asp:Label ID="lblComment" runat="server" Text="Comment" AssociatedControlID="txtComment" CssClass="contactLabels"></asp:Label>
         </div>
 
         <div id="messageField">
-            <asp:TextBox ID="txtComment" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtComment" runat="server" CssClass="messageField" TextMode="MultiLine"></asp:TextBox>
         </div>
 
-        <div id="messageVal" class="contactVal">
-            <asp:RequiredFieldValidator ID="reqValComment" runat="server" ErrorMessage="*This field cannot be left blank" ControlToValidate="txtComment" Display="Dynamic"></asp:RequiredFieldValidator>
+        <div id="messageVal">
+            <asp:RequiredFieldValidator ID="reqValComment" runat="server" ErrorMessage="*This field cannot be left blank" ControlToValidate="txtComment" Display="Dynamic" CssClass="contactVal"></asp:RequiredFieldValidator>
         </div>
 
     </div>
