@@ -13,5 +13,10 @@ namespace labManagmentSite
         {
 
         }
+
+        protected void rptrGases_DataBinding(object sender, EventArgs e)
+        {
+
+        }
     }
 }

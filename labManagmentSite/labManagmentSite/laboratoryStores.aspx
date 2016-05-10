@@ -3,28 +3,34 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Lab Stores</h1>
-    <asp:Repeater ID="rptrLabStore" runat="server" DataSourceID="SqlDataSourceLab">
-        <HeaderTemplate><h2>Gases</h2></HeaderTemplate>
-        <ItemTemplate><p><%#Eval("Name") %></p></ItemTemplate>
+    <asp:Repeater ID="rptrGases" runat="server" DataSourceID="SqlDataSourceLab" OnDataBinding="rptrGases_DataBinding">
+        <HeaderTemplate></HeaderTemplate>
+        
+        
+        <ItemTemplate>
+            <h2><%#Eval("Category") %></h2>
+            <asp:Repeater ID="rptrItems" runat="server">
+                <HeaderTemplate><ul></HeaderTemplate>
+                <ItemTemplate><li><%#Eval("Name") %></li></ItemTemplate>
+                <FooterTemplate></ul></FooterTemplate>
+            </asp:Repeater>
+
+
+
+
+        </ItemTemplate>
+        
+        
         <FooterTemplate></FooterTemplate>
 
     </asp:Repeater>
-    <asp:Repeater ID="rptrSolv" runat="server" DataSourceID="SqlDataSourceSolv">
-        <HeaderTemplate><h2>Solvents</h2></HeaderTemplate>
-<ItemTemplate><p><%#Eval("Name") %></p></ItemTemplate>
-        <FooterTemplate></FooterTemplate>
-
-        </asp:Repeater>
-        <asp:SqlDataSource ID="SqlDataSourceSolv" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [Name] FROM [Lab_Stores] WHERE ([Category] = @Category)">
-            <SelectParameters>
-                <asp:Parameter DefaultValue="Solvent" Name="Category" Type="String" />
-            </SelectParameters>
-    </asp:SqlDataSource>
+  
        
-<asp:SqlDataSource ID="SqlDataSourceLab" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [Name] FROM [Lab_Stores] WHERE ([Category] = @Category)">
-    <SelectParameters>
-        <asp:Parameter DefaultValue="Gas" Name="Category" Type="String" />
-    </SelectParameters>
+<asp:SqlDataSource ID="SqlDataSourceLab" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT DISTINCT [Category] FROM [Lab_Stores]">
+    </asp:SqlDataSource>
+
+    <asp:SqlDataSource ID="SqlDataSourceItems" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [Name] From [Lab_Stores]">
+
     </asp:SqlDataSource>
 
 </asp:Content>
