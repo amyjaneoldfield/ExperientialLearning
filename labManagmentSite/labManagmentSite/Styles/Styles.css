@@ -16,6 +16,17 @@ body {
    
 } /*for logo image*/
  
+  #nav masthead-nav, ul li a:hover{
+      color: #FFFFFF;
+  }
+
+  nav masthead-nav{
+      position: fixed;
+  }
+
+  #masthead clearfix{
+      position: absolute;
+  }
 
 
 
@@ -143,7 +154,7 @@ body {
   font-weight: bold;
   color: #fff; /* IE8 proofing */
   color: rgba(255,255,255,.75);
-  border-bottom: 2px solid transparent;
+  /*border-bottom: 2px solid transparent;*/
 }
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
@@ -250,6 +261,7 @@ margin-bottom: 4px;
   padding: 30px;
   border-bottom: 5px;
   bottom: 5px;
+ 
 }
 
 

@@ -35,7 +35,7 @@
 
               <nav>
                 <ul class="nav masthead-nav">
-                  <li class="active"><a href="default.aspx">Home</a></li>
+                  <li><a href="default.aspx">Home</a></li>
                 <li><a href="userEquipment.aspx">User Equipment</a></li>
                 <li><a href="researchEquipment.aspx">Research Equipment</a></li>
                 <li><a href="laboratoryStores.aspx">Labroatory Equipment</a></li>
@@ -104,10 +104,11 @@
         </p></div>     
 
         <p class="copyright">&copy; 2016 The Constabulary</p>
- <p class="pull-right"><a href="#">Back to top</a></p>
-                    </div>
-
+                    
+               <asp:LinkButton ID="LinkButton1" OnClientClick="javascript:scroll(0:0)" runat="server" CssClass="pull-right">Back To Top</asp:LinkButton>
      
+                    </div>
+  
   </div>   
 
           </div>
@@ -117,6 +118,7 @@
         </div>
       </div>
     </div>
+        
         <script src="js/bootstrap.js"></script>
     
     

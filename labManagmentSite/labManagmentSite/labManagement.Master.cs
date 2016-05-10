@@ -13,5 +13,9 @@ namespace labManagmentSite
         {
 
         }
+        protected void backToTop() {
+
+
+        }
     }
 }
