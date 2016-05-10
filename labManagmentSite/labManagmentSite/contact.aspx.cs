@@ -23,6 +23,7 @@ namespace labManagmentSite
                 //sendMail();
                 returnLiteral();
                 clear();
+                visability();
                
             }
         }
@@ -39,6 +40,20 @@ namespace labManagmentSite
             txtRe.Text = "";
             txtEmail.Text = "";
             txtComment.Text = "";
+        }
+
+        private void visability()
+        {
+            lblName.Visible = false;
+            txtName.Visible = false;
+            lblRe.Visible = false;
+            txtRe.Visible = false;
+            lblEmail.Visible = false;
+            txtEmail.Visible = false;
+            lblComment.Visible = false;
+            txtComment.Visible = false;
+            btnSubmit.Visible = false;
+
         }
 
         private void sendMail()                 //code to send email. Not being called as it will be be ammended later
@@ -60,5 +75,7 @@ namespace labManagmentSite
             msg.Body = "This is a message from " + txtName.Text + Environment.NewLine + Environment.NewLine + txtComment.Text + Environment.NewLine + Environment.NewLine + "Recieved From " + txtEmail.Text; // body of message with email adress added to the end 
             smtpClient.Send(msg);
         }
+
+      
     }
 }
