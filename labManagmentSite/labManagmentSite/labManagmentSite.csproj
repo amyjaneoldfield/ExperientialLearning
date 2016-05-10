@@ -69,7 +69,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="admin.aspx" />
+    <Content Include="admin\admin.aspx" />
     <Content Include="contact.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Images\facebook.png" />
@@ -83,6 +83,7 @@
     <Content Include="JS\jquery-2.2.3.js" />
     <Content Include="JS\jquery-2.2.3.min.js" />
     <Content Include="laboratoryStores.aspx" />
+    <Content Include="login.aspx" />
     <Content Include="packages.config" />
     <Content Include="labManagement.Master" />
     <Content Include="JS\jquery-2.2.3.min.map" />
@@ -90,6 +91,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="admin\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -108,11 +110,11 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="admin.aspx.cs">
+    <Compile Include="admin\admin.aspx.cs">
       <DependentUpon>admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin.aspx.designer.cs">
+    <Compile Include="admin\admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
     </Compile>
     <Compile Include="contact.aspx.cs">
@@ -145,6 +147,13 @@
     </Compile>
     <Compile Include="laboratoryStores.aspx.designer.cs">
       <DependentUpon>laboratoryStores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="researchEquipment.aspx.cs">

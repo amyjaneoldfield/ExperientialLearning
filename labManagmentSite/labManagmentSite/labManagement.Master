@@ -66,7 +66,7 @@
                        
                     <ul>
                         <li>
-                            <a href="admin.aspx">Admin</a>
+                            <a href="~/admin/admin.aspx" runat="server">Admin</a>
                         </li>
                         <li>&middot;</li>
 
