@@ -10,7 +10,7 @@
 
     <link href="Styles/bootstrap.css" rel="stylesheet" />
     <link href="Styles/Styles.css" rel="stylesheet" /> 
-     <link href="Styles/test.css" rel="stylesheet" />
+<!--     <link href="Styles/test.css" rel="stylesheet" /> --> 
     
 </head>
 <body>
@@ -44,11 +44,8 @@
                 </div>
         </div>
               
-       
-
-
-
-
+ 
+          
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
@@ -60,27 +57,28 @@
           <div class="mastfoot">
             <div class="inner">
               
-                <div id="further">
+                
 
                     <div id="furtherLayer">
 
-           <h3 id="footFurthPage">Futher Pages</h3>
-    <!--    <p id="footFurthLink"> <a href="admin.aspx">Admin</a> &middot; <a href="contact.aspx">Contact</a></p> -->
-
-                        <div id="linkPages">
+           <h3>Futher Pages</h3>
+<div id="further">
+                       
                     <ul>
                         <li>
                             <a href="admin.aspx">Admin</a>
                         </li>
-
-                        <li>
-                            &middot;
-                        </li>
+                        <li>&middot;</li>
 
                         <li>
                             <a href="contact.aspx">Contact</a>
                         </li>
-                    </ul></div>
+                        <li>&middot;</li> 
+
+                        <li>
+                             <a href="www.1409891.studentwebserver.co.uk">Site Map</a> 
+                        </li>
+                    </ul>
 
 
                     </div>
@@ -102,7 +100,7 @@
             <a class="thornton"  href="www.thorntonsciencepark.co.uk">
             <img src="Images/th.png"  alt="" width="30" height="30"/></a>
             
-             &middot; <a href="www.portal.chester.ac.uk">Moodle</a> &middot; <a href="www.1409891.studentwebserver.co.uk">Site Map</a> 
+             &middot; <a href="www.portal.chester.ac.uk">Moodle</a>
         </p></div>     
 
         <p class="copyright">&copy; 2016 The Constabulary</p>
@@ -118,7 +116,7 @@
           
         </div>
       </div>
-    
+    </div>
         <script src="js/bootstrap.js"></script>
     
     
