@@ -98,9 +98,11 @@
              &middot;
             <a class="twitter"  href="www.twitter.com">
             <img src="Images/twitter.png"  alt="" width="30" height="30"/></a>
-
+            &middot;
+            <a class="thornton"  href="www.thorntonsciencepark.co.uk">
+            <img src="Images/th.png"  alt="" width="30" height="30"/></a>
             
-             &middot; <a href="www.throntonsciencepark.co.uk">Thornton</a> &middot; <a href="www.portal.chester.ac.uk">Moodle</a> &middot; <a href="www.1409891.studentwebserver.co.uk">Site Map</a> 
+             &middot; <a href="www.portal.chester.ac.uk">Moodle</a> &middot; <a href="www.1409891.studentwebserver.co.uk">Site Map</a> 
         </p></div>     
 
         <p class="copyright">&copy; 2016 The Constabulary</p>
