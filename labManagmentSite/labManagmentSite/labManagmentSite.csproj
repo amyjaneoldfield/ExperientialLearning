@@ -75,6 +75,7 @@
     <Content Include="Images\facebook.png" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\test.jpg" />
+    <Content Include="Images\pl1.png" />
     <Content Include="Images\th.png" />
     <Content Include="Images\twitter.png" />
     <Content Include="js\bootstrap.js" />

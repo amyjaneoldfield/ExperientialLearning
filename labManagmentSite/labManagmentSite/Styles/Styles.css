@@ -36,14 +36,14 @@ body {
    bottom: 15%;
  } /*positions header title h3*/
  #furtherLayer{
-     display: inline-block;  
+     display: inline-block;
      right: 10%;
  } /*positions header links*/
  further ul, li, p{
      text-decoration: none;
       list-style-type: none;
       margin: 0;
-     padding: 0;  
+     padding: 0;
  } /*for header links decor*/
    .pull-right {
    float: right;
@@ -67,10 +67,6 @@ body {
     font-family:Arial, Helvetica, sans-serif;
     color:black;
 }
-/*
-.contactLabels{
-    padding-left:
-}*/
 #nameLabel{
     text-align:left;
     padding-top:10px;
@@ -273,3 +269,24 @@ a:hover {
 
 
 
+
+/*home styles*/
+
+/*images*/
+
+#homeImages{
+    display:inline-block;
+    width:728px;
+    left:50%;
+    margin-top:40px;
+   
+}
+.homeImage{
+    margin-right:20px;
+    margin-left:20px;
+}
+.homePara{
+    margin-right:auto;
+    margin-left:auto;
+    padding-top:20px;
+}
