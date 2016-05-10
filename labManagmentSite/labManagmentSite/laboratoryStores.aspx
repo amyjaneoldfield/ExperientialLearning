@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Lab Stores</h1>
-    <asp:Repeater ID="rptrGases" runat="server" DataSourceID="SqlDataSourceLab" OnDataBinding="rptrGases_DataBinding">
+    <asp:Repeater ID="rptrGases" runat="server" DataSourceID="SqlDataSourceLab">
         <HeaderTemplate></HeaderTemplate>
         
         
