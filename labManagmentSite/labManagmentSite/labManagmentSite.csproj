@@ -71,6 +71,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Images\facebook.png" />
     <Content Include="Images\logo.png" />
+    <Content Include="Images\test.jpg" />
     <Content Include="Images\th.png" />
     <Content Include="Images\twitter.png" />
     <Content Include="js\bootstrap.js" />
@@ -99,7 +100,6 @@
     <Content Include="Styles\bootstrap.css" />
     <Content Include="Styles\bootstrap.min.css" />
     <Content Include="Styles\Styles.css" />
-    <Content Include="Styles\test.css" />
     <Content Include="userEquipment.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
