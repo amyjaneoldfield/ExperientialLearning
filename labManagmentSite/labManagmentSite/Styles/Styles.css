@@ -71,10 +71,6 @@
     font-family:Arial, Helvetica, sans-serif;
     color:black;
 }
-/*
-.contactLabels{
-    padding-left:
-}*/
 #nameLabel{
     text-align:left;
     padding-top:10px;
@@ -95,4 +91,25 @@
     width:400px;
     margin-left:auto;
     margin-right:auto;
+}
+
+/*home styles*/
+
+/*images*/
+
+#homeImages{
+    display:inline-block;
+    width:728px;
+    left:50%;
+    margin-top:40px;
+   
+}
+.homeImage{
+    margin-right:20px;
+    margin-left:20px;
+}
+.homePara{
+    margin-right:auto;
+    margin-left:auto;
+    padding-top:20px;
 }
