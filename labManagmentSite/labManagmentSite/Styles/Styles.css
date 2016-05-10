@@ -1,59 +1,55 @@
-﻿.throntonImage{
+﻿html,
+body {
+  height: 100%;
+  background-color: #333;
+} /*main colour use*/
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+} /*for fonts, colours, setup*/
+
+
+.throntonImage{
    float: left;
-   margin-left: 550px;      
+   margin-left: 800px;
+   
 } /*for logo image*/
  
+
+
+
+
 /*footer css*/
 .copyright{ 
    position: absolute;
-   left: 50%;
+   left: 47%;
    bottom: 10%;
 }/*for copyright text in footer*/
 #social{ 
     float: left;
-    margin-left: 550px;
-    margin-top: 50px;
+    margin-left: 800px;
+    bottom: 10%;
 }/*for social media links*/
-
  #further{
-     margin-left: 450px;
-    display:inline;
- }
-
+  float: left;
+   bottom: 15%;
+ } /*positions header title h3*/
  #furtherLayer{
-   
      display: inline-block;
-     /*  margin-right: 150px;
-     margin-top: 5px;*/ 
      right: 10%;
-
- }
-
-
+ } /*positions header links*/
  further ul, li, p{
      text-decoration: none;
       list-style-type: none;
       margin: 0;
      padding: 0;
-
-     
- }
-
-
- linkPages{
-     display: block;
- }
-
- #footFurthPage{
-     display: block;
- }
-
-
- #footFurthLink{
-     display: block;
- }
-
-
+ } /*for header links decor*/
+   .pull-right {
+   float: right;
+    margin-right: 800px;
+    bottom: 10%;
+}/*for back to top link button*/
 
 
 /*contact form styles*/
@@ -92,6 +88,187 @@
     margin-left:auto;
     margin-right:auto;
 }
+
+
+
+
+
+
+
+
+/* TEST CSSS BELOW*/
+
+
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+
+
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+display: table;
+
+    
+ width: 100%;
+    height: 250px;
+   
+
+      -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  
+    
+}
+
+.footer{
+    position:absolute;
+   bottom:0;
+
+}
+
+.footLinks{
+margin-bottom: 4px;
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+
+    position: fixed;
+    bottom: 0;
+
+    bottom: 20px;
+	right: 0px;
+ 
+
+     
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+ 
+  .cover-container {
+    width: 700px;
+  }
+}
+
+
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+  border-bottom: 5px;
+  bottom: 5px;
+}
+
+
+
+
+
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+} /*links font colour setup - mainly for footer*/
+
+
+
 
 /*home styles*/
 
