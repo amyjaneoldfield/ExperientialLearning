@@ -59,9 +59,34 @@
 
           <div class="mastfoot">
             <div class="inner">
-               
-           
-        <p> <a href="admin.aspx">Admin</a> &middot; <a href="contact.aspx">Contact</a></p>
+              
+                <div id="further">
+
+                    <div id="furtherLayer">
+
+           <h3 id="footFurthPage">Futher Pages</h3>
+    <!--    <p id="footFurthLink"> <a href="admin.aspx">Admin</a> &middot; <a href="contact.aspx">Contact</a></p> -->
+
+                        <div id="linkPages">
+                    <ul>
+                        <li>
+                            <a href="admin.aspx">Admin</a>
+                        </li>
+
+                        <li>
+                            &middot;
+                        </li>
+
+                        <li>
+                            <a href="contact.aspx">Contact</a>
+                        </li>
+                    </ul></div>
+
+
+                    </div>
+</div> 
+
+
 
                 <div id="footLinks">
                     

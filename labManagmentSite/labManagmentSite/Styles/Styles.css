@@ -3,28 +3,60 @@
    margin-left: 550px;      
 } /*for logo image*/
  
-.footer{
-    
-}
-
-.copyright{
-   margin-left: 50%;
-   margin-right: 50%;
-   display: inline-block;
-   width: 100px;
-}
-
-
-#social{
+/*footer css*/
+.copyright{ 
+   position: absolute;
+   left: 50%;
+   bottom: 10%;
+}/*for copyright text in footer*/
+#social{ 
     float: left;
     margin-left: 550px;
     margin-top: 50px;
-}
+}/*for social media links*/
+
+ #further{
+     margin-left: 450px;
+    display:inline;
+ }
+
+ #furtherLayer{
+   
+     display: inline-block;
+     /*  margin-right: 150px;
+     margin-top: 5px;*/ 
+     right: 10%;
+
+ }
+
+
+ further ul, li, p{
+     text-decoration: none;
+      list-style-type: none;
+      margin: 0;
+     padding: 0;
+
+     
+ }
+
+
+ linkPages{
+     display: block;
+ }
+
+ #footFurthPage{
+     display: block;
+ }
+
+
+ #footFurthLink{
+     display: block;
+ }
+
 
 
 
 /*contact form styles*/
-
 .contactFields{
     font-family:Arial, Helvetica, sans-serif;
     color:black;
@@ -33,7 +65,6 @@
 .contactVal{
     color:red;
 }
-
 .messageField{
     height:300px;
     width:400px;
@@ -44,27 +75,22 @@
 .contactLabels{
     padding-left:
 }*/
-
 #nameLabel{
     text-align:left;
     padding-top:10px;
 }
-
 #emailLabel{
     text-align:left;
     padding-top:10px;
 }
-
 #reLabel{
     text-align:left;
     padding-top:10px;
 }
-
 #messageLabel{
     text-align:left;
     padding-top:10px;
 }
-
 #contactForm{
     width:400px;
     margin-left:auto;
