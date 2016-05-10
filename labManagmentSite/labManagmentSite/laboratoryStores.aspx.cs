@@ -12,8 +12,8 @@ namespace labManagmentSite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var db = new db_1421049_LabManagementEntities();
-            var Categories = db.Lab_Stores.ToList();
+            
+    
 
 
 
