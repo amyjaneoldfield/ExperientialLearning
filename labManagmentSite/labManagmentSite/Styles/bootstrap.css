@@ -6249,7 +6249,7 @@ button.close {
 .carousel {
   position: relative;
 
-  height: 500px;
+ 
   margin-bottom: 60px;
 
 }/*TESTING PART CHECK IT*/
@@ -6481,7 +6481,7 @@ button.close {
     padding-bottom: 30px;
   }
   .carousel-indicators {
-    bottom: 20px;
+   /* bottom: 200px; */
   }
 }
 .clearfix:before,
