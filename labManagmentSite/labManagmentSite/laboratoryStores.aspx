@@ -13,9 +13,9 @@
         
         <ItemTemplate>
             <h2><%#Eval("Category") %></h2>
-            <asp:SqlDataSource ID="SqlDataSourceItems" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand='<%#"SELECT [Name] From [Lab_Stores] WHERE [Category] ="  + Eval("Category") %>'>
+            <asp:SqlDataSource ID="SqlDataSourceItems" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="selectCommand"
 
-    </asp:SqlDataSource>
+    SelectCommandType="StoredProcedure"> </asp:SqlDataSource>
 <asp:Repeater ID="rptrItems" runat="server" DataSourceID="SqlDataSourceItems">
                 <HeaderTemplate><ul></HeaderTemplate>
                 <ItemTemplate><li><%#Eval("Name") %></li></ItemTemplate>
