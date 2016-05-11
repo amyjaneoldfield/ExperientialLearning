@@ -9,119 +9,120 @@
     </asp:ContentPlaceHolder>
 
     <link href="Styles/bootstrap.css" rel="stylesheet" />
-    <link href="Styles/Styles.css" rel="stylesheet" /> 
-<!--     <link href="Styles/test.css" rel="stylesheet" /> --> 
-    
+    <link href="Styles/Styles.css" rel="stylesheet" />
+    <!--     <link href="Styles/test.css" rel="stylesheet" /> -->
+
 </head>
 <body>
     <form id="form1" runat="server">
 
-          <div class="throntonImage">
-          <img src="Images/logo.png"  alt="" width="200" height="200"/>
-</div>  
-        <div class="site-wrapper">
-       
-      <div class="site-wrapper-inner">
+        <div class="throntonImage">
+            <img src="Images/logo.png" alt="" width="200" height="200" /></div>
+        <!-- image logo NEED TO SET INTO CSS -->
+
 
         <div class="cover-container">
-              
-          <div class="masthead clearfix">
-            <div class="inner">
 
-                <a class="navbar-brand" href="#">
-                    <!-- NEED TO ADD NAME 
-                        possibly use h3 tag
-                </a> -->
+            <div class="masthead-clearfix">
+                <div class="inner">
 
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li><a href="default.aspx">Home</a></li>
-                <li><a href="userEquipment.aspx">User Equipment</a></li>
-                <li><a href="researchEquipment.aspx">Research Equipment</a></li>
-                <li><a href="laboratoryStores.aspx">Labroatory Equipment</a></li>
-            </ul>
-              </nav>
+                    <a class="navbar-brand" href="#">
+                        <!-- NEED TO ADD NAME 
+                        possibly use h3 tag -->
+                    </a>
+
+                    <nav>
+                        <ul class="nav masthead-nav">
+                            <li><a href="default.aspx">Home</a></li>
+                            <li><a href="userEquipment.aspx">User Equipment</a></li>
+                            <li><a href="researchEquipment.aspx">Research Equipment</a></li>
+                            <li><a href="laboratoryStores.aspx">Labroatory Equipment</a></li>
+                        </ul>
+                    </nav>
                 </div>
+            </div>
+
         </div>
-              
- 
-          
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
+        <div class="site-wrapper">
+
+            <div class="site-wrapper-inner">
 
 
-<div id="footer">
- <footer class="foot">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
 
-          <div class="mastfoot">
-            <div class="inner">
-              
-                
+            </div>
+        </div>
 
-                    <div id="furtherLayer">
 
-           <h3>Futher Pages</h3>
-<div id="further">
-                       
-                    <ul>
-                        <li>
-                            <a href="~/admin/admin.aspx" runat="server">Admin</a>
-                        </li>
-                        <li>&middot;</li>
+        <div id="footer">
+            <footer class="foot">
 
-                        <li>
-                            <a href="contact.aspx">Contact</a>
-                        </li>
-                        <li>&middot;</li> 
+                <div class="mastfoot">
+                    <div class="inner">
 
-                        <li>
-                             <a href="www.1409891.studentwebserver.co.uk">Site Map</a> 
-                        </li>
-                    </ul>
 
+
+                        <div id="furtherLayer">
+
+                            <h3>Futher Pages</h3>
+                            <div id="further">
+
+                                <ul>
+                                    <li>
+                                        <a href="~/admin/admin.aspx" runat="server">Admin</a>
+                                    </li>
+                                    <li>&middot;</li>
+
+                                    <li>
+                                        <a href="contact.aspx">Contact</a>
+                                    </li>
+                                    <li>&middot;</li>
+
+                                    <li>
+                                        <a href="www.1409891.studentwebserver.co.uk">Site Map</a>
+                                    </li>
+                                </ul>
+
+
+                            </div>
+                        </div>
+
+
+
+                        <div id="footLinks">
+
+
+                            <div id="social">
+                                <p>
+                                    <a class="facebook" href="www.facebook.com">
+                                        <img src="Images/facebook.png" alt="" width="30" height="30" /></a>
+                                    &middot;
+            <a class="twitter" href="www.twitter.com">
+                <img src="Images/twitter.png" alt="" width="30" height="30" /></a>
+                                    &middot;
+            <a class="thornton" href="www.thorntonsciencepark.co.uk">
+                <img src="Images/th.png" alt="" width="30" height="30" /></a>
+
+                                    &middot; <a href="www.portal.chester.ac.uk">Moodle</a>
+                                </p>
+                            </div>
+
+                            <p class="copyright">&copy; 2016 The Constabulary</p>
+
+                            <asp:LinkButton ID="LinkButton1" OnClientClick="javascript:scroll(0:0)" runat="server" CssClass="pull-right">Back To Top</asp:LinkButton>
+
+                        </div>
 
                     </div>
-</div> 
 
-
-
-                <div id="footLinks">
-                    
-
-                <div id="social">
-        <p>
-            <a class="facebook" href="www.facebook.com">
-            <img src="Images/facebook.png"  alt="" width="30" height="30"/></a>
-             &middot;
-            <a class="twitter"  href="www.twitter.com">
-            <img src="Images/twitter.png"  alt="" width="30" height="30"/></a>
-            &middot;
-            <a class="thornton"  href="www.thorntonsciencepark.co.uk">
-            <img src="Images/th.png"  alt="" width="30" height="30"/></a>
-            
-             &middot; <a href="www.portal.chester.ac.uk">Moodle</a>
-        </p></div>     
-
-        <p class="copyright">&copy; 2016 The Constabulary</p>
-                    
-               <asp:LinkButton ID="LinkButton1" OnClientClick="javascript:scroll(0:0)" runat="server" CssClass="pull-right">Back To Top</asp:LinkButton>
-     
-                    </div>
-  
-  </div>   
-
-          </div>
-        </footer></div>
-
-          
+                </div>
+            </footer>
         </div>
-      </div>
-    </div>
-        
+
         <script src="js/bootstrap.js"></script>
-    
-    
+
+
     </form>
 </body>
 </html>
