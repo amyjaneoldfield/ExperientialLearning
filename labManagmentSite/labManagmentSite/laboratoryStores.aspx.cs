@@ -10,6 +10,8 @@ namespace labManagmentSite
 {
     public partial class laboratoryStores : System.Web.UI.Page
     {
+
+      //  public db_1421049_LabManagementEntities db = new db_1421049_LabManagementEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -23,16 +25,11 @@ namespace labManagmentSite
 
         protected void rptrGases_ItemCreated(object sender, RepeaterItemEventArgs e)
         {
-         SqlDataSource sql = (SqlDataSource) 
+           // SqlDataSource sql = (SqlDataSource); 
             //Repeater child = (Repeater)e.Item.FindControl("rptrItems");
-             
+          
         }
 
-        private String selectCommand()
-        {
-            String command = "\'<%#\"SELECT [Name] From [Lab_Stores] WHERE [Category] = \' \"  + Eval(\"Category\") + \"\'\" %>\'";
-                
-            return command;
-        }
+       
     }
 }
