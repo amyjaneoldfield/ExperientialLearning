@@ -19,6 +19,18 @@ namespace labManagmentSite
 
         }
 
-       
+        protected void rptrGases_ItemCreated(object sender, RepeaterItemEventArgs e)
+        {
+         
+            //Repeater child = (Repeater)e.Item.FindControl("rptrItems");
+             
+        }
+
+        private String selectCommand()
+        {
+            String command = "SELECT [Name] From [Lab_Stores] WHERE [Category] =" + Eval("Category");
+                
+            return command;
+        }
     }
 }
