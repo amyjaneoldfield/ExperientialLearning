@@ -4281,6 +4281,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
+  position: static;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -6240,9 +6241,28 @@ button.close {
   border-right-width: 0;
   border-left-color: #fff;
 }
+
+
+
+
+
 .carousel {
   position: relative;
-}
+
+  height: 500px;
+  margin-bottom: 60px;
+
+}/*TESTING PART CHECK IT*/
+
+
+
+
+
+
+
+
+
+
 .carousel-inner {
   position: relative;
   width: 100%;

@@ -12,22 +12,14 @@ body {
 
 .throntonImage{
    float: left;
-   margin-left: 800px;
-   
+   margin-left: 750px;
 } /*for logo image*/
- 
   #nav masthead-nav, ul li a:hover{
       color: #FFFFFF;
-  }
-
-  nav masthead-nav{
-      position: fixed;
-  }
-
-  #masthead clearfix{
-      position: absolute;
-  }
-
+  } /*hover colour on nav links*/
+.masthead-clearfix{
+    position: absolute;
+} /*stops the nav bar from moving when you scroll*/
 
 
 
@@ -103,6 +95,15 @@ body {
 
 
 
+
+/*TEST CAROUSEL*/
+.first-slide{
+    top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+
+}
 
 
 
