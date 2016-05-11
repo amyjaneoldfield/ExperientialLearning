@@ -101,7 +101,27 @@ body {
 }
 
 
+/*admin styles*/
 
+#loginForm{
+    width:400px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.loginText{
+    font-family:Arial, Heletica, sans-serif;
+    width:400px;
+    color:black;
+}
+.loginVal{
+    color:red;
+}
+.loginLabel{
+    text-align:left;
+    padding-top:10px;
+    padding-bottom:5px;
+}
 
 
 
