@@ -3,6 +3,29 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+    
+    <br />
+    
+<br />
+
+
+    
+<br />
+
+    
+<br />
+
+
+<br />
+
+
+<br />
+
+
+<br />
+
+
+
 
 
 
@@ -16,8 +39,9 @@
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img class="first-slide" src="Images/test.jpg" alt="First slide">
+       <!--Items-->
+           <div class="item active">
+          <img class="first-slide" src="Images/test1.jpg" alt="First slide"/>
           <div class="container">
             <div class="carousel-caption">
               <h1>Example headline.</h1>
@@ -27,7 +51,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="Images/test1.jpg" alt="Second slide">
+          <img class="second-slide" src="Images/test1.jpg" alt="Second slide"/>
           <div class="container">
             <div class="carousel-caption">
               <h1>Another example headline.</h1>
@@ -37,7 +61,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+          <img class="third-slide" src="Images/test1.jpg" alt="Third slide"/>
           <div class="container">
             <div class="carousel-caption">
               <h1>One more for good measure.</h1>
@@ -46,7 +70,9 @@
             </div>
           </div>
         </div>
-      </div>
+      
+        <!-- Controls-->
+
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -55,7 +81,8 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div><!-- /.carousel -->
+    </div>
+        </div><!-- /.carousel -->
 
 
 
@@ -146,103 +173,6 @@
     <img class="homeImage" src="Images/pl1.png" alt="place holder for image3" height="200" width="200" />
 
 </div>
-    <p>
-        <br />
-
-        <br />
-
-
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-
-
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-    
-    </p>
-
-    
-     
-   
-
-   
-
-
-
-
 
 
 

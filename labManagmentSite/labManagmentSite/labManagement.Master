@@ -10,51 +10,43 @@
 
     <link href="Styles/bootstrap.css" rel="stylesheet" />
     <link href="Styles/Styles.css" rel="stylesheet" />
-    <!--     <link href="Styles/test.css" rel="stylesheet" /> -->
+   
 
 </head>
 <body>
     <form id="form1" runat="server">
 
-        <div class="throntonImage">
-            <img src="Images/logo.png" alt="" width="200" height="200" /></div>
-        <!-- image logo NEED TO SET INTO CSS -->
+          <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="default.aspx">
 
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
 
-        <div class="cover-container">
+              <li><img src="Images/logo.png" alt="" width="250" height="60" /></li>
 
-            <div class="masthead-clearfix">
-                <div class="inner">
-
-                    <a class="navbar-brand" href="#">
-                        <!-- NEED TO ADD NAME 
-                        possibly use h3 tag -->
-                    </a>
-
-                    <nav>
-                        <ul class="nav masthead-nav">
-                            <li><a href="default.aspx">Home</a></li>
+            <li><a href="default.aspx">Home</a></li>
                             <li><a href="userEquipment.aspx">User Equipment</a></li>
                             <li><a href="researchEquipment.aspx">Research Equipment</a></li>
                             <li><a href="laboratoryStores.aspx">Labroatory Equipment</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
 
-        </div>
-        <div class="site-wrapper">
-
-            <div class="site-wrapper-inner">
-
-
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
 
-            </div>
-        </div>
-
-
+  
         <div id="footer">
             <footer class="foot">
 
@@ -120,9 +112,9 @@
             </footer>
         </div>
 
-        <script src="js/bootstrap.js"></script>
+       
         <script src="js/jquery-2.2.3.min.js"></script>
-
+ <script src="js/bootstrap.js"></script>
 
     </form>
 </body>

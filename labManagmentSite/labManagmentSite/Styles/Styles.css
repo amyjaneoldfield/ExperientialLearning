@@ -1,22 +1,16 @@
 ﻿html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color: #fff;
 } /*main colour use*/
 body {
-  color: #fff;
+  color: #58595B;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 } /*for fonts, colours, setup*/
 
 
-.throntonImage{
-   float: left;
-   margin-left: 750px;
-} /*for logo image*/
-  #nav masthead-nav, ul li a:hover{
-      color: #FFFFFF;
-  } /*hover colour on nav links*/
+
 .masthead-clearfix{
     position: absolute;
 } /*stops the nav bar from moving when you scroll*/
@@ -24,6 +18,7 @@ body {
 
 
 /*footer css*/
+
 .copyright{ 
    position: absolute;
    left: 47%;
@@ -94,13 +89,11 @@ body {
 
 
 /*admin styles*/
-
 #loginForm{
     width:400px;
     margin-left:auto;
     margin-right:auto;
 }
-
 .loginText{
     font-family:Arial, Heletica, sans-serif;
     width:400px;
@@ -138,6 +131,7 @@ body {
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
+ /* background-color: #fff;        CHANGE FOR  CENTER SHADOW*/
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
@@ -186,8 +180,8 @@ body {
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
-  color: #fff;
-  border-bottom-color: #fff;
+/*color: #6C9B3B:;
+  border-bottom-color: #6C9B3B:;*/  
 }
 
 @media (min-width: 768px) {
@@ -214,11 +208,16 @@ display: table;
 
     
  width: 100%;
-    height: 250px;
+    height: 150px /* WAS 250PX MAY NEED TO CHANGE*/;
+   
+background-color: #333; 
+border-color: #080808;
+/*CHANGE FOR FOOTER BACKGROUND SOLID COLOUR
    
 
-      -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+*/
+   /*   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
   
     
 }
@@ -294,11 +293,24 @@ margin-bottom: 4px;
  */
 
 /* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-} /*links font colour setup - mainly for footer*/
+
+
+li > a{
+color: #fff;
+}
+
+
+.further > a,
+.further > a:focus,
+.further > a:hover {
+    color: #6C9B3B;
+
+
+
+
+
+ 
+} /*links font colour setup - mainly for footer* color: #fff;/
 
 
 
