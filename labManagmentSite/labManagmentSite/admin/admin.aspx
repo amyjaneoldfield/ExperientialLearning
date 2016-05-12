@@ -5,7 +5,11 @@
     <h1>Admin</h1>
 
     <a href="createAdmin.aspx">Create New Admin</a>
-
+    <div id="loginDetails">
     <asp:LoginStatus ID="LoginStatus1" runat="server" />
+    
+    
     <asp:LoginName ID="LoginName1" runat="server" />
+
+</div>
 </asp:Content>
