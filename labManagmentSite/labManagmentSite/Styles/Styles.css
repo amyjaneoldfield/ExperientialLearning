@@ -92,6 +92,26 @@ body {
     margin-right:auto;
 }
 
+/*admin register styles*/
+
+#register{
+    width:400px;
+    margin-right:auto;
+    margin-left:auto;
+}
+.registerFields{
+    font-family:Arial, Arial, Helvetica, sans-serif;
+    color:black;
+    width:400px;
+}
+.registerVal{
+    color:red;
+}
+.registerLabels{
+    text-align:left;
+    padding-top:5px;
+}
+
 
 /*admin styles*/
 
