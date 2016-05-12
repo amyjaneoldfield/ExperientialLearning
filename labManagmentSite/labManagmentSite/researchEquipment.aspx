@@ -7,17 +7,13 @@
     <asp:Repeater ID="rptrResearch" runat="server" DataSourceID="SqlDataSourceResearch">
         <HeaderTemplate><ul></ul></HeaderTemplate>
         <ItemTemplate>
-<%#Eval("Name") %>
+           <li> <a href="<%#Eval("ID","individualItem.aspx?ID={0}") %>"><%#Eval("Name") %></a></li>
         </ItemTemplate>
         <FooterTemplate></ul></FooterTemplate>
         
 
     </asp:Repeater>
-    <asp:SqlDataSource ID="SqlDataSourceResearch" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [Name] FROM [User_Research_Equip] WHERE ([ResearchEquipment] = @ResearchEquipment)">
-        <SelectParameters>
-            <asp:Parameter DefaultValue="True" Name="ResearchEquipment" Type="Boolean" />
-
-        </SelectParameters>
+    <asp:SqlDataSource ID="SqlDataSourceResearch" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [ID], [Name] FROM [User_Research_Equip]">
     </asp:SqlDataSource>
 </asp:Content>
 
