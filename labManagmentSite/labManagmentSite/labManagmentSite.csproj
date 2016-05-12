@@ -71,6 +71,7 @@
   <ItemGroup>
     <Content Include="admin\admin.aspx" />
     <Content Include="contact.aspx" />
+    <Content Include="admin\createAdmin.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Images\facebook.png" />
     <Content Include="Images\logo.png" />
@@ -126,6 +127,13 @@
     </Compile>
     <Compile Include="contact.aspx.designer.cs">
       <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\createAdmin.aspx.cs">
+      <DependentUpon>createAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\createAdmin.aspx.designer.cs">
+      <DependentUpon>createAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
