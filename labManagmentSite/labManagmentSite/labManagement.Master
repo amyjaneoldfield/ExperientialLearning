@@ -46,10 +46,14 @@
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
     </nav><!-- /.navbar -->
+      <div class="site-wrapper">
+
+            <div class="site-wrapper-inner">
 
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
-
+                </div>
+          </div>
 
         <div id="footer">
             <footer class="foot">
