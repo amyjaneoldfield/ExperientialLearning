@@ -55,7 +55,7 @@
           <EntitySet Name="Custodians" EntityType="Self.Custodians" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Lab_Stores" EntityType="Self.Lab_Stores" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="User_Research_Equip" EntityType="Self.User_Research_Equip" Schema="dbo" store:Type="Tables" />
-          </EntityContainer>
+        </EntityContainer>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
@@ -75,18 +75,18 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
-          <Property Name="Location" MaxLength="50" FixedLength="false" Unicode="true" Type="String" />
-          <Property Name="Custodian" MaxLength="50" FixedLength="false" Unicode="true" Type="String" />
-          <Property Name="Name" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
-          <Property Name="Quantity" Nullable="false" Type="Int32" />
-          <Property Name="UserGuide" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
-          <Property Name="RiskAssessment" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
-          <Property Name="MaterialSpecific" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
-          <Property Name="ManuelHandling" MaxLength="10" FixedLength="true" Unicode="true" Type="String" />
-          <Property Name="ApprovedSuppliers" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
-          <Property Name="OrderRequestProcedure" MaxLength="Max" FixedLength="false" Unicode="true" Type="String" />
-          <Property Name="Category" MaxLength="50" FixedLength="false" Unicode="true" Type="String" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Custodian" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
+          <Property Name="UserGuide" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="RiskAssessment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MaterialSpecific" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ManuelHandling" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="ApprovedSuppliers" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OrderRequestProcedure" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Category" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="User_Research_Equip">
           <Key>

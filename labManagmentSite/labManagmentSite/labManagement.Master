@@ -10,12 +10,18 @@
 
     <link href="Styles/bootstrap.css" rel="stylesheet" />
     <link href="Styles/Styles.css" rel="stylesheet" />
-   
+
 
 </head>
 <body>
     <form id="form1" runat="server">
 
+        <div class="throntonImage">
+            <img src="~/Images/logo.png" runat="server" alt="" width="200" height="200" /></div>
+        <!-- image logo NEED TO SET INTO CSS -->
+
+
+        <div class="cover-container">
           <nav class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
         <div class="navbar-header">
@@ -34,19 +40,21 @@
 
               <li><img src="Images/logo.png" alt="" width="250" height="60" /></li>
 
-            <li><a href="default.aspx">Home</a></li>
-                            <li><a href="userEquipment.aspx">User Equipment</a></li>
-                            <li><a href="researchEquipment.aspx">Research Equipment</a></li>
-                            <li><a href="laboratoryStores.aspx">Labroatory Equipment</a></li>
-          </ul>
+                    <nav>
+                        <ul class="nav masthead-nav">
+                            <li><a href="~/default.aspx" runat="server">Home</a></li>
+                            <li><a href="~/userEquipment.aspx" runat="server">User Equipment</a></li>
+                            <li><a href="~/researchEquipment.aspx" runat="server">Research Equipment</a></li>
+                            <li><a href="~/laboratoryStores.aspx" runat="server">Labroatory Equipment</a></li>
+                        </ul>
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
     </nav><!-- /.navbar -->
 
-     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
 
-  
+
         <div id="footer">
             <footer class="foot">
 
@@ -67,7 +75,7 @@
                                     <li>&middot;</li>
 
                                     <li>
-                                        <a href="contact.aspx">Contact</a>
+                                        <a href="~/contact.aspx" runat="server">Contact</a>
                                     </li>
                                     <li>&middot;</li>
 
@@ -88,13 +96,13 @@
                             <div id="social">
                                 <p>
                                     <a class="facebook" href="www.facebook.com">
-                                        <img src="Images/facebook.png" alt="" width="30" height="30" /></a>
+                                        <img src="~/Images/facebook.png" runat="server" alt="" width="30" height="30" /></a>
                                     &middot;
             <a class="twitter" href="www.twitter.com">
-                <img src="Images/twitter.png" alt="" width="30" height="30" /></a>
+                <img src="~/Images/twitter.png" runat="server" alt="" width="30" height="30" /></a>
                                     &middot;
             <a class="thornton" href="www.thorntonsciencepark.co.uk">
-                <img src="Images/th.png" alt="" width="30" height="30" /></a>
+                <img src="~/Images/th.png" runat="server" alt="" width="30" height="30" /></a>
 
                                     &middot; <a href="www.portal.chester.ac.uk">Moodle</a>
                                 </p>
@@ -114,7 +122,7 @@
 
        
         <script src="js/jquery-2.2.3.min.js"></script>
- <script src="js/bootstrap.js"></script>
+        <script src="js/bootstrap.js"></script>
 
     </form>
 </body>

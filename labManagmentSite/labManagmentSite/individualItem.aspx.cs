@@ -7,11 +7,10 @@ using System.Web.UI.WebControls;
 
 namespace labManagmentSite
 {
-    public partial class login : System.Web.UI.Page
+    public partial class individualItem : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
 
         }
     }
