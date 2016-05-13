@@ -8,7 +8,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
     <!--Carousel-->
-    
+    <div id="item-carousel" class="container" >
     <div id="itemCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -63,13 +63,15 @@
     
         </div>
     
-    
-    
+    </div>
+    <div id ="Space">
+
+    </div>
     
     
     
     <!-- Individual Item Data -->
-    <div id="tim">
+    <div class="container">
     <asp:FormView runat="server" DataSourceID="SqlDataSourceItem" RenderOuterTable="False">
        
 <ItemTemplate> 
@@ -79,7 +81,7 @@
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        <a data-toggle="collapse" href="#collapse1">
         Location</a>
       </h4>
     </div>
@@ -104,7 +106,7 @@
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        <a data-toggle="collapse" href="#collapse3">
         Collapsible Group 3</a>
       </h4>
     </div>
