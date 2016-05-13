@@ -17,6 +17,12 @@ body {
 
 
 
+  .navpad{
+      padding-top: 8px;
+  }
+
+
+
 /*footer css*/
 
 .copyright{ 
@@ -323,6 +329,9 @@ color: #fff;
 }
 
 
+
+
+
 .further > a,
 .further > a:focus,
 .further > a:hover {
@@ -338,6 +347,7 @@ color: #fff;
 
 
 
+
 /*home styles*/
 
 /*images*/
@@ -349,6 +359,7 @@ color: #fff;
     margin-top:40px;
    
 }
+
 .homeImage{
     margin-right:20px;
     margin-left:20px;

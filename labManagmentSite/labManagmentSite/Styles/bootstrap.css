@@ -3123,18 +3123,18 @@ fieldset[disabled] .btn-default.focus {
 }
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #6C9B3B;
+  border-color: #333;
 }
 .btn-primary:focus,
 .btn-primary.focus {
   color: #fff;
-  background-color: #286090;
-  border-color: #122b40;
+  background-color: #6C9B3B;
+  border-color: #333;
 }
 .btn-primary:hover {
-  color: #fff;
-  background-color: #286090;
+  color: #333;
+  background-color: #6C9B3B;
   border-color: #204d74;
 }
 .btn-primary:active,
@@ -6353,7 +6353,7 @@ button.close {
   left: 0;
   width: 15%;
   font-size: 20px;
-  color: #fff;
+  color: #6C9B3B; /* for arrows colour*/
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
   background-color: rgba(0, 0, 0, 0);
@@ -6438,8 +6438,8 @@ button.close {
   text-indent: -999px;
   cursor: pointer;
   background-color: #000 \9;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #fff;
+  background-color: #333;
+  border: 1px solid #6C9B3B;
   border-radius: 10px;
 }
 .carousel-indicators .active {
@@ -6456,7 +6456,7 @@ button.close {
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #fff;
+  color: #333;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
 }

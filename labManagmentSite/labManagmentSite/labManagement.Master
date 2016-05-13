@@ -39,10 +39,10 @@
               <li><img src="Images/logo.png" alt="" width="250" height="60" /></li>
 
                         
-                            <li><a href="~/default.aspx" runat="server">Home</a></li>
-                            <li><a href="~/userEquipment.aspx" runat="server">User Equipment</a></li>
-                            <li><a href="~/researchEquipment.aspx" runat="server">Research Equipment</a></li>
-                            <li><a href="~/laboratoryStores.aspx" runat="server">Labroatory Equipment</a></li>
+                            <li class="navpad"><a href="~/default.aspx" runat="server">Home</a></li>
+                            <li class="navpad"><a href="~/userEquipment.aspx" runat="server">User Equipment</a></li>
+                            <li class="navpad"><a href="~/researchEquipment.aspx" runat="server">Research Equipment</a></li>
+                            <li class="navpad"><a href="~/laboratoryStores.aspx" runat="server">Labroatory Equipment</a></li>
                         </ul>
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
