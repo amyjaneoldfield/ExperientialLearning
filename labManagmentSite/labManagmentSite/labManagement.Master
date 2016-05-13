@@ -99,13 +99,13 @@
                     <div id="social">
                         <p>
                             <a class="facebook" href="www.facebook.com">
-                                <img src="~/Images/facebook.png" runat="server" alt="" width="40" height="40" /></a>
+                                <img src="~/Images/facebook.png" runat="server" alt="" width="30" height="30" /></a>
                             &middot;
             <a class="twitter" href="www.twitter.com">
-                <img src="~/Images/twitter.png" runat="server" alt="" width="40" height="40" /></a>
+                <img src="~/Images/twitter.png" runat="server" alt="" width="30" height="30" /></a>
                             &middot;
             <a class="thornton" href="www.thorntonsciencepark.co.uk">
-                <img src="~/Images/th.png" runat="server" alt="" width="40" height="40" /></a>
+                <img src="~/Images/th.png" runat="server" alt="" width="30" height="30" /></a>
 
                             &middot; <a href="www.portal.chester.ac.uk">Moodle</a>
                         </p>

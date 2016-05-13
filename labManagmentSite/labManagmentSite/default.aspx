@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-
+    <div class="container">
 
 
      <!-- Carousel
@@ -88,7 +88,7 @@
     <img class="homeImage" src="Images/pl1.png" alt="place holder for image3" height="200" width="200" />
 
 </div>
-
+</div>
 
 
 </asp:Content>
