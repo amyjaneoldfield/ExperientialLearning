@@ -134,6 +134,7 @@
     <Content Include="researchEquipment.aspx" />
     <Content Include="Styles\bootstrap.css" />
     <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Styles\itemStyles.css" />
     <Content Include="Styles\Styles.css" />
     <Content Include="userEquipment.aspx" />
     <Content Include="Web.config" />
