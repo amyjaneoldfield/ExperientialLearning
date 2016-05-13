@@ -53,6 +53,7 @@ body {
    float: right;
     margin-right: 800px;
     bottom: 10%;
+    color: #fff;
 }/*for back to top link button*/
 
 
@@ -324,7 +325,7 @@ margin-bottom: 4px;
 /* Links */
 
 
-li > a{
+ #footer li > a{
 color: #fff;
 }
 

@@ -48,7 +48,7 @@ a {
 }
 a:active,
 a:hover {
-  outline: 0;
+  outline: 0;F
 }
 abbr[title] {
   border-bottom: 1px dotted;
@@ -1098,7 +1098,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #fff; /*for link colours - back to top */
+  color: #333; /*for link colours - back to top */
   text-decoration: none;
 }
 a:hover,
