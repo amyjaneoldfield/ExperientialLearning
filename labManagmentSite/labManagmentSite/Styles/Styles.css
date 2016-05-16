@@ -188,7 +188,7 @@ color:blue;
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
-  display: table;
+  
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
@@ -231,20 +231,13 @@ display: table;
 
     
  width: 100%;
-    height: 10px /* WAS 250PX MAY NEED TO CHANGE*/;
+     /* WAS 250PX MAY NEED TO CHANGE*/;
    
 background-color: transparent; 
-border-color: #080808;
 border-top: #333 solid 1px;
-
-/*CHANGE FOR FOOTER BACKGROUND SOLID COLOUR
-   
-
-*/
-   /*   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
-  
-    
+    border-left-color: #080808;
+    border-right-color: #080808;
+    border-bottom-color: #080808;
 }
 
 .footer{

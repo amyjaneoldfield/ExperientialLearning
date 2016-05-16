@@ -52,11 +52,16 @@
       <div class="site-wrapper">
 
             <div class="site-wrapper-inner">
+                <div class="container">
+
+               
 
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
-                </div>
-          </div>
+                </div> 
+
+            </div>
+         
 
         <div id="footer">
             <footer class="foot">
@@ -112,13 +117,19 @@
 
         </footer></div>
             
-      
+       </div>
 
 
        
         <script src="js/jquery-2.2.3.min.js"></script>
         <script src="js/bootstrap.js"></script>
 
+        <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
     </form>
 </body>
 </html>
