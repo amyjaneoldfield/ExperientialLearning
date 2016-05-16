@@ -65,50 +65,22 @@
                     <div class="inner">
 
 
-
-                        <!--         <div id="furtherLayer">
-
-                            <h3>Futher Pages</h3>
-                            <div id="further">
-
-                                <ul>
-                                    <li>
-                                        <a href="~/admin/admin.aspx" runat="server">Admin</a>
-                                    </li>
-                                    <li>&middot;</li>
-
-                                    <li>
-                                        <a href="~/contact.aspx" runat="server">Contact</a>
-                                    </li>
-                                    <li>&middot;</li>
-
-                                    <li>
-                                        <a href="www.1409891.studentwebserver.co.uk">Site Map</a>
-                                    </li>
-                                </ul>
-
-
-                            </div>
-                </div>-->
-
-
-
                         <div id="footLinks">
 
 
                             <div id="social">
-                                <p>
-                                    <a class="facebook" href="www.facebook.com">
+                                
+                                    <a href="www.facebook.com">
                                         <img src="~/Images/facebook.png" runat="server" alt="" width="30" height="30" /></a>
-                                    &middot;
-            <a class="twitter" href="www.twitter.com">
+                                   
+            <a  href="www.twitter.com">
                 <img src="~/Images/twitter.png" runat="server" alt="" width="30" height="30" /></a>
-                                    &middot;
-            <a class="thornton" href="www.thorntonsciencepark.co.uk">
+                                    
+            <a  href="www.thorntonsciencepark.co.uk">
                 <img src="~/Images/th.png" runat="server" alt="" width="30" height="30" /></a>
 
-                                    &middot; <a href="www.portal.chester.ac.uk">Moodle</a>
-                                </p>
+                                   <a href="www.portal.chester.ac.uk">Moodle</a>
+                               
                             </div>
 
                             <p class="copyright">&copy; 2016 The Constabulary</p>
@@ -119,23 +91,24 @@
                             <li>
                                 <a href="~/admin/admin.aspx" runat="server">Admin</a>
                             </li>
-                            <li>&middot;</li>
+                            <li class ="sep"> | </li>
 
                             <li>
                                 <a href="~/contact.aspx" runat="server">Contact</a>
                             </li>
-                            <li>&middot;</li>
+                         <li class="sep"> | </li>
 
                             <li>
                                 <a href="www.1409891.studentwebserver.co.uk">Site Map</a>
                             </li>
-
+                            <li class="sep"> | </li>
                             <li>
                                 <asp:LinkButton ID="LinkButton1" OnClientClick="javascript:scroll(0:0)" runat="server" CssClass="pull-right">Back To Top</asp:LinkButton></li>
                         </ul>
                     </div>
                 </div>
         </div>
+                    </div>
 
         </footer></div>
             

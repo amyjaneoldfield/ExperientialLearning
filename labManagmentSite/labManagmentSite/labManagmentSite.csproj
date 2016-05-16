@@ -80,6 +80,9 @@
     <Content Include="contact.aspx" />
     <Content Include="admin\createAdmin.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\banner.jpg" />
+    <Content Include="Images\banner1.jpg" />
+    <Content Include="Images\banner2.jpg" />
     <Content Include="Images\facebook.png" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\test.jpg" />
