@@ -13,7 +13,10 @@
         
 
     </asp:Repeater>
-    <asp:SqlDataSource ID="SqlDataSourceResearch" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [ID], [Name] FROM [User_Research_Equip]">
+    <asp:SqlDataSource ID="SqlDataSourceResearch" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [ID], [Name] FROM [User_Research_Equip] WHERE ([ResearchEquipment] = @ResearchEquipment)">
+        <SelectParameters>
+            <asp:Parameter DefaultValue="False" Name="ResearchEquipment" Type="Boolean" />
+        </SelectParameters>
     </asp:SqlDataSource>
 </asp:Content>
 

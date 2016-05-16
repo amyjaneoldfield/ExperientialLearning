@@ -5,12 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Lab Management System</title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+
 
     <link href="Styles/bootstrap.css" rel="stylesheet" />
     <link href="Styles/Styles.css" rel="stylesheet" />
 
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
 
 </head>
 <body>
@@ -28,24 +29,26 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="default.aspx">
-
-          </a>
+                    <a class="navbar-brand" href="default.aspx"></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
 
-              <li><img src="Images/logo.png" alt="" width="250" height="60" /></li>
+                        <li>
+                            <img src="Images/logo.png" alt="" width="250" height="60" /></li>
 
                         
-                            <li><a class="active" href="~/default.aspx" runat="server">Home</a></li>
-                            <li><a href="~/userEquipment.aspx" runat="server">User Equipment</a></li>
-                            <li><a href="~/researchEquipment.aspx" runat="server">Research Equipment</a></li>
-                            <li><a href="~/laboratoryStores.aspx" runat="server">Labroatory Equipment</a></li>
+                        <li class="navpad"><a href="~/default.aspx" runat="server">Home</a></li>
+                        <li class="navpad"><a href="~/userEquipment.aspx" runat="server">User Equipment</a></li>
+                        <li class="navpad"><a href="~/researchEquipment.aspx" runat="server">Research Equipment</a></li>
+                        <li class="navpad"><a href="~/laboratoryStores.aspx" runat="server">Labroatory Equipment</a></li>
                         </ul>
-        </div><!-- /.nav-collapse -->
-      </div><!-- /.container -->
-    </nav><!-- /.navbar -->
+                </div>
+                <!-- /.nav-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <!-- /.navbar -->
       <div class="site-wrapper">
 
             <div class="site-wrapper-inner">
@@ -63,7 +66,7 @@
 
 
 
-                        <div id="furtherLayer">
+                        <!--         <div id="furtherLayer">
 
                             <h3>Futher Pages</h3>
                             <div id="further">
@@ -86,7 +89,7 @@
 
 
                             </div>
-                        </div>
+                </div>-->
 
 
 
@@ -110,15 +113,34 @@
 
                             <p class="copyright">&copy; 2016 The Constabulary</p>
 
-                            <asp:LinkButton ID="LinkButton1" OnClientClick="javascript:scroll(0:0)" runat="server" CssClass="pull-right">Back To Top</asp:LinkButton>
 
-                        </div>
+                    <div class="pull">
+                        <ul>
+                            <li>
+                                <a href="~/admin/admin.aspx" runat="server">Admin</a>
+                            </li>
+                            <li>&middot;</li>
 
+                            <li>
+                                <a href="~/contact.aspx" runat="server">Contact</a>
+                            </li>
+                            <li>&middot;</li>
+
+                            <li>
+                                <a href="www.1409891.studentwebserver.co.uk">Site Map</a>
+                            </li>
+
+                            <li>
+                                <asp:LinkButton ID="LinkButton1" OnClientClick="javascript:scroll(0:0)" runat="server" CssClass="pull-right">Back To Top</asp:LinkButton></li>
+                        </ul>
                     </div>
-
                 </div>
-            </footer>
         </div>
+
+        </footer></div>
+            
+      
+
 
        
         <script src="js/jquery-2.2.3.min.js"></script>

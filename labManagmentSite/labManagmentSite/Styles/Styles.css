@@ -6,7 +6,7 @@ body {
 body {
   color: #58595B;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+ 
 } /*for fonts, colours, setup*/
 
 
@@ -19,12 +19,29 @@ body {
 color:blue;
 }
 
+  .navpad{
+      padding-top: 8px;
+      left: 200px;
+  }
+
+
+
+  .pull , li {
+      display: inline-block;
+      vertical-align: top;
+    float: right;
+    margin-right: 700px;
+    bottom: 5%;
+   
+  }
+
 /*footer css*/
 
 .copyright{ 
    position: absolute;
    left: 47%;
-   bottom: 10%;
+   
+   color: #333;
 }/*for copyright text in footer*/
 #social{ 
     float: left;
@@ -33,7 +50,7 @@ color:blue;
 }/*for social media links*/
  #further{
   float: left;
-   bottom: 15%;
+   
  } /*positions header title h3*/
  #furtherLayer{
      display: inline-block;
@@ -46,9 +63,8 @@ color:blue;
      padding: 0;
  } /*for header links decor*/
    .pull-right {
-   float: right;
-    margin-right: 800px;
-    bottom: 10%;
+  
+    color: #337ab7;
 }/*for back to top link button*/
 
 
@@ -189,10 +205,12 @@ display: table;
 
     
  width: 100%;
-    height: 150px /* WAS 250PX MAY NEED TO CHANGE*/;
+    height: 50px /* WAS 250PX MAY NEED TO CHANGE*/;
    
-background-color: #333; 
+background-color: #fff; 
 border-color: #080808;
+border-top: #333 solid 1px;
+
 /*CHANGE FOR FOOTER BACKGROUND SOLID COLOUR
    
 
@@ -276,9 +294,13 @@ margin-bottom: 4px;
 /* Links */
 
 
-li > a{
-color: #fff;
+ #footer li > a{
+color: #337ab7;
+padding-right: 3%;
 }
+
+
+
 
 
 .further > a,
@@ -296,6 +318,7 @@ color: #fff;
 
 
 
+
 /*home styles*/
 
 /*images*/
@@ -307,6 +330,7 @@ color: #fff;
     margin-top:40px;
    
 }
+
 .homeImage{
     margin-right:20px;
     margin-left:20px;
