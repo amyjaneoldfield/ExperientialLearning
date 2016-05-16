@@ -10,7 +10,7 @@ body {
 } /*for fonts, colours, setup*/
 
   .homeCap{
-      color: #337ab7;
+      color: #6C9B3B;
   }
 
 .masthead-clearfix{
@@ -35,6 +35,7 @@ color:blue;
     margin-right: 500px;
     bottom: 5%;
     width: 100px;
+ 
   }
 
 /*footer css*/
@@ -67,7 +68,7 @@ color:blue;
  } /*for header links decor*/
    .pull-right {
   
-    color: #337ab7;
+    color: #6C9B3B;
 }/*for back to top link button*/
 
 
@@ -324,7 +325,7 @@ margin-bottom: 4px;
 
 
  #footer li > a{
-color: #337ab7;
+color: #6C9B3B;
 
 }
 
