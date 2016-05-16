@@ -6,7 +6,7 @@
     <p>Please login to gain access to the admin area.</p>
 
     <div id="loginControl">
-        <asp:Login ID="Login1" runat="server"  RenderOuterTable="False" DestinationPageUrl="~/admin/admin.aspx">
+        <asp:Login ID="Login1" runat="server"  RenderOuterTable="False" DestinationPageUrl="~/admin/adminMain.aspx">
             <LayoutTemplate>
                                         <div id="loginForm">
 
@@ -45,5 +45,5 @@
                                         </div>
             </LayoutTemplate>
         </asp:Login>
-
+        </div>
 </asp:Content>

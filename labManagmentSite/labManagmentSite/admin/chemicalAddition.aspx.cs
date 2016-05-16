@@ -13,5 +13,37 @@ namespace labManagmentSite.admin
         {
 
         }
+
+        protected void btnClearFields_Click(object sender, EventArgs e)
+        {
+            clear();
+
+        }
+
+        private void clear()
+        {
+            txtNameOfSubstance.Text = "";
+            txtFormula.Text = "";
+            txtLocation.Text = "";
+            txtUnits.Text = "";
+            txtTriggerLevel.Text = "";
+            txtCurrentStockLevel.Text = "";
+            txtSupplier.Text = "";
+            txtSupplierProductCode.Text = "";
+            txtCASCode.Text = "";
+            txtBathCode.Text = "";
+            txtPurityGrade.Text = "";
+            txtExpiryDate.Text = "";
+            txtSummaryOfHazards.Text = "";
+            txtOrderedBy.Text = "";
+            txtReviewed.Text = "";
+            txtPurpose.Text = "";
+            txtLinkToMSDS.Text = "";
+            txtCatagory.Text = "";
+            txtCOSHHCompleted.Text = "";
+            txtMSDSAvailable.Text = "";
+
+
+        }
     }
 }

@@ -210,8 +210,10 @@
 
     </div>
 
-    <asp:Button ID="btnAddChemicalData" runat="server" Text="Add" />
 
+    <asp:Button ID="btnClearFields" runat="server" Text="Clear All" OnClick="btnClearFields_Click" />
+    <asp:Button ID="btnAddChemicalData" runat="server" Text="Add" />
+    
 
 </div>
 
