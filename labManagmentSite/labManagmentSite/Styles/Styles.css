@@ -9,7 +9,9 @@ body {
  
 } /*for fonts, colours, setup*/
 
-
+  .homeCap{
+      color: #337ab7;
+  }
 
 .masthead-clearfix{
     position: absolute;
@@ -26,13 +28,13 @@ color:blue;
 
 
 
-  .pull , li {
-      display: inline-block;
+  .pull , li , sep{
+      display: inline;
       vertical-align: top;
-    float: right;
-    margin-right: 700px;
+  margin-top:0;
+    margin-right: 500px;
     bottom: 5%;
-   
+    width: 100px;
   }
 
 /*footer css*/
@@ -40,18 +42,19 @@ color:blue;
 .copyright{ 
    position: absolute;
    left: 47%;
-   
+   bottom: 5%;
    color: #333;
 }/*for copyright text in footer*/
 #social{ 
     float: left;
-    margin-left: 800px;
-    bottom: 10%;
-}/*for social media links*/
- #further{
-  float: left;
+    margin-left:800px;
+    bottom: 5%;
    
- } /*positions header title h3*/
+    margin-top: 17px;
+
+}/*for social media links*/
+
+
  #furtherLayer{
      display: inline-block;
      right: 10%;
@@ -210,7 +213,10 @@ color:blue;
 
 
 
-
+.slide{
+    display: block;
+    margin: 0 auto;
+}
 
 
 
@@ -225,9 +231,9 @@ display: table;
 
     
  width: 100%;
-    height: 50px /* WAS 250PX MAY NEED TO CHANGE*/;
+    height: 10px /* WAS 250PX MAY NEED TO CHANGE*/;
    
-background-color: #fff; 
+background-color: transparent; 
 border-color: #080808;
 border-top: #333 solid 1px;
 
@@ -251,6 +257,10 @@ border-top: #333 solid 1px;
 margin-bottom: 4px;
 }
 
+.sep{
+    color: #333;
+    
+}
 
 /*
  * Affix and center
@@ -267,7 +277,6 @@ margin-bottom: 4px;
     
     bottom: 0;
 
-    bottom: 20px;
 	right: 0px;
  
 
@@ -297,7 +306,7 @@ margin-bottom: 4px;
 
 /* Padding for spacing */
 .inner {
-  padding: 30px;
+  
   border-bottom: 5px;
   bottom: 5px;
  
@@ -316,7 +325,7 @@ margin-bottom: 4px;
 
  #footer li > a{
 color: #337ab7;
-padding-right: 3%;
+
 }
 
 
@@ -327,18 +336,7 @@ padding-right: 3%;
 .further > a:focus,
 .further > a:hover {
     color: #6C9B3B;
-
-
-
-
-
- 
 } /*links font colour setup - mainly for footer* color: #fff;/
-
-
-
-
-
 /*home styles*/
 
 /*images*/
