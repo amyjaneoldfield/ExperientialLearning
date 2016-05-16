@@ -10,7 +10,7 @@ body {
 } /*for fonts, colours, setup*/
 
   .homeCap{
-      color: #337ab7;
+      color: #6C9B3B;
   }
 
 .masthead-clearfix{
@@ -35,12 +35,13 @@ color:blue;
     margin-right: 500px;
     bottom: 5%;
     width: 100px;
+ 
   }
 
 /*footer css*/
 
 .copyright{ 
-   position: absolute;
+  
    left: 47%;
    bottom: 5%;
    color: #333;
@@ -67,7 +68,7 @@ color:blue;
  } /*for header links decor*/
    .pull-right {
   
-    color: #337ab7;
+    color: #6C9B3B;
 }/*for back to top link button*/
 
 
@@ -284,6 +285,7 @@ margin-bottom: 4px;
   .mastfoot,
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  
   }
 }
 
@@ -317,7 +319,7 @@ margin-bottom: 4px;
 
 
  #footer li > a{
-color: #337ab7;
+color: #6C9B3B;
 
 }
 
@@ -334,14 +336,6 @@ color: #337ab7;
 
 /*images*/
 
-#homeImages{
-    display:inline-block;
-    width:728px;
-    left:50%;
-    margin-top:40px;
-   
-}
-
 .homeImage{
     margin-right:20px;
     margin-left:20px;
@@ -351,3 +345,11 @@ color: #337ab7;
     margin-left:auto;
     padding-top:20px;
 }
+
+.home1{
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    height: 500px;
+    vertical-align: top;
+}/*for the home page threee images layout*/
