@@ -35,7 +35,7 @@
           <ul class="nav navbar-nav">
 
                         <li>
-                            <img src="Images/logo.png" alt="" width="250" height="60" /></li>
+                            <img src="~/Images/logo.png" runat="server" alt="" width="250" height="60" /></li>
 
                         
                         <li class="navpad"><a href="~/default.aspx" runat="server">Home</a></li>
@@ -117,7 +117,7 @@
                     <div class="pull">
                         <ul>
                             <li>
-                                <a href="~/admin/admin.aspx" runat="server">Admin</a>
+                                <a href="~/admin/adminMain.aspx" runat="server">Admin</a>
                             </li>
                             <li>&middot;</li>
 

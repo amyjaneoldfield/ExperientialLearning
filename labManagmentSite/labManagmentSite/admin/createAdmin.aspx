@@ -1,16 +1,17 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/labManagement.Master" AutoEventWireup="true" CodeBehind="createAdmin.aspx.cs" Inherits="labManagmentSite.createAdmin" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   
-    
-     <div id="register">    
-        <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" ActiveStepIndex="1" ContinueDestinationPageUrl="~/admin/admin.aspx">
-        <WizardSteps>
-            <asp:CreateUserWizardStep ID="CreateUserWizardStep1" runat="server">
-                <ContentTemplate>
-                    
-                    
+
+
+    <div id="register">
+        <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" ContinueDestinationPageUrl="~/admin/admin.aspx">
+            <WizardSteps>
+                <asp:CreateUserWizardStep ID="CreateUserWizardStep1" runat="server">
+                    <ContentTemplate>
+
+
                         <div class="registerLabels">
                             <asp:Label ID="UserNameLabel" runat="server" AssociatedControlID="UserName">User Name</asp:Label>
                         </div>
@@ -85,13 +86,13 @@
                         <div id="litRegisterErrorMessage">
                             <asp:Literal ID="ErrorMessage" runat="server" EnableViewState="False"></asp:Literal>
                         </div>
-                    
-                </ContentTemplate>
-            </asp:CreateUserWizardStep>
-            <asp:CompleteWizardStep ID="CompleteWizardStep1" runat="server">
-            </asp:CompleteWizardStep>
-        </WizardSteps>
-    </asp:CreateUserWizard>
+
+                    </ContentTemplate>
+                </asp:CreateUserWizardStep>
+                <asp:CompleteWizardStep ID="CompleteWizardStep1" runat="server">
+                </asp:CompleteWizardStep>
+            </WizardSteps>
+        </asp:CreateUserWizard>
 
     </div>
 

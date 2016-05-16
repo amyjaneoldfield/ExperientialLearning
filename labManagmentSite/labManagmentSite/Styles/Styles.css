@@ -156,6 +156,26 @@ color:blue;
 
 }
 
+/*chamical addition form styles*/
+
+
+
+.txtChemical{
+    padding-bottom:20px;
+
+    width:500px;
+    
+}
+
+.lblChemical{
+   padding-top:10px;
+   width:500px;
+   text-align:left;
+}
+#hazardsText{
+    height:50px;
+}
+
 
 
 
@@ -222,7 +242,7 @@ border-top: #333 solid 1px;
 }
 
 .footer{
-    position:absolute;
+    position:static;
    bottom:0;
 
 }
@@ -239,12 +259,12 @@ margin-bottom: 4px;
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
-    position: fixed;
+   
     top: 0;
   }
   .mastfoot {
 
-    position: fixed;
+    
     bottom: 0;
 
     bottom: 20px;

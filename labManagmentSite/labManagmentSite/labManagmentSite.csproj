@@ -76,7 +76,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="admin\admin.aspx" />
+    <Content Include="admin\adminMain.aspx" />
+    <Content Include="admin\chemicalAddition.aspx" />
+    <Content Include="admin\chemicalData.aspx" />
+    <Content Include="admin\upload.aspx" />
     <Content Include="contact.aspx" />
     <Content Include="admin\createAdmin.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -140,12 +143,33 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="admin\admin.aspx.cs">
-      <DependentUpon>admin.aspx</DependentUpon>
+    <Compile Include="admin\adminMain.aspx.cs">
+      <DependentUpon>adminMain.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\admin.aspx.designer.cs">
-      <DependentUpon>admin.aspx</DependentUpon>
+    <Compile Include="admin\adminMain.aspx.designer.cs">
+      <DependentUpon>adminMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\chemicalAddition.aspx.cs">
+      <DependentUpon>chemicalAddition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\chemicalAddition.aspx.designer.cs">
+      <DependentUpon>chemicalAddition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\chemicalData.aspx.cs">
+      <DependentUpon>chemicalData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\chemicalData.aspx.designer.cs">
+      <DependentUpon>chemicalData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\upload.aspx.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\upload.aspx.designer.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
     </Compile>
     <Compile Include="contact.aspx.cs">
       <DependentUpon>contact.aspx</DependentUpon>
