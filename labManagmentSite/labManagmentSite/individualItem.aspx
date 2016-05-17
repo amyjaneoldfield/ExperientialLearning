@@ -114,7 +114,7 @@
        
 <ItemTemplate> 
     
-            <h2><%#Eval("Name") %></h2>
+            <h2 class="homeCap"><%#Eval("Name") %></h2>
       <div class="panel-group" id="accordion">
   <div class="panel panel-default">
     <div class="panel-heading">
