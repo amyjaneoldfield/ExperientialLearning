@@ -24,6 +24,7 @@ namespace labManagmentSite.admin
         {
             add();
             clear();
+            refresh();
 
         }
 
@@ -56,33 +57,38 @@ namespace labManagmentSite.admin
         private void add()
         {
             var db = new db_1421049_LabManagementEntities();
-            var entry = new Lab();
+            var entry = new Sheet1_();
 
-            entry.Name = txtNameOfSubstance.Text;
+            entry.Name_of_Substance = txtNameOfSubstance.Text;
             entry.Formula = txtFormula.Text;
             entry.Location = txtLocation.Text;
             entry.Units = txtUnits.Text;
-            entry.TriggerLevel = txtTriggerLevel.Text;
-            entry.CurrentStock = txtCurrentStockLevel.Text;
+            entry.Trigger_Level = txtTriggerLevel.Text;
+            entry.Current_Stock_Level = txtCurrentStockLevel.Text;
             entry.Supplier = txtSupplier.Text;
-            entry.SupplierProductCode = txtSupplierProductCode.Text;
-            entry.CASCode = txtCASCode.Text;
-            entry.BatchCode = txtBathCode.Text;
+            entry.Supplier_Product_Code = txtSupplierProductCode.Text;
+            entry.CAS_Code = txtCASCode.Text;
+            entry.Batch_Code = txtBathCode.Text;
             entry.Purity_Grade = txtPurityGrade.Text;
             entry.Expiry_Date = txtExpiryDate.Text;
-            entry.SummaryOfHazards = txtSummaryOfHazards.Text;
-            entry.OrderedBy = txtOrderedBy.Text;
+            entry.Summary_of_Hazards = txtSummaryOfHazards.Text;
+            entry.Ordered_by = txtOrderedBy.Text;
             entry.Reviewed = txtReviewed.Text;
-            entry.Purpose = txtPurpose.Text;
-            entry.LinkToMSDS = txtLinkToMSDS.Text;
-            entry.Catagory = txtCatagory.Text;
-            entry.COSHHCompleted = txtCOSHHCompleted.Text;
-            entry.MSDSAvailable = txtMSDSAvailable.Text;
+            entry.Purpose__Teaching_Research_etc_ = txtPurpose.Text;
+            entry.Link_to_MSDS = txtLinkToMSDS.Text;
+            entry.Category = txtCatagory.Text;
+            entry.COSHH_completed__Y_N_ = txtCOSHHCompleted.Text;
+            entry.MSDS_Available__Y_N_ = txtMSDSAvailable.Text;
 
-            db.Labs.Add(entry);
+            db.Sheet1_.Add(entry);
             db.SaveChanges();
 
 
+        }
+
+        private void refresh()
+        {
+            Response.Redirect("~/admin/chemicalAdditon");
         }
        
 

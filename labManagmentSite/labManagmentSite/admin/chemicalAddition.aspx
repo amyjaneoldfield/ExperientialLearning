@@ -4,7 +4,17 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+
+<div class="container">
+
     <h1>Add a New Substance to the Chemical Database</h1>
+
+
+    <!--TODO must add field validation for this form. Then we can modify the database table fileds to match the specific format of each field in a record. --> 
+
+    <!-- It may also be worth having a sepporate page on the site to diplay the whole grid of data and a sepporate one to allow the user to simply search for a record and have it appear in front of them. This would greatly increase accessibility. -->
+
+
 
     <div id="addChemicalForm">
 
@@ -146,7 +156,7 @@
             <asp:TextBox ID="txtOrderedBy" runat="server" CssClass="txtChemical"></asp:TextBox>
         </div>
 
-        
+
         <div>
             <asp:Label ID="lblReviewed" runat="server" Text="Reviewed" CssClass="lblChemical" AssociatedControlID="txtReviewed"></asp:Label>
         </div>
@@ -209,8 +219,8 @@
     <asp:Button ID="btnClearFields" runat="server" Text="Clear All" OnClick="btnClearFields_Click" />
     <asp:Button ID="btnAddChemicalData" runat="server" Text="Add" OnClick="btnAddChemicalData_Click" />
 
-</div>
-    
+    </div>
+
     <div class ="container">
     <div id="chemicalGrid" class="table">
 
@@ -245,14 +255,14 @@
 
 </div>
 </div>
-    
 
+    
     <asp:SqlDataSource ID="chemicalSource" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT * FROM [Sheet1$]"></asp:SqlDataSource>
 
 
 
-    
 
+    
 
 
 </asp:Content>
