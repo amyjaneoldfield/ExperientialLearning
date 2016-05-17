@@ -174,7 +174,7 @@
         </SelectParameters>
     </asp:SqlDataSource>
 
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><</a>
                     </div>
                 </div>
             </div>
