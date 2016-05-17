@@ -27,6 +27,6 @@ namespace labManagmentSite
     
         public virtual DbSet<Custodian> Custodians { get; set; }
         public virtual DbSet<User_Research_Equip> User_Research_Equip { get; set; }
-        public virtual DbSet<Lab> Labs { get; set; }
+        public virtual DbSet<Sheet1_> Sheet1_ { get; set; }
     }
 }
