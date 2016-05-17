@@ -2,8 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1>Research Equipment</h1>
-
+     <div class="container">
+         <h1>Research Equipment</h1>
+   
     <asp:Repeater ID="rptrResearch" runat="server" DataSourceID="SqlDataSourceResearch">
         <HeaderTemplate><ul></ul></HeaderTemplate>
         <ItemTemplate>
@@ -13,6 +14,7 @@
         
 
     </asp:Repeater>
+    </div>
     <asp:SqlDataSource ID="SqlDataSourceResearch" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [ID], [Name] FROM [User_Research_Equip] WHERE ([ResearchEquipment] = @ResearchEquipment)">
         <SelectParameters>
             <asp:Parameter DefaultValue="False" Name="ResearchEquipment" Type="Boolean" />

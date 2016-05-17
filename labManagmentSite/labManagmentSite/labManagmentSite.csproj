@@ -82,6 +82,7 @@
     <Content Include="admin\upload.aspx" />
     <Content Include="contact.aspx" />
     <Content Include="admin\createAdmin.aspx" />
+    <Content Include="custodians.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Images\banner.jpg" />
     <Content Include="Images\banner1.jpg" />
@@ -191,6 +192,13 @@
     </Compile>
     <Compile Include="admin\createAdmin.aspx.designer.cs">
       <DependentUpon>createAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custodians.aspx.cs">
+      <DependentUpon>custodians.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custodians.aspx.designer.cs">
+      <DependentUpon>custodians.aspx</DependentUpon>
     </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
