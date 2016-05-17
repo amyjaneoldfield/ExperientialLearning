@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="db_1421049_LabManagementModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="db_1421049_LabManagementModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Custodians">
           <Key>
             <PropertyRef Name="ID" />
@@ -15,28 +15,37 @@
           <Property Name="Email" Type="nvarchar(max)" />
           <Property Name="Phone" Type="nvarchar" MaxLength="50" />
         </EntityType>
-        <EntityType Name="Lab_Stores">
+        <EntityType Name="Lab">
           <Key>
-            <PropertyRef Name="ID" />
+            <PropertyRef Name="Id" />
           </Key>
-          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Location" Type="nvarchar" MaxLength="50" />
-          <Property Name="Custodian" Type="nvarchar" MaxLength="50" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="Quantity" Type="int" Nullable="false" />
-          <Property Name="UserGuide" Type="nvarchar(max)" />
-          <Property Name="RiskAssessment" Type="nvarchar(max)" />
-          <Property Name="MaterialSpecific" Type="nvarchar(max)" />
-          <Property Name="ManuelHandling" Type="nchar" MaxLength="10" />
-          <Property Name="ApprovedSuppliers" Type="nvarchar(max)" />
-          <Property Name="OrderRequestProcedure" Type="nvarchar(max)" />
-          <Property Name="Category" Type="nvarchar" MaxLength="50" />
+          <Property Name="Formula" Type="nvarchar(max)" />
+          <Property Name="Location" Type="nvarchar(max)" />
+          <Property Name="Units" Type="nvarchar(max)" />
+          <Property Name="TriggerLevel" Type="nvarchar(max)" />
+          <Property Name="CurrentStock" Type="nvarchar(max)" />
+          <Property Name="Supplier" Type="nvarchar(max)" />
+          <Property Name="SupplierProductCode" Type="nvarchar(max)" />
+          <Property Name="CASCode" Type="nvarchar(max)" />
+          <Property Name="BatchCode" Type="nvarchar(max)" />
+          <Property Name="Purity/Grade" Type="nvarchar(max)" />
+          <Property Name="Expiry Date" Type="nvarchar(max)" />
+          <Property Name="SummaryOfHazards" Type="nvarchar(max)" />
+          <Property Name="OrderedBy" Type="nvarchar(max)" />
+          <Property Name="Reviewed" Type="nvarchar(max)" />
+          <Property Name="Purpose" Type="nvarchar(max)" />
+          <Property Name="LinkToMSDS" Type="nvarchar(max)" />
+          <Property Name="COSHHCompleted" Type="nvarchar(max)" />
+          <Property Name="MSDSAvailable" Type="nvarchar(max)" />
+          <Property Name="Catagory" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="User_Research_Equip">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Location" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Specifications" Type="nvarchar(max)" Nullable="false" />
@@ -53,11 +62,10 @@
         </EntityType>
         <EntityContainer Name="db_1421049_LabManagementModelStoreContainer">
           <EntitySet Name="Custodians" EntityType="Self.Custodians" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Lab_Stores" EntityType="Self.Lab_Stores" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Lab" EntityType="Self.Lab" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="User_Research_Equip" EntityType="Self.User_Research_Equip" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="db_1421049_LabManagementModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -70,23 +78,6 @@
           <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-        </EntityType>
-        <EntityType Name="Lab_Stores">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Custodian" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Quantity" Type="Int32" Nullable="false" />
-          <Property Name="UserGuide" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="RiskAssessment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="MaterialSpecific" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="ManuelHandling" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="ApprovedSuppliers" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="OrderRequestProcedure" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Category" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="User_Research_Equip">
           <Key>
@@ -109,9 +100,35 @@
         </EntityType>
         <EntityContainer Name="db_1421049_LabManagementEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Custodians" EntityType="Self.Custodian" />
-          <EntitySet Name="Lab_Stores" EntityType="Self.Lab_Stores" />
           <EntitySet Name="User_Research_Equip" EntityType="Self.User_Research_Equip" />
+          <EntitySet Name="Labs" EntityType="db_1421049_LabManagementModel.Lab" />
         </EntityContainer>
+        <EntityType Name="Lab">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Formula" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Location" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Units" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TriggerLevel" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CurrentStock" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Supplier" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SupplierProductCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CASCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BatchCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Purity_Grade" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Expiry_Date" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SummaryOfHazards" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="OrderedBy" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Reviewed" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Purpose" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="LinkToMSDS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="COSHHCompleted" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MSDSAvailable" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Catagory" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -126,24 +143,6 @@
                 <ScalarProperty Name="Location" ColumnName="Location" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="Phone" ColumnName="Phone" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Lab_Stores">
-            <EntityTypeMapping TypeName="db_1421049_LabManagementModel.Lab_Stores">
-              <MappingFragment StoreEntitySet="Lab_Stores">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="Location" ColumnName="Location" />
-                <ScalarProperty Name="Custodian" ColumnName="Custodian" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
-                <ScalarProperty Name="UserGuide" ColumnName="UserGuide" />
-                <ScalarProperty Name="RiskAssessment" ColumnName="RiskAssessment" />
-                <ScalarProperty Name="MaterialSpecific" ColumnName="MaterialSpecific" />
-                <ScalarProperty Name="ManuelHandling" ColumnName="ManuelHandling" />
-                <ScalarProperty Name="ApprovedSuppliers" ColumnName="ApprovedSuppliers" />
-                <ScalarProperty Name="OrderRequestProcedure" ColumnName="OrderRequestProcedure" />
-                <ScalarProperty Name="Category" ColumnName="Category" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -164,6 +163,33 @@
                 <ScalarProperty Name="QuartzyLink" ColumnName="QuartzyLink" />
                 <ScalarProperty Name="ResearchEquipment" ColumnName="ResearchEquipment" />
                 <ScalarProperty Name="Custodian" ColumnName="Custodian" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Labs">
+            <EntityTypeMapping TypeName="db_1421049_LabManagementModel.Lab">
+              <MappingFragment StoreEntitySet="Lab">
+                <ScalarProperty Name="Catagory" ColumnName="Catagory" />
+                <ScalarProperty Name="MSDSAvailable" ColumnName="MSDSAvailable" />
+                <ScalarProperty Name="COSHHCompleted" ColumnName="COSHHCompleted" />
+                <ScalarProperty Name="LinkToMSDS" ColumnName="LinkToMSDS" />
+                <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+                <ScalarProperty Name="Reviewed" ColumnName="Reviewed" />
+                <ScalarProperty Name="OrderedBy" ColumnName="OrderedBy" />
+                <ScalarProperty Name="SummaryOfHazards" ColumnName="SummaryOfHazards" />
+                <ScalarProperty Name="Expiry_Date" ColumnName="Expiry Date" />
+                <ScalarProperty Name="Purity_Grade" ColumnName="Purity/Grade" />
+                <ScalarProperty Name="BatchCode" ColumnName="BatchCode" />
+                <ScalarProperty Name="CASCode" ColumnName="CASCode" />
+                <ScalarProperty Name="SupplierProductCode" ColumnName="SupplierProductCode" />
+                <ScalarProperty Name="Supplier" ColumnName="Supplier" />
+                <ScalarProperty Name="CurrentStock" ColumnName="CurrentStock" />
+                <ScalarProperty Name="TriggerLevel" ColumnName="TriggerLevel" />
+                <ScalarProperty Name="Units" ColumnName="Units" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Formula" ColumnName="Formula" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
