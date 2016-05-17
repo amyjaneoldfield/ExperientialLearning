@@ -3,12 +3,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<div class="container">
+
     <h1>Add a New Substance to the Chemical Database</h1>
 
     <div id="addChemicalForm">
 
-
+        <ul></ul>
         <div>
             <asp:Label ID="lblNameOfSubstance" runat="server" Text="Name of Substance" CssClass="lblChemical" AssociatedControlID="txtNameOfSubstance"></asp:Label>
         </div>
@@ -132,8 +132,8 @@
             <asp:Label ID="lblSummaryOfHazards" runat="server" Text="Summary of Hazards" CssClass="lblChemical" AssociatedControlID="txtSummaryOfHazards"></asp:Label>
         </div>
 
-        <div id="hazardsText">
-            <asp:TextBox ID="txtSummaryOfHazards" runat="server" CssClass="txtChemical" TextMode="MultiLine"></asp:TextBox>
+        <div>
+            <asp:TextBox ID="txtSummaryOfHazards" runat="server" CssClass="txtChemical"></asp:TextBox>
         </div>
 
 
@@ -146,8 +146,7 @@
             <asp:TextBox ID="txtOrderedBy" runat="server" CssClass="txtChemical"></asp:TextBox>
         </div>
 
-
-
+        
         <div>
             <asp:Label ID="lblReviewed" runat="server" Text="Reviewed" CssClass="lblChemical" AssociatedControlID="txtReviewed"></asp:Label>
         </div>
@@ -210,9 +209,10 @@
     <asp:Button ID="btnClearFields" runat="server" Text="Clear All" OnClick="btnClearFields_Click" />
     <asp:Button ID="btnAddChemicalData" runat="server" Text="Add" OnClick="btnAddChemicalData_Click" />
 
-    </div>
-
-    <div id="chemicalGrid">
+</div>
+    
+    <div class ="container">
+    <div id="chemicalGrid" class="table">
 
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="chemicalSource">
         <Columns>
@@ -244,7 +244,7 @@
     </asp:GridView>
 
 </div>
-
+</div>
     
 
     <asp:SqlDataSource ID="chemicalSource" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT * FROM [Sheet1$]"></asp:SqlDataSource>
@@ -253,6 +253,6 @@
 
     
 
-</div>
+
 
 </asp:Content>

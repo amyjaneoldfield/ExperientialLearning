@@ -30,38 +30,34 @@ color:blue;
 
 
   .pull , li , sep{
-      display: inline;
-      vertical-align: top;
-  margin-top:0;
-    margin-right: 500px;
-    bottom: 5%;
-    width: 100px;
+    display:inline;
+
  
   }
 
 /*footer css*/
 
 .copyright{ 
-  
-   left: 47%;
-   bottom: 5%;
+
    color: #333;
 }/*for copyright text in footer*/
-#social{ 
-    float: left;
-    margin-left:800px;
-    bottom: 5%;
+.Social{ 
+    float:left;
+    width:auto;
+     
+    
    
-    margin-top: 17px;
 
 }/*for social media links*/
-
+ .pull , .copyright{
+     align-content:center;
+ }
 
  #furtherLayer{
      display: inline-block;
      right: 10%;
  } /*positions header links*/
- further ul, li, p{
+ .further ul, li, p{
      text-decoration: none;
       list-style-type: none;
       margin: 0;
@@ -221,15 +217,41 @@ color:blue;
     display: block;
     margin: 0 auto;
 }
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  background-color:lightgray;
+
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+ 
+}
+.footLinks {
+padding-left:0px;
+
+}
+.footLinks, li, a {
+color:#6C9B3B;
+
+}
 
 
-
-/*
+/**
  * Footer
- */
+
 
 .mastfoot {
-  color: #999; /* IE8 proofing */
+  color: #999; /* IE8 proofing 
   color: rgba(255,255,255,.5);
 display: table;
 position:absolute;
@@ -237,7 +259,7 @@ position:absolute;
 
     
  width: 100%;
-     /* WAS 250PX MAY NEED TO CHANGE*/;
+     
    
 background-color: transparent; 
 border-top: #333 solid 1px;
@@ -260,7 +282,7 @@ margin-bottom: 4px;
     color: #333;
     
 }
-
+*/
 /*
  * Affix and center
  */
@@ -307,8 +329,8 @@ margin-bottom: 4px;
 /* Padding for spacing */
 .inner {
   
-  border-bottom: 5px;
-  bottom: 5px;
+  display:inline-block;
+
  
 }
 

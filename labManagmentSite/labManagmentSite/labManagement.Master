@@ -7,7 +7,7 @@
     <title>Lab Management System</title>
 
 
-    <link href="Styles/bootstrap.css" rel="stylesheet" />
+    <link href="Styles/bootstrap.min.css" rel="stylesheet" />
     <link href="Styles/Styles.css" rel="stylesheet" />
 
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -61,23 +61,14 @@
 
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
+              
+          </div> 
                 </div> 
 
-            </div>
-         
-
-        <div id="footer">
-            <footer class="foot">
-
-                <div class="mastfoot">
-                    <div class="inner">
-
-
-                        <div id="footLinks">
-
-
-                            <div id="social">
-                                
+      </div> 
+          <footer class="footer">
+              <div class="container">
+                                <div class="Social">
                                     <a href="www.facebook.com">
                                         <img src="~/Images/facebook.png" runat="server" alt="" width="30" height="30" /></a>
                                    
@@ -88,14 +79,13 @@
                 <img src="~/Images/th.png" runat="server" alt="" width="30" height="30" /></a>
 
              <a href="www.portal.chester.ac.uk"> <img src="~/Images/moodle.png" runat="server" alt="" width="30" height="30" /></a>
-                               
-                            </div>
+                           </div>    
+                       
+                            
 
-                            <p class="copyright">&copy; 2016 The Constabulary</p>
 
-
-                    <div class="pull">
-                        <ul>
+                    <div class ="inner">
+                        <ul class="footLinks">
                             <li>
                                 <a href="~/admin/adminMain.aspx" runat="server">Admin</a>
                             </li>
@@ -109,11 +99,31 @@
                             <li>
                                 <a href="www.1409891.studentwebserver.co.uk">Site Map</a>
                             </li>
-                            <li class="sep"> | </li>
-                            <li>
-                                <asp:LinkButton ID="LinkButton1" OnClientClick="javascript:scroll(0:0)" runat="server" CssClass="pull-right">Back To Top</asp:LinkButton></li>
+                           
+                            
+                                
                         </ul>
+ <p class="copyright">&copy; 2016 The Constabulary</p>   
                     </div>
+              <asp:LinkButton ID="LinkButton1" OnClientClick="javascript:scroll(0:0)" runat="server" CssClass="pull-right">Back To Top</asp:LinkButton>
+                         
+
+                   </div>   
+         </footer>
+      
+           
+           <!-- <div id="footer">
+            <footer class="foot">
+
+                <div class="mastfoot">
+                    <div class="inner">
+
+
+                        <div id="footLinks">
+
+
+                            
+
                 </div>
         </div>
                     </div>
@@ -121,7 +131,7 @@
         </footer></div>
             
        </div>
-
+        -->
 
        
         <script src="js/jquery-2.2.3.min.js"></script>
