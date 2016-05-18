@@ -14,7 +14,6 @@ body {
       color: #6C9B3B;
   }
 
-
  /*Nav Bar CSS*/ 
  .navbar-inverse .navbar-nav > li > a {
   color:#fff; 
@@ -262,6 +261,19 @@ padding-left:0px;
 #hazardsText{
     height:50px;
 }
+
+
+
+.indItem{
+  
+}
+
+
+
+
+
+
+
 
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */

@@ -4,9 +4,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>User Equipment</h1>
      <asp:Repeater ID="rptrUser" runat="server" DataSourceID="SqlDataSourceUser">
-        <HeaderTemplate><ul></ul></HeaderTemplate>
+        <HeaderTemplate><ul></HeaderTemplate>
         <ItemTemplate>
-<li> <a href="<%#Eval("ID","individualItem.aspx?ID={0}") %>"><%#Eval("Name") %></a></li>
+          <ul class="indItem">
+<li> <a href="<%#Eval("ID","individualItem.aspx?ID={0}") %>"><%#Eval("Name") %></a></li></ul>
         </ItemTemplate>
         <FooterTemplate></ul></FooterTemplate>
         
