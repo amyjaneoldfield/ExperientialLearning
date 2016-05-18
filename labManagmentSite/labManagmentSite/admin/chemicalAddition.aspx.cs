@@ -9,10 +9,10 @@ using System.Data.Entity;
 namespace labManagmentSite.admin
 {
     public partial class chemicalAddition : System.Web.UI.Page
-    {
+    { db_1421049_LabManagementEntities db = new db_1421049_LabManagementEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         protected void btnClearFields_Click(object sender, EventArgs e)
@@ -90,7 +90,16 @@ namespace labManagmentSite.admin
         {
             Response.Redirect("~/admin/chemicalAdditon");
         }
-       
 
+        protected void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string term = txtSearch.Text;
+
+           var data = db.Sheet1_.SqlQuery("SELECT * FROM dbo.Sheet1$ WHERE [Name of Substance] LIKE %"+ term + "% ORDER BY Name ASC");
+            rptrSearch.DataSource = data;
+            rptrSearch.DataBind();
+
+
+        }
     }
 }

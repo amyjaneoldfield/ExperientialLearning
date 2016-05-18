@@ -391,21 +391,21 @@ namespace labManagmentSite.admin {
         protected global::System.Web.UI.WebControls.Button btnAddChemicalData;
         
         /// <summary>
-        /// GridView1 control.
+        /// txtSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.TextBox txtSearch;
         
         /// <summary>
-        /// chemicalSource control.
+        /// rptrSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource chemicalSource;
+        protected global::System.Web.UI.WebControls.Repeater rptrSearch;
     }
 }

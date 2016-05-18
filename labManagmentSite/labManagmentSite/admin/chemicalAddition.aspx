@@ -1,11 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/labManagement.Master" AutoEventWireup="true" CodeBehind="chemicalAddition.aspx.cs" Inherits="labManagmentSite.admin.chemicalAddition" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="../Styles/itemStyles.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
 <div class="container">
+   
 
     <h1>Add a New Substance to the Chemical Database</h1>
 
@@ -14,11 +16,19 @@
 
     <!-- It may also be worth having a sepporate page on the site to diplay the whole grid of data and a sepporate one to allow the user to simply search for a record and have it appear in front of them. This would greatly increase accessibility. -->
 
+         
+      <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+         <a data-toggle="collapse" href="#collapse1">
+        Location</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body">
+         <div id="addChemicalForm">
 
-
-    <div id="addChemicalForm">
-
-        <ul></ul>
         <div>
             <asp:Label ID="lblNameOfSubstance" runat="server" Text="Name of Substance" CssClass="lblChemical" AssociatedControlID="txtNameOfSubstance"></asp:Label>
         </div>
@@ -219,47 +229,72 @@
     <asp:Button ID="btnClearFields" runat="server" Text="Clear All" OnClick="btnClearFields_Click" />
     <asp:Button ID="btnAddChemicalData" runat="server" Text="Add" OnClick="btnAddChemicalData_Click" />
 
+    </div></div>
     </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse"  href="#collapse2">
+        Search</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">
+         <asp:TextBox ID="txtSearch" runat="server" OnTextChanged="txtSearch_TextChanged"></asp:TextBox>
+          <asp:Repeater ID="rptrSearch" runat="server">
+              <HeaderTemplate>Items Containing (Search term)</HeaderTemplate>
+              <ItemTemplate>
+                <%#Eval ("Name of Substance") %>              
+    <%#Eval ("Formula") %>
+    <%#Eval ("Location") %>
+   <%#Eval ("Units") %> 
+    <%#Eval ("Trigger Level") %>
+   <!-- [Current Stock Level]
+    [Supplier]
+    [Supplier Product Code]
+    [CAS Code]
+    [Batch Code]
+    [Purity/Grade]
+    [Expiry Date]
+    [Summary of Hazards
+    [Ordered by]
+    [Reviewed
+    [Purpose (Teaching/Research etc)]
+    [Link to MSDS]
+    [Category]
+    [COSHH completed (Y/N)]
+    [MSDS Available (Y/N)]
+    [F21
+    [F22
+    [F23]
+    [ID]
+                  -->
 
-    <div class ="container">
-    <div id="chemicalGrid" class="table">
+              </ItemTemplate>
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="chemicalSource">
-        <Columns>
-            <asp:BoundField DataField="Name of Substance" HeaderText="Name of Substance" SortExpression="Name of Substance" />
-            <asp:BoundField DataField="Formula" HeaderText="Formula" SortExpression="Formula" />
-            <asp:BoundField DataField="Location" HeaderText="Location" SortExpression="Location" />
-            <asp:BoundField DataField="Units" HeaderText="Units" SortExpression="Units" />
-            <asp:BoundField DataField="Trigger Level" HeaderText="Trigger Level" SortExpression="Trigger Level" />
-            <asp:BoundField DataField="Current Stock Level" HeaderText="Current Stock Level" SortExpression="Current Stock Level" />
-            <asp:BoundField DataField="Supplier" HeaderText="Supplier" SortExpression="Supplier" />
-            <asp:BoundField DataField="Supplier Product Code" HeaderText="Supplier Product Code" SortExpression="Supplier Product Code" />
-            <asp:BoundField DataField="CAS Code" HeaderText="CAS Code" SortExpression="CAS Code" />
-            <asp:BoundField DataField="Batch Code" HeaderText="Batch Code" SortExpression="Batch Code" />
-            <asp:BoundField DataField="Purity/Grade" HeaderText="Purity/Grade" SortExpression="Purity/Grade" />
-            <asp:BoundField DataField="Expiry Date" HeaderText="Expiry Date" SortExpression="Expiry Date" />
-            <asp:BoundField DataField="Summary of Hazards" HeaderText="Summary of Hazards" SortExpression="Summary of Hazards" />
-            <asp:BoundField DataField="Ordered by" HeaderText="Ordered by" SortExpression="Ordered by" />
-            <asp:BoundField DataField="Reviewed" HeaderText="Reviewed" SortExpression="Reviewed" />
-            <asp:BoundField DataField="Purpose (Teaching/Research etc)" HeaderText="Purpose (Teaching/Research etc)" SortExpression="Purpose (Teaching/Research etc)" />
-            <asp:BoundField DataField="Link to MSDS" HeaderText="Link to MSDS" SortExpression="Link to MSDS" />
-            <asp:BoundField DataField="Category" HeaderText="Category" SortExpression="Category" />
-            <asp:BoundField DataField="COSHH completed (Y/N)" HeaderText="COSHH completed (Y/N)" SortExpression="COSHH completed (Y/N)" />
-            <asp:BoundField DataField="MSDS Available (Y/N)" HeaderText="MSDS Available (Y/N)" SortExpression="MSDS Available (Y/N)" />
-            <asp:BoundField DataField="F21" HeaderText="F21" SortExpression="F21" />
-            <asp:BoundField DataField="F22" HeaderText="F22" SortExpression="F22" />
-            <asp:BoundField DataField="F23" HeaderText="F23" SortExpression="F23" />
-            <asp:BoundField DataField="ID" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="ID" />
-        </Columns>
-    </asp:GridView>
+          </asp:Repeater>
 
-</div>
-</div>
 
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+  
+ 
     
-    <asp:SqlDataSource ID="chemicalSource" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT * FROM [Sheet1$]"></asp:SqlDataSource>
 
-
+  </div>
+    </div>
+    <script src="../js/jquery-2.2.3.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 
 
     
