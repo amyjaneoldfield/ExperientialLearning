@@ -263,16 +263,28 @@ padding-left:0px;
 }
 
 
+/*USER EQUIPMENT STYLES*/
+.indItem > li > a:hover{
+  color: #333;
+}/*for when hovering*/
 
-.indItem{
-  
+.indItem {
+
+
+
+}
+ .indItem , .UserTitle{
+     
+ }
+#EquipmentInner{
+    display: inline-block;
+    align-content: center;
+
 }
 
-
-
-
-
-
+.equipList{
+    display:block;
+}
 
 
 
@@ -350,11 +362,11 @@ padding-left:0px;
 
 
 
-/* Padding for spacing */
+
 .inner {
 
   display:inline-block;
 
-}
+}/* Padding for spacing */
 
 
