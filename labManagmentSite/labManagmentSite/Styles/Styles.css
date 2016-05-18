@@ -14,29 +14,33 @@ body {
       color: #6C9B3B;
   }
 
+
+ /*Nav Bar CSS*/ 
+ .navbar-inverse .navbar-nav > li > a {
+  color:#fff; 
+}/*NAV BAR LINKS COLOUR*/
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #6C9B3B;
+  background-color: transparent;
+}/*nav bar hover links colour*/
 .masthead-clearfix{
     position: absolute;
 } /*stops the nav bar from moving when you scroll*/
-
-#navbar .nav navbar-nav ul li a:active{
-color:blue;
-}
-
-  .navpad{
+.navpad{
       padding-top: 8px;
       left: 200px;
   }
 
-
-
-  .pull , li , sep{
-    display:inline;
-
- 
-  }
-
 /*footer css*/
-
+.footer {
+  background-color:lightgray;
+  margin-top: 10px;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+}/*footer setup*/
 .copyright{ 
 
    color: #333;
@@ -44,15 +48,11 @@ color:blue;
 .Social{ 
     float:left;
     width:auto;
-     
-    
-   
 
 }/*for social media links*/
  .pull , .copyright{
      align-content:center;
- }
-
+ }/*group the copyright & links to align*/
  #furtherLayer{
      display: inline-block;
      right: 10%;
@@ -64,12 +64,112 @@ color:blue;
      padding: 0;
  } /*for header links decor*/
    .pull-right {
-  
     color: #6C9B3B;
 }/*for back to top link button*/
+.pull , li , sep{
+    display:inline;
 
+  }
+.footLinks, li, a {
+color:#6C9B3B;
 
-/*contact form styles*/
+}/*footer colour links to green*/
+  #footer li > a{
+color: #6C9B3B;
+
+}
+.footLinks li > a:hover,
+.footLinks li > a:focus{
+    color: #333;
+}/*footer hover colour */
+.sep{
+    color: #333;
+}/*seperation | among links in footer colour*/
+.footLinks {
+padding-left:0px;
+}
+
+/*HOME / DEFAULT PAGE STYLES BELOW*/
+
+/*images*/
+.homeImage{
+    margin-right:20px;
+    margin-left:20px;
+}
+.homePara{
+    margin-right:auto;
+    margin-left:auto;
+    padding-top:20px;
+}
+.home1{
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    height: 500px;
+    vertical-align: top;
+}/*for the home page threee images layout*/
+
+ /*Carousel*/
+.carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: 20px;
+  color: #6C9B3B; /* for arrows colour*/
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  background-color: rgba(0, 0, 0, 0);
+  filter: alpha(opacity=50);
+  opacity: .5;
+} /*For slider arrows colour*/
+.carousel-control.left {
+ background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, .0000) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, .0000) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0)), to(rgba(0, 0, 0, .0000)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, .0000) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+ background-repeat: repeat-x;
+}/*for left arrow to be transparent*/
+.carousel-control.right {
+  right: 0;
+  left: auto;
+ background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0000) 0%, rgba(0, 0, 0, .0) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0000) 0%, rgba(0, 0, 0, .0) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0000)), to(rgba(0, 0, 0, .0)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0000) 0%, rgba(0, 0, 0, .0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  background-repeat: repeat-x;
+}/*for right arrow to be transparent */
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #fff;
+  text-decoration: none;
+  filter: alpha(opacity=90);
+  outline: 0;
+  opacity: .9;
+}/*for arrow hover*/
+
+ /*Buttons*/
+ .btn-primary {
+  color: #fff;
+  background-color: #6C9B3B;
+  border-color: #333;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #fff;
+  background-color: #6C9B3B;
+  border-color: #333;
+}
+.btn-primary:hover {
+  color: #333;
+  background-color: #6C9B3B;
+  border-color: #204d74;
+}
+
+/*CONTACT PAGESTYLES BELOW*/
 .contactFields{
     font-family:Arial, Helvetica, sans-serif;
     color:black;
@@ -106,8 +206,7 @@ color:blue;
     margin-right:auto;
 }
 
-/*admin register styles*/
-
+/*ADMIN REGISTER STYLES BELOW*/
 #register{
     width:400px;
     margin-right:auto;
@@ -126,10 +225,7 @@ color:blue;
     padding-top:5px;
 }
 
-/*add chemical styles*/
-
-
-/*admin styles*/
+/*ADMIN STYLES BELOW*/
 #loginForm{
     width:400px;
     margin-left:auto;
@@ -150,26 +246,14 @@ color:blue;
 }
 
 
-/*TEST CAROUSEL*/
-.first-slide{
-    top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
 
-}
-
-/*chamical addition form styles*/
-
-
-
+/*CHEMICAL ADDITION STYLES BELOW*/
 .txtChemical{
     padding-bottom:20px;
 
     width:500px;
     
 }
-
 .lblChemical{
    padding-top:10px;
    width:500px;
@@ -178,12 +262,6 @@ color:blue;
 #hazardsText{
     height:50px;
 }
-
-
-
-
-/* TEST CSSS BELOW*/
-
 
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -219,79 +297,8 @@ color:blue;
 }
 /* Sticky footer styles
 -------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-.footer {
-  background-color:lightgray;
-  margin-top: 10px;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
- 
-}
-.footLinks {
-padding-left:0px;
-
-}
-.footLinks, li, a {
-color:#6C9B3B;
-
-}
-
-.footLinks li, a:hover,
-.footLinks li, a:focus{
-    color: #fff;
-}
 
 
-/**
- * Footer
-
-
-.mastfoot {
-  color: #999; /* IE8 proofing 
-  color: rgba(255,255,255,.5);
-display: table;
-position:absolute;
-
-
-    
- width: 100%;
-     
-   
-background-color: transparent; 
-border-top: #333 solid 1px;
-    border-left-color: #080808;
-    border-right-color: #080808;
-    border-bottom-color: #080808;
-}
-
-.footer{
-    position:static;
-   bottom:0;
-
-}
-
-.footLinks{
-margin-bottom: 4px;
-}
-
-
-*/
-/*
- * Affix and center
- */
-.sep{
-    color: #333;
-    
-}
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
@@ -333,55 +340,9 @@ margin-bottom: 4px;
 
 /* Padding for spacing */
 .inner {
-  
+
   display:inline-block;
 
- 
 }
 
 
-
-
-
-/*
- * Globals
- */
-
-/* Links */
-
-
- #footer li > a{
-color: #6C9B3B;
-
-}
-
-
-
-
-
-.further > a,
-.further > a:focus,
-.further > a:hover {
-    color: #6C9B3B;
-} /*links font colour setup - mainly for footer* color: #fff;/
-/*home styles*/
-
-/*images*/
-
-.homeImage{
-    margin-right:20px;
-    margin-left:20px;
-}
-.homePara{
-    margin-right:auto;
-    margin-left:auto;
-    padding-top:20px;
-}
-
-.home1{
-    display: inline-block;
-    text-align: center;
-    width: 300px;
-    height: 500px;
-    vertical-align: top;
-}/*for the home page threee images layout*/

@@ -91,7 +91,7 @@
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed augue vel mi suscipit semper. 
             Sed neque lacus, ultricies ut magna nec, maximus luctus mauris. Praesent mattis, risus at venenatis dapibus, tellus purus sagittis ex, vel aliquam sem ex a tellus. 
             Suspendisse congue nec purus et consequat.</p>
-            <p class="=btnView"><a class="btn btn-lg btn-primary" href="#" role="button">Visit</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Visit</a></p>
 
 
         </div>
@@ -103,7 +103,7 @@
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed augue vel mi suscipit semper. 
             Sed neque lacus, ultricies ut magna nec, maximus luctus mauris. Praesent mattis, risus at venenatis dapibus, tellus purus sagittis ex, vel aliquam sem ex a tellus. 
             Suspendisse congue nec purus et consequat.</p> 
-            <p class="=homeImage"><a class="btn btn-lg btn-primary" href="#" role="button">Visit</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Visit</a></p>
         </div>
 
         <div class="home1">
@@ -113,7 +113,7 @@
             Sed neque lacus, ultricies ut magna nec, maximus luctus mauris. Praesent mattis, risus at venenatis dapibus, tellus purus sagittis ex, vel aliquam sem ex a tellus. 
             Suspendisse congue nec purus et consequat.
             </p>
-            <p class="=homeImage"><a class="btn btn-lg btn-primary" href="#" role="button">Visit</a></p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Visit</a></p>
         </div>
 
 
