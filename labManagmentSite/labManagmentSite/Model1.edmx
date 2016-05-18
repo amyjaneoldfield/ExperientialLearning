@@ -5,6 +5,35 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="db_1421049_LabManagementModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ChemData">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="Name_of_Substance" Type="nvarchar" MaxLength="255" />
+          <Property Name="Formula" Type="nvarchar" MaxLength="255" />
+          <Property Name="Location" Type="nvarchar" MaxLength="255" />
+          <Property Name="Units" Type="nvarchar" MaxLength="255" />
+          <Property Name="Trigger_Level" Type="nvarchar" MaxLength="255" />
+          <Property Name="Current_Stock_Level" Type="nvarchar" MaxLength="255" />
+          <Property Name="Supplier" Type="nvarchar" MaxLength="255" />
+          <Property Name="Supplier_Product_Code" Type="nvarchar" MaxLength="255" />
+          <Property Name="CAS_Code" Type="nvarchar" MaxLength="255" />
+          <Property Name="Batch_Code" Type="nvarchar" MaxLength="255" />
+          <Property Name="Purity_Grade" Type="nvarchar" MaxLength="255" />
+          <Property Name="Expiry_Date" Type="nvarchar" MaxLength="255" />
+          <Property Name="Summary_of_Hazards" Type="nvarchar" MaxLength="255" />
+          <Property Name="Ordered_by" Type="nvarchar" MaxLength="255" />
+          <Property Name="Reviewed" Type="nvarchar" MaxLength="255" />
+          <Property Name="Purpose" Type="nvarchar" MaxLength="255" />
+          <Property Name="Link_to_MSDS" Type="nvarchar" MaxLength="255" />
+          <Property Name="Category" Type="nvarchar" MaxLength="255" />
+          <Property Name="COSHH_completed" Type="nvarchar" MaxLength="255" />
+          <Property Name="MSDS_Available" Type="nvarchar" MaxLength="255" />
+          <Property Name="F21" Type="nvarchar" MaxLength="255" />
+          <Property Name="F22" Type="nvarchar" MaxLength="255" />
+          <Property Name="F23" Type="nvarchar" MaxLength="255" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
         <EntityType Name="Custodians">
           <Key>
             <PropertyRef Name="ID" />
@@ -14,35 +43,6 @@
           <Property Name="Location" Type="nvarchar" MaxLength="50" />
           <Property Name="Email" Type="nvarchar(max)" />
           <Property Name="Phone" Type="nvarchar" MaxLength="50" />
-        </EntityType>
-        <EntityType Name="Sheet1$">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="Name of Substance" Type="nvarchar" MaxLength="255" />
-          <Property Name="Formula" Type="nvarchar" MaxLength="255" />
-          <Property Name="Location" Type="nvarchar" MaxLength="255" />
-          <Property Name="Units" Type="nvarchar" MaxLength="255" />
-          <Property Name="Trigger Level" Type="nvarchar" MaxLength="255" />
-          <Property Name="Current Stock Level" Type="nvarchar" MaxLength="255" />
-          <Property Name="Supplier" Type="nvarchar" MaxLength="255" />
-          <Property Name="Supplier Product Code" Type="nvarchar" MaxLength="255" />
-          <Property Name="CAS Code" Type="nvarchar" MaxLength="255" />
-          <Property Name="Batch Code" Type="nvarchar" MaxLength="255" />
-          <Property Name="Purity/Grade" Type="nvarchar" MaxLength="255" />
-          <Property Name="Expiry Date" Type="nvarchar" MaxLength="255" />
-          <Property Name="Summary of Hazards" Type="nvarchar" MaxLength="255" />
-          <Property Name="Ordered by" Type="nvarchar" MaxLength="255" />
-          <Property Name="Reviewed" Type="nvarchar" MaxLength="255" />
-          <Property Name="Purpose (Teaching/Research etc)" Type="nvarchar" MaxLength="255" />
-          <Property Name="Link to MSDS" Type="nvarchar" MaxLength="255" />
-          <Property Name="Category" Type="nvarchar" MaxLength="255" />
-          <Property Name="COSHH completed (Y/N)" Type="nvarchar" MaxLength="255" />
-          <Property Name="MSDS Available (Y/N)" Type="nvarchar" MaxLength="255" />
-          <Property Name="F21" Type="nvarchar" MaxLength="255" />
-          <Property Name="F22" Type="nvarchar" MaxLength="255" />
-          <Property Name="F23" Type="nvarchar" MaxLength="255" />
-          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="User_Research_Equip">
           <Key>
@@ -64,8 +64,8 @@
           <Property Name="Custodian" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityContainer Name="db_1421049_LabManagementModelStoreContainer">
+          <EntitySet Name="ChemData" EntityType="Self.ChemData" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Custodians" EntityType="Self.Custodians" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Sheet1$" EntityType="Self.Sheet1$" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="User_Research_Equip" EntityType="Self.User_Research_Equip" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -104,9 +104,9 @@
         <EntityContainer Name="db_1421049_LabManagementEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Custodians" EntityType="Self.Custodian" />
           <EntitySet Name="User_Research_Equip" EntityType="Self.User_Research_Equip" />
-          <EntitySet Name="Sheet1_" EntityType="db_1421049_LabManagementModel.Sheet1_" />
+          <EntitySet Name="ChemDatas" EntityType="db_1421049_LabManagementModel.ChemData" />
         </EntityContainer>
-        <EntityType Name="Sheet1_">
+        <EntityType Name="ChemData">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
@@ -125,11 +125,11 @@
           <Property Name="Summary_of_Hazards" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="Ordered_by" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="Reviewed" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="Purpose__Teaching_Research_etc_" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Purpose" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="Link_to_MSDS" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="Category" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="COSHH_completed__Y_N_" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="MSDS_Available__Y_N_" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="COSHH_completed" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="MSDS_Available" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="F21" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="F22" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="F23" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
@@ -172,33 +172,33 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Sheet1_">
-            <EntityTypeMapping TypeName="db_1421049_LabManagementModel.Sheet1_">
-              <MappingFragment StoreEntitySet="Sheet1$">
+          <EntitySetMapping Name="ChemDatas">
+            <EntityTypeMapping TypeName="db_1421049_LabManagementModel.ChemData">
+              <MappingFragment StoreEntitySet="ChemData">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="F23" ColumnName="F23" />
                 <ScalarProperty Name="F22" ColumnName="F22" />
                 <ScalarProperty Name="F21" ColumnName="F21" />
-                <ScalarProperty Name="MSDS_Available__Y_N_" ColumnName="MSDS Available (Y/N)" />
-                <ScalarProperty Name="COSHH_completed__Y_N_" ColumnName="COSHH completed (Y/N)" />
+                <ScalarProperty Name="MSDS_Available" ColumnName="MSDS_Available" />
+                <ScalarProperty Name="COSHH_completed" ColumnName="COSHH_completed" />
                 <ScalarProperty Name="Category" ColumnName="Category" />
-                <ScalarProperty Name="Link_to_MSDS" ColumnName="Link to MSDS" />
-                <ScalarProperty Name="Purpose__Teaching_Research_etc_" ColumnName="Purpose (Teaching/Research etc)" />
+                <ScalarProperty Name="Link_to_MSDS" ColumnName="Link_to_MSDS" />
+                <ScalarProperty Name="Purpose" ColumnName="Purpose" />
                 <ScalarProperty Name="Reviewed" ColumnName="Reviewed" />
-                <ScalarProperty Name="Ordered_by" ColumnName="Ordered by" />
-                <ScalarProperty Name="Summary_of_Hazards" ColumnName="Summary of Hazards" />
-                <ScalarProperty Name="Expiry_Date" ColumnName="Expiry Date" />
-                <ScalarProperty Name="Purity_Grade" ColumnName="Purity/Grade" />
-                <ScalarProperty Name="Batch_Code" ColumnName="Batch Code" />
-                <ScalarProperty Name="CAS_Code" ColumnName="CAS Code" />
-                <ScalarProperty Name="Supplier_Product_Code" ColumnName="Supplier Product Code" />
+                <ScalarProperty Name="Ordered_by" ColumnName="Ordered_by" />
+                <ScalarProperty Name="Summary_of_Hazards" ColumnName="Summary_of_Hazards" />
+                <ScalarProperty Name="Expiry_Date" ColumnName="Expiry_Date" />
+                <ScalarProperty Name="Purity_Grade" ColumnName="Purity_Grade" />
+                <ScalarProperty Name="Batch_Code" ColumnName="Batch_Code" />
+                <ScalarProperty Name="CAS_Code" ColumnName="CAS_Code" />
+                <ScalarProperty Name="Supplier_Product_Code" ColumnName="Supplier_Product_Code" />
                 <ScalarProperty Name="Supplier" ColumnName="Supplier" />
-                <ScalarProperty Name="Current_Stock_Level" ColumnName="Current Stock Level" />
-                <ScalarProperty Name="Trigger_Level" ColumnName="Trigger Level" />
+                <ScalarProperty Name="Current_Stock_Level" ColumnName="Current_Stock_Level" />
+                <ScalarProperty Name="Trigger_Level" ColumnName="Trigger_Level" />
                 <ScalarProperty Name="Units" ColumnName="Units" />
                 <ScalarProperty Name="Location" ColumnName="Location" />
                 <ScalarProperty Name="Formula" ColumnName="Formula" />
-                <ScalarProperty Name="Name_of_Substance" ColumnName="Name of Substance" />
+                <ScalarProperty Name="Name_of_Substance" ColumnName="Name_of_Substance" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

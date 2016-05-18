@@ -12,7 +12,7 @@ namespace labManagmentSite
     using System;
     using System.Collections.Generic;
     
-    public partial class Sheet1_
+    public partial class ChemData
     {
         public string Name_of_Substance { get; set; }
         public string Formula { get; set; }
@@ -29,11 +29,11 @@ namespace labManagmentSite
         public string Summary_of_Hazards { get; set; }
         public string Ordered_by { get; set; }
         public string Reviewed { get; set; }
-        public string Purpose__Teaching_Research_etc_ { get; set; }
+        public string Purpose { get; set; }
         public string Link_to_MSDS { get; set; }
         public string Category { get; set; }
-        public string COSHH_completed__Y_N_ { get; set; }
-        public string MSDS_Available__Y_N_ { get; set; }
+        public string COSHH_completed { get; set; }
+        public string MSDS_Available { get; set; }
         public string F21 { get; set; }
         public string F22 { get; set; }
         public string F23 { get; set; }

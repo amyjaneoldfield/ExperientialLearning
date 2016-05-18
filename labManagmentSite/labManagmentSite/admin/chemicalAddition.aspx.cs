@@ -57,7 +57,7 @@ namespace labManagmentSite.admin
         private void add()
         {
             var db = new db_1421049_LabManagementEntities();
-            var entry = new Sheet1_();
+            var entry = new ChemData();
 
             entry.Name_of_Substance = txtNameOfSubstance.Text;
             entry.Formula = txtFormula.Text;
@@ -74,13 +74,13 @@ namespace labManagmentSite.admin
             entry.Summary_of_Hazards = txtSummaryOfHazards.Text;
             entry.Ordered_by = txtOrderedBy.Text;
             entry.Reviewed = txtReviewed.Text;
-            entry.Purpose__Teaching_Research_etc_ = txtPurpose.Text;
+            entry.Purpose = txtPurpose.Text;
             entry.Link_to_MSDS = txtLinkToMSDS.Text;
             entry.Category = txtCatagory.Text;
-            entry.COSHH_completed__Y_N_ = txtCOSHHCompleted.Text;
-            entry.MSDS_Available__Y_N_ = txtMSDSAvailable.Text;
+            entry.COSHH_completed= txtCOSHHCompleted.Text;
+            entry.MSDS_Available = txtMSDSAvailable.Text;
 
-            db.Sheet1_.Add(entry);
+            db.ChemDatas.Add(entry);
             db.SaveChanges();
 
 
@@ -95,9 +95,11 @@ namespace labManagmentSite.admin
         {
             string term = txtSearch.Text;
 
-           var data = db.Sheet1_.SqlQuery("SELECT * FROM dbo.Sheet1$ WHERE [Name of Substance] LIKE %"+ term + "% ORDER BY Name ASC");
+           var data = db.ChemDatas.SqlQuery("SELECT * FROM dbo.ChemData WHERE [Name_of_Substance] LIKE '%"+ term + "%' ORDER BY [Name_of_Substance] ASC").ToList();
             rptrSearch.DataSource = data;
             rptrSearch.DataBind();
+            lblSearchTerm.Text = "Results for " + term;
+
 
 
         }

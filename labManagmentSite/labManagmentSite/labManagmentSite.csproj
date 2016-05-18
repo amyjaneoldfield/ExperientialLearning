@@ -176,6 +176,9 @@
     <Compile Include="admin\upload.aspx.designer.cs">
       <DependentUpon>upload.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ChemData.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="contact.aspx.cs">
       <DependentUpon>contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -260,9 +263,6 @@
     </Compile>
     <Compile Include="researchEquipment.aspx.designer.cs">
       <DependentUpon>researchEquipment.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Sheet1_.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="userEquipment.aspx.cs">
       <DependentUpon>userEquipment.aspx</DependentUpon>

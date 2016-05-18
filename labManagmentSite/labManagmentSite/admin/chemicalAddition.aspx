@@ -234,22 +234,24 @@
   </div>
   <div class="panel panel-default">
     <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse"  href="#collapse2">
-        Search</a>
+      <h4 class="panel-title">Search
+        
+         <asp:TextBox ID="txtSearch" runat="server" OnTextChanged="txtSearch_TextChanged"></asp:TextBox>
+             <asp:Label ID="lblSearchTerm" runat="server"></asp:Label><a data-toggle="collapse"  href="#collapse2"> &#9660;</a>  
       </h4>
     </div>
     <div id="collapse2" class="panel-collapse collapse">
       <div class="panel-body">
-         <asp:TextBox ID="txtSearch" runat="server" OnTextChanged="txtSearch_TextChanged"></asp:TextBox>
+        
           <asp:Repeater ID="rptrSearch" runat="server">
-              <HeaderTemplate>Items Containing (Search term)</HeaderTemplate>
+              <HeaderTemplate></HeaderTemplate>
               <ItemTemplate>
-                <%#Eval ("Name of Substance") %>              
-    <%#Eval ("Formula") %>
-    <%#Eval ("Location") %>
-   <%#Eval ("Units") %> 
-    <%#Eval ("Trigger Level") %>
+
+               <p>Name: <%#Eval ("Name_of_Substance") %>    </p>           
+    <p>Formula: <%#Eval ("Formula") %></p>
+   <p>Location: <%#Eval ("Location") %></p> 
+  <p>Units: <%#Eval ("Units") %> </p> 
+   <p>Trigger Level: <%#Eval ("Trigger_Level") %></p>
    <!-- [Current Stock Level]
     [Supplier]
     [Supplier Product Code]
