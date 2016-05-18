@@ -229,7 +229,7 @@ body {
 }
 .footer {
   background-color:lightgray;
-
+  margin-top: 10px;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
@@ -243,6 +243,11 @@ padding-left:0px;
 .footLinks, li, a {
 color:#6C9B3B;
 
+}
+
+.footLinks li, a:hover,
+.footLinks li, a:focus{
+    color: #fff;
 }
 
 
@@ -278,15 +283,15 @@ border-top: #333 solid 1px;
 margin-bottom: 4px;
 }
 
-.sep{
-    color: #333;
-    
-}
+
 */
 /*
  * Affix and center
  */
-
+.sep{
+    color: #333;
+    
+}
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {

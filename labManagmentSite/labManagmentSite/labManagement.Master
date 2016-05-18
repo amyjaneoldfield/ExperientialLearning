@@ -35,7 +35,7 @@
           <ul class="nav navbar-nav">
 
                         <li>
-                            <img src="~/Images/logo.png" runat="server" alt="" width="250" height="60" /></li>
+                            <img src="~/Images/logo.png" runat="server" alt="" width="250" height="60" /></li> <!-- TAKE OUT LI FOR JACK  -->
 
                         
                         <li class="navpad"><a href="~/default.aspx" runat="server">Home</a></li>
@@ -111,27 +111,6 @@
                    </div>   
          </footer>
       
-           
-           <!-- <div id="footer">
-            <footer class="foot">
-
-                <div class="mastfoot">
-                    <div class="inner">
-
-
-                        <div id="footLinks">
-
-
-                            
-
-                </div>
-        </div>
-                    </div>
-
-        </footer></div>
-            
-       </div>
-        -->
 
        
         <script src="js/jquery-2.2.3.min.js"></script>
