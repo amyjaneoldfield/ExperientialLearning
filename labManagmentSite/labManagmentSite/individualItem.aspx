@@ -45,15 +45,18 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                         
+                        
+                        
+          <img src="Images/LabImages/XRD.jpg" alt="an image" width="400" height="400" />
+    <!--                     
      <div class="carousel-inner" role="listbox">
       
        <asp:Repeater ID ="rptrcarousel" DataSourceID="sqlDataSourceCarousel" runat="server">
-           <HeaderTemplate>                   <!--Carousel-->
+           <HeaderTemplate>                   <!--Carousel
                
     <div id="item-carousel" class="container" >
     <div id="itemCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
+      <!-- Indicators 
       <ol class="carousel-indicators">
         <li data-target="#itemCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#itemCarousel" data-slide-to="1"></li>
@@ -63,7 +66,7 @@
               
 
                 <div class="item active">
-          <img src="<%#Eval("path")%>.<%#Eval("ext")%>" width="<%#Eval("width")%>" height="<%#Eval("height")%>" alt="<%#Eval("alt")%>"/>
+          
           <div class="container">
             <div class="carousel-caption"> 
             </div>
@@ -73,7 +76,7 @@
 
            </ItemTemplate>
            <FooterTemplate>
-               <!-- Controls-->
+               <!-- Controls
 
       <a class="left carousel-control" href="#itemCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -89,8 +92,6 @@
     
     </div>
    
-    
-
            </FooterTemplate>
 
 
@@ -105,55 +106,7 @@
           
           
           
-          <!--Items
-           <div class="item active">
-          <img id="firstImage" class="first-slide" src="" width="" height="" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1></h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="second-slide" src="Images/test.jpg" alt="Second slide"/>
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="third-slide" src="Images/test.jpg" alt="Third slide"/>
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          
-            </div>
-          </div>
-        </div>
-      
-        <!-- Controls
-
-      <a class="left carousel-control" href="#itemCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#itemCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-    
-        </div>
-    
-    </div>
-   
-    -->
+         -->
     
     <!-- Individual Item Data -->
     <div class="container">
@@ -171,39 +124,48 @@
       </h4>
     </div>
     <div id="collapse1" class="panel-collapse collapse in">
-      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.</div>
+      <div class="panel-body"><%#Eval("Location")%></div>
     </div>
   </div>
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse"  href="#collapse2">
-        Specifications</a>
+        Local Area Rules</a>
       </h4>
     </div>
     <div id="collapse2" class="panel-collapse collapse">
-      <div class="panel-body"><%#Eval("Specifications")%></div>
+      <div class="panel-body">
+          <a href='<%#Eval("LocalRules")%>'>Local Rules</a>
+          </div>
     </div>
   </div>
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" href="#collapse3">
-        Collapsible Group 3</a>
+        Risk Assessment
+        </a>
       </h4>
     </div>
     <div id="collapse3" class="panel-collapse collapse">
-      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.</div>
+      <div class="panel-body"><a href='<%#Eval("CurrentRiskAssessment")%>' >Risk Assessment</a></div>
+    </div>
+  </div>
+
+    <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse4">
+        Monitoring Results
+        </a>
+      </h4>
+    </div>
+    <div id="collapse4" class="panel-collapse collapse">
+      <div class="panel-body"><a href='<%#Eval("Maintenance")%>'>Maintenance</a></div>
     </div>
   </div>
 </div>
-
            
       
            

@@ -131,6 +131,9 @@
     <Content Include="Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
+    <Content Include="Docs\Local Rules Issue 2 July 2015.pdf" />
+    <Content Include="Docs\2014-15 Monitoring Results.pdf" />
+    <Content Include="Docs\FSE0007 Microscopy Lab Visitors GCS.docx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
