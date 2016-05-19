@@ -7,6 +7,7 @@
     <asp:Repeater runat="server" ID="rptrLabs" DataSourceID="sqlDataSourceLabs">
         <HeaderTemplate></HeaderTemplate>
         <ItemTemplate>
+            <h2><%#Eval ("LabName")%></h2>
             <h2><%#Eval ("Location")%></h2>
             <asp:HiddenField ID="hdnValue" Value='<%#Eval("Location")%>' runat="server"/>
             <asp:SqlDataSource ID="sqlDataSourceChild" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [Name], [ID] FROM [User_Research_Equip] WHERE [Location] = @Location" >
@@ -28,6 +29,6 @@
 
     </asp:Repeater> 
 
-    <asp:SqlDataSource ID="SqlDataSourceLabs" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT DISTINCT [Location] FROM [User_Research_Equip]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSourceLabs" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT User_Research_Equip.Location, LabNames.LabName FROM [User_Research_Equip] INNER JOIN [LabNames] ON User_Research_Equip.Location = LabNames.LabRoom"></asp:SqlDataSource>
 </asp:Content>
 
