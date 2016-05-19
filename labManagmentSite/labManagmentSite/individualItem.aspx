@@ -45,7 +45,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        
+                         
                         
           <img src="Images/LabImages/XRD.jpg" alt="an image" width="400" height="400" />
     <!--                     
@@ -102,11 +102,12 @@
               </SelectParameters>
           </asp:SqlDataSource>
           
-          
-          
-          
-          
-         -->
+
+    
+    
+   
+    -->
+    </div>
     
     <!-- Individual Item Data -->
     <div class="container">
@@ -166,9 +167,9 @@
     </div>
   </div>
 </div>
+
            
       
-           
         </ItemTemplate>
 
 
@@ -193,7 +194,6 @@
                 
     
     <!-- Menu Toggle Script -->
-    
     
     </asp:Content>
    
