@@ -154,6 +154,7 @@
     </div>
    
     -->
+    </div>
     
     <!-- Individual Item Data -->
     <div class="container">
@@ -213,7 +214,7 @@
     </asp:FormView>
 
        </div>  
-
+   
 
     <asp:SqlDataSource ID="SqlDataSourceItem" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT * FROM [User_Research_Equip] WHERE ([ID] = @ID)">
         <SelectParameters>
@@ -231,7 +232,6 @@
                 
     
     <!-- Menu Toggle Script -->
-    
-    
+ 
     </asp:Content>
    
