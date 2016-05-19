@@ -10,31 +10,21 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#">
-                        Start Bootstrap
+                        Other Equipment
                     </a>
                 </li>
-                <li>
-                    <a href="#">Dashboard</a>
-                </li>
-                <li>
-                    <a href="#">Shortcuts</a>
-                </li>
-                <li>
-                    <a href="#">Overview</a>
-                </li>
-                <li>
-                    <a href="#">Events</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
+               <asp:Repeater ID="rptrSidebar" runat="server" DataSourceID="sqlDataSourceSide">
+                   <ItemTemplate>
+                       <li><a href="<%#Eval("ID","individualItem.aspx?ID={0}") %>"><%#Eval ("Name")%></li></a>
+
+                   </ItemTemplate>
+
+
+               </asp:Repeater>
+
             </ul>
+
+
         </div>
         <!-- /#sidebar-wrapper -->
         
@@ -188,7 +178,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        <asp:SqlDataSource ID="sqlDataSourceSide" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [Name], [ID] FROM [User_Research_Equip]" >
+                
+            </asp:SqlDataSource>
         <!-- /#page-content-wrapper -->
 
                 

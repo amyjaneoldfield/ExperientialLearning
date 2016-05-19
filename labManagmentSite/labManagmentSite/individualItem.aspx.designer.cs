@@ -13,6 +13,15 @@ namespace labManagmentSite {
     public partial class individualItem {
         
         /// <summary>
+        /// rptrSidebar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptrSidebar;
+        
+        /// <summary>
         /// rptrcarousel control.
         /// </summary>
         /// <remarks>
@@ -38,5 +47,14 @@ namespace labManagmentSite {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceItem;
+        
+        /// <summary>
+        /// sqlDataSourceSide control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource sqlDataSourceSide;
     }
 }
