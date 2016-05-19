@@ -7,6 +7,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
  <!-- Sidebar -->
+  
+   
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
@@ -38,6 +40,8 @@
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
+        
+           
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
@@ -102,10 +106,7 @@
         </div>
     
     </div>
-    <div id ="Space">
-
-    </div>
-    
+   
     
     
     <!-- Individual Item Data -->
@@ -174,15 +175,14 @@
         </SelectParameters>
     </asp:SqlDataSource>
 
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><</a>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">◄</a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- /#page-content-wrapper -->
 
-     
-                       
+                
     
     <!-- Menu Toggle Script -->
     
