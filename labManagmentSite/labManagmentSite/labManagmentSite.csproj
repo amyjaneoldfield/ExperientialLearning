@@ -88,6 +88,8 @@
     <Content Include="Images\banner1.jpg" />
     <Content Include="Images\banner2.jpg" />
     <Content Include="Images\facebook.png" />
+    <Content Include="Images\LabImages\SEM.jpg" />
+    <Content Include="Images\LabImages\XRD.jpg" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\moodle.png" />
     <Content Include="Images\test.jpg" />
@@ -213,6 +215,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Image.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="individualItem.aspx.cs">
       <DependentUpon>individualItem.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -278,7 +283,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

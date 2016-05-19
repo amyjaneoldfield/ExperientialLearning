@@ -49,7 +49,11 @@
                 <div class="row">
                     <div class="col-lg-12">
                          
-                        <!--Carousel-->
+     <div class="carousel-inner" role="listbox">
+      
+       <asp:Repeater ID ="rptrcarousel" DataSourceID="sqlDataSourceCarousel" runat="server">
+           <HeaderTemplate>                   <!--Carousel-->
+               
     <div id="item-carousel" class="container" >
     <div id="itemCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -57,11 +61,56 @@
         <li data-target="#itemCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#itemCarousel" data-slide-to="1"></li>
         <li data-target="#itemCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-       <!--Items-->
+      </ol></HeaderTemplate>
+           <ItemTemplate>
+              
+
+                <div class="item active">
+          <img src="<%#Eval("path")%>.<%#Eval("ext")%>" width="<%#Eval("width")%>" height="<%#Eval("height")%>" alt="<%#Eval("alt")%>"/>
+          <div class="container">
+            <div class="carousel-caption"> 
+            </div>
+          </div>
+        </div>
+
+
+           </ItemTemplate>
+           <FooterTemplate>
+               <!-- Controls-->
+
+      <a class="left carousel-control" href="#itemCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#itemCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    
+        </div>
+    
+    </div>
+   
+    
+
+           </FooterTemplate>
+
+
+</asp:Repeater> 
+          <asp:SqlDataSource ID="sqlDataSourceCarousel" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [path], [ext], [height], [width], [alt] FROM [Images] WHERE ([peiceofEquipment] = @peiceofEquipment)">
+              <SelectParameters>
+                  <asp:QueryStringParameter Name="peiceofEquipment" QueryStringField="ID" Type="String" />
+              </SelectParameters>
+          </asp:SqlDataSource>
+          
+          
+          
+          
+          
+          <!--Items
            <div class="item active">
-          <img class="first-slide" src="Images/test.jpg" alt="First slide"/>
+          <img id="firstImage" class="first-slide" src="" width="" height="" alt="">
           <div class="container">
             <div class="carousel-caption">
               <h1></h1>
@@ -91,7 +140,7 @@
           </div>
         </div>
       
-        <!-- Controls-->
+        <!-- Controls
 
       <a class="left carousel-control" href="#itemCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -107,7 +156,7 @@
     
     </div>
    
-    
+    -->
     
     <!-- Individual Item Data -->
     <div class="container">

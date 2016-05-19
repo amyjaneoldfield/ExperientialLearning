@@ -13,6 +13,24 @@ namespace labManagmentSite {
     public partial class individualItem {
         
         /// <summary>
+        /// rptrcarousel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptrcarousel;
+        
+        /// <summary>
+        /// sqlDataSourceCarousel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource sqlDataSourceCarousel;
+        
+        /// <summary>
         /// SqlDataSourceItem control.
         /// </summary>
         /// <remarks>
