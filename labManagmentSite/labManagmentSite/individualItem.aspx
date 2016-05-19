@@ -127,7 +127,7 @@
     </div>
     <div id="collapse2" class="panel-collapse collapse">
       <div class="panel-body">
-          <a href='<%#Eval("LocalRules")%>'>Local Rules</a>
+          <a href='<%#Eval("LocalRules")%>' runat="server">Local Rules</a>
           </div>
     </div>
   </div>
@@ -140,7 +140,7 @@
       </h4>
     </div>
     <div id="collapse3" class="panel-collapse collapse">
-      <div class="panel-body"><a href='<%#Eval("CurrentRiskAssessment")%>' >Risk Assessment</a></div>
+      <div class="panel-body"><a href='<%#Eval("CurrentRiskAssessment")%>' runat="server" >Risk Assessment</a></div>
     </div>
   </div>
 
@@ -153,7 +153,7 @@
       </h4>
     </div>
     <div id="collapse4" class="panel-collapse collapse">
-      <div class="panel-body"><a href='<%#Eval("Maintenance")%>'>Maintenance</a></div>
+      <div class="panel-body"><a href='<%#Eval("Maintenance")%>' runat="server" >Maintenance</a></div>
     </div>
   </div>
 </div>
