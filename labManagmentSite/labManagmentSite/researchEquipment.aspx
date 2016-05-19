@@ -2,23 +2,32 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div class="container">
-         <h1>Research Equipment</h1>
-   
-    <asp:Repeater ID="rptrResearch" runat="server" DataSourceID="SqlDataSourceResearch">
-        <HeaderTemplate><ul></ul></HeaderTemplate>
-        <ItemTemplate>
-           <li> <a href="<%#Eval("ID","individualItem.aspx?ID={0}") %>"><%#Eval("Name") %></a></li>
-        </ItemTemplate>
-        <FooterTemplate></ul></FooterTemplate>
-        
+     <h1>Laboratories</h1>
 
-    </asp:Repeater>
-    </div>
-    <asp:SqlDataSource ID="SqlDataSourceResearch" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [ID], [Name] FROM [User_Research_Equip] WHERE ([ResearchEquipment] = @ResearchEquipment)">
-        <SelectParameters>
-            <asp:Parameter DefaultValue="False" Name="ResearchEquipment" Type="Boolean" />
-        </SelectParameters>
-    </asp:SqlDataSource>
+    <asp:Repeater runat="server" ID="rptrLabs" DataSourceID="sqlDataSourceLabs">
+        <HeaderTemplate></HeaderTemplate>
+        <ItemTemplate>
+            <h2><%#Eval ("Location")%></h2>
+            <asp:HiddenField ID="hdnValue" Value='<%#Eval("Location")%>' runat="server"/>
+            <asp:SqlDataSource ID="sqlDataSourceChild" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [Name], [ID] FROM [User_Research_Equip] WHERE [Location] = @Location" >
+                <SelectParameters>
+                    <asp:ControlParameter Name="Location" PropertyName="Value" ControlID="hdnValue" Type="String" DefaultValue="" />
+                </SelectParameters>
+            </asp:SqlDataSource>
+            <asp:Repeater ID ="rptrLabChild" runat="server" DataSourceID="sqlDataSourceChild">
+                <HeaderTemplate><ul></HeaderTemplate>
+                <ItemTemplate><li><a href="<%#Eval("ID","individualItem.aspx?ID={0}") %>"><%#Eval ("Name")%></li></a></ItemTemplate>
+                <FooterTemplate></ul></FooterTemplate>
+            </asp:Repeater>
+            
+
+
+
+        </ItemTemplate>
+        <FooterTemplate></FooterTemplate>
+
+    </asp:Repeater> 
+
+    <asp:SqlDataSource ID="SqlDataSourceLabs" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT DISTINCT [Location] FROM [User_Research_Equip]"></asp:SqlDataSource>
 </asp:Content>
 
