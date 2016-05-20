@@ -69,10 +69,10 @@
           <footer class="footer">
               <div class="container">
                                 <div class="Social">
-                                    <a href="www.facebook.com">
+                                    <a href="www.https://www.facebook.com/UoCSciEng">
                                         <img src="~/Images/facebook.png" runat="server" alt="" width="30" height="30" /></a>
                                    
-            <a  href="www.twitter.com">
+            <a  href="https://twitter.com/UoCSciEng?ref_src=twsrc%5Etfw">
                 <img src="~/Images/twitter.png" runat="server" alt="" width="30" height="30" /></a>
                                     
             <a  href="www.thorntonsciencepark.co.uk">
