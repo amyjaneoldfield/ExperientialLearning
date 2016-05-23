@@ -172,8 +172,7 @@
 
 
 <asp:Repeater ID="rptrLogbook" runat="server" DataSourceID="sqlDataLogBook">
-   <HeaderTemplate> <table>
-<asp:Repeater ID="Repeater1" runat="server" DataSourceID="sqlDataLogBook">
+  
    <HeaderTemplate> <table class="table-bordered">
       
        <tbody>
