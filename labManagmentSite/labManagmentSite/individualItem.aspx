@@ -101,7 +101,7 @@
     
     <!-- Individual Item Data -->
     <div class="container">
-    <asp:FormView runat="server" DataSourceID="SqlDataSourceItem" RenderOuterTable="False">
+    <asp:FormView ID="frmItem" runat="server" DataSourceID="SqlDataSourceItem" RenderOuterTable="False">
        
 <ItemTemplate> 
     
@@ -156,7 +156,63 @@
       <div class="panel-body"><a href='<%#Eval("Maintenance")%>' runat="server" >Maintenance</a></div>
     </div>
   </div>
+ 
+          <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse5">
+        Log Book
+        </a>
+      </h4>
+    </div>
+    <div id="collapse5" class="panel-collapse collapse">
+      <div class="panel-body">
+
+
+
+
+<asp:Repeater ID="rptrLogbook" runat="server" DataSourceID="sqlDataLogBook">
+  
+   <HeaderTemplate> <table class="table-bordered">
+      
+       <tbody>
+           <tr class="tableHead"><td>Date</td> <td>User</td> <td>Comment</td></tr></HeaderTemplate>
+   
+       <ItemTemplate><tr><td><%#Eval("Date", "{0:d}")%></td><td><%#Eval("User")%></td><td><%#Eval("Comment")%></td> </tr></ItemTemplate>
+           <FooterTemplate></tbody>
+   </table></FooterTemplate>
+         
+       </asp:Repeater>
+           <asp:SqlDataSource ID="sqlDataLogBook" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT * FROM [LogBook] WHERE ([PieceofEquipment] = @ID)">
+               <SelectParameters>
+            <asp:QueryStringParameter Name="ID" QueryStringField="ID" Type="Int32" />
+        </SelectParameters></asp:SqlDataSource>
+       
+
+
+          <asp:Label ID="lblLogDate" runat="server" Text="Date" AssociatedControlID="txtLogDate"></asp:Label>
+          <asp:TextBox ID="txtLogDate" runat="server"></asp:TextBox>
+          <asp:Label ID="lblLogUser" runat="server" Text="User" AssociatedControlID="txtLogUser"></asp:Label>
+          <asp:TextBox ID="txtLogUser" runat="server"></asp:TextBox>
+          <asp:Label ID="lblLogComment" runat="server" Text="Comment" AssociatedControlID="txtLogComment"></asp:Label>
+          <asp:TextBox ID="txtLogComment" runat="server"></asp:TextBox>
+          
+          <asp:Button ID="btnLogSubmit" runat="server" Text="Submit" CssClass="btn btn-default" OnClick="btnLogSubmit_Click"/>
+
+          <asp:Table ID="Table1" runat="server"></asp:Table>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
 </div>
+
+
 
            
       
