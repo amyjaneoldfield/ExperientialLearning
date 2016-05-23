@@ -179,7 +179,8 @@
    </table></FooterTemplate>
          
        </asp:Repeater>
-           <asp:SqlDataSource ID="sqlDataLogBook" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT * FROM [LogBook] WHERE ([PieceofEquipment] = @ID")><SelectParameters>
+           <asp:SqlDataSource ID="sqlDataLogBook" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT * FROM [LogBook] WHERE ([PieceofEquipment] = @ID)">
+               <SelectParameters>
             <asp:QueryStringParameter Name="ID" QueryStringField="ID" Type="Int32" />
         </SelectParameters></asp:SqlDataSource>
        
