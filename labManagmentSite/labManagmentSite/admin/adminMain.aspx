@@ -7,13 +7,17 @@
 
     <ul class="adminConLink">
     <li>
-    <a href="~/admin/createAdmin.aspx" runat="server">Create new admin</a></li>
+    <a href="~/admin/createAdmin.aspx" runat="server">Create new admin </a></li>
+
     <li class="sep"> | </li>
+
         <li>
-    <a href="~/admin/chemicalData.aspx" runat="server">View Chemical Stores</a></li>
+    <a href="~/admin/chemicalData.aspx" runat="server">View Chemical Stores </a></li>
+
     <li class="sep"> | </li>
+
         <li>
-    <a href="~/admin/chemicalAddition.aspx" runat="server">Add a new chemical</a></li>
+    <a href="~/admin/chemicalAddition.aspx" runat="server">Add a new chemical </a></li>
 </ul>
 
 </asp:Content>

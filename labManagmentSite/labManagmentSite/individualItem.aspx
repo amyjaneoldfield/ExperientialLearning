@@ -1,11 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/labManagement.Master" AutoEventWireup="true" CodeBehind="individualItem.aspx.cs" Inherits="labManagmentSite.individualItem" %>
+﻿ <%@ Page Title="" Language="C#" MasterPageFile="~/labManagement.Master" AutoEventWireup="true" CodeBehind="individualItem.aspx.cs" Inherits="labManagmentSite.individualItem" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
  <!-- Sidebar -->
   
-   
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
@@ -15,7 +14,7 @@
                 </li>
                <asp:Repeater ID="rptrSidebar" runat="server" DataSourceID="sqlDataSourceSide">
                    <ItemTemplate>
-                       <li><a href="<%#Eval("ID","individualItem.aspx?ID={0}") %>"><%#Eval ("Name")%></li></a>
+                       <li><a href="<%#Eval("ID","individualItem.aspx?ID={0}") %>"><%#Eval ("Name")%></a></li>
 
                    </ItemTemplate>
 
@@ -37,16 +36,18 @@
                     <div class="col-lg-12">
                          
                         
-          <img src="Images/LabImages/XRD.jpg" alt="an image" width="400" height="400" />
-    <!--                     
+          
+                       
      <div class="carousel-inner" role="listbox">
+
+         <asp:FormView ID=""></asp:FormView>
       
        <asp:Repeater ID ="rptrcarousel" DataSourceID="sqlDataSourceCarousel" runat="server">
-           <HeaderTemplate>                   <!--Carousel
+           <HeaderTemplate>                   <!--Carousel -->
                
     <div id="item-carousel" class="container" >
     <div id="itemCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators 
+      <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#itemCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#itemCarousel" data-slide-to="1"></li>
@@ -66,7 +67,7 @@
 
            </ItemTemplate>
            <FooterTemplate>
-               <!-- Controls
+               <!-- Controls -->
 
       <a class="left carousel-control" href="#itemCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -96,15 +97,17 @@
     
     
    
-    -->
+    
     </div>
     
     <!-- Individual Item Data -->
     <div class="container">
     <asp:FormView ID="frmItem" runat="server" DataSourceID="SqlDataSourceItem" RenderOuterTable="False">
        
+
+                 
 <ItemTemplate> 
-    
+     
             <h2 class="homeCap"><%#Eval("Name") %></h2>
       <div class="panel-group" id="accordion">
   <div class="panel panel-default">
@@ -157,6 +160,8 @@
     </div>
   </div>
  
+          <!-- LOG BOOK -->
+
           <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
@@ -199,7 +204,7 @@
           
           <asp:Button ID="btnLogSubmit" runat="server" Text="Submit" CssClass="btn btn-default" OnClick="btnLogSubmit_Click"/>
 
-          <asp:Table ID="Table1" runat="server"></asp:Table>
+         
 
 
 
@@ -211,7 +216,8 @@
 
 
 </div>
-
+    </div>
+    </div>
 
 
            
@@ -229,18 +235,32 @@
             <asp:QueryStringParameter Name="ID" QueryStringField="ID" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
+                    
+                        
 
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">◄</a>
+
                     </div>
                 </div>
+            </div>
             </div>
         <asp:SqlDataSource ID="sqlDataSourceSide" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [Name], [ID] FROM [User_Research_Equip]" >
                 
             </asp:SqlDataSource>
         <!-- /#page-content-wrapper -->
-
+    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
                 
-    
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("toggled");
+    });
+    </script>
     <!-- Menu Toggle Script -->
     
     </asp:Content>

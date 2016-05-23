@@ -68,7 +68,7 @@
       </div> 
           <footer class="footer">
               <div class="container">
-                                <div class="Social">
+                      <!--          <div class="Social">
                                     <a href="www.https://www.facebook.com/UoCSciEng">
                                         <img src="~/Images/facebook.png" runat="server" alt="" width="30" height="30" /></a>
                                    
@@ -82,7 +82,7 @@
                            </div>    
                        
                             
-
+-->
 
                     <div class ="inner">
                         <ul class="footLinks">
@@ -91,11 +91,7 @@
                             </li>
                             <li class ="sep"> | </li>
 
-                    <!--        <li>
-                                <a href="~/contact.aspx" runat="server">Contact</a>
-                            </li>
-                         <li class="sep"> | </li>
-                            -->
+                    
                             <li>
                                 <a href="www.1409891.studentwebserver.co.uk">Site Map</a>
                             </li>

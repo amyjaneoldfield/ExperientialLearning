@@ -273,8 +273,13 @@ padding-left:0px;
 /*ADMIN CONTROL PAGE STYLES (FOR AFTER LOGGING IN)*/
 .adminConLink,  ul , li > a:hover{
     color: #333;
+    
 }/*hover colour for links*/
 
+
+.adminConLink  li {
+     display: inline-flex;
+ }
 
 
 /*CHEMICAL ADDITION STYLES BELOW*/
