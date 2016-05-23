@@ -24,7 +24,7 @@ namespace labManagmentSite.admin
         {
             add();
             clear();
-            refresh();
+         
 
         }
 
@@ -39,7 +39,7 @@ namespace labManagmentSite.admin
             txtSupplier.Text = "";
             txtSupplierProductCode.Text = "";
             txtCASCode.Text = "";
-            txtBathCode.Text = "";
+            txtBatchCode.Text = "";
             txtPurityGrade.Text = "";
             txtExpiryDate.Text = "";
             txtSummaryOfHazards.Text = "";
@@ -68,7 +68,7 @@ namespace labManagmentSite.admin
             entry.Supplier = txtSupplier.Text;
             entry.Supplier_Product_Code = txtSupplierProductCode.Text;
             entry.CAS_Code = txtCASCode.Text;
-            entry.Batch_Code = txtBathCode.Text;
+            entry.Batch_Code = txtBatchCode.Text;
             entry.Purity_Grade = txtPurityGrade.Text;
             entry.Expiry_Date = txtExpiryDate.Text;
             entry.Summary_of_Hazards = txtSummaryOfHazards.Text;
@@ -80,16 +80,14 @@ namespace labManagmentSite.admin
             entry.COSHH_completed= txtCOSHHCompleted.Text;
             entry.MSDS_Available = txtMSDSAvailable.Text;
 
+
             db.ChemDatas.Add(entry);
             db.SaveChanges();
 
 
         }
 
-        private void refresh()
-        {
-            Response.Redirect("~/admin/chemicalAdditon");
-        }
+
 
         protected void txtSearch_TextChanged(object sender, EventArgs e)
         {
