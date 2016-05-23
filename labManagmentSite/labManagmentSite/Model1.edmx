@@ -56,6 +56,16 @@
           <Property Name="width" Type="nchar" MaxLength="10" />
           <Property Name="alt" Type="nvarchar(max)" />
         </EntityType>
+        <EntityType Name="Logbook">
+          <Key>
+            <PropertyRef Name="EntryId" />
+          </Key>
+          <Property Name="EntryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PieceofEquipment" Type="int" />
+          <Property Name="Date" Type="smalldatetime" />
+          <Property Name="User" Type="nvarchar(max)" />
+          <Property Name="Comment" Type="nvarchar(max)" />
+        </EntityType>
         <EntityType Name="User_Research_Equip">
           <Key>
             <PropertyRef Name="ID" />
@@ -79,6 +89,7 @@
           <EntitySet Name="ChemData" EntityType="Self.ChemData" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Custodians" EntityType="Self.Custodians" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Images" EntityType="Self.Images" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Logbook" EntityType="Self.Logbook" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="User_Research_Equip" EntityType="Self.User_Research_Equip" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -119,6 +130,7 @@
           <EntitySet Name="User_Research_Equip" EntityType="Self.User_Research_Equip" />
           <EntitySet Name="ChemDatas" EntityType="db_1421049_LabManagementModel.ChemData" />
           <EntitySet Name="Images" EntityType="db_1421049_LabManagementModel.Image" />
+          <EntitySet Name="Logbooks" EntityType="db_1421049_LabManagementModel.Logbook" />
         </EntityContainer>
         <EntityType Name="ChemData">
           <Key>
@@ -160,6 +172,16 @@
           <Property Name="height" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
           <Property Name="width" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
           <Property Name="alt" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Logbook">
+          <Key>
+            <PropertyRef Name="EntryId" />
+          </Key>
+          <Property Name="EntryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PieceofEquipment" Type="Int32" />
+          <Property Name="Date" Type="DateTime" Precision="0" />
+          <Property Name="User" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -238,6 +260,17 @@
                 <ScalarProperty Name="ext" ColumnName="ext" />
                 <ScalarProperty Name="path" ColumnName="path" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Logbooks">
+            <EntityTypeMapping TypeName="db_1421049_LabManagementModel.Logbook">
+              <MappingFragment StoreEntitySet="Logbook">
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="User" ColumnName="User" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="PieceofEquipment" ColumnName="PieceofEquipment" />
+                <ScalarProperty Name="EntryId" ColumnName="EntryId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -101,7 +101,7 @@
     
     <!-- Individual Item Data -->
     <div class="container">
-    <asp:FormView runat="server" DataSourceID="SqlDataSourceItem" RenderOuterTable="False">
+    <asp:FormView ID="frmItem" runat="server" DataSourceID="SqlDataSourceItem" RenderOuterTable="False">
        
 <ItemTemplate> 
     
@@ -168,6 +168,11 @@
     <div id="collapse5" class="panel-collapse collapse">
       <div class="panel-body">
 
+
+
+
+<asp:Repeater ID="rptrLogbook" runat="server" DataSourceID="sqlDataLogBook">
+   <HeaderTemplate> <table>
 <asp:Repeater ID="Repeater1" runat="server" DataSourceID="sqlDataLogBook">
    <HeaderTemplate> <table class="table-bordered">
       
@@ -186,14 +191,14 @@
        
 
 
-          <asp:Label ID="lblbLogDate" runat="server" Text="Date" AssociatedControlID="txtLogDate"></asp:Label>
+          <asp:Label ID="lblLogDate" runat="server" Text="Date" AssociatedControlID="txtLogDate"></asp:Label>
           <asp:TextBox ID="txtLogDate" runat="server"></asp:TextBox>
           <asp:Label ID="lblLogUser" runat="server" Text="User" AssociatedControlID="txtLogUser"></asp:Label>
           <asp:TextBox ID="txtLogUser" runat="server"></asp:TextBox>
           <asp:Label ID="lblLogComment" runat="server" Text="Comment" AssociatedControlID="txtLogComment"></asp:Label>
           <asp:TextBox ID="txtLogComment" runat="server"></asp:TextBox>
           
-          <asp:Button ID="Button1" runat="server" Text="Button" CssClass="btn btn-default"/>
+          <asp:Button ID="btnLogSubmit" runat="server" Text="Submit" CssClass="btn btn-default" OnClick="btnLogSubmit_Click"/>
 
           <asp:Table ID="Table1" runat="server"></asp:Table>
 
