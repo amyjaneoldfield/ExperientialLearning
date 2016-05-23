@@ -9,7 +9,7 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="#">
+                    <a href="~/userEquipment.aspx">
                         Other Equipment
                     </a>
                 </li>
