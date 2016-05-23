@@ -16,19 +16,22 @@ namespace labManagmentSite.admin
         }
 
         protected void btnClearFields_Click(object sender, EventArgs e)
-        {
+        {                                // button to clear all fields
             clear();
 
         }
-        protected void btnAddChemicalData_Click(object sender, EventArgs e)
+        protected void btnAddChemicalData_Click(object sender, EventArgs e)   
         {
-            add();
-            clear();
-         
+            Page.Validate();             // validate page if JS not enabled
+            if (Page.IsValid)
+            {
+                add();          //chemicalAddition of data when button clicked
+                clear();
+            }
 
         }
 
-        private void clear()
+        private void clear()                 // method to clear all fields
         {
             txtNameOfSubstance.Text = "";
             txtFormula.Text = "";
@@ -54,7 +57,7 @@ namespace labManagmentSite.admin
 
         }
 
-        private void add()
+        private void add()                  // method to add records and data to database
         {
             var db = new db_1421049_LabManagementEntities();
             var entry = new ChemData();
@@ -89,7 +92,7 @@ namespace labManagmentSite.admin
 
 
 
-        protected void txtSearch_TextChanged(object sender, EventArgs e)
+        protected void txtSearch_TextChanged(object sender, EventArgs e) // search method
         {
             string term = txtSearch.Text;
 
