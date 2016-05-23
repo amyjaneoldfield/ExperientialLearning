@@ -242,6 +242,9 @@
     <Compile Include="laboratoryStores.aspx.designer.cs">
       <DependentUpon>laboratoryStores.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Logbook.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
