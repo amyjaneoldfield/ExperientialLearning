@@ -163,6 +163,19 @@ padding-left:0px;
   opacity: .9;
 }/*for arrow hover*/
 
+ .twitter-timeline{
+     float: left;
+ }
+
+ .fb-page{
+     float: right;
+     margin-top: 56px;
+     width: 500px;
+ }
+#facebook{
+     margin-top: 50px;
+ }
+
  /*Buttons*/
  .btn-primary {
   color: #fff;
