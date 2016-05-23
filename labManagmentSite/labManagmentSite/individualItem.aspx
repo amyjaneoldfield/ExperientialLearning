@@ -169,12 +169,12 @@
       <div class="panel-body">
 
 <asp:Repeater ID="Repeater1" runat="server" DataSourceID="sqlDataLogBook">
-   <HeaderTemplate> <table>
+   <HeaderTemplate> <table class="table-bordered">
       
        <tbody>
-           <tr><td>Date</td> <td>User</td> <td>Comment</td></tr></HeaderTemplate>
+           <tr class="tableHead"><td>Date</td> <td>User</td> <td>Comment</td></tr></HeaderTemplate>
    
-       <ItemTemplate><tr><td><%#Eval("Date")%></td><td><%#Eval("User")%></td><td><%#Eval("Comment")%></td> </tr></ItemTemplate>
+       <ItemTemplate><tr><td><%#Eval("Date", "{0:d}")%></td><td><%#Eval("User")%></td><td><%#Eval("Comment")%></td> </tr></ItemTemplate>
            <FooterTemplate></tbody>
    </table></FooterTemplate>
          
