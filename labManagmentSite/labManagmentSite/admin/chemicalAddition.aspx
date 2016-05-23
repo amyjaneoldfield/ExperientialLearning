@@ -241,7 +241,7 @@
              <asp:Label ID="lblSearchTerm" runat="server"></asp:Label><a data-toggle="collapse"  href="#collapse2"> &#9660;</a>  
       </h4>
     </div>
-    <div id="collapse2" class="panel-collapse collapse">
+    <div id="collapse2" class="panel-collapse collapse in">
       <div class="panel-body">
         
           <asp:Repeater ID="rptrSearch" runat="server">
