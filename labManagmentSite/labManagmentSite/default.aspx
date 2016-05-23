@@ -2,7 +2,21 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
+
+
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 
 
     <div class="container">
@@ -82,10 +96,16 @@
     be able to contact the departments custodian team for any queries.
         </p>
 
+<a class="twitter-timeline" href="https://twitter.com/UoCSciEng" data-widget-id="734663427679981568">Tweets by @UoCSciEng</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 
+        <div class="fb-page" data-href="https://www.facebook.com/UoCSciEng" data-tabs="timeline" data-width="500" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/UoCSciEng"><a href="https://www.facebook.com/UoCSciEng">Faculty of Science and Engineering</a></blockquote></div></div>
 
-        <div class="home1">
+  <!-- 
+        <a class="twitter-grid" href="https://twitter.com/UoCSciEng?ref_src=twsrc%5Etfw">National Park Tweets</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+     <div class="home1">
             <img class="homeImage" src="Images/pl1.png" alt="place holder for image1" height="200" width="200" />
 
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed augue vel mi suscipit semper. 
@@ -116,13 +136,13 @@
             <p><a class="btn btn-lg btn-primary" href="#" role="button">Visit</a></p>
         </div>
 
-
+        -->
       
 
 
 
 
     </div>
-
+    
 
 </asp:Content>
