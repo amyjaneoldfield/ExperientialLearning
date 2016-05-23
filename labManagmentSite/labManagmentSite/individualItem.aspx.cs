@@ -28,20 +28,27 @@ namespace labManagmentSite
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-           
 
+         
 
         }
 
         private void submitLog(TextBox comment, TextBox User)
         {
-            var db = new db_1421049_LabManagementEntities();
+
+            String id = Page.ClientQueryString;
+            String peice = id.TrimStart('I','D','=');
+
+
+
             var log = new Logbook();
 
             log.Comment = comment.Text;
             log.User = User.Text;
 
             log.Date = DateTime.Now;
+            log.PieceofEquipment = int.Parse(peice);
+
 
             db.Logbooks.Add(log);
             db.SaveChanges();
