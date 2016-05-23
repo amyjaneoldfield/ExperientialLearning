@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/labManagement.Master" AutoEventWireup="true" CodeBehind="chemicalAddition.aspx.cs" Inherits="labManagmentSite.admin.chemicalAddition" %>
+<%@ Import Namespace="App.Extensions" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../Styles/itemStyles.css" rel="stylesheet" />
@@ -248,7 +249,7 @@
               <ItemTemplate>
 
                <p>Name: <%#Eval ("Name_of_Substance") %>    </p>           
-    <p>Formula: <%#Eval ("Formula") %></p>
+    <p>Formula: <%# Eval("Formula").ToString().ToHtmlFormula() %></p>
    <p>Location: <%#Eval ("Location") %></p> 
   <p>Units: <%#Eval ("Units") %> </p> 
    <p>Trigger Level: <%#Eval ("Trigger_Level") %></p>

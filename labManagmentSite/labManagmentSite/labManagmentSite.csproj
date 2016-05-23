@@ -180,6 +180,7 @@
     <Compile Include="admin\upload.aspx.designer.cs">
       <DependentUpon>upload.aspx</DependentUpon>
     </Compile>
+    <Content Include="App_Code\StringExtensions.cs" />
     <Compile Include="ChemData.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
