@@ -100,7 +100,8 @@ namespace labManagmentSite.admin
             rptrSearch.DataBind();
             lblSearchTerm.Text = "Results for " + term;
 
-
+            Panel pnl = (Panel)FindControl("collapse2");
+            pnl.CssClass = "panel-collapse collapse in";
 
         }
     }
