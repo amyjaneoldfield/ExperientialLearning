@@ -195,8 +195,7 @@
        
 
 
-          <asp:Label ID="lblLogDate" runat="server" Text="Date" AssociatedControlID="txtLogDate"></asp:Label>
-          <asp:TextBox ID="txtLogDate" runat="server"></asp:TextBox>
+
           <asp:Label ID="lblLogUser" runat="server" Text="User" AssociatedControlID="txtLogUser"></asp:Label>
           <asp:TextBox ID="txtLogUser" runat="server"></asp:TextBox>
           <asp:Label ID="lblLogComment" runat="server" Text="Comment" AssociatedControlID="txtLogComment"></asp:Label>

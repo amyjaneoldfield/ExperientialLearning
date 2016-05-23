@@ -16,19 +16,22 @@ namespace labManagmentSite.admin
         }
 
         protected void btnClearFields_Click(object sender, EventArgs e)
-        {
+        {                                // button to clear all fields
             clear();
 
         }
-        protected void btnAddChemicalData_Click(object sender, EventArgs e)
+        protected void btnAddChemicalData_Click(object sender, EventArgs e)   
         {
-            add();
-            clear();
-            refresh();
+            Page.Validate();             // validate page if JS not enabled
+            if (Page.IsValid)
+            {
+                add();          //chemicalAddition of data when button clicked
+                clear();
+            }
 
         }
 
-        private void clear()
+        private void clear()                 // method to clear all fields
         {
             txtNameOfSubstance.Text = "";
             txtFormula.Text = "";
@@ -39,7 +42,7 @@ namespace labManagmentSite.admin
             txtSupplier.Text = "";
             txtSupplierProductCode.Text = "";
             txtCASCode.Text = "";
-            txtBathCode.Text = "";
+            txtBatchCode.Text = "";
             txtPurityGrade.Text = "";
             txtExpiryDate.Text = "";
             txtSummaryOfHazards.Text = "";
@@ -54,7 +57,7 @@ namespace labManagmentSite.admin
 
         }
 
-        private void add()
+        private void add()                  // method to add records and data to database
         {
             var db = new db_1421049_LabManagementEntities();
             var entry = new ChemData();
@@ -68,7 +71,7 @@ namespace labManagmentSite.admin
             entry.Supplier = txtSupplier.Text;
             entry.Supplier_Product_Code = txtSupplierProductCode.Text;
             entry.CAS_Code = txtCASCode.Text;
-            entry.Batch_Code = txtBathCode.Text;
+            entry.Batch_Code = txtBatchCode.Text;
             entry.Purity_Grade = txtPurityGrade.Text;
             entry.Expiry_Date = txtExpiryDate.Text;
             entry.Summary_of_Hazards = txtSummaryOfHazards.Text;
@@ -80,18 +83,16 @@ namespace labManagmentSite.admin
             entry.COSHH_completed= txtCOSHHCompleted.Text;
             entry.MSDS_Available = txtMSDSAvailable.Text;
 
+
             db.ChemDatas.Add(entry);
             db.SaveChanges();
 
 
         }
 
-        private void refresh()
-        {
-            Response.Redirect("~/admin/chemicalAdditon");
-        }
 
-        protected void txtSearch_TextChanged(object sender, EventArgs e)
+
+        protected void txtSearch_TextChanged(object sender, EventArgs e) // search method
         {
             string term = txtSearch.Text;
 
@@ -100,8 +101,8 @@ namespace labManagmentSite.admin
             rptrSearch.DataBind();
             lblSearchTerm.Text = "Results for " + term;
 
-            Panel pnl = (Panel)FindControl("collapse2");
-            pnl.CssClass = "panel-collapse collapse in";
+           
+
 
         }
     }
