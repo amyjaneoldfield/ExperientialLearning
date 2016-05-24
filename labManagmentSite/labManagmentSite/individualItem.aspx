@@ -48,8 +48,19 @@
      <div class="carousel-inner" role="listbox">
 
 
-         <asp:FormView ID="FormView1" runat="server">
+         <asp:FormView ID="FormView1" runat="server" DataSourceID="sqlDataSource">
+             <HeaderTemplate></HeaderTemplate>
+             <ItemTemplate>
+              
 
+
+
+             
+             
+             </ItemTemplate>
+             
+             
+             <FooterTemplate></FooterTemplate>
          </asp:FormView>
          
       
