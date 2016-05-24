@@ -22,22 +22,22 @@ namespace labManagmentSite {
         protected global::System.Web.UI.WebControls.Label lblRequestFunction;
         
         /// <summary>
-        /// chkFunction control.
+        /// ddlFunction control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList chkFunction;
+        protected global::System.Web.UI.WebControls.DropDownList ddlFunction;
         
         /// <summary>
-        /// txtFunctionCheckOther control.
+        /// txtFunctionOther control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFunctionCheckOther;
+        protected global::System.Web.UI.WebControls.TextBox txtFunctionOther;
         
         /// <summary>
         /// lblRequestSubject control.
@@ -49,22 +49,22 @@ namespace labManagmentSite {
         protected global::System.Web.UI.WebControls.Label lblRequestSubject;
         
         /// <summary>
-        /// DropDownList1 control.
+        /// ddlRequestSubject control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList ddlRequestSubject;
         
         /// <summary>
-        /// txtSubjectDropDownOther control.
+        /// txtSubjectOther control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSubjectDropDownOther;
+        protected global::System.Web.UI.WebControls.TextBox txtSubjectOther;
         
         /// <summary>
         /// lblRequestLocation control.
@@ -247,66 +247,66 @@ namespace labManagmentSite {
         protected global::System.Web.UI.WebControls.TextBox txtRequestSoftware;
         
         /// <summary>
-        /// Label9 control.
+        /// lblRequestPresentationEquipment control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label9;
+        protected global::System.Web.UI.WebControls.Label lblRequestPresentationEquipment;
         
         /// <summary>
-        /// DropDownList2 control.
+        /// ddlRequestPresentationEquipment control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
+        protected global::System.Web.UI.WebControls.DropDownList ddlRequestPresentationEquipment;
         
         /// <summary>
-        /// txtEquipmentOther control.
+        /// txtPresentationOther control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEquipmentOther;
+        protected global::System.Web.UI.WebControls.TextBox txtPresentationOther;
         
         /// <summary>
-        /// Label11 control.
+        /// lblRequestRiskAssesment control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label11;
+        protected global::System.Web.UI.WebControls.Label lblRequestRiskAssesment;
         
         /// <summary>
-        /// txt control.
+        /// txtRequestRiskAssessment control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt;
+        protected global::System.Web.UI.WebControls.TextBox txtRequestRiskAssessment;
         
         /// <summary>
-        /// labelRisks control.
+        /// lblRequestRisks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label labelRisks;
+        protected global::System.Web.UI.WebControls.Label lblRequestRisks;
         
         /// <summary>
-        /// TextBox3 control.
+        /// txtRequestRisks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox txtRequestRisks;
     }
 }
