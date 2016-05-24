@@ -103,6 +103,7 @@
     <Content Include="js\bootstrap.min.js" />
     <Content Include="JS\jquery-2.2.3.js" />
     <Content Include="JS\jquery-2.2.3.min.js" />
+    <Content Include="js\jquery.js" />
     <Content Include="laboratoryStores.aspx" />
     <Content Include="login.aspx" />
     <Content Include="Model1.Context.tt">
