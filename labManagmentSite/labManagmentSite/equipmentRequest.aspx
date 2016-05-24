@@ -10,17 +10,37 @@
 
     <div>
         <div>
+            <asp:Label ID="lblRequestName" runat="server" Text="Your Name" AssociatedControlID="txtRequestName"></asp:Label>
+        </div>
+        <div>
+            <asp:TextBox ID="txtRequestName" runat="server"></asp:TextBox>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <asp:Label ID="lblRequestEmail" runat="server" Text="Your Email" AssociatedControlID="txtRequestEmail"></asp:Label>
+        </div>
+        <div>
+            <asp:TextBox ID="txtRequestEmail" runat="server"></asp:TextBox>
+        </div>
+    </div>
+
+    <div>
+        <div>
             <asp:Label ID="lblRequestFunction" runat="server" Text="Function" AssociatedControlID="ddlFunction"></asp:Label>
         </div>
 
         <div>
             <asp:DropDownList ID="ddlFunction" runat="server">
+                <asp:ListItem>Please Select...</asp:ListItem>
                 <asp:ListItem>Laboratory</asp:ListItem>
                 <asp:ListItem>Classroom</asp:ListItem>
-                <asp:ListItem Value="txtfunctionOther">Other (Please Specify)</asp:ListItem>
+                <asp:ListItem Value="txtfunctionOther">Other (Please Specify)</asp:ListItem>        
+               
             </asp:DropDownList>
         </div>
-
+ <!--check tosee if a compare validator can be used to check if the "Please Select..." value field is selected -->
         <div>
             <asp:TextBox runat="server" ID="txtFunctionOther"></asp:TextBox>
         </div>
@@ -34,6 +54,7 @@
         </div>
         <div>
             <asp:DropDownList ID="ddlRequestSubject" runat="server">
+                <asp:ListItem>Please Select...</asp:ListItem>
                 <asp:ListItem>Electronics Principles &amp; Electromagnetism</asp:ListItem>
                 <asp:ListItem>Automation / Control</asp:ListItem>
                 <asp:ListItem>Power / Machines </asp:ListItem>
@@ -132,6 +153,7 @@
 
         <div>
             <asp:DropDownList ID="ddlRequestPresentationEquipment" runat="server">
+                <asp:ListItem>Please Select...</asp:ListItem>
                 <asp:ListItem>big Screen</asp:ListItem>
                 <asp:ListItem>Whiteboard</asp:ListItem>
                 <asp:ListItem>Flipchart </asp:ListItem>
@@ -165,5 +187,6 @@
         </div>
     </div>
 
+    <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
 
 </asp:Content>
