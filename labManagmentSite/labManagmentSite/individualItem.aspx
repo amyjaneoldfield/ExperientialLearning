@@ -1,7 +1,6 @@
 ﻿ <%@ Page Title="" Language="C#" MasterPageFile="~/labManagement.Master" AutoEventWireup="true" CodeBehind="individualItem.aspx.cs" Inherits="labManagmentSite.individualItem" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-     
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -23,7 +22,7 @@
                  </HeaderTemplate>
                    <ItemTemplate>
                    
-  <li><a href="<%#Eval("ID","individualItem.aspx?ID={0}") %>"><%#Eval ("Name")%><span class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                        <li><a href="<%#Eval("ID","individualItem.aspx?ID={0}") %>"><%#Eval ("Name")%></a></li>
                  </ItemTemplate>
                  <FooterTemplate>
 </ul>  
@@ -52,17 +51,17 @@
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner" role="listbox">
+     <div class="carousel-inner" role="listbox">
                 <!--Items-->
                 <asp:Repeater ID ="rptrcarousel" DataSourceID="sqlDataSourceCarousel" runat="server">
-           <ItemTemplate>                
-           
+           <ItemTemplate>
               
 
+          
                <div class="item <%# (Container.ItemIndex == 0 ? "active" : "") %>">
            <img class="slide" src="<%# Eval("path")%>.<%#Eval("ext")%>" height="<%#Eval("height") %>" width="<%#Eval("width")%>" alt="<%#Eval("alt")%>"/>
           <div class="container">
-            <div class="carousel-caption">
+            <div class="carousel-caption"> 
             </div>
           </div>
         </div>
@@ -74,19 +73,19 @@
                 <!-- Controls-->
 
                 <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
                 <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
         </div>
         <!-- /.carousel -->
+    
+    
    
-           
-
 
 
           <asp:SqlDataSource ID="sqlDataSourceCarousel" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [path], [ext], [height], [width], [alt] FROM [Images] WHERE ([peiceofEquipment] = @peiceofEquipment)">
@@ -115,8 +114,7 @@
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" href="#collapse1">
-        Location</a>
+                                                <a data-toggle="collapse" href="#collapse1">Location</a>
       </h4>
     </div>
     <div id="collapse1" class="panel-collapse collapse in">
@@ -126,8 +124,7 @@
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse"  href="#collapse2">
-        Local Area Rules</a>
+                                                <a data-toggle="collapse" href="#collapse2">Local Area Rules</a>
       </h4>
     </div>
     <div id="collapse2" class="panel-collapse collapse">
@@ -141,36 +138,39 @@
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" href="#collapse3">
-        Risk Assessment
-        </a>
+                                                <a data-toggle="collapse" href="#collapse3">Risk Assessment</a>
       </h4>
     </div>
     <div id="collapse3" class="panel-collapse collapse">
-      <div class="panel-body"><a href='<%#Eval("CurrentRiskAssessment")%>' runat="server" >Risk Assessment</a></div>
+                                            <div class="panel-body">
+                                                <a href='<%#Eval("CurrentRiskAssessment")%>' runat="server">Risk Assessment</a>
+                                                 <asp:Button ID="btnRiskUpload" runat="server" Text="Upload" Visible="false" />
+                                                <asp:FileUpload ID="riskUploadControl" runat="server" />
     </div>
   </div>
+                                    </div>
 
     <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" href="#collapse4">
-        Monitoring Results
+                                                <a data-toggle="collapse" href="#collapse4">Monitoring Results
         </a>
       </h4>
     </div>
     <div id="collapse4" class="panel-collapse collapse">
-      <div class="panel-body"><a href='<%#Eval("Maintenance")%>' runat="server" >Maintenance</a></div>
+                                            <div class="panel-body"><a href='<%#Eval("Maintenance")%>' runat="server">Maintenance</a>
+                                                 <asp:Button ID="btnMaintenance" runat="server" Text="Upload" Visible="false" />
+                                                <asp:FileUpload ID="maintenanceUploadControl" runat="server" />
     </div>
   </div>
+                                    </div>
  
           <!-- LOG BOOK -->
 
           <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a data-toggle="collapse" href="#collapse5">
-        Log Book
+                                                <a data-toggle="collapse" href="#collapse5">Log Book
         </a>
       </h4>
     </div>
@@ -182,20 +182,35 @@
 
 <asp:Repeater ID="rptrLogbook" runat="server" DataSourceID="sqlDataLogBook">
   
-   <HeaderTemplate> <table class="table-bordered">
+                                                    <HeaderTemplate>
+                                                        <table class="table-bordered">
       
        <tbody>
-           <tr class="tableHead"><td>Date</td> <td>User</td> <td>Comment</td></tr></HeaderTemplate>
+                                                                <tr class="tableHead">
+                                                                    <td>Date</td>
+                                                                    <td>User</td>
+                                                                    <td>Comment</td>
+                                                                </tr>
+                                                    </HeaderTemplate>
    
-       <ItemTemplate><tr><td><%#Eval("Date", "{0:d}")%></td><td><%#Eval("User")%></td><td><%#Eval("Comment")%></td> </tr></ItemTemplate>
-           <FooterTemplate></tbody>
-   </table></FooterTemplate>
+                                                    <ItemTemplate>
+                                                        <tr>
+                                                            <td><%#Eval("Date", "{0:d}")%></td>
+                                                            <td><%#Eval("User")%></td>
+                                                            <td><%#Eval("Comment")%></td>
+                                                        </tr>
+                                                    </ItemTemplate>
+                                                    <FooterTemplate>
+                                                        </tbody>
+   </table>
+                                                    </FooterTemplate>
          
        </asp:Repeater>
            <asp:SqlDataSource ID="sqlDataLogBook" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT * FROM [LogBook] WHERE ([PieceofEquipment] = @ID)">
                <SelectParameters>
             <asp:QueryStringParameter Name="ID" QueryStringField="ID" Type="Int32" />
-        </SelectParameters></asp:SqlDataSource>
+                                                    </SelectParameters>
+                                                </asp:SqlDataSource>
        
 
 
@@ -205,26 +220,15 @@
           <asp:Label ID="lblLogComment" runat="server" Text="Comment" AssociatedControlID="txtLogComment"></asp:Label>
           <asp:TextBox ID="txtLogComment" runat="server"></asp:TextBox>
           
-          <asp:Button ID="btnLogSubmit" runat="server" Text="Submit" CssClass="btn btn-default" OnClick="btnLogSubmit_Click"/>
-
-         
-
-
+                                                <asp:Button ID="btnLogSubmit" runat="server" Text="Submit" CssClass="btn btn-default" OnClick="btnLogSubmit_Click" />
 
       </div>
     </div>
   </div>
-
-
-
-
 </div>
     </div>
     </div>
 
-
-           
-      
         </ItemTemplate>
 
 
@@ -246,9 +250,7 @@
                 </div>
             </div>
             </div>
-        <asp:SqlDataSource ID="sqlDataSourceSide" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [Name], [ID] FROM [User_Research_Equip]" >
-                
-            </asp:SqlDataSource>
+    <asp:SqlDataSource ID="sqlDataSourceSide" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [Name], [ID] FROM [User_Research_Equip]"></asp:SqlDataSource>
         <!-- /#page-content-wrapper -->
          
     <script src="js/jquery.js"></script>
@@ -256,14 +258,6 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Menu Toggle Script 
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("toggled");
-    });
-    </script>-->
-    <!-- Menu Toggle Script -->
     
     </asp:Content>
    

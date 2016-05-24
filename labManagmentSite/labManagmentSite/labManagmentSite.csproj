@@ -151,7 +151,6 @@
     <Content Include="Styles\bootstrap.min.css" />
     <Content Include="Styles\simple-sidebar.css" />
     <Content Include="Styles\Styles.css" />
-    <Content Include="test.aspx" />
     <Content Include="upload.aspx" />
     <Content Include="userEquipment.aspx" />
     <Content Include="Web.config" />
@@ -286,13 +285,6 @@
     </Compile>
     <Compile Include="researchEquipment.aspx.designer.cs">
       <DependentUpon>researchEquipment.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="test.aspx.cs">
-      <DependentUpon>test.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="test.aspx.designer.cs">
-      <DependentUpon>test.aspx</DependentUpon>
     </Compile>
     <Compile Include="upload.aspx.cs">
       <DependentUpon>upload.aspx</DependentUpon>
