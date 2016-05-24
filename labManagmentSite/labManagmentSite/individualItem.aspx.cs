@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.Entity;
+using System.Web.Security;
 
 namespace labManagmentSite
 {
@@ -19,7 +20,7 @@ namespace labManagmentSite
             
             TextBox user = (TextBox)frmItem.FindControl("txtLogUser");
 
-
+            
             submitLog(comment, user);
 
             
@@ -28,8 +29,12 @@ namespace labManagmentSite
         }
         protected void Page_Load(object sender, EventArgs e)
         {
+           
 
-         
+            if (Context.User.IsInRole("Admin") && Page.ClientQueryString != ""){
+                Button btnLocalUpload = (Button)frmItem.FindControl("btnLocalUpload");
+                btnLocalUpload.Visible = true; 
+            }
 
         }
 

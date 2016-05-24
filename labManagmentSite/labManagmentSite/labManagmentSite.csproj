@@ -83,6 +83,7 @@
     <Content Include="contact.aspx" />
     <Content Include="admin\createAdmin.aspx" />
     <Content Include="custodians.aspx" />
+    <Content Include="equipmentRequest.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Images\banner.jpg" />
     <Content Include="Images\banner1.jpg" />
@@ -151,6 +152,7 @@
     <Content Include="Styles\simple-sidebar.css" />
     <Content Include="Styles\Styles.css" />
     <Content Include="test.aspx" />
+    <Content Include="upload.aspx" />
     <Content Include="userEquipment.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -218,6 +220,13 @@
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="equipmentRequest.aspx.cs">
+      <DependentUpon>equipmentRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="equipmentRequest.aspx.designer.cs">
+      <DependentUpon>equipmentRequest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -284,6 +293,13 @@
     </Compile>
     <Compile Include="test.aspx.designer.cs">
       <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="upload.aspx.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload.aspx.designer.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
     </Compile>
     <Compile Include="userEquipment.aspx.cs">
       <DependentUpon>userEquipment.aspx</DependentUpon>

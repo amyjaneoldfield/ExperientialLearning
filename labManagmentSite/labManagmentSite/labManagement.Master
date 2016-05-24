@@ -44,7 +44,7 @@
                         <li class="navpad"><a href="~/default.aspx" runat="server">Home</a></li>
                         <li class="navpad"><a href="~/userEquipment.aspx" runat="server">Equipment Index</a></li>
                         <li class="navpad"><a href="~/researchEquipment.aspx" runat="server">Laboratories</a></li>
-                        <li class="navpad"><a href="~/contact.aspx" runat="server">Contact Us</a></li>
+                        <li class="navpad"><a href="~/equipmentRequest.aspx" runat="server">Equipment Booking</a></li>
                         </ul>
                 </div>
                 <!-- /.nav-collapse -->
@@ -97,6 +97,10 @@
                     
                             <li>
                                 <a href="www.1409891.studentwebserver.co.uk">Site Map</a>
+                            </li>
+
+                            <li>
+                                <a href="~/contact.aspx" runat="server">Contact Us</a>
                             </li>
                            
                             
