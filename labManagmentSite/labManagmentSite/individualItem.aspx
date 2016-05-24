@@ -131,6 +131,8 @@
     <div id="collapse2" class="panel-collapse collapse">
       <div class="panel-body">
           <a href='<%#Eval("LocalRules")%>' runat="server">Local Rules</a>
+          <asp:Button ID="btnLocalUpload" runat="server" Text="Upload" Visible="false" />
+          <asp:FileUpload ID="localUploadControl" runat="server" />
           </div>
     </div>
   </div>
