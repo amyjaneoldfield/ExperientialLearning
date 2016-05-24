@@ -324,48 +324,14 @@ padding-left:0px;
 
 /*CSS FOR INDIVDUAL ITEM PAGES STYLES*/
 
+
+#menu-toggle{
+    float: right;
+}
+
 /* SIDEBAR STYLES*/
 
 
-    /*
-.sidebar-nav {
-    position: absolute;
-    top: 0;
-    width: 250px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.sidebar-nav li {
-    text-indent: 20px;
-    line-height: 40px;
-}
-.sidebar-nav li a {
-    display: block;
-    text-decoration: none;
-    color: #6C9B3B;
-}/*for the main list content
-.sidebar-nav li a:hover {
-    text-decoration: none;
-    color: #333;
-    background: rgba(255,255,255,0.2);
-}/*when main list is hovered
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-    text-decoration: none;
-}
-.sidebar-nav > .sidebar-brand {
-    height: 65px;
-    font-size: 18px;
-    line-height: 60px;
-}
-.sidebar-nav > .sidebar-brand a {
-color: #333;
-}/*heading list
-.sidebar-nav > .sidebar-brand a:hover {
-    color: #6C9B3B;
-    background: none;
-}/*heading list hover colour*/
 
 
 
@@ -382,14 +348,15 @@ color: #333;
     -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05); 
     box-shadow: 0 1px 1px rgba(0,0,0,.05); 
  }
+
 /*LOGBOOK STYLES*/
 .tableHead td {
     font-weight:bolder;
-
-
-
 }/*headings for columns*/
 
+ .table-bordered{
+     width: 100%;
+ }
 
 /*FOR INDIVDUAL PAGE WRAPPERS CONTENT */
 #wrapper {
@@ -429,7 +396,7 @@ color: #333;
 }/*size*/
 #page-content-wrapper {
     width: 100%;
-    position: absolute;
+    
     padding: 15px;
 }
 #wrapper.toggled #page-content-wrapper {
