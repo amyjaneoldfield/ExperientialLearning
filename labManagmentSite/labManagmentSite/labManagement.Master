@@ -94,14 +94,16 @@
                             </li>
                             <li class ="sep"> | </li>
 
-                    
+                     <li>
+                                <a href="~/contact.aspx" runat="server">Contact Us</a>
+                            </li>
+                             <li class ="sep"> | </li>
+
                             <li>
                                 <a href="www.1409891.studentwebserver.co.uk">Site Map</a>
                             </li>
 
-                            <li>
-                                <a href="~/contact.aspx" runat="server">Contact Us</a>
-                            </li>
+                           
                            
                             
                                 
