@@ -145,12 +145,15 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" href="#collapse3">Risk Assessment
-                                                </a>
+                                                <a data-toggle="collapse" href="#collapse3">Risk Assessment</a>
                                             </h4>
                                         </div>
                                         <div id="collapse3" class="panel-collapse collapse">
-                                            <div class="panel-body"><a href='<%#Eval("CurrentRiskAssessment")%>' runat="server">Risk Assessment</a></div>
+                                            <div class="panel-body">
+                                                <a href='<%#Eval("CurrentRiskAssessment")%>' runat="server">Risk Assessment</a>
+                                                 <asp:Button ID="btnRiskUpload" runat="server" Text="Upload" Visible="false" />
+                                                <asp:FileUpload ID="riskUploadControl" runat="server" />
+                                            </div>
                                         </div>
                                     </div>
 
@@ -162,7 +165,10 @@
                                             </h4>
                                         </div>
                                         <div id="collapse4" class="panel-collapse collapse">
-                                            <div class="panel-body"><a href='<%#Eval("Maintenance")%>' runat="server">Maintenance</a></div>
+                                            <div class="panel-body"><a href='<%#Eval("Maintenance")%>' runat="server">Maintenance</a>
+                                                 <asp:Button ID="btnMaintenance" runat="server" Text="Upload" Visible="false" />
+                                                <asp:FileUpload ID="maintenanceUploadControl" runat="server" />
+                                            </div>
                                         </div>
                                     </div>
 
