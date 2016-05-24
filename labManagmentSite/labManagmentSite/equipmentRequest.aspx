@@ -19,7 +19,7 @@
             </asp:CheckBoxList>
         </div>
         <div>
-            <asp:TextBox runat="server" ID="txtCheckOther"></asp:TextBox>
+            <asp:TextBox runat="server" ID="txtFunctionCheckOther"></asp:TextBox>
         </div>
     </div>
 
@@ -27,25 +27,25 @@
 
     <div>
         <div>
-            <asp:Label ID="Label2" runat="server" Text="Subject Matter"></asp:Label>
+            <asp:Label ID="lblRequestSubject" runat="server" Text="Subject Matter"></asp:Label>
         </div>
         <div>
             <asp:DropDownList ID="DropDownList1" runat="server">
                 <asp:ListItem>Electronics Principles &amp; Electromagnetism</asp:ListItem>
                 <asp:ListItem>Automation / Control</asp:ListItem>
                 <asp:ListItem>Power / Machines </asp:ListItem>
-                <asp:ListItem Value="txtDropDownOther">Other (Please Specify)</asp:ListItem>
+                <asp:ListItem Value="txtSubjectDropDownOther">Other (Please Specify)</asp:ListItem>
             </asp:DropDownList>
         </div>
         <div>
-            <asp:TextBox ID="txtDropDownOther" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtSubjectDropDownOther" runat="server"></asp:TextBox>
 
         </div>
     </div>
 
     <div>
         <div>
-            <asp:Label ID="Label6" runat="server" Text="Location"></asp:Label>
+            <asp:Label ID="lblRequestLocation" runat="server" Text="Location"></asp:Label>
         </div>
         <div>
             <asp:TextBox ID="txtRequestLocation" runat="server"></asp:TextBox>
@@ -57,20 +57,20 @@
         <h2>Dates Required</h2>
        
          <div>
-            <asp:Label ID="Label4" runat="server" Text="From"></asp:Label>
+            <asp:Label ID="lblRequestDateFrom" runat="server" Text="From"></asp:Label>
         </div>
         <div>
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtRequestDateFrom" runat="server"></asp:TextBox>
         </div>
         <div>
-            <asp:Label ID="Label5" runat="server" Text="To"></asp:Label>
+            <asp:Label ID="lblRequestDateTo" runat="server" Text="To"></asp:Label>
         </div>
         <div>
-            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtRequestDateTo" runat="server"></asp:TextBox>
         </div>
     </div>
 
-    <asp:Label ID="lblStartTime" runat="server" Text="Start Time"></asp:Label>
+    <asp:Label ID="lblRequestStartTime" runat="server" Text="Start Time"></asp:Label>
     <asp:TextBox ID="txtRequestStartTime" runat="server"></asp:TextBox>
 
     <asp:Label ID="lblRequestDuration" runat="server" Text="Duration"></asp:Label>
@@ -83,17 +83,17 @@
 
     <h2>Resourses Required</h2>
 
-    <asp:Label ID="lblNoOfSeats" runat="server" Text="Number of Seats"></asp:Label>
-    <asp:TextBox ID="txtNoOfSeats" runat="server"></asp:TextBox>
-    <asp:Label ID="lblSpecialNeeds" runat="server" Text=" Special Needs Access?"></asp:Label>
-    <asp:TextBox ID="txtSpecialNeeds" runat="server"></asp:TextBox>
+    <asp:Label ID="lblRequestNoOfSeats" runat="server" Text="Number of Seats"></asp:Label>
+    <asp:TextBox ID="txtRequestNoOfSeats" runat="server"></asp:TextBox>
+    <asp:Label ID="lblRequestSpecialNeeds" runat="server" Text=" Special Needs Access?"></asp:Label>
+    <asp:TextBox ID="txtRequestSpecialNeeds" runat="server"></asp:TextBox>
 
 
-    <asp:Label ID="Label7" runat="server" Text="Hardware (type and Quantity)"></asp:Label>
-    <asp:TextBox ID="txtHardware" runat="server"></asp:TextBox>
+    <asp:Label ID="lblRequestHardware" runat="server" Text="Hardware (type and Quantity)"></asp:Label>
+    <asp:TextBox ID="txtRequestHardware" runat="server"></asp:TextBox>
 
-    <asp:Label ID="Label8" runat="server" Text="Software Required"></asp:Label>
-    <asp:TextBox ID="txtSoftware" runat="server"></asp:TextBox>
+    <asp:Label ID="lblRequestSoftware" runat="server" Text="Software Required"></asp:Label>
+    <asp:TextBox ID="txtRequestSoftware" runat="server"></asp:TextBox>
 
 
 <asp:label ID="Label9" runat="server" Text="Presentation Equipment"></asp:label>
