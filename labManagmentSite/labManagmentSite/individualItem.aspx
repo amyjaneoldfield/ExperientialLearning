@@ -1,33 +1,40 @@
 ﻿ <%@ Page Title="" Language="C#" MasterPageFile="~/labManagement.Master" AutoEventWireup="true" CodeBehind="individualItem.aspx.cs" Inherits="labManagmentSite.individualItem" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+     
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
- <!-- Sidebar -->
-  
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="~/userEquipment.aspx">
-                        Other Equipment
-                    </a>
-                </li>
-               <asp:Repeater ID="rptrSidebar" runat="server" DataSourceID="sqlDataSourceSide">
+
+
+    <div id="wrapper" class="active">
+      
+      <!-- Sidebar -->
+            <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+      <ul id="sidebar_menu" class="sidebar-nav">
+           <li class="sidebar-brand"><a id="menu-toggle" href="#">Menu<span id="main_icon" class="glyphicon glyphicon-align-justify"></span></a></li>
+      </ul>
+        <ul class="sidebar-nav" id="sidebar">     
+
+
+             <asp:Repeater ID="rptrSidebar" runat="server" DataSourceID="sqlDataSourceSide">
+                 <HeaderTemplate>
+<ul>
+                 </HeaderTemplate>
                    <ItemTemplate>
-                       <li><a href="<%#Eval("ID","individualItem.aspx?ID={0}") %>"><%#Eval ("Name")%></a></li>
-
-                   </ItemTemplate>
-
+                   
+  <li><a href="<%#Eval("ID","individualItem.aspx?ID={0}") %>"><%#Eval ("Name")%><span class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                 </ItemTemplate>
+                 <FooterTemplate>
+</ul>  
+                 </FooterTemplate>
 
                </asp:Repeater>
-
-            </ul>
-
-
+        </ul>
+      </div>
         </div>
-        <!-- /#sidebar-wrapper -->
-        
-           
+
+   
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
@@ -40,7 +47,11 @@
                        
      <div class="carousel-inner" role="listbox">
 
-         <asp:FormView ID=""></asp:FormView>
+
+         <asp:FormView ID="FormView1" runat="server">
+
+         </asp:FormView>
+         
       
        <asp:Repeater ID ="rptrcarousel" DataSourceID="sqlDataSourceCarousel" runat="server">
            <HeaderTemplate>                   <!--Carousel -->
@@ -246,20 +257,19 @@
                 
             </asp:SqlDataSource>
         <!-- /#page-content-wrapper -->
-    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
-                
+         
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Menu Toggle Script -->
+    <!-- Menu Toggle Script 
     <script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("toggled");
     });
-    </script>
+    </script>-->
     <!-- Menu Toggle Script -->
     
     </asp:Content>

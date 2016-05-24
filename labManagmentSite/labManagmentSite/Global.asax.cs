@@ -12,7 +12,7 @@ namespace labManagmentSite
     {
         protected void Application_Start(object sender, EventArgs e)
         {
-            string JQueryVer = "2.1.4";
+            string JQueryVer = "2.2.3";
             ScriptManager.ScriptResourceMapping.AddDefinition("jquery", new ScriptResourceDefinition
             {
                 Path = "~/Scripts/jquery-" + JQueryVer + ".min.js",
