@@ -14,9 +14,11 @@ namespace labManagmentSite
 
         }
        
-        protected void exampleMapping()
+       /* protected void exampleMapping()
         {
+           lab
+
            
-        }
+        }*/
     }
 }

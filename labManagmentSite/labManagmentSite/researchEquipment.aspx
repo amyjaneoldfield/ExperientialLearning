@@ -7,7 +7,7 @@
    
 <img src="Images/Slide1.PNG" border="0" width="960" height="720" orgWidth="960" orgHeight="720" usemap="#labMap" alt="" />
 <map name="labMap" id="labMap1">
-<area id="labOne" alt="lab1" title="lab1" href="http://www.image-maps.com/" shape="rect" coords="382,164,509,277" style="outline:none;" target="_self" onclick="exampleMapping"     />
+<area id="labOne" alt="lab1" title="lab1"  shape="rect" coords="382,164,509,277" style="outline:none;" target="_self" onclick="exampleMapping"     />
 <area id="labTwo" alt="lab2" title="lab2" href="http://www.image-maps.com/" shape="rect" coords="386,279,508,352" style="outline:none;" target="_self"     />
 <area id="labThree" alt="lab3" title="lab3" href="http://www.image-maps.com/" shape="rect" coords="382,357,510,395" style="outline:none;" target="_self"     />
 <area id="labFour" alt="lab4" title="lab4" href="http://www.image-maps.com/" shape="rect" coords="383,398,507,468" style="outline:none;" target="_self"     />
@@ -19,7 +19,7 @@
     <asp:Repeater runat="server" ID="rptrLabs" DataSourceID="sqlDataSourceLabs">
         <HeaderTemplate> </HeaderTemplate>
         <ItemTemplate>
-           <div class="lab">
+           <div  runat="server" id="<%#Eval ("LabName")%>" class="lab">
             <h4><%#Eval ("LabName")%></h4>
             <h5><%#Eval ("Location")%></h5>
             <asp:HiddenField ID="hdnValue" Value='<%#Eval("Location")%>' runat="server"/>
