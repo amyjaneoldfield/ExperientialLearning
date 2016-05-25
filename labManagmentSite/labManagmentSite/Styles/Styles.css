@@ -1,4 +1,9 @@
 ﻿html,
+ 
+ul {
+padding-left:0
+
+}
 
 body {
   height: 100%;
@@ -193,6 +198,19 @@ padding-left:0px;
   background-color: #6C9B3B;
   border-color: #204d74;
 }
+
+
+/*RESEARCH EQUIPMENT STYLES*/
+.lab{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
+    vertical-align: top;
+
+}
+
 
 /*CONTACT PAGESTYLES BELOW*/
 .contactFields{
