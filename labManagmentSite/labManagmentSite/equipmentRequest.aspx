@@ -13,26 +13,27 @@
     <div class="request">
     <h2 class="reqHeader">Purpose of Request</h2>
 
-  
+    <div>  <!-- need to do vals -->
         <div>
             <asp:Label ID="lblRequestName" runat="server" Text="Your Name" AssociatedControlID="txtRequestName"></asp:Label>
         </div>
+        <asp:RequiredFieldValidator ID="reqValRequestName" runat="server" ErrorMessage="RequiredFieldValidator" ControlToValidate="txtRequestName"></asp:RequiredFieldValidator>
         <div>
             <asp:TextBox ID="txtRequestName" runat="server"></asp:TextBox>
         </div>
-  
+
 
  
-        <div>
+    <div>
             <asp:Label ID="lblRequestEmail" runat="server" Text="Your Email" AssociatedControlID="txtRequestEmail"></asp:Label>
         </div>
         <div>
             <asp:TextBox ID="txtRequestEmail" runat="server"></asp:TextBox>
         </div>
-   
+
 
    
-        <div>
+    <div>
             <asp:Label ID="lblRequestFunction" runat="server" Text="Function" AssociatedControlID="ddlFunction"></asp:Label>
         </div>
 
@@ -49,14 +50,14 @@
         <div>
             <asp:TextBox runat="server" ID="txtFunctionOther"></asp:TextBox>
         </div>
-   
+
 
 
 
     
-      <div>
+    <div>
             <asp:Label ID="lblRequestSubject" runat="server" Text="Subject Matter" AssociatedControlID="ddlRequestSubject"></asp:Label>
-       </div>
+        </div>
         
             <asp:DropDownList ID="ddlRequestSubject" runat="server">
                 <asp:ListItem>Please Select...</asp:ListItem>
@@ -70,7 +71,7 @@
             <asp:TextBox ID="txtSubjectOther" runat="server"></asp:TextBox>
 
         </div>
-  
+
 
     <div>
         <div>
@@ -182,7 +183,7 @@
     <!--4th req page-->
     <div class="request">
     <div>
-        
+
 
         <h2 class="reqHeader">Safety Issues</h2>
 

@@ -211,7 +211,8 @@ padding-left:0px;
 
 /*RESEARCH EQUIPMENT STYLES*/
 .lab{
-    display: inline-block;
+   
+    display: none;
     text-align: center;
     border: 1px solid black;
     width: 400px;
