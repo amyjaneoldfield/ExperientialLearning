@@ -4,7 +4,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-
+    <h1 class="reqHeader">Create new admin users</h1>
+    <p>Fill out all the required fields below to create another Admin user, please be aware by creating such person they have the authroity to access, update and change all the private areas which an Admin has access to. E.G Adding new equipment.</p>
     <div id="register">
         <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" ContinueDestinationPageUrl="~/admin/admin.aspx">
             <WizardSteps>

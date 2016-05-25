@@ -51,7 +51,7 @@
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
-     <div class="carousel-inner" role="listbox">
+     <div id="individualitem" class="carousel-inner" role="listbox">
                 <!--Items-->
                 <asp:Repeater ID ="rptrcarousel" DataSourceID="sqlDataSourceCarousel" runat="server">
            <ItemTemplate>
@@ -117,7 +117,7 @@
                                                 <a data-toggle="collapse" href="#collapse1">Location</a>
       </h4>
     </div>
-    <div id="collapse1" class="panel-collapse collapse in">
+    <div id="collapse1" class="panel-collapse collapse">
       <div class="panel-body"><%#Eval("Location")%></div>
     </div>
   </div>

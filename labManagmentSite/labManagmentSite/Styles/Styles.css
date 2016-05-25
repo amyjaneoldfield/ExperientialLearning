@@ -168,6 +168,15 @@ padding-left:0px;
   opacity: .9;
 }/*for arrow hover*/
 
+#individualitem{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 400px;
+}/*fix for individualitem carousel*/
+
+
+
  .twitter-timeline{
      float: left;
  }
@@ -219,8 +228,20 @@ padding-left:0px;
     width: 400px;
     height: 400px;
     vertical-align: top;
-}
+}/*each equipment grouped positioning*/
 
+.btnReq{
+    float: right;
+       display: inline-block;
+  
+    width: 400px;
+    height: 150px;
+    vertical-align: top;
+}/*button setup*/
+
+.reqHeader{
+    color: #6C9B3B;
+}/*header colours*/
 
 
 

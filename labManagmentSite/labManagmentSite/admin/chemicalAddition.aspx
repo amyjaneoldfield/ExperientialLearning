@@ -11,13 +11,77 @@
 <div class="container">
    
 
-    <h1>Add a New Substance to the Chemical Database</h1>
+    <h1 class="reqHeader">Add a New Substance to the Chemical Database</h1>
 
-
+    <p>Use the drop downs below to search for a product or key word currently in the database to display all the included fields, or add a new product by filling out all the required fields with accurate information and selecting the add button.</p>
     <!--TODO must add field validation for this form. Then we can modify the database table fileds to match the specific format of each field in a record. --> 
 
     <!-- It may also be worth having a sepporate page on the site to diplay the whole grid of data and a sepporate one to allow the user to simply search for a record and have it appear in front of them. This would greatly increase accessibility. -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">Search
+        
+         <asp:TextBox ID="txtSearch" runat="server" OnTextChanged="txtSearch_TextChanged"></asp:TextBox>
+                        <asp:Label ID="lblSearchTerm" runat="server"></asp:Label><a data-toggle="collapse" href="#collapse2"> &#9660;</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">
+        
+          <asp:Repeater ID="rptrSearch" runat="server">
+              <HeaderTemplate>
+                  <table>
+                      <tbody>
+                          <tr>
+                              <td></td><td></td><
+                          </tr>
+                      </tbody>
+                  </table>
+              </HeaderTemplate>
+              <ItemTemplate>
 
+               <p>Name: <%#Eval ("Name_of_Substance") %>    </p>           
+    <p>Formula: <%# Eval("Formula").ToString().ToHtmlFormula() %></p>
+   <p>Location: <%#Eval ("Location") %></p> 
+  <p>Units: <%#Eval ("Units") %> </p> 
+   <p>Trigger Level: <%#Eval ("Trigger_Level") %></p>
+   <!-- [Current Stock Level]
+    [Supplier]
+    [Supplier Product Code]
+    [CAS Code]
+    [Batch Code]
+    [Purity/Grade]
+    [Expiry Date]
+    [Summary of Hazards
+    [Ordered by]
+    [Reviewed
+    [Purpose (Teaching/Research etc)]
+    [Link to MSDS]
+    [Category]
+    [COSHH completed (Y/N)]
+    [MSDS Available (Y/N)]
+    [F21
+    [F22
+    [F23]
+    [ID]
+                  -->
+
+              </ItemTemplate>
+
+          </asp:Repeater>
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
          
       <div class="panel-group" id="accordion">
   <div class="panel panel-default">
@@ -242,63 +306,7 @@
                     </div>
     </div>
   </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">Search
-        
-         <asp:TextBox ID="txtSearch" runat="server" OnTextChanged="txtSearch_TextChanged"></asp:TextBox>
-                        <asp:Label ID="lblSearchTerm" runat="server"></asp:Label><a data-toggle="collapse" href="#collapse2"> &#9660;</a>
-      </h4>
-    </div>
-    <div id="collapse2" class="panel-collapse collapse in">
-      <div class="panel-body">
-        
-          <asp:Repeater ID="rptrSearch" runat="server">
-              <HeaderTemplate></HeaderTemplate>
-              <ItemTemplate>
 
-               <p>Name: <%#Eval ("Name_of_Substance") %>    </p>           
-    <p>Formula: <%# Eval("Formula").ToString().ToHtmlFormula() %></p>
-   <p>Location: <%#Eval ("Location") %></p> 
-  <p>Units: <%#Eval ("Units") %> </p> 
-   <p>Trigger Level: <%#Eval ("Trigger_Level") %></p>
-   <!-- [Current Stock Level]
-    [Supplier]
-    [Supplier Product Code]
-    [CAS Code]
-    [Batch Code]
-    [Purity/Grade]
-    [Expiry Date]
-    [Summary of Hazards
-    [Ordered by]
-    [Reviewed
-    [Purpose (Teaching/Research etc)]
-    [Link to MSDS]
-    [Category]
-    [COSHH completed (Y/N)]
-    [MSDS Available (Y/N)]
-    [F21
-    [F22
-    [F23]
-    [ID]
-                  -->
-
-              </ItemTemplate>
-
-          </asp:Repeater>
-
-
-
-
-
-
-
-
-
-
-      </div>
-    </div>
-  </div>
   
  
     

@@ -5,10 +5,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <h1>Equipment Request Form</h1>
+    <p>If you wish to book a specific piece of equipment you are required to fill out all the necessary fields beow and submit a request form, which will be approved/declined by a member of staff depending on avaliblity.
+        Please allow up to 48 hours for a response, which will be sent to the email included in the contact form you submitted.
+    </p>
 
 <!-- first req box-->
     <div class="request">
-    <h2>Purpose of Request</h2>
+    <h2 class="reqHeader">Purpose of Request</h2>
 
   
         <div>
@@ -85,7 +88,7 @@
     <!-- seperate info box -->
     <div class="request">
     <div>
-        <h2>Dates Required</h2>
+        <h2 class="reqHeader">Dates Required</h2>
 
         <div>
             <asp:Label ID="lblRequestDateFrom" runat="server" Text="From" AssociatedControlID="txtRequestDateFrom"></asp:Label>
@@ -128,7 +131,7 @@
 
         <!-- 3rd req form-->
         <div class="request">
-        <h2>Resourses Required</h2>
+        <h2 class="reqHeader">Resourses Required</h2>
 
         <div>
             <asp:Label ID="lblRequestNoOfSeats" runat="server" Text="Number of Seats" AssociatedControlID="txtRequestNoOfSeats"></asp:Label>
@@ -181,7 +184,7 @@
     <div>
         
 
-        <h2>Safety Issues</h2>
+        <h2 class="reqHeader">Safety Issues</h2>
 
         <div>
             <asp:Label ID="lblRequestRiskAssesment" runat="server" Text="Risk Assessment Number" AssociatedControlID="txtRequestRiskAssessment"></asp:Label>
@@ -201,8 +204,8 @@
     </div>
         </div>
 
-    <br />
+<div class="btnReq">
 
-    <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
+    <asp:Button ID="btnRequest" runat="server" Text="Submit Request" OnClick="Button1_Click" /></div>
 
 </asp:Content>
