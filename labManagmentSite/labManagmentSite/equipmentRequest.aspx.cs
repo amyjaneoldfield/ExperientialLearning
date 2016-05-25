@@ -10,6 +10,7 @@ namespace labManagmentSite
 {
     public partial class equipmentRequest : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -18,7 +19,57 @@ namespace labManagmentSite
         protected void Button1_Click(object sender, EventArgs e)
         {
             sendRequest();
+            clear();
+
         }
+
+
+        private void clear()
+        {
+
+            txtRequestName.Text = "";
+            txtRequestEmail.Text = "";
+            ddlFunction.SelectedIndex = 0;
+            txtFunctionOther.Text = "";
+            ddlRequestSubject.SelectedIndex = 0;
+            txtSubjectOther.Text = "";
+            txtRequestLocation.Text = "";
+            txtRequestDateFrom.Text = "";
+            txtRequestDateTo.Text = "";
+            txtRequestStartTime.Text = "";
+            txtRequestDuration.Text = "";
+            txtRequestNoOfStudents.Text = "";
+            txtRequestNoOfSeats.Text = "";
+            txtRequestSpecialNeeds.Text = "";
+            txtRequestHardware.Text = "";
+            txtRequestSoftware.Text = "";
+            ddlRequestPresentationEquipment.SelectedIndex = 0;
+            txtPresentationOther.Text = "";
+            txtRequestRiskAssessment.Text = "";
+            txtRequestRisks.Text = "";
+
+        }
+
+
+
+
+        private String getListItem(DropDownList list, TextBox other)
+        {
+            String otherFunction = "";
+            if (list.SelectedItem.ToString() == "Other (Please Specify)")
+            {
+                otherFunction = other.Text;
+                return otherFunction;
+            }
+            else
+            {
+                otherFunction = list.SelectedItem.ToString();
+                return otherFunction;
+            }
+        }
+
+
+
 
         private void sendRequest()
         {
@@ -36,10 +87,9 @@ namespace labManagmentSite
             MailMessage msg = new MailMessage("fantasyvoyagercustomer@gmail.com", "andyelliottcs@gmail.com");
 
 
-
-
-            msg.Subject = "Request for " + ddlFunction.Text +" usage from " + txtRequestName.Text;
-            msg.Body = "This is a request from " + txtRequestName.Text + " for the usage of a " + ddlFunction.Text + ", Located in " + txtRequestLocation.Text + " for the subject of " + ddlRequestSubject.Text + "." + Environment.NewLine + Environment.NewLine +
+            msg.Subject = "Request for " + getListItem(ddlFunction, txtFunctionOther) + " usage from " + txtRequestName.Text;
+            msg.Body = "This is a request from " + txtRequestName.Text + " for the usage of a " + getListItem(ddlFunction, txtFunctionOther) + ", Located in " + txtRequestLocation.Text + " for the subject of "
+                            + getListItem(ddlRequestSubject, txtSubjectOther) + "." + Environment.NewLine + Environment.NewLine +
 
               " The details can be found below: " + Environment.NewLine + Environment.NewLine +
 
@@ -49,23 +99,24 @@ namespace labManagmentSite
             "Duration: " + txtRequestDuration.Text + Environment.NewLine +
             "Number of Student: " + txtRequestNoOfStudents.Text + Environment.NewLine +
             "Number of Seats Required : " + txtRequestNoOfSeats.Text + Environment.NewLine +
-            "Special Needs Access? : " + txtRequestSpecialNeeds.Text + Environment.NewLine +
+            "Special Needs Access: " + txtRequestSpecialNeeds.Text + Environment.NewLine +
             "Hardware Needed: " + txtRequestHardware.Text + Environment.NewLine +
             "Software Needed: " + txtRequestSoftware.Text + Environment.NewLine +
-            "Presentation Equipment Needed :" + ddlRequestPresentationEquipment.Text + Environment.NewLine +
+            "Presentation Equipment Needed :" + getListItem(ddlRequestPresentationEquipment, txtPresentationOther) + Environment.NewLine +
             "Risk Assessment Number: " + txtRequestRiskAssessment.Text + Environment.NewLine +
             "Risk Inherent to This Activity: " + txtRequestRisks.Text + Environment.NewLine + Environment.NewLine + Environment.NewLine +
-             "The senders email address is: " + txtRequestEmail.Text; 
+            "The senders email address is: " + txtRequestEmail.Text;
 
 
             smtpClient.Send(msg);
 
-
-
-
         }
 
+
+
     }
-    }
+
+}
+
 
 
