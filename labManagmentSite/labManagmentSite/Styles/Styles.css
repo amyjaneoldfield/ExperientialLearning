@@ -211,6 +211,18 @@ padding-left:0px;
 
 }
 
+/* REQUEST PAGE STYLES */
+.request{
+    display: inline-block;
+    text-align: center;
+    
+    width: 400px;
+    height: 400px;
+    vertical-align: top;
+}
+
+
+
 
 /*CONTACT PAGESTYLES BELOW*/
 .contactFields{

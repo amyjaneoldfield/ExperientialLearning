@@ -6,32 +6,34 @@
 
     <h1>Equipment Request Form</h1>
 
+<!-- first req box-->
+    <div class="request">
     <h2>Purpose of Request</h2>
 
-    <div>
+  
         <div>
             <asp:Label ID="lblRequestName" runat="server" Text="Your Name" AssociatedControlID="txtRequestName"></asp:Label>
         </div>
         <div>
             <asp:TextBox ID="txtRequestName" runat="server"></asp:TextBox>
         </div>
-    </div>
+  
 
-    <div>
+ 
         <div>
             <asp:Label ID="lblRequestEmail" runat="server" Text="Your Email" AssociatedControlID="txtRequestEmail"></asp:Label>
         </div>
         <div>
             <asp:TextBox ID="txtRequestEmail" runat="server"></asp:TextBox>
         </div>
-    </div>
+   
 
-    <div>
+   
         <div>
             <asp:Label ID="lblRequestFunction" runat="server" Text="Function" AssociatedControlID="ddlFunction"></asp:Label>
         </div>
 
-        <div>
+      
             <asp:DropDownList ID="ddlFunction" runat="server">
                 <asp:ListItem>Please Select...</asp:ListItem>
                 <asp:ListItem>Laboratory</asp:ListItem>
@@ -39,20 +41,20 @@
                 <asp:ListItem Value="txtfunctionOther">Other (Please Specify)</asp:ListItem>        
                
             </asp:DropDownList>
-        </div>
+       
  <!--check tosee if a compare validator can be used to check if the "Please Select..." value field is selected -->
         <div>
             <asp:TextBox runat="server" ID="txtFunctionOther"></asp:TextBox>
         </div>
-    </div>
+   
 
 
 
-    <div>
-        <div>
+    
+      <div>
             <asp:Label ID="lblRequestSubject" runat="server" Text="Subject Matter" AssociatedControlID="ddlRequestSubject"></asp:Label>
-        </div>
-        <div>
+       </div>
+        
             <asp:DropDownList ID="ddlRequestSubject" runat="server">
                 <asp:ListItem>Please Select...</asp:ListItem>
                 <asp:ListItem>Electronics Principles &amp; Electromagnetism</asp:ListItem>
@@ -60,12 +62,12 @@
                 <asp:ListItem>Power / Machines </asp:ListItem>
                 <asp:ListItem Value="txtSubjectOther">Other (Please Specify)</asp:ListItem>
             </asp:DropDownList>
-        </div>
+       
         <div>
             <asp:TextBox ID="txtSubjectOther" runat="server"></asp:TextBox>
 
         </div>
-    </div>
+  
 
     <div>
         <div>
@@ -75,8 +77,13 @@
             <asp:TextBox ID="txtRequestLocation" runat="server"></asp:TextBox>
         </div>
     </div>
+ </div>
 
 
+
+
+    <!-- seperate info box -->
+    <div class="request">
     <div>
         <h2>Dates Required</h2>
 
@@ -116,8 +123,11 @@
         </div>
     </div>
 
-    <div>
+  
+        </div>
 
+        <!-- 3rd req form-->
+        <div class="request">
         <h2>Resourses Required</h2>
 
         <div>
@@ -166,7 +176,10 @@
 
     </div>
 
+    <!--4th req page-->
+    <div class="request">
     <div>
+        
 
         <h2>Safety Issues</h2>
 
@@ -186,6 +199,9 @@
             <asp:TextBox ID="txtRequestRisks" runat="server"></asp:TextBox>
         </div>
     </div>
+        </div>
+
+    <br />
 
     <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
 
