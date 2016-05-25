@@ -12,7 +12,7 @@
         <div>
             <asp:Label ID="lblRequestName" runat="server" Text="Your Name" AssociatedControlID="txtRequestName"></asp:Label>
         </div>
-        <asp:RequiredFieldValidator ID="reqValRequestName" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+        <asp:RequiredFieldValidator ID="reqValRequestName" runat="server" ErrorMessage="RequiredFieldValidator" ControlToValidate="txtRequestName"></asp:RequiredFieldValidator>
         <div>
             <asp:TextBox ID="txtRequestName" runat="server"></asp:TextBox>
         </div>
