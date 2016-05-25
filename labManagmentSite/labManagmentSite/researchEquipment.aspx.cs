@@ -13,5 +13,10 @@ namespace labManagmentSite
         {
 
         }
+       
+        protected void exampleMapping()
+        {
+           
+        }
     }
 }
