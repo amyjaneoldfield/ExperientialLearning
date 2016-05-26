@@ -342,18 +342,12 @@ body {
     font-weight: bold;
 }/*styles for validators */
 
-.registerVal {
-    color: red;
-}
-
 .registerLabels {
     text-align: left;
     padding-top: 5px;
 }
 
-.addChemVal {
-    color: red;
-}
+
 
 /*ADMIN STYLES BELOW*/
 .adminPara {

@@ -22,7 +22,7 @@
                             <asp:TextBox ID="UserName" runat="server" CssClass="registerFields"></asp:TextBox>
                         </div>
 
-                        <div id="registerNameValdator" class="registerVal">
+                        <div id="registerNameValdator" class="validation">
                             <asp:RequiredFieldValidator ID="UserNameRequired" runat="server" ControlToValidate="UserName" ErrorMessage="*User Name is required." ToolTip="User Name is required." ValidationGroup="CreateUserWizard1"></asp:RequiredFieldValidator>
                         </div>
 
@@ -34,7 +34,7 @@
                             <asp:TextBox ID="Password" runat="server" TextMode="Password" CssClass="registerFields"></asp:TextBox>
                         </div>
 
-                        <div id="registerPasswordValidator" class="registerVal">
+                        <div id="registerPasswordValidator" class="validation">
                             <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ControlToValidate="Password" ErrorMessage="*Password is required." ToolTip="Password is required." ValidationGroup="CreateUserWizard1"></asp:RequiredFieldValidator>
                         </div>
 
@@ -46,10 +46,10 @@
                             <asp:TextBox ID="ConfirmPassword" runat="server" TextMode="Password" CssClass="registerFields"></asp:TextBox>
                         </div>
 
-                        <div id="regsterConfirmPasswordValidator" class="registerVal">
+                        <div id="regsterConfirmPasswordValidator" class="validation">
                             <asp:RequiredFieldValidator ID="ConfirmPasswordRequired" runat="server" ControlToValidate="ConfirmPassword" ErrorMessage="*Passwords do not match" ToolTip="Confirm Password is required." ValidationGroup="CreateUserWizard1"></asp:RequiredFieldValidator>
                         </div>
-                        <div id="registerAnswerCompareValidator" class="registerVal">
+                        <div id="registerAnswerCompareValidator" class="validation">
                             <asp:CompareValidator ID="PasswordCompare" runat="server" ControlToCompare="Password" ControlToValidate="ConfirmPassword" Display="Dynamic" ErrorMessage="The Password and Confirmation Password must match." ValidationGroup="CreateUserWizard1"></asp:CompareValidator>
                         </div>
                         <div class="registerLabels">
@@ -60,7 +60,7 @@
                             <asp:TextBox ID="Email" runat="server" CssClass="registerFields"></asp:TextBox>
                         </div>
 
-                        <div id="registerEmailValidator" class="registerVal">
+                        <div id="registerEmailValidator" class="validation">
                             <asp:RequiredFieldValidator ID="EmailRequired" runat="server" ControlToValidate="Email" ErrorMessage="*E-mail is required." ToolTip="E-mail is required." ValidationGroup="CreateUserWizard1"></asp:RequiredFieldValidator>
                         </div>
 
@@ -72,7 +72,7 @@
                             <asp:TextBox ID="Question" runat="server" CssClass="registerFields"></asp:TextBox>
                         </div>
 
-                        <div id="registerQuestionValidator" class="registerVal">
+                        <div id="registerQuestionValidator" class="validation">
                             <asp:RequiredFieldValidator ID="QuestionRequired" runat="server" ControlToValidate="Question" ErrorMessage="*Security question is required." ToolTip="Security question is required." ValidationGroup="CreateUserWizard1"></asp:RequiredFieldValidator>
                         </div>
                         <div class="registerLabels">
@@ -81,7 +81,7 @@
                         <div id="registerAnswerTextBox" class="registerFields">
                             <asp:TextBox ID="Answer" runat="server" CssClass="registerFields"></asp:TextBox>
                         </div>
-                        <div id="registerAnswerRequiredValidator" class="registerVal">
+                        <div id="registerAnswerRequiredValidator" class="validation">
                             <asp:RequiredFieldValidator ID="AnswerRequired" runat="server" ControlToValidate="Answer" ErrorMessage="*Security answer is required." ToolTip="Security answer is required." ValidationGroup="CreateUserWizard1"></asp:RequiredFieldValidator>
                         </div>
 

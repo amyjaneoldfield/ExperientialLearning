@@ -83,10 +83,10 @@
                         <a data-toggle="collapse" href="#collapse1">Add New Substance</a>
                     </h4>
                 </div>
-                <div id="collapse1" class="panel-collapse collapse ">
+                <div id="collapse1" class="panel-collapse collapse " runat ="server">
                     <div class="panel-body">
                         <div id="addChemicalForm">
-                            <!-- -->
+                            <!-- 1. -->
                             <div class="request1">
                                 <div>
                                     <asp:Label ID="lblNameOfSubstance" runat="server" Text="Name of Substance" CssClass="lblChemical" AssociatedControlID="txtNameOfSubstance"></asp:Label>
@@ -96,10 +96,10 @@
                                     <asp:TextBox ID="txtNameOfSubstance" runat="server" CssClass="txtChemical"></asp:TextBox>
                                 </div>
 
-                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtNameOfSubstance" CssClass="addChemVal"></asp:RequiredFieldValidator>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtNameOfSubstance" CssClass="validation"></asp:RequiredFieldValidator>
                             </div>
 
-                            <!-- -->
+                            <!-- 2. -->
                             <div class="request1">
                             <div>
                                 <asp:Label ID="lblFormula" runat="server" Text="Formula" CssClass="lblChemical" AssociatedControlID="txtFormula"></asp:Label>
@@ -109,9 +109,11 @@
                                 <asp:TextBox ID="txtFormula" runat="server" CssClass="txtChemical"></asp:TextBox>
                             </div>
 
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtFormula" CssClass="addChemVal"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtFormula" CssClass="validation"></asp:RequiredFieldValidator>
                             
-                                </div><!-- -->
+                                </div>
+                            
+                            <!-- 3. -->
                             <div class="request1">
                             <div>
                                 <asp:Label ID="lblLocation" runat="server" Text="Location" CssClass="lblChemical" AssociatedControlID="txtLocation"></asp:Label>
@@ -121,8 +123,10 @@
                                 <asp:TextBox ID="txtLocation" runat="server" CssClass="txtChemical"></asp:TextBox>
                             </div>
 
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtLocation" CssClass="addChemVal"></asp:RequiredFieldValidator>
-                            </div><!-- -->
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtLocation" CssClass="validation"></asp:RequiredFieldValidator>
+                            </div>
+                            
+                            <!-- 4. -->
                                 <div class="request1">
                             <div>
                                 <asp:Label ID="lblUnits" runat="server" Text="Units" CssClass="lblChemical" AssociatedControlID="txtUnits"></asp:Label>
@@ -132,9 +136,10 @@
                                 <asp:TextBox ID="txtUnits" runat="server" CssClass="txtChemical"></asp:TextBox>
                             </div>
 
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtUnits" CssClass="addChemVal"></asp:RequiredFieldValidator>
-                            </div><!-- -->
-
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtUnits" CssClass="validation"></asp:RequiredFieldValidator>
+                            </div>
+                        
+                                <!-- 5. -->
                             <div class="request1">
                             <div>
                                 <asp:Label ID="lblTriggerLevel" runat="server" Text="Trigger Label" CssClass="lblChemical" AssociatedControlID="txtTriggerLevel"></asp:Label>
@@ -144,9 +149,10 @@
                                 <asp:TextBox ID="txtTriggerLevel" runat="server" CssClass="txtChemical"></asp:TextBox>
                             </div>
 
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtTriggerLevel" CssClass="addChemVal"></asp:RequiredFieldValidator>
-                            </div><!-- -->
-
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtTriggerLevel" CssClass="validation"></asp:RequiredFieldValidator>
+                            </div>
+                            
+                            <!-- 6. -->
                             <div class="request1">
                             <div>
                                 <asp:Label ID="lblCurrentStockLevel" runat="server" Text="Current Stock Level " CssClass="lblChemical" AssociatedControlID="txtCurrentStockLevel"></asp:Label>
@@ -156,8 +162,10 @@
                                 <asp:TextBox ID="txtCurrentStockLevel" runat="server" CssClass="txtChemical"></asp:TextBox>
                             </div>
 
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtCurrentStockLevel" CssClass="addChemVal"></asp:RequiredFieldValidator>
-                            </div><!-- -->
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtCurrentStockLevel" CssClass="validation"></asp:RequiredFieldValidator>
+                            </div>
+                            
+                            <!-- 7. -->
 
                             <div class="request1">
                             <div>
@@ -168,8 +176,10 @@
                                 <asp:TextBox ID="txtSupplier" runat="server" CssClass="txtChemical"></asp:TextBox>
                             </div>
 
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtsupplier" CssClass="addChemVal"></asp:RequiredFieldValidator>
-                            </div><!-- -->
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtsupplier" CssClass="validation"></asp:RequiredFieldValidator>
+                            </div>
+                            
+                            <!-- 8. -->
                             
                             <div class="request1">
                             <div>
@@ -180,8 +190,10 @@
                                 <asp:TextBox ID="txtSupplierProductCode" runat="server" CssClass="txtChemical"></asp:TextBox>
                             </div>
 
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtSupplierProductCode" CssClass="addChemVal"></asp:RequiredFieldValidator>
-                            </div><!-- -->
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtSupplierProductCode" CssClass="validation"></asp:RequiredFieldValidator>
+                            </div>
+                            
+                            <!-- 9. -->
                             
                             <div class="request1">
                             <div>
@@ -192,8 +204,10 @@
                                 <asp:TextBox ID="txtCASCode" runat="server" CssClass="txtChemical"></asp:TextBox>
                             </div>
 
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtCASCode" CssClass="addChemVal"></asp:RequiredFieldValidator>
-                            </div><!-- -->
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtCASCode" CssClass="validation"></asp:RequiredFieldValidator>
+                            </div>
+                            
+                            <!-- 10. -->
                             
                             <div class="request1">
                             <div>
@@ -204,8 +218,10 @@
                                 <asp:TextBox ID="txtBatchCode" runat="server" CssClass="txtChemical"></asp:TextBox>
                             </div>
 
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtBatchCode" CssClass="addChemVal"></asp:RequiredFieldValidator>
-                            </div><!-- -->
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtBatchCode" CssClass="validation"></asp:RequiredFieldValidator>
+                            </div>
+                            
+                            <!-- 11. -->
                             
                             <div class="request1">
                             <div>
@@ -216,8 +232,11 @@
                                 <asp:TextBox ID="txtPurityGrade" runat="server" CssClass="txtChemical"></asp:TextBox>
                             </div>
 
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtPurityGrade" CssClass="addChemVal"></asp:RequiredFieldValidator>
-                            </div><!-- -->
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtPurityGrade" CssClass="validation"></asp:RequiredFieldValidator>
+                            </div>
+                            
+                            
+                            <!-- 12. -->
                             
                             <div class="request1">
                             <div>
@@ -228,8 +247,10 @@
                                 <asp:TextBox ID="txtExpiryDate" runat="server" CssClass="txtChemical"></asp:TextBox>
                             </div>
 
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtExpiryDate" CssClass="addChemVal"></asp:RequiredFieldValidator>
-                            </div><!-- -->
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtExpiryDate" CssClass="validation"></asp:RequiredFieldValidator>
+                            </div>
+                            
+                            <!-- 13. -->
 
                                 <div class="request1">
                             <div>
@@ -240,8 +261,10 @@
                                 <asp:TextBox ID="txtSummaryOfHazards" runat="server" CssClass="txtChemical"></asp:TextBox>
                             </div>
 
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtSummaryOfHazards" CssClass="addChemVal"></asp:RequiredFieldValidator>
-                            </div><!-- -->
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtSummaryOfHazards" CssClass="validation"></asp:RequiredFieldValidator>
+                            </div>
+                            
+                            <!-- 14. -->
                             
                                     <div class="request1">
                                     <div>
@@ -252,9 +275,10 @@
                                 <asp:TextBox ID="txtOrderedBy" runat="server" CssClass="txtChemical"></asp:TextBox>
                             </div>
 
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtOrderedBy" CssClass="addChemVal"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtOrderedBy" CssClass="validation"></asp:RequiredFieldValidator>
                             </div>
-                            <!-- -->
+
+                            <!-- 15. -->
                           
                             <div class="request1">
                               <div>
@@ -265,8 +289,10 @@
                                 <asp:TextBox ID="txtReviewed" runat="server" CssClass="txtChemical"></asp:TextBox>
                             </div>
 
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtReviewed" CssClass="addChemVal"></asp:RequiredFieldValidator>
-                            </div><!-- -->
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtReviewed" CssClass="validation"></asp:RequiredFieldValidator>
+                            </div>
+                            
+                            <!--17. -->
                             
                             <div class="request1">
                             <div>
@@ -277,8 +303,10 @@
                                 <asp:TextBox ID="txtPurpose" runat="server" CssClass="txtChemical"></asp:TextBox>
                             </div>
 
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtPurpose" CssClass="addChemVal"></asp:RequiredFieldValidator>
-                            </div><!-- -->
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtPurpose" CssClass="validation"></asp:RequiredFieldValidator>
+                            </div>
+                            
+                            <!--18. -->
                             
                             <div class="request1">
                             <div>
@@ -289,8 +317,10 @@
                                 <asp:TextBox ID="txtLinkToMSDS" runat="server" CssClass="txtChemical"></asp:TextBox>
                             </div>
 
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator17" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtLinkToMSDS" CssClass="addChemVal"></asp:RequiredFieldValidator>
-                            </div><!-- -->
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator17" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtLinkToMSDS" CssClass="validation"></asp:RequiredFieldValidator>
+                            </div>
+                            
+                            <!-- 19. -->
 
                                 <div class="request1">
                             <div>
@@ -301,8 +331,10 @@
                                 <asp:TextBox ID="txtCatagory" runat="server" CssClass="txtChemical"></asp:TextBox>
                             </div>
 
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator18" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtCatagory" CssClass="addChemVal"></asp:RequiredFieldValidator>
-                            </div><!-- -->
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator18" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtCatagory" CssClass="validation"></asp:RequiredFieldValidator>
+                            </div>
+                            
+                            <!-- 20. -->
 
 
                                     <div class="request1">
@@ -314,9 +346,9 @@
                                 <asp:TextBox ID="txtCOSHHCompleted" runat="server" CssClass="txtChemical"></asp:TextBox>
                             </div>
 
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator19" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtCOSHHCOmpleted" CssClass="addChemVal"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator19" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtCOSHHCOmpleted" CssClass="validation"></asp:RequiredFieldValidator>
                                         </div>
-                            <!-- -->
+                            <!-- 21. -->
                             
 
                                         <div class="request1">
@@ -328,7 +360,7 @@
                                 <asp:TextBox ID="txtMSDSAvailable" runat="server" CssClass="txtChemical"></asp:TextBox>
                             </div>
 
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator20" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtMSDSAvailable" CssClass="addChemVal"></asp:RequiredFieldValidator>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator20" runat="server" ErrorMessage="*This Filed Cannot Be Left Blank" ControlToValidate="txtMSDSAvailable" CssClass="validation"></asp:RequiredFieldValidator>
                                             </div>
                             <!-- -->
 
