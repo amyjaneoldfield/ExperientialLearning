@@ -5,8 +5,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-    <h1>Contact </h1>
-    <div id="contactForm">
+    <h1 class="reqHeader">Contact </h1>
+            <p class="para">If you have any problems, or queires regarding the website, equipment or anything related to this site please contact us below enusring you correctly fill out all the required fields. We aim to respond to all emails within 48 hours of working days.</p>
+
+  
+    <div id="contactForm">   
+
         <!--basic contact form, structure will be amended to fit its purpose once we have spoken to james-->
         <div id="nameContact">
 
@@ -78,7 +82,7 @@
     </div>
 
     <div id="buttonContact">
-        <asp:Button ID="btnSubmit" runat="server" Text="Send" OnClick="btnSubmit_Click" />
+        <asp:Button ID="btnSubmit" runat="server" Text="Send" CssClass="btn btn-default" OnClick="btnSubmit_Click" />
     </div>
 
 
