@@ -83,7 +83,7 @@
     </div>
  </div>
 
-
+        </div>
 
 
     <!-- seperate info box -->
