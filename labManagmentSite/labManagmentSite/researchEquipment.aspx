@@ -19,7 +19,8 @@
     <asp:Repeater runat="server" ID="rptrLabs" DataSourceID="sqlDataSourceLabs">
         <HeaderTemplate>  </HeaderTemplate>
         <ItemTemplate>
-            <asp:Panel ID="<%# Eval("LabName")%>" runat="server" CssClass="lab">
+               <asp:Panel Data-Label=""
+            
             <h4><%#Eval ("LabName")%></h4>
             <h5><%#Eval ("Location")%></h5>
             <asp:HiddenField ID="hdnValue" Value='<%#Eval("Location")%>' runat="server"/>
@@ -39,7 +40,7 @@
                 <FooterTemplate></ul></FooterTemplate>
             </asp:Repeater>
             
-</asp:Panel>
+
 
 
         </ItemTemplate>

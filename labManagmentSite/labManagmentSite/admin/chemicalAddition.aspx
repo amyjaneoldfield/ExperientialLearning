@@ -27,16 +27,10 @@
     </div>
     <div id="collapse2" class="panel-collapse collapse">
       <div class="panel-body">
-        
+        <
           <asp:Repeater ID="rptrSearch" runat="server">
               <HeaderTemplate>
-                  <table>
-                      <tbody>
-                          <tr>
-                              <td></td><td></td><
-                          </tr>
-                      </tbody>
-                  </table>
+                  
               </HeaderTemplate>
               <ItemTemplate>
 
@@ -45,31 +39,13 @@
    <p>Location: <%#Eval ("Location") %></p> 
   <p>Units: <%#Eval ("Units") %> </p> 
    <p>Trigger Level: <%#Eval ("Trigger_Level") %></p>
-   <!-- [Current Stock Level]
-    [Supplier]
-    [Supplier Product Code]
-    [CAS Code]
-    [Batch Code]
-    [Purity/Grade]
-    [Expiry Date]
-    [Summary of Hazards
-    [Ordered by]
-    [Reviewed
-    [Purpose (Teaching/Research etc)]
-    [Link to MSDS]
-    [Category]
-    [COSHH completed (Y/N)]
-    [MSDS Available (Y/N)]
-    [F21
-    [F22
-    [F23]
-    [ID]
-                  -->
+  
 
               </ItemTemplate>
 
           </asp:Repeater>
-
+          <asp:LinkButton ID="LnkPrevious" runat="server" NavigateURL="~/admin/chemicalAddition.aspx" OnClick="LnkPrevious_Click" >Prev</asp:LinkButton>
+          <asp:LinkButton ID="LnkNext" runat="server" NavigateURL="~/admin/chemicalAddition.aspx" OnClick="LnkNext_Click" >Next</asp:LinkButton>
 
 
 
