@@ -226,8 +226,9 @@ body {
 
 
 /*RESEARCH EQUIPMENT STYLES*/
-.lab {
-    display: none;
+.lab{
+   
+    display: inline-block;
     text-align: center;
     border: 1px solid black;
     width: 400px;
