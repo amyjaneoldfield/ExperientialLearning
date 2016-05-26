@@ -243,6 +243,15 @@ body {
     height: 400px;
     vertical-align: top;
 }
+
+.request1 {
+    display: inline-block;
+    text-align: center;
+    width: 400px;
+    height: 100px;
+    vertical-align: top;
+}
+
 /*each equipment grouped positioning*/
 
 .btnReq {
@@ -339,6 +348,18 @@ body {
 }
 
 /*ADMIN STYLES BELOW*/
+.adminPara {
+    width: 650px;
+    margin: auto;
+
+}/*for admin home page paragraph styles*/
+
+ .adminCreaPara{
+width: 500px;
+    margin: auto;
+    text-align: left;
+ }
+
 #loginForm {
     width: 400px;
     margin-left: auto;
@@ -376,12 +397,12 @@ body {
 /*CHEMICAL ADDITION STYLES BELOW*/
 .txtChemical {
     padding-bottom: 20px;
-    width: 500px;
+    width: 250px;
 }
 
 .lblChemical {
     padding-top: 10px;
-    width: 500px;
+    width: 250px;
     text-align: left;
 }
 
