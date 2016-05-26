@@ -14,9 +14,16 @@ namespace labManagmentSite
             
         }
        
-        protected void exampleMapping()
+        protected void exampleMapping(System.Web.UI.HtmlControls.HtmlArea Lab)
         {
-            
+            String labName = "";
+            labName = Lab.ID;
+
+            Panel panel = (Panel)rptrLabs.FindControl(labName);
+            panel.CssClass = "";
+
+
+
 
 
         }

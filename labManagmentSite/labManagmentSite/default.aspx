@@ -102,6 +102,35 @@
 
         <div class="fb-page" data-href="https://www.facebook.com/UoCSciEng" data-tabs="timeline" data-width="500" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/UoCSciEng"><a href="https://www.facebook.com/UoCSciEng">Faculty of Science and Engineering</a></blockquote></div></div>
 
+
+           
+<img src="Images/Slide1.PNG" width="960" height="720"  usemap="#labMap" alt="" />
+<map name="labMap" id="labMap1">
+<area id="tha061"  title="lab1" alt="" href="individualLab.aspx?Name={Analytical%20Chemistry%20Laboratory}" shape="rect" coords="382,164,509,277" style="outline:none;" target="_self" onclick="exampleMapping(this)" runat="server"  />
+<area id="tha063" title="lab2" shape="rect" coords="386,279,508,352" style="outline:none;" target="_self"/>
+<area id="labThree" title="lab3" shape="rect" coords="382,357,510,395" style="outline:none;" target="_self"/>
+<area id="labFour" title="lab4" shape="rect" coords="383,398,507,468" style="outline:none;" target="_self"/>
+<area id="labFive" title="lab5" shape="rect" coords="384,475,508,545" style="outline:none;" target="_self"/>
+<area id="labSix" title="lab6" shape="rect" coords="385,552,509,622" style="outline:none;" target="_self"/>
+<area shape="rect" coords="958,718,960,720" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
+</map>
+
+
+<img src="Images/Picture1.PNG"  width="707" height="1060"  usemap="#labTop" alt="" />
+<map name="labTop" id="labMapTop1">
+<area id="labOneTop" title="labTop1" shape="rect" coords="263,227,456,329" style="outline:none;" target="_self"/>
+<area id="labTwoTop" title="labTop2" shape="rect" coords="264,346,457,448" style="outline:none;" target="_self"/>
+<area id="labThreeTop" title="labtop3" shape="rect" coords="265,464,458,566" style="outline:none;" target="_self"/>
+<area id="labFourTop" title="labTop4" shape="rect" coords="265,585,458,687" style="outline:none;" target="_self"/>
+<area id="labFiveTop" title="labTop5" shape="rect" coords="266,703,459,805" style="outline:none;" target="_self" />
+<area id="labSixTop6" title="labTop6" shape="rect" coords="263,819,456,921" style="outline:none;" target="_self"/>
+<area shape="rect" coords="705,1058,707,1060" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
+</map>
+
+
+
+
+
   <!-- 
         <a class="twitter-grid" href="https://twitter.com/UoCSciEng?ref_src=twsrc%5Etfw">National Park Tweets</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 

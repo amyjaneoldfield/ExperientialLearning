@@ -93,6 +93,7 @@
     <Content Include="Images\LabImages\XRD.jpg" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\moodle.png" />
+    <Content Include="Images\Picture1.png" />
     <Content Include="Images\Slide1.PNG" />
     <Content Include="Images\test.jpg" />
     <Content Include="Images\pl1.png" />
@@ -100,6 +101,7 @@
     <Content Include="Images\th.png" />
     <Content Include="Images\twitter.png" />
     <Content Include="individualItem.aspx" />
+    <Content Include="individualLab.aspx" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="JS\jquery-2.2.3.js" />
@@ -239,6 +241,13 @@
     </Compile>
     <Compile Include="individualItem.aspx.designer.cs">
       <DependentUpon>individualItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="individualLab.aspx.cs">
+      <DependentUpon>individualLab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="individualLab.aspx.designer.cs">
+      <DependentUpon>individualLab.aspx</DependentUpon>
     </Compile>
     <Compile Include="labManagement.Master.cs">
       <DependentUpon>labManagement.Master</DependentUpon>
