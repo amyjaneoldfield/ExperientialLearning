@@ -334,6 +334,14 @@ body {
     width: 400px;
 }
 
+
+
+/*VALIDATION*/
+.validation{
+    color: red;
+    font-weight: bold;
+}/*styles for validators */
+
 .registerVal {
     color: red;
 }
@@ -416,6 +424,11 @@ width: 500px;
     color: #333;
 }
 /*for when hovering*/
+
+.equipReqVal{
+    color: red;
+    font-weight: bold;
+}
 
 .indItem, .UserTitle {
 }
