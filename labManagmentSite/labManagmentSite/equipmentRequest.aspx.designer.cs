@@ -22,15 +22,6 @@ namespace labManagmentSite {
         protected global::System.Web.UI.WebControls.Label lblRequestName;
         
         /// <summary>
-        /// reqValRequestName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValRequestName;
-        
-        /// <summary>
         /// txtRequestName control.
         /// </summary>
         /// <remarks>
@@ -38,6 +29,15 @@ namespace labManagmentSite {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtRequestName;
+        
+        /// <summary>
+        /// reqValRequestName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValRequestName;
         
         /// <summary>
         /// lblRequestEmail control.
@@ -56,6 +56,15 @@ namespace labManagmentSite {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtRequestEmail;
+        
+        /// <summary>
+        /// reqValRequestEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValRequestEmail;
         
         /// <summary>
         /// lblRequestFunction control.
@@ -130,6 +139,15 @@ namespace labManagmentSite {
         protected global::System.Web.UI.WebControls.TextBox txtRequestLocation;
         
         /// <summary>
+        /// reqValRequestLocation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValRequestLocation;
+        
+        /// <summary>
         /// lblRequestDateFrom control.
         /// </summary>
         /// <remarks>
@@ -146,6 +164,15 @@ namespace labManagmentSite {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtRequestDateFrom;
+        
+        /// <summary>
+        /// reqValRequestDateFrom control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValRequestDateFrom;
         
         /// <summary>
         /// lblRequestDateTo control.
@@ -166,6 +193,15 @@ namespace labManagmentSite {
         protected global::System.Web.UI.WebControls.TextBox txtRequestDateTo;
         
         /// <summary>
+        /// reqValDateTo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValDateTo;
+        
+        /// <summary>
         /// lblRequestStartTime control.
         /// </summary>
         /// <remarks>
@@ -182,6 +218,15 @@ namespace labManagmentSite {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtRequestStartTime;
+        
+        /// <summary>
+        /// reqValRequestStartTime control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValRequestStartTime;
         
         /// <summary>
         /// lblRequestDuration control.
@@ -202,6 +247,15 @@ namespace labManagmentSite {
         protected global::System.Web.UI.WebControls.TextBox txtRequestDuration;
         
         /// <summary>
+        /// reqValRequestDuration control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValRequestDuration;
+        
+        /// <summary>
         /// lblRequestNoOfstudents control.
         /// </summary>
         /// <remarks>
@@ -218,6 +272,15 @@ namespace labManagmentSite {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtRequestNoOfStudents;
+        
+        /// <summary>
+        /// reqValRequestNoStudents control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValRequestNoStudents;
         
         /// <summary>
         /// lblRequestNoOfSeats control.
@@ -238,6 +301,15 @@ namespace labManagmentSite {
         protected global::System.Web.UI.WebControls.TextBox txtRequestNoOfSeats;
         
         /// <summary>
+        /// reqValNoSeats control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValNoSeats;
+        
+        /// <summary>
         /// lblRequestSpecialNeeds control.
         /// </summary>
         /// <remarks>
@@ -254,6 +326,15 @@ namespace labManagmentSite {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtRequestSpecialNeeds;
+        
+        /// <summary>
+        /// reqValSpecialNeeds control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValSpecialNeeds;
         
         /// <summary>
         /// lblRequestHardware control.
@@ -274,6 +355,15 @@ namespace labManagmentSite {
         protected global::System.Web.UI.WebControls.TextBox txtRequestHardware;
         
         /// <summary>
+        /// ReqValHardware control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqValHardware;
+        
+        /// <summary>
         /// lblRequestSoftware control.
         /// </summary>
         /// <remarks>
@@ -290,6 +380,15 @@ namespace labManagmentSite {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtRequestSoftware;
+        
+        /// <summary>
+        /// reqValSoftware control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValSoftware;
         
         /// <summary>
         /// lblRequestPresentationEquipment control.
@@ -337,6 +436,15 @@ namespace labManagmentSite {
         protected global::System.Web.UI.WebControls.TextBox txtRequestRiskAssessment;
         
         /// <summary>
+        /// valRiskAssement control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator valRiskAssement;
+        
+        /// <summary>
         /// lblRequestRisks control.
         /// </summary>
         /// <remarks>
@@ -353,6 +461,15 @@ namespace labManagmentSite {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtRequestRisks;
+        
+        /// <summary>
+        /// reqValRequestRisks control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValRequestRisks;
         
         /// <summary>
         /// btnRequest control.

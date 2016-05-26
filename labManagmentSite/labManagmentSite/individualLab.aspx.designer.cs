@@ -10,15 +10,24 @@
 namespace labManagmentSite {
     
     
-    public partial class _default {
+    public partial class individualLab {
         
         /// <summary>
-        /// tha061 control.
+        /// rptrLabs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlArea tha061;
+        protected global::System.Web.UI.WebControls.Repeater rptrLabs;
+        
+        /// <summary>
+        /// sqlDataSourceLabs control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource sqlDataSourceLabs;
     }
 }

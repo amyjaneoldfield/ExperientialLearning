@@ -11,7 +11,7 @@
             <!-- Sidebar -->
       <div id="sidebar-wrapper">
       <ul id="sidebar_menu" class="sidebar-nav">
-           <li class="sidebar-brand"><a id="menu-toggle" href="#">Menu<span id="main_icon" class="glyphicon glyphicon-align-justify"></span></a></li>
+           <li class="sidebar-brand"><a id="menu-toggle" href="#">Equipment<span id="main_icon" class="glyphicon glyphicon-align-justify"></span></a></li>
       </ul>
         <ul class="sidebar-nav" id="sidebar">     
 
@@ -103,7 +103,7 @@
     
     <!-- Individual Item Data -->
     
-    <asp:FormView ID="frmItem" runat="server" DataSourceID="SqlDataSourceItem" RenderOuterTable="False">
+    <asp:FormView ID="frmItem" runat="server" DataSourceID="SqlDataSourceItem" RenderOuterTable="False" >
        
 
                  
@@ -131,7 +131,7 @@
       <div class="panel-body">
           <a href='<%#Eval("LocalRules")%>' runat="server">Local Rules</a>
           <asp:Button ID="btnLocalUpload" runat="server" Text="Upload" Visible="false" />
-          <asp:FileUpload ID="localUploadControl" runat="server" />
+          <asp:FileUpload ID="localUploadControl" runat="server" Visible="false" />
           </div>
     </div>
   </div>
@@ -145,7 +145,7 @@
                                             <div class="panel-body">
                                                 <a href='<%#Eval("CurrentRiskAssessment")%>' runat="server">Risk Assessment</a>
                                                  <asp:Button ID="btnRiskUpload" runat="server" Text="Upload" Visible="false" />
-                                                <asp:FileUpload ID="riskUploadControl" runat="server" />
+                                                <asp:FileUpload ID="riskUploadControl" runat="server" visible="false" />
     </div>
   </div>
                                     </div>
@@ -159,8 +159,8 @@
     </div>
     <div id="collapse4" class="panel-collapse collapse">
                                             <div class="panel-body"><a href='<%#Eval("Maintenance")%>' runat="server">Maintenance</a>
-                                                 <asp:Button ID="btnMaintenance" runat="server" Text="Upload" Visible="false" />
-                                                <asp:FileUpload ID="maintenanceUploadControl" runat="server" />
+                                                 <asp:Button ID="btnMaintenanceUpload" runat="server" Text="Upload" Visible="false" />
+                                                <asp:FileUpload ID="maintenanceUploadControl" runat="server" Visible="false" />
     </div>
   </div>
                                     </div>
@@ -257,6 +257,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+
+    <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
 
     
     </asp:Content>
