@@ -81,7 +81,7 @@
 
         <h1 class="homeCap">Thornton Laboratory Management System</h1>
 
-
+        <div class="homePara1">
 
         <p class="homePara">
             This system contains the logbooks, user manuals, fixes, and risk assessments and specifications 
@@ -95,16 +95,19 @@
     well as have access to quartzy to book access to the equipment. you will also
     be able to contact the departments custodian team for any queries.
         </p>
-
+</div>
+        <!--
 <a class="twitter-timeline" href="https://twitter.com/UoCSciEng" data-widget-id="734663427679981568">Tweets by @UoCSciEng</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 
         <div class="fb-page" data-href="https://www.facebook.com/UoCSciEng" data-tabs="timeline" data-width="500" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/UoCSciEng"><a href="https://www.facebook.com/UoCSciEng">Faculty of Science and Engineering</a></blockquote></div></div>
 
-
-           
-<img src="Images/Slide1.PNG" width="960" height="720"  usemap="#labMap" alt="" />
+        -->
+          
+        
+     
+<img id="image" src="Images/Slide1.PNG" width="960" height="720"  usemap="#labMap" alt="" runat="server" />
 <map name="labMap" id="labMap1">
 <area id="tha061"  title="lab1" alt="" href="individualLab.aspx?Name={Analytical%20Chemistry%20Laboratory}" shape="rect" coords="382,164,509,277" style="outline:none;" target="_self" onclick="exampleMapping(this)" runat="server"  />
 <area id="tha063" title="lab2" shape="rect" coords="386,279,508,352" style="outline:none;" target="_self"/>
@@ -114,9 +117,16 @@
 <area id="labSix" title="lab6" shape="rect" coords="385,552,509,622" style="outline:none;" target="_self"/>
 <area shape="rect" coords="958,718,960,720" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
 </map>
+  
 
+        
 
-<img src="Images/Picture1.PNG"  width="707" height="1060"  usemap="#labTop" alt="" />
+        <div>
+        <asp:Button ID="change" Text="First Floor" runat="server" OnClick="change_Click" CssClass="btn btn-default" />
+            <asp:Button ID="Button1" Text="Ground Floor" runat="server" OnClick="Button1_Click" CssClass="btn btn-default" />
+   </div>
+        <!--
+<img  src="Images/Picture1.PNG"  width="707" height="1060"  usemap="#labTop" alt="" />
 <map name="labTop" id="labMapTop1">
 <area id="labOneTop" title="labTop1" shape="rect" coords="263,227,456,329" style="outline:none;" target="_self"/>
 <area id="labTwoTop" title="labTop2" shape="rect" coords="264,346,457,448" style="outline:none;" target="_self"/>
@@ -128,7 +138,7 @@
 </map>
 
 
-
+-->
 
 
   <!-- 
@@ -172,6 +182,59 @@
 
 
     </div>
-    
+
+    <script>
+    function pictureChange()
+    {
+        document.getElementById('theImage').src = 'Images/Picture1.PNG';
+    }
+</script>
+
+
+  <!--       /*script one/*
+
+<script>
+(function() {
+   'use strict';
+
+function init(){ 
+
+    var el,flag=0;
+
+    el=document.getElementById('image');
+
+    document.getElementById('clickme').onclick = function () {
+
+   flag==0?
+  (flag = 1, el.src = 'Images/Slide1.PNG', el.alt = 'my dog') :
+  (flag = 0, el.src = 'Images/Picture1.PNG', el.alt = 'my cat');
+
+  }
+ }
+   window.addEventListener('load',init,false);
+})();
+</script>
+  
+        /*script two/*
+ 
+
+  <script>
+(function() {
+   'use strict';
+
+function init(){ 
+
+    var el=document.getElementById('image');
+
+    document.getElementById('clickme').onclick = function () {
+        el.id == 'image' ?
+
+       (el.id = 'image', el.src = 'Images/Slide1.PNG', el.alt = 'my cat') :
+        (el.id = 'lab', el.src = 'Images/Picture1.PNG', el.alt = 'my dog');
+    }
+ }
+   window.addEventListener('load',init,false);
+})();
+</script> -->
 
 </asp:Content>

@@ -53,13 +53,13 @@
             </ol>
      <div id="individualitem" class="carousel-inner" role="listbox">
                 <!--Items-->
-                <asp:Repeater ID ="rptrcarousel" DataSourceID="sqlDataSourceCarousel" runat="server">
+                            <asp:Repeater ID="rptrcarousel" DataSourceID="sqlDataSourceCarousel" runat="server">
            <ItemTemplate>
               
 
           
                <div class="item <%# (Container.ItemIndex == 0 ? "active" : "") %>">
-           <img class="slide" src="<%# Eval("path")%>.<%#Eval("ext")%>" height="<%#Eval("height") %>" width="<%#Eval("width")%>" alt="<%#Eval("alt")%>"/>
+                                        <img class="slide" src="<%# Eval("path")%>.<%#Eval("ext")%>" height="<%#Eval("height") %>" width="<%#Eval("width")%>" alt="<%#Eval("alt")%>" />
           <div class="container">
             <div class="carousel-caption"> 
             </div>
@@ -103,7 +103,7 @@
     
     <!-- Individual Item Data -->
     
-    <asp:FormView ID="frmItem" runat="server" DataSourceID="SqlDataSourceItem" RenderOuterTable="False" >
+                <asp:FormView ID="frmItem" runat="server" DataSourceID="SqlDataSourceItem" RenderOuterTable="False">
        
 
                  
@@ -127,14 +127,45 @@
                                                 <a data-toggle="collapse" href="#collapse2">Local Area Rules</a>
       </h4>
     </div>
+                                <div id="collapse6" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <a href='<%#Eval("HardwareFixes")%>' runat="server">Hardware Fixes</a>
+                                        <asp:Button ID="btnHardwareUpload" runat="server" Text="Upload" Visible="false" />
+                                        <asp:FileUpload ID="hardwareUploadControl" runat="server" Visible="false" />
+                                    </div>
+                                </div>
+                            </div>
+                                                        <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#collapse2">Local Area Rules</a>
+                                    </h4>
+                                </div>
     <div id="collapse2" class="panel-collapse collapse">
       <div class="panel-body">
           <a href='<%#Eval("LocalRules")%>' runat="server">Local Rules</a>
-          <asp:Button ID="btnLocalUpload" runat="server" Text="Upload" Visible="false" />
-          <asp:FileUpload ID="localUploadControl" runat="server" Visible="false" />
+                                        <asp:Button ID="Button2" runat="server" Text="Upload" Visible="false" />
+                                        <asp:FileUpload ID="FileUpload1" runat="server" Visible="false" />
           </div>
+                                </div>
+                            </div>
+
+
+                           <!-- <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" href="#collapseHardware">Hardware Fixes</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseHardware" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <a href='<%#Eval("HardwareFixes")%>' runat="server">Harware fixes< %></a>
+                                        <asp:Button ID="btnRiskUpload" runat="server" Text="Upload" Visible="false" />
+                                        <asp:FileUpload ID="riskUploadControl" runat="server" Visible="false" />
     </div>
   </div>
+                            </div>-->
+
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
@@ -144,8 +175,8 @@
     <div id="collapse3" class="panel-collapse collapse">
                                             <div class="panel-body">
                                                 <a href='<%#Eval("CurrentRiskAssessment")%>' runat="server">Risk Assessment</a>
-                                                 <asp:Button ID="btnRiskUpload" runat="server" Text="Upload" Visible="false" />
-                                                <asp:FileUpload ID="riskUploadControl" runat="server" visible="false" />
+                                        <asp:Button ID="Button2" runat="server" Text="Upload" Visible="false" />
+                                        <asp:FileUpload ID="FileUpload1" runat="server" Visible="false" />
     </div>
   </div>
                                     </div>
@@ -158,7 +189,8 @@
       </h4>
     </div>
     <div id="collapse4" class="panel-collapse collapse">
-                                            <div class="panel-body"><a href='<%#Eval("Maintenance")%>' runat="server">Maintenance</a>
+                                    <div class="panel-body">
+                                        <a href='<%#Eval("Maintenance")%>' runat="server">Maintenance</a>
                                                  <asp:Button ID="btnMaintenanceUpload" runat="server" Text="Upload" Visible="false" />
                                                 <asp:FileUpload ID="maintenanceUploadControl" runat="server" Visible="false" />
     </div>
@@ -259,7 +291,7 @@
     <script src="js/bootstrap.min.js"></script>
 
 
-    <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
+    
 
     
     </asp:Content>
