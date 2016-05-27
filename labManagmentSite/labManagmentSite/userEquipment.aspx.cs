@@ -16,24 +16,7 @@ namespace labManagmentSite
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            var data = db.User_Research_Equip.SqlQuery("SELECT Name FROM User_Research_Equip ORDER BY Name ASC");
-
-            var arrayData = data.ToArray();
-
-            for (int i =0; i == arrayData.Length; i++ )
-            {
-                String word = arrayData.ElementAt(i).ToString();
-
-
-                if (word.Substring(0, 1) == "A")
-                {
-                   // arrayData.Add("A");
-
-                }
-
-
-            }
-
+            
         }
     }
 }

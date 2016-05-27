@@ -38,6 +38,23 @@ body {
     left: 200px;
 }
 
+
+.homePara1{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 500px;
+}
+
+.imageMap{
+    float: right;
+    width: 500px;
+}
+
+.btnMap{
+    
+}
+
 /*footer css*/
 .footer {
     margin-top: 10px;
@@ -188,10 +205,9 @@ body {
 }
 /*fix for individualitem carousel*/
 
-
-
-.twitter-timeline {
-    float: left;
+.twitter-timeline iframe {
+    float: right;
+    width: 300px;
 }
 
 .fb-page {
@@ -274,7 +290,7 @@ body {
 /*CONTACT PAGESTYLES BELOW*/
 .para{
     text-align: left;
-       width: 500px;
+       width: 800px;
     display: block;
     margin: auto;
 }
@@ -318,8 +334,19 @@ body {
 
 #contactForm {
     width: 400px;
+    
     margin-left: auto;
     margin-right: auto;
+}
+
+.twitter-widget-0{
+    width: 200px;
+}
+
+.twitterContact{
+    width: 0px;
+    float: right;
+   
 }
 
 /*ADMIN REGISTER STYLES BELOW*/
