@@ -3,12 +3,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+       <div class="container">
 
     <h1 class="reqHeader">Contact </h1>
             <p class="para">If you have any problems, or queires regarding the website, equipment or anything related to this site please contact us below enusring you correctly fill out all the required fields. We aim to respond to all emails within 48 hours of working days.</p>
 
-  
+   <div id="twitterContact">
+<a class="twitter-timeline" href="https://twitter.com/UoCSciEng" data-widget-id="736132796276690944">Tweets by @UoCSciEng</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+    
     <div id="contactForm">   
 
         <!--basic contact form, structure will be amended to fit its purpose once we have spoken to james-->
@@ -91,10 +95,8 @@
     </div>
 </div>
 
-  <!-- 
-    <div id="twitterContact">
-<a class="twitter-timeline" href="https://twitter.com/UoCSciEng" data-widget-id="736132796276690944">Tweets by @UoCSciEng</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-</div>
-    -->
+
+           </div>
+
+   
 </asp:Content>

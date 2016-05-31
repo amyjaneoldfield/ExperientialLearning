@@ -343,17 +343,19 @@ body {
     width: 200px;
 }
 
-.twitterContact{
-    width: 0px;
+#twitterContact{
+        width: 20% !important;
     float: right;
-   
+ 
 }
+
 
 /*ADMIN REGISTER STYLES BELOW*/
 #register { 
     width: 400px;
     margin-right: auto;
     margin-left: auto;
+  
 }
 
 .registerFields {
@@ -363,8 +365,24 @@ body {
 }
 
 .adminTable tr, td, th{
-   
-    border: 1px solid black;
+    width: 30px;
+    border: 1px solid #58595B;
+  
+}
+
+.adminTable{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.adminTableStyles{
+    color: #6C9B3B;
+    
+  
+}
+
+.adminTblData{
+    text-align: left;
 }
 
 
@@ -377,6 +395,12 @@ body {
 .registerLabels {
     text-align: left;
     padding-top: 5px;
+}
+#register td th {
+    width: unset;
+    border: none;
+
+
 }
 
 

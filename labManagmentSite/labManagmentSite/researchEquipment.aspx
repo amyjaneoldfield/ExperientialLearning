@@ -2,6 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+       <div class="container">
+    
      <h1>Laboratories</h1>
 
    
@@ -41,6 +43,8 @@
     <asp:SqlDataSource ID="SqlDataSourceLabs" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT Distinct  User_Research_Equip.Location, LabNames.LabName FROM [User_Research_Equip] INNER JOIN [LabNames] ON User_Research_Equip.Location = LabNames.LabRoom">
         
     </asp:SqlDataSource>
+
+           </div>
 </asp:Content>
 
 

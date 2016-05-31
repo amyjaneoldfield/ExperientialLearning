@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+       <div class="container">
     <h1>Equipment Request Form</h1>
     <p>If you wish to book a specific piece of equipment you are required to fill out all the necessary fields beow and submit a request form, which will be approved/declined by a member of staff depending on avaliblity.
         Please allow up to 48 hours for a response, which will be sent to the email included in the contact form you submitted.
@@ -227,5 +227,5 @@
 <div class="btnReq">
 
     <asp:Button ID="btnRequest" runat="server" Text="Submit Request" CssClass="btn btn-default" OnClick="Button1_Click" /></div>
-
+           </div>
 </asp:Content>

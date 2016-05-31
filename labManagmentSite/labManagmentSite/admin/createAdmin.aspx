@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+       <div class="container">
     <h1 class="reqHeader">Create new admin users</h1>
     <p class="adminCreaPara">Fill out all the required fields below to create another Admin user, please be aware by creating such person they have the authroity to access, update and change all the private areas which an Admin has access to. E.G Adding new equipment.</p>
     <div id="register">
@@ -98,7 +98,7 @@
 
     </div>
 
-
+           </div>
 
 
 </asp:Content>
