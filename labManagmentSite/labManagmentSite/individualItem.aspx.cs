@@ -84,7 +84,8 @@ namespace labManagmentSite
 
             try
             {
-                    file.PostedFile.SaveAs(Server.MapPath("~/Docs/" + fn));
+                    
+                    file.PostedFile.SaveAs(HttpContext.Current.Server.MapPath("~/Docs/" + fn));
                     var doc = new Doc();
                     doc.name = name.Text;
                     doc.path = (Server.MapPath("~/Docs/" + fn));
