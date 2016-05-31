@@ -27,7 +27,7 @@
     </div>
             <div id="collapse2" class="panel-collapse collapse in">
       <div class="panel-body">
-        <
+        
           <asp:Repeater ID="rptrSearch" runat="server">
               <HeaderTemplate>
                             
@@ -62,8 +62,7 @@
               </ItemTemplate>
 
           </asp:Repeater>
-          <asp:LinkButton ID="LnkPrevious" runat="server" NavigateURL="~/admin/chemicalAddition.aspx" OnClick="LnkPrevious_Click" >Prev</asp:LinkButton>
-          <asp:LinkButton ID="LnkNext" runat="server" NavigateURL="~/admin/chemicalAddition.aspx" OnClick="LnkNext_Click" >Next</asp:LinkButton>
+          
 
 
 
