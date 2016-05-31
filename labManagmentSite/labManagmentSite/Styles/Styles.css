@@ -350,7 +350,7 @@ body {
 }
 
 /*ADMIN REGISTER STYLES BELOW*/
-#register {
+#register { 
     width: 400px;
     margin-right: auto;
     margin-left: auto;
@@ -362,6 +362,10 @@ body {
     width: 400px;
 }
 
+.adminTable tr, td, th{
+   
+    border: 1px solid black;
+}
 
 
 /*VALIDATION*/

@@ -5,30 +5,32 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <asp:GridView ID="GridView1" runat="server" DataSourceID="chemicalDataSource" AutoGenerateColumns="False" DataKeyNames="ID" AllowPaging="True">
+    <asp:GridView ID="GridView1" runat="server" DataSourceID="chemicalDataSource" AutoGenerateColumns="False" DataKeyNames="ID" AllowPaging="True" GridLines="None" CellSpacing="-1" CssClass="adminTable">
         <Columns>
-            <asp:CommandField ButtonType="Button" ShowDeleteButton="True" ShowEditButton="True" />
+            <asp:CommandField ButtonType="Button" ShowDeleteButton="True" ShowEditButton="True" >
+            <ControlStyle CssClass="btn btn-default" />
+            </asp:CommandField>
             <asp:BoundField DataField="ID" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="ID" />
-            <asp:BoundField DataField="Name_of_Substance" HeaderText="Name_of_Substance" SortExpression="Name_of_Substance" />
+            <asp:BoundField DataField="Name_of_Substance" HeaderText="Name of Substance" SortExpression="Name_of_Substance" />
             <asp:BoundField DataField="Formula" HeaderText="Formula" SortExpression="Formula" />
             <asp:BoundField DataField="Location" HeaderText="Location" SortExpression="Location" />
             <asp:BoundField DataField="Units" HeaderText="Units" SortExpression="Units" />
-            <asp:BoundField DataField="Trigger_Level" HeaderText="Trigger_Level" SortExpression="Trigger_Level" />
-            <asp:BoundField DataField="Current_Stock_Level" HeaderText="Current_Stock_Level" SortExpression="Current_Stock_Level" />
+            <asp:BoundField DataField="Trigger_Level" HeaderText="Trigger Level" SortExpression="Trigger_Level" />
+            <asp:BoundField DataField="Current_Stock_Level" HeaderText="Current Stock Level" SortExpression="Current_Stock_Level" />
             <asp:BoundField DataField="Supplier" HeaderText="Supplier" SortExpression="Supplier" />
             <asp:BoundField DataField="Reviewed" HeaderText="Reviewed" SortExpression="Reviewed" />
-            <asp:BoundField DataField="Ordered_by" HeaderText="Ordered_by" SortExpression="Ordered_by" />
-            <asp:BoundField DataField="Summary_of_Hazards" HeaderText="Summary_of_Hazards" SortExpression="Summary_of_Hazards" />
-            <asp:BoundField DataField="Expiry_Date" HeaderText="Expiry_Date" SortExpression="Expiry_Date" />
-            <asp:BoundField DataField="Purity_Grade" HeaderText="Purity_Grade" SortExpression="Purity_Grade" />
-            <asp:BoundField DataField="Batch_Code" HeaderText="Batch_Code" SortExpression="Batch_Code" />
-            <asp:BoundField DataField="CAS_Code" HeaderText="CAS_Code" SortExpression="CAS_Code" />
-            <asp:BoundField DataField="Supplier_Product_Code" HeaderText="Supplier_Product_Code" SortExpression="Supplier_Product_Code" />
+            <asp:BoundField DataField="Ordered_by" HeaderText="Ordered by" SortExpression="Ordered_by" />
+            <asp:BoundField DataField="Summary_of_Hazards" HeaderText="Summary of Hazards" SortExpression="Summary_of_Hazards" />
+            <asp:BoundField DataField="Expiry_Date" HeaderText="Expiry Date" SortExpression="Expiry_Date" />
+            <asp:BoundField DataField="Purity_Grade" HeaderText="Purity Grade" SortExpression="Purity_Grade" />
+            <asp:BoundField DataField="Batch_Code" HeaderText="Batch Code" SortExpression="Batch_Code" />
+            <asp:BoundField DataField="CAS_Code" HeaderText="CAS Code" SortExpression="CAS_Code" />
+            <asp:BoundField DataField="Supplier_Product_Code" HeaderText="Supplier Product Code" SortExpression="Supplier_Product_Code" />
             <asp:BoundField DataField="Purpose" HeaderText="Purpose" SortExpression="Purpose" />
             <asp:BoundField DataField="MSDS_Available" HeaderText="MSDS_Available" SortExpression="MSDS_Available" />
-            <asp:BoundField DataField="Link_to_MSDS" HeaderText="Link_to_MSDS" SortExpression="Link_to_MSDS" />
+            <asp:BoundField DataField="Link_to_MSDS" HeaderText="Link to MSDS" SortExpression="Link_to_MSDS" />
             <asp:BoundField DataField="Category" HeaderText="Category" SortExpression="Category" />
-            <asp:BoundField DataField="COSHH_completed" HeaderText="COSHH_completed" SortExpression="COSHH_completed" />
+            <asp:BoundField DataField="COSHH_completed" HeaderText="COSHH Completed" SortExpression="COSHH_completed" />
             
         </Columns>
     </asp:GridView>
