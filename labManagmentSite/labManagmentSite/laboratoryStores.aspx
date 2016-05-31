@@ -3,6 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+       <div class="container">
+
     <h1>Lab Stores</h1>
 
 
@@ -42,6 +44,6 @@
 
 
     <asp:SqlDataSource ID="SqlDataSourceLab" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT DISTINCT [Category] FROM [Lab_Stores]"></asp:SqlDataSource>
-
+           </div>
 
 </asp:Content>

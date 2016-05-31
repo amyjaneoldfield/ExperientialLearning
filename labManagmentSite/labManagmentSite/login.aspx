@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+       <div class="container">
     <p>Please login to gain access to the admin area.</p>
 
     <div id="loginControl">
@@ -46,4 +46,5 @@
             </LayoutTemplate>
         </asp:Login>
         </div>
+           </div>
 </asp:Content>
