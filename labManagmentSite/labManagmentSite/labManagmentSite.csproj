@@ -89,11 +89,14 @@
     <Content Include="Images\banner1.jpg" />
     <Content Include="Images\banner2.jpg" />
     <Content Include="Images\facebook.png" />
+    <Content Include="Images\GroundFloor.png" />
     <Content Include="Images\LabImages\SEM.jpg" />
     <Content Include="Images\LabImages\XRD.jpg" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\moodle.png" />
     <Content Include="Images\Picture1.png" />
+    <Content Include="Images\SandfieldFirstFloor.png" />
+    <Content Include="Images\SandfieldGroundFloor.png" />
     <Content Include="Images\Slide1.PNG" />
     <Content Include="Images\test.jpg" />
     <Content Include="Images\pl1.png" />
@@ -151,6 +154,7 @@
     <Content Include="default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="researchEquipment.aspx" />
+    <Content Include="SiteMap.aspx" />
     <Content Include="Styles\bootstrap.css" />
     <Content Include="Styles\bootstrap.min.css" />
     <Content Include="Styles\simple-sidebar.css" />
@@ -299,6 +303,13 @@
     </Compile>
     <Compile Include="researchEquipment.aspx.designer.cs">
       <DependentUpon>researchEquipment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteMap.aspx.cs">
+      <DependentUpon>SiteMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMap.aspx.designer.cs">
+      <DependentUpon>SiteMap.aspx</DependentUpon>
     </Compile>
     <Compile Include="upload.aspx.cs">
       <DependentUpon>upload.aspx</DependentUpon>

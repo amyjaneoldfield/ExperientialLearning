@@ -37,16 +37,16 @@ namespace labManagmentSite.admin
 
         protected void Page_Load(object sender, EventArgs e)
             
-        {
-            if (!IsPostBack)
-            {
-                BringData();
+       {
+            //if (!IsPostBack)
+           // {
+            //    BringData();
 
-            }
+//}
 
 
         }
-        protected void BringData() {
+       /* protected void BringData() {
             SqlConnection conn = new SqlConnection("Data Source =sql2014.studentwebserver.co.uk; Initial Catalog=db_1421049_LabManagement; Integrated Security =False; User ID=user_db_1421049_LabManagement; Password=P@55word");
 
             int cnt;
@@ -95,7 +95,7 @@ namespace labManagmentSite.admin
        
  
          
-
+*/
         protected void btnClearFields_Click(object sender, EventArgs e)
         {                                // button to clear all fields
             clear();
@@ -115,7 +115,7 @@ namespace labManagmentSite.admin
             }
 
         }
-
+        
         private void clear()                 // method to clear all fields
         {
             txtNameOfSubstance.Text = "";
@@ -194,7 +194,7 @@ namespace labManagmentSite.admin
 
         }
 
-        protected void LnkPrevious_Click(object sender, EventArgs e)
+        /*protected void LnkPrevious_Click(object sender, EventArgs e)
         {
            PageNum -= 1;
             BringData();
@@ -207,5 +207,6 @@ namespace labManagmentSite.admin
  PageNum += 1;
             BringData();
         }
+        */
     }
 }
