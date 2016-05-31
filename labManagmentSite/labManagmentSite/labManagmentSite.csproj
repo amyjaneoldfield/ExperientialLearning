@@ -139,6 +139,7 @@
     <Content Include="Docs\Local Rules Issue 2 July 2015.pdf" />
     <Content Include="Docs\2014-15 Monitoring Results.pdf" />
     <Content Include="Docs\FSE0007 Microscopy Lab Visitors GCS.docx" />
+    <Content Include="Docs\Project Specification.docx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

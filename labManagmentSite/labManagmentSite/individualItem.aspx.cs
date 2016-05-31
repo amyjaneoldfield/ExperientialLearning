@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.Entity;
 using System.Web.Security;
+using System.ComponentModel;
 
 namespace labManagmentSite
 {
@@ -51,7 +52,6 @@ namespace labManagmentSite
             String peice = id.TrimStart('I', 'D', '=');
 
 
-
             var log = new Logbook();
 
             log.Comment = comment.Text;
@@ -70,7 +70,9 @@ namespace labManagmentSite
         }
 
         protected void btnAdminFileUpload_Click(object sender, EventArgs e)
+
         {
+            
             Button upload = (Button)frmItem.FindControl("btnAdminFileUpload");
             FileUpload file = (FileUpload)frmItem.FindControl("adminFileControl");
             TextBox name = (TextBox)frmItem.FindControl("txtFileName");
@@ -79,16 +81,18 @@ namespace labManagmentSite
             String extension = (System.IO.Path.GetExtension(file.FileName).ToLower());
             String id = Page.ClientQueryString;
             String peice = id.TrimStart('I', 'D', '=');
+            
+
 
             if ((file.PostedFile!= null) && (file.PostedFile.ContentLength > 0)) { 
 
             try
             {
                     
-                    file.PostedFile.SaveAs(HttpContext.Current.Server.MapPath("~/Docs/" + fn));
+                    file.PostedFile.SaveAs(Server.MapPath("~/Docs/") + fn);
                     var doc = new Doc();
                     doc.name = name.Text;
-                    doc.path = (Server.MapPath("~/Docs/" + fn));
+                    doc.path = (Page.ResolveUrl("~/Docs/" + fn));
                     doc.pieceOfEquipment = peice;
 
                     db.Docs.Add(doc);
@@ -113,6 +117,12 @@ namespace labManagmentSite
             }
 
 
+        }
+
+        protected void btnAdminDel_Click(object sender, EventArgs e)
+        {
+   
+            
         }
     }
 }

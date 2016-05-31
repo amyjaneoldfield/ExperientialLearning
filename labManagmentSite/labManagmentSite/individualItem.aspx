@@ -135,7 +135,7 @@
 
                                         <asp:Repeater ID="rptrDocs" runat="server" DataSourceID="SqlDataSourceDocs">
                                             <HeaderTemplate><ul></HeaderTemplate>
-                                            <ItemTemplate><li><a href="<%#Eval("path")%>"><%# Eval("name")%></a></li></ItemTemplate>
+                                            <ItemTemplate><li><a href="<%#Eval("path")%>"><%#Eval("name")%></a></li></ItemTemplate>
                                             <FooterTemplate></ul></FooterTemplate>
                                         </asp:Repeater>
 
