@@ -88,7 +88,7 @@ body {
     right: 10%;
 }
 /*positions header links*/
-.further ul, li, p {
+.further ul li p {
     text-decoration: none;
     list-style-type: none;
     margin: 0;
@@ -99,7 +99,7 @@ body {
     color: #333;
 }
 /*for back to top link button*/
-.pull li, sep {
+.pull li sep {
     display: inline;
 }
 
@@ -107,7 +107,7 @@ body {
     display: inline;
 }
 
-.footLinks, li, a {
+.footLinks li  a {
     color: #6C9B3B;
 }
 /*footer colour links to green*/
@@ -252,6 +252,11 @@ body {
     vertical-align: top;
 }
 
+
+.lab li > a{
+    color: #6C9B3B;
+} 
+
 /* REQUEST PAGE STYLES */
 .request {
     display: inline-block;
@@ -364,7 +369,7 @@ body {
     width: 400px;
 }
 
-.adminTable tr, td, th{
+.adminTable tr, th ,td{
     width: 30px;
     border: 1px solid #58595B;
   
@@ -386,6 +391,21 @@ body {
 }
 
 
+
+/*SITEMAP STYLES*/
+
+
+ul.siteList{
+    width: 1000px;
+    text-align: left;
+       list-style-type: circle;
+        color: #333;
+}
+
+.innerPointMap{
+       padding-left: 3%;
+}
+
 /*VALIDATION*/
 .validation{
     color: red;
@@ -396,9 +416,9 @@ body {
     text-align: left;
     padding-top: 5px;
 }
-#register td th {
-    width: unset;
-    border: none;
+#register td, th {
+    width: 0;
+    border: 0px solid rgba(255,255,255,.5);
 
 
 }
@@ -443,12 +463,16 @@ width: 500px;
 /*ADMIN CONTROL PAGE STYLES (FOR AFTER LOGGING IN)*/
 .adminConLink, ul, li > a:hover {
     color: #333;
+    list-style-type: none;
 }
     /*hover colour for links*/
 
-
+    .adminConLink > li > a{
+        color: #6C9B3B;
+    }
     .adminConLink li {
         display: inline-flex;
+       
     }
 
 
@@ -473,6 +497,10 @@ width: 500px;
 .indItem > li > a:hover {
     color: #333;
 }
+
+.indItem > li > a{
+      color: #6C9B3B;
+}
 /*for when hovering*/
 
 .equipReqVal{
@@ -489,7 +517,8 @@ width: 500px;
 }
 
 .equipList {
-    display: block;
+    display: block;  
+   
 }
 
 

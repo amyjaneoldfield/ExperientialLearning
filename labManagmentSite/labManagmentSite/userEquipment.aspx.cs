@@ -15,6 +15,7 @@ namespace labManagmentSite
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            /*
             List<String> alphabet = new List<string> { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
 
             List<String> index = new List<string> {"A"};
@@ -68,6 +69,7 @@ namespace labManagmentSite
 
 
 
+    */
 
 
         }
