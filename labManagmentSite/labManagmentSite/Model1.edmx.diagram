@@ -10,6 +10,7 @@
         <EntityTypeShape EntityType="db_1421049_LabManagementModel.ChemData" Width="1.5" PointX="0.75" PointY="4.75" />
         <EntityTypeShape EntityType="db_1421049_LabManagementModel.Image" Width="1.5" PointX="3.375" PointY="5.75" />
         <EntityTypeShape EntityType="db_1421049_LabManagementModel.Logbook" Width="1.5" PointX="6.375" PointY="4.5" />
+        <EntityTypeShape EntityType="db_1421049_LabManagementModel.Doc" Width="1.5" PointX="6.875" PointY="1.125" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

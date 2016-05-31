@@ -30,5 +30,6 @@ namespace labManagmentSite
         public virtual DbSet<ChemData> ChemDatas { get; set; }
         public virtual DbSet<Image> Images { get; set; }
         public virtual DbSet<Logbook> Logbooks { get; set; }
+        public virtual DbSet<Doc> Docs { get; set; }
     }
 }

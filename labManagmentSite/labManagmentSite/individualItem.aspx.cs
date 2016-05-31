@@ -13,12 +13,16 @@ namespace labManagmentSite
     {
         db_1421049_LabManagementEntities db = new db_1421049_LabManagementEntities();
 
+        
+
         protected void btnLogSubmit_Click(object sender, EventArgs e)
         {
 
             TextBox comment = (TextBox)frmItem.FindControl("txtLogComment");
 
             TextBox user = (TextBox)frmItem.FindControl("txtLogUser");
+
+
 
 
             submitLog(comment, user);
@@ -29,50 +33,13 @@ namespace labManagmentSite
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-
-
-            if (Context.User.IsInRole("Admin") && Page.ClientQueryString != "")
-            {
-                Button btnLocalUpload = (Button)frmItem.FindControl("btnLocalUpload");
-                btnLocalUpload.Visible = true;
-
-            }
-            if
-               (Context.User.IsInRole("Admin") && Page.ClientQueryString != "")
-            {
-                FileUpload localUploadControl = (FileUpload)frmItem.FindControl("localUploadControl");
-                localUploadControl.Visible = true;
-
-            }
+            System.Web.UI.HtmlControls.HtmlGenericControl accordian = (System.Web.UI.HtmlControls.HtmlGenericControl)frmItem.FindControl("adminAccordian");
 
             if (Context.User.IsInRole("Admin") && Page.ClientQueryString != "")
             {
-                Button btnRiskUpload = (Button)frmItem.FindControl("btnRiskUpload");
-                btnRiskUpload.Visible = true;
+                accordian.Visible = true;
 
             }
-            if
-               (Context.User.IsInRole("Admin") && Page.ClientQueryString != "")
-            {
-                FileUpload riskUploadControl = (FileUpload)frmItem.FindControl("riskUploadControl");
-                riskUploadControl.Visible = true;
-
-            }
-
-            if (Context.User.IsInRole("Admin") && Page.ClientQueryString != "")
-            {
-                Button btnMaintenanceUpload = (Button)frmItem.FindControl("btnMaintenanceUpload");
-                btnMaintenanceUpload.Visible = true;
-
-            }
-            if
-               (Context.User.IsInRole("Admin") && Page.ClientQueryString != "")
-            {
-                FileUpload maintenanceUploadControl = (FileUpload)frmItem.FindControl("maintenanceUploadControl");
-                maintenanceUploadControl.Visible = true;
-
-
-        }
             }
 
 
@@ -102,7 +69,49 @@ namespace labManagmentSite
 
         }
 
+        protected void btnAdminFileUpload_Click(object sender, EventArgs e)
+        {
+            Button upload = (Button)frmItem.FindControl("btnAdminFileUpload");
+            FileUpload file = (FileUpload)frmItem.FindControl("adminFileControl");
+            TextBox name = (TextBox)frmItem.FindControl("txtFileName");
+
+            String fn = file.FileName;
+            String extension = (System.IO.Path.GetExtension(file.FileName).ToLower());
+            String id = Page.ClientQueryString;
+            String peice = id.TrimStart('I', 'D', '=');
+
+            if ((file.PostedFile!= null) && (file.PostedFile.ContentLength > 0)) { 
+
+            try
+            {
+                    file.PostedFile.SaveAs(Server.MapPath("~/Docs/" + fn));
+                    var doc = new Doc();
+                    doc.name = name.Text;
+                    doc.path = (Server.MapPath("~/Docs/" + fn));
+                    doc.pieceOfEquipment = peice;
+
+                    db.Docs.Add(doc);
+                    db.SaveChanges();
 
 
+
+                
+
+                
+
+            }
+            catch (Exception ex)
+            {
+                Response.Write("Error " + ex.Message);
+            }
+            }
+            else{
+                Response.Write("Please select a file to upload");
+
+
+            }
+
+
+        }
     }
 }
