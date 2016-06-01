@@ -87,29 +87,62 @@ namespace labManagmentSite
 
             if ((file.PostedFile != null) && (file.PostedFile.ContentLength > 0))
             {
-
-                try
+                if (extension == ".png" || extension == ".jpg" || extension == ".gif")
                 {
+                    try
+                    {
+                        file.PostedFile.SaveAs(Server.MapPath("~/Images/" + fn));
+                        var images = new Image();
+                        images.path = (Page.ResolveUrl("~/Images/" + fn.Remove(fn.Length - 4)));
+                        images.ext = extension;
+                        images.peiceofEquipment = peice;
+                        //images.height = System.Drawing.Image.FromFile(file.FileName).Height.ToString();
+                        //images.width = System.Drawing.Image.FromFile(file.FileName).Width.ToString();
+                        db.Images.Add(images);
+                        db.SaveChanges();
 
-                    file.PostedFile.SaveAs(Server.MapPath("~/Docs/") + fn);
-                    var doc = new Doc();
-                    doc.name = name.Text;
-                    doc.path = (Page.ResolveUrl("~/Docs/" + fn));
-                    doc.pieceOfEquipment = peice;
+                        Response.Redirect(HttpContext.Current.Request.Url.AbsoluteUri);
+                    }
 
-                    db.Docs.Add(doc);
-                    db.SaveChanges();
+                    catch (Exception er)
+                    {
+                        Response.Write("Error" + er.Message);
 
 
-
-
-
-
+                    }
 
                 }
-                catch (Exception ex)
+
+                else
                 {
-                    Response.Write("Error " + ex.Message);
+
+
+
+
+
+
+
+
+                    try
+                    {
+
+                        file.PostedFile.SaveAs(Server.MapPath("~/Docs/") + fn);
+                        var doc = new Doc();
+                        doc.name = name.Text;
+                        doc.path = (Page.ResolveUrl("~/Docs/" + fn));
+                        doc.pieceOfEquipment = peice;
+
+                        db.Docs.Add(doc);
+                        db.SaveChanges();
+
+                        Response.Redirect(HttpContext.Current.Request.Url.AbsoluteUri);
+
+                    }
+                    catch (Exception ex)
+                    {
+                        Response.Write("Error " + ex.Message);
+                    }
+
                 }
             }
             else
@@ -120,9 +153,9 @@ namespace labManagmentSite
             }
 
 
-        }
+            }
 
-
+        
 
         protected void rptrDocs_ItemDataBound(object sender, RepeaterItemEventArgs e)
         {
