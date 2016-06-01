@@ -6,6 +6,8 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+    <h1 class="reqHeader">Chemicals Table</h1>
+    <p>Below is a grid of all the current chemicals in the database, used to display any data on the site. Please note any changes made here will be final.</p>
     <asp:GridView ID="GridView1" runat="server" DataSourceID="chemicalDataSource" AutoGenerateColumns="False" DataKeyNames="ID" AllowPaging="True" GridLines="None" CellSpacing="-1" CssClass="adminTable">
         <Columns>
             <asp:CommandField ButtonType="Button" ShowDeleteButton="True" ShowEditButton="True">
