@@ -85,6 +85,15 @@ namespace labManagmentSite {
         protected global::System.Web.UI.WebControls.DropDownList ddlFunction;
         
         /// <summary>
+        /// reqValRequestFunction control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValRequestFunction;
+        
+        /// <summary>
         /// txtFunctionOther control.
         /// </summary>
         /// <remarks>
@@ -110,6 +119,15 @@ namespace labManagmentSite {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlRequestSubject;
+        
+        /// <summary>
+        /// reqValRequestSubject control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqValRequestSubject;
         
         /// <summary>
         /// txtSubjectOther control.
@@ -407,6 +425,15 @@ namespace labManagmentSite {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlRequestPresentationEquipment;
+        
+        /// <summary>
+        /// reqvalRequestPresEquip control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator reqvalRequestPresEquip;
         
         /// <summary>
         /// txtPresentationOther control.

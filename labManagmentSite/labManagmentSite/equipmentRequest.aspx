@@ -33,7 +33,7 @@
                 <div>
                     <asp:TextBox ID="txtRequestEmail" runat="server"></asp:TextBox>
                 </div>
-                <asp:RequiredFieldValidator ID="reqValRequestEmail" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestName" CssClass="validation"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="reqValRequestEmail" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestEmail" CssClass="validation"></asp:RequiredFieldValidator>
 
 
 
@@ -50,6 +50,10 @@
                     <asp:ListItem Value="txtfunctionOther">Other (Please Specify)</asp:ListItem>
 
                 </asp:DropDownList>
+
+                <div>
+                <asp:RequiredFieldValidator ID="reqValRequestFunction" runat="server" ErrorMessage="* Error You Must Select a Function " ControlToValidate="ddlFunction" InitialValue="Please Select..." CssClass="validation"></asp:RequiredFieldValidator>
+                </div>
 
                 <!--check tosee if a compare validator can be used to check if the "Please Select..." value field is selected -->
                 <div>
@@ -73,6 +77,10 @@
                     <asp:ListItem Value="txtSubjectOther">Other (Please Specify)</asp:ListItem>
                 </asp:DropDownList>
 
+                                <div>
+                <asp:RequiredFieldValidator ID="reqValRequestSubject" runat="server" ErrorMessage="* Error You Must Select a Subject " ControlToValidate="ddlRequestSubject" InitialValue="Please Select..." CssClass="validation"></asp:RequiredFieldValidator>
+                </div>
+
                 <div>
                     <asp:TextBox ID="txtSubjectOther" runat="server"></asp:TextBox>
 
@@ -88,7 +96,7 @@
                         <asp:TextBox ID="txtRequestLocation" runat="server"></asp:TextBox>
                     </div>
                 </div>
-                <asp:RequiredFieldValidator ID="reqValRequestLocation" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestName" CssClass="validation"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="reqValRequestLocation" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestLocation" CssClass="validation"></asp:RequiredFieldValidator>
             </div>
 
         </div>
@@ -106,7 +114,7 @@
                 <div>
                     <asp:TextBox ID="txtRequestDateFrom" runat="server"></asp:TextBox>
                 </div>
-                <asp:RequiredFieldValidator ID="reqValRequestDateFrom" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestName" CssClass="validation"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="reqValRequestDateFrom" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestDateFrom" CssClass="validation"></asp:RequiredFieldValidator>
 
                 <!-- 7. Date To -->
                 <div>
@@ -115,7 +123,7 @@
                 <div>
                     <asp:TextBox ID="txtRequestDateTo" runat="server"></asp:TextBox>
                 </div>
-                <asp:RequiredFieldValidator ID="reqValDateTo" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestName" CssClass="validation"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="reqValDateTo" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestDateTo" CssClass="validation"></asp:RequiredFieldValidator>
 
 
 
@@ -126,7 +134,7 @@
                 <div>
                     <asp:TextBox ID="txtRequestStartTime" runat="server"></asp:TextBox>
                 </div>
-                <asp:RequiredFieldValidator ID="reqValRequestStartTime" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestName" CssClass="validation"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="reqValRequestStartTime" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestStartTime" CssClass="validation"></asp:RequiredFieldValidator>
 
 
                 <div>
@@ -136,7 +144,7 @@
                 <div>
                     <asp:TextBox ID="txtRequestDuration" runat="server"></asp:TextBox>
                 </div>
-                <asp:RequiredFieldValidator ID="reqValRequestDuration" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestName" CssClass="validation"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="reqValRequestDuration" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestDuration" CssClass="validation"></asp:RequiredFieldValidator>
 
 
                 <div>
@@ -146,7 +154,7 @@
                 <div>
                     <asp:TextBox ID="txtRequestNoOfStudents" runat="server"></asp:TextBox>
                 </div>
-                <asp:RequiredFieldValidator ID="reqValRequestNoStudents" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestName" CssClass="validation"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="reqValRequestNoStudents" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestNoOfStudents" CssClass="validation"></asp:RequiredFieldValidator>
             </div>
 
 
@@ -163,7 +171,7 @@
             <div>
                 <asp:TextBox ID="txtRequestNoOfSeats" runat="server"></asp:TextBox>
             </div>
-            <asp:RequiredFieldValidator ID="reqValNoSeats" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestName" CssClass="validation"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="reqValNoSeats" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestNoOfSeats" CssClass="validation"></asp:RequiredFieldValidator>
 
             <div>
                 <!-- 12. Special Needs -->
@@ -172,7 +180,7 @@
             <div>
                 <asp:TextBox ID="txtRequestSpecialNeeds" runat="server"></asp:TextBox>
             </div>
-            <asp:RequiredFieldValidator ID="reqValSpecialNeeds" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestName" CssClass="validation"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="reqValSpecialNeeds" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestSpecialNeeds" CssClass="validation"></asp:RequiredFieldValidator>
 
             <div>
                 <!-- 13. Hardware -->
@@ -181,7 +189,7 @@
             <div>
                 <asp:TextBox ID="txtRequestHardware" runat="server"></asp:TextBox>
             </div>
-            <asp:RequiredFieldValidator ID="ReqValHardware" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestName" CssClass="validation"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="ReqValHardware" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestHardware" CssClass="validation"></asp:RequiredFieldValidator>
 
             <div>
                 <!-- 14. Software -->
@@ -190,7 +198,7 @@
             <div>
                 <asp:TextBox ID="txtRequestSoftware" runat="server"></asp:TextBox>
             </div>
-            <asp:RequiredFieldValidator ID="reqValSoftware" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestName" CssClass="validation"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="reqValSoftware" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestSoftware" CssClass="validation"></asp:RequiredFieldValidator>
 
             <div>
                 <!-- 15. Drop List -->
@@ -207,6 +215,11 @@
                     <asp:ListItem Value="txtPresentationOther">Other (Please Specify)</asp:ListItem>
                 </asp:DropDownList>
             </div>
+
+                            <div>
+                <asp:RequiredFieldValidator ID="reqvalRequestPresEquip" runat="server" ErrorMessage="* Error You Must Select Required Presentation Equipment" ControlToValidate="ddlRequestPresentationEquipment" InitialValue="Please Select..." CssClass="validation"></asp:RequiredFieldValidator>
+                </div>
+
             <div>
                 <asp:TextBox ID="txtPresentationOther" runat="server"></asp:TextBox>
             </div>
@@ -227,7 +240,7 @@
                 <div>
                     <asp:TextBox ID="txtRequestRiskAssessment" runat="server"></asp:TextBox>
                 </div>
-                <asp:RequiredFieldValidator ID="valRiskAssement" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestName" CssClass="validation"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="valRiskAssement" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestRiskAssessment" CssClass="validation"></asp:RequiredFieldValidator>
 
                 <div>
                     <!-- 17. Request Risks -->
@@ -237,7 +250,7 @@
 
                     <asp:TextBox ID="txtRequestRisks" runat="server"></asp:TextBox>
                 </div>
-                <asp:RequiredFieldValidator ID="reqValRequestRisks" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestName" CssClass="validation"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="reqValRequestRisks" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestRisks" CssClass="validation"></asp:RequiredFieldValidator>
             </div>
             <div>
                 <asp:FileUpload ID="riskAssessUpload" runat="server" />
