@@ -258,6 +258,15 @@ body {
 } 
 
 /* REQUEST PAGE STYLES */
+.bookingLabels{
+    text-align:left;
+    padding-left:110px;
+}
+
+.DropListBooking{
+    width:180px;
+}
+
 .request {
     display: inline-block;
     text-align: center;
