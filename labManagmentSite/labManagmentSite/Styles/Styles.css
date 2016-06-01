@@ -242,6 +242,9 @@ body {
 
 
 /*RESEARCH EQUIPMENT STYLES*/
+.equipBulletList{
+    list-style-type: none;
+}
 .lab{
    
     display: inline-block;
@@ -271,7 +274,7 @@ body {
     display: inline-block;
     text-align: center;
     width: 400px;
-    height: 400px;
+   
     vertical-align: top;
 }
 
@@ -549,6 +552,10 @@ width: 500px;
     display: block;  
    
 }
+
+.fileUploadRequest{
+        float: right;
+}/*positioning for the file upload feature*/
 
 
 /*CSS FOR INDIVDUAL ITEM PAGES STYLES*/

@@ -253,7 +253,7 @@
                 <asp:RequiredFieldValidator ID="reqValRequestRisks" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestRisks" CssClass="validation"></asp:RequiredFieldValidator>
             </div>
             <div>
-                <asp:FileUpload ID="riskAssessUpload" runat="server" />
+                <asp:FileUpload ID="riskAssessUpload" runat="server" CssClass="fileUploadRequest"/>
             </div>
         </div>
 
