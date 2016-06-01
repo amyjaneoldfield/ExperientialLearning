@@ -526,6 +526,48 @@ width: 500px;
     }
 
 
+/*ADMIN ADD EQUIP PAGE STYLES*/
+    .addEquipGrid{
+        margin-left: auto;
+    margin-right: auto;
+    }/*grid position*/
+
+
+    .addEquipGrid th{
+        color: #6C9B3B;
+    }/*grid headers*/
+
+     .addEquipForm{
+         display: inline-block;
+         text-align: center;
+    width: 400px;
+    vertical-align: top;
+     }
+
+     .addLblEquip{
+         text-align: left;
+         padding-left: 50px;
+     }
+
+
+     .txtAddEquip{
+         width: 300px
+     }
+
+     .addEquipBtn{
+         margin-top: 2%;
+     }
+
+
+     .addEquipPara{
+         width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+
+     }
+
+
 /*CHEMICAL ADDITION STYLES BELOW*/
 .txtChemical {
     padding-bottom: 20px;

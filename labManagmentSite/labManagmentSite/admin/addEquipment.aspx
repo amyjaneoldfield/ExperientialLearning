@@ -5,45 +5,50 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-    <h1>Modify Equipment Index </h1>
+    <h1 class="reqHeader">Modify Equipment Index </h1>
+    <p class="addEquipPara">This page allows you to add, edit and delete data from the current database used to display equipment among the Laboratories index.</p>
 
-    <h2>Add Equipment</h2>
+    <h3 class="reqHeader">Add Equipment</h3>
+    <p class="addEquipPara">Fill out the form below to create a new equipment list, once added with a specific room number it will appear on the Laboratories index under the stated room. If you wish to edit or delete the fields / record then use the tabel below.</p>
 
+    <div class="addEquipForm">
 
-
-    <div>
+    <div class="addLblEquip">
         <asp:Label ID="lblAddEquipName" runat="server" Text="Name of Equipment" AssociatedControlID="txtAddEquipName"></asp:Label>
     </div>
     <div>
-        <asp:TextBox ID="txtAddEquipName" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtAddEquipName" runat="server" CssClass="txtAddEquip"></asp:TextBox>
+    </div>
+
+    <div class="addLblEquip">
+        <asp:Label ID="lblEquipLocation" runat="server" Text="Location of Equipment (Room Number)" AssociatedControlID="txtAddEquipLocation"></asp:Label>
     </div>
 
     <div>
-        <asp:Label ID="lblEquipLocation" runat="server" Text="Location of Equipment" AssociatedControlID="txtAddEquipLocation"></asp:Label>
+        <asp:TextBox ID="txtAddEquipLocation" runat="server"  CssClass="txtAddEquip"></asp:TextBox>
     </div>
 
-    <div>
-        <asp:TextBox ID="txtAddEquipLocation" runat="server"></asp:TextBox>
-    </div>
-
-    <div>
+    <div class="addLblEquip" >
             <asp:Label ID="lblAddEquipCustodian" runat="server" Text="Custodian (If Applicable)" AssociatedControlID="txtAddEquipcustodian"></asp:Label>
     </div>
     <div>
-        <asp:TextBox ID="txtAddEquipCustodian" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtAddEquipCustodian" runat="server"  CssClass="txtAddEquip"></asp:TextBox>
     </div>
 
-    <asp:Button ID="Button2" runat="server" Text="Add" OnClick="Button2_Click" />
-
-
+        <div class="addEquipBtn">
+    <asp:Button ID="Button2" runat="server" Text="Add" OnClick="Button2_Click" CssClass="btn btn-default" />
+</div>
+</div>
    
 
-    <h2>Edit and Delete Equipement</h2>
+    <h3 class="reqHeader">Edit and Delete Equipment</h3>
+    <p class="addEquipPara">Use the table below to edit or delete equipment information, please note this is linked to the database, any changes made will be final.</p>
 
-
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="SqlDataEquipment" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="SqlDataEquipment" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" CssClass="addEquipGrid">
         <Columns>
-            <asp:CommandField ButtonType="Button" ShowDeleteButton="True" ShowEditButton="True" />
+            <asp:CommandField ButtonType="Button" ShowDeleteButton="True" ShowEditButton="True" >
+                  <ControlStyle CssClass="btn btn-default" />
+                 </asp:CommandField>
             <asp:BoundField DataField="ID" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="ID" />
             <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
             <asp:BoundField DataField="Location" HeaderText="Location" SortExpression="Location" />
