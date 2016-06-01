@@ -25,7 +25,7 @@
                 <HeaderTemplate><ul></HeaderTemplate>
                 <ItemTemplate>
                    
-                    <li><a href="<%#Eval("ID","individualItem.aspx?ID={0}") %>"><%#Eval ("Name")%></li></a>
+                    <li class="equipBulletList"><a href="<%#Eval("ID","individualItem.aspx?ID={0}") %>"><%#Eval ("Name")%></li></a>
 
 
                 </ItemTemplate>
