@@ -287,9 +287,24 @@ body {
 
 .reqHeader {
     color: #6C9B3B;
+   
 }
 /*header colours*/
 
+.bookingLabels{
+   text-align: left;
+   padding-left: 110px;
+}/*position for label textbox labels*/
+
+
+ .bookingDDL{
+         padding-bottom: 2%;
+ }
+
+
+  .DropListBooking{
+     width: 180px;
+ }
 
 
 /*CONTACT PAGESTYLES BELOW*/
