@@ -253,6 +253,7 @@ body {
     width: 400px;
     height: 200px;
     vertical-align: top;
+    margin-top: 5px;
 }
 
 
@@ -540,7 +541,9 @@ width: 500px;
     font-weight: bold;
 }
 
-.indItem, .UserTitle {
+.indItem {
+    text-align: left;
+    padding-left: 40%;
 }
 
 #EquipmentInner {

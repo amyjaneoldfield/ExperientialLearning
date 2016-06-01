@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
        <div class="container">
-    <h2>Admin Control</h2>
+    <h2 class="reqHeader">Admin Control</h2>
     <p class="adminPara">This is a restricted access area, only Admin users have access to this region. Please be aware any changes you make are final, and may affect the current data being displayed on the site if updated.</p>
 
     <ul class="adminConLink">
