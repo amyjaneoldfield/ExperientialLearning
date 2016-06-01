@@ -6,7 +6,7 @@
     
      <h1 class="reqHeader">Laboratories</h1>
 
-   <p>Below is a grid where you can find pieces of equipment and there current location. To find out further information and specifics for each individual piece of equipment click the name to redirect to a Wiki Information page. </p>
+   <p class="researchPara">Below is a grid where you can find pieces of equipment and there current location. To find out further information and specifics for each individual piece of equipment click the name to redirect to a Wiki Information page. </p>
 
     <asp:Repeater runat="server" ID="rptrLabs" DataSourceID="sqlDataSourceLabs">
         <HeaderTemplate>  </HeaderTemplate>
