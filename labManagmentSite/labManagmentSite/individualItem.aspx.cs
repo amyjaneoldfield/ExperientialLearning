@@ -14,7 +14,7 @@ namespace labManagmentSite
     {
         db_1421049_LabManagementEntities db = new db_1421049_LabManagementEntities();
 
-        
+
 
         protected void btnLogSubmit_Click(object sender, EventArgs e)
         {
@@ -36,12 +36,13 @@ namespace labManagmentSite
         {
             System.Web.UI.HtmlControls.HtmlGenericControl accordian = (System.Web.UI.HtmlControls.HtmlGenericControl)frmItem.FindControl("adminAccordian");
 
+
             if (Context.User.IsInRole("Admin") && Page.ClientQueryString != "")
             {
                 accordian.Visible = true;
 
             }
-            }
+        }
 
 
 
@@ -72,7 +73,7 @@ namespace labManagmentSite
         protected void btnAdminFileUpload_Click(object sender, EventArgs e)
 
         {
-            
+
             Button upload = (Button)frmItem.FindControl("btnAdminFileUpload");
             FileUpload file = (FileUpload)frmItem.FindControl("adminFileControl");
             TextBox name = (TextBox)frmItem.FindControl("txtFileName");
@@ -81,14 +82,15 @@ namespace labManagmentSite
             String extension = (System.IO.Path.GetExtension(file.FileName).ToLower());
             String id = Page.ClientQueryString;
             String peice = id.TrimStart('I', 'D', '=');
-            
 
 
-            if ((file.PostedFile!= null) && (file.PostedFile.ContentLength > 0)) { 
 
-            try
+            if ((file.PostedFile != null) && (file.PostedFile.ContentLength > 0))
             {
-                    
+
+                try
+                {
+
                     file.PostedFile.SaveAs(Server.MapPath("~/Docs/") + fn);
                     var doc = new Doc();
                     doc.name = name.Text;
@@ -100,17 +102,18 @@ namespace labManagmentSite
 
 
 
-                
 
-                
 
+
+
+                }
+                catch (Exception ex)
+                {
+                    Response.Write("Error " + ex.Message);
+                }
             }
-            catch (Exception ex)
+            else
             {
-                Response.Write("Error " + ex.Message);
-            }
-            }
-            else{
                 Response.Write("Please select a file to upload");
 
 
@@ -119,10 +122,45 @@ namespace labManagmentSite
 
         }
 
-        protected void btnAdminDel_Click(object sender, EventArgs e)
+
+
+        protected void rptrDocs_ItemDataBound(object sender, RepeaterItemEventArgs e)
         {
-   
-            
+            if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
+            {
+                Button btn = (Button)e.Item.FindControl("btnAdminDel");
+                HiddenField hf = (HiddenField)e.Item.FindControl("hdnField");
+
+
+                btn.ID = "txtReplyArea" + hf.Value;
+
+                if (User.IsInRole("admin"))
+                {
+                    btn.Visible = true;
+
+                }
+            }
         }
+
+        protected void btnAdminDel_Command(object sender, CommandEventArgs e)
+        {
+            
+            var item = (from x in db.Docs where x.path == e.CommandArgument.ToString() select x).First();
+            db.Docs.Remove(item);
+            db.SaveChanges();
+            try
+            {
+
+                System.IO.File.Delete((e.CommandArgument.ToString()));
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            Response.Redirect( HttpContext.Current.Request.Url.AbsoluteUri);
+
+        }
+
     }
 }
