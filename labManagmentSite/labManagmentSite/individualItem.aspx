@@ -18,7 +18,7 @@
 
                     <asp:Repeater ID="rptrSidebar" runat="server" DataSourceID="sqlDataSourceSide">
                         <HeaderTemplate>
-                            <ul>
+                            <ul class="bullet">
                         </HeaderTemplate>
                         <ItemTemplate>
 
@@ -135,12 +135,12 @@
 
                                             <asp:Repeater ID="rptrDocs" runat="server" DataSourceID="SqlDataSourceDocs" OnItemDataBound="rptrDocs_ItemDataBound">
                                                 <HeaderTemplate>
-                                                    <ul>
+                                                    <ul class="footLinks">
                                                 </HeaderTemplate>
                                                 <ItemTemplate>
-                                                    <li><a href="<%#Eval("path")%>"><%#Eval("name")%></a>
+                                                    <li class="bullet"><a  href="<%#Eval("path")%>"><%#Eval("name")%></a>
                                                         <asp:HiddenField ID="hdnField" Value='<%#Eval("name")%>' runat="server" />
-                                                        <asp:Button ID="btnAdminDel" runat="server" Text="Button" CommandName="Delete" CommandArgument='<%#Eval("path")%>' OnCommand="btnAdminDel_Command" Visible="false" />
+                                                        <asp:Button ID="btnAdminDel" runat="server" Text="Delete" CommandName="Delete" CommandArgument='<%#Eval("path")%>' OnCommand="btnAdminDel_Command" Visible="false" CssClass="btn btn-default" />
 
                                                     </li>
                                                 </ItemTemplate>
