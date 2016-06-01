@@ -369,11 +369,37 @@ body {
     width: 400px;
 }
 
-.adminTable tr, th ,td{
-    width: 30px;
+.adminTable tr{
+    width: 100px;
     border: 1px solid #58595B;
-  
+  padding-left: 1%;
+    padding-right: 1%;
+   
 }
+
+.adminTable th {
+    width: 100px;
+    border: 1px solid #58595B;
+  padding-left: 1%;
+    padding-right: 1%;
+    color: #6C9B3B; 
+}
+
+.adminTable td{
+    width: 100px;
+    border: 1px solid #58595B;
+
+    padding-right: 1%;
+}
+
+.adminTable a{
+         color: #6C9B3B; 
+}
+
+.adminTable a:hover{
+    color: #333;
+}
+
 
 .adminTable{
     margin-left: auto;
@@ -416,12 +442,6 @@ ul.siteList{
     text-align: left;
     padding-top: 5px;
 }
-#register td, th {
-    width: 0;
-    border: 0px solid rgba(255,255,255,.5);
-
-
-}
 
 
 
@@ -461,7 +481,7 @@ width: 500px;
 }
 
 /*ADMIN CONTROL PAGE STYLES (FOR AFTER LOGGING IN)*/
-.adminConLink, ul, li > a:hover {
+.adminConLink li > a:hover {
     color: #333;
     list-style-type: none;
 }

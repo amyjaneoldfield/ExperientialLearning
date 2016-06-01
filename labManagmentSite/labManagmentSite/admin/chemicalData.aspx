@@ -28,13 +28,13 @@
             <asp:BoundField DataField="CAS_Code" HeaderText="CAS Code" SortExpression="CAS_Code" />
             <asp:BoundField DataField="Supplier_Product_Code" HeaderText="Supplier Product Code" SortExpression="Supplier_Product_Code" />
             <asp:BoundField DataField="Purpose" HeaderText="Purpose" SortExpression="Purpose" />
-            <asp:BoundField DataField="MSDS_Available" HeaderText="MSDS_Available" SortExpression="MSDS_Available" />
+            <asp:BoundField DataField="MSDS_Available" HeaderText="MSDS Available" SortExpression="MSDS_Available" />
             <asp:BoundField DataField="Link_to_MSDS" HeaderText="Link to MSDS" SortExpression="Link_to_MSDS" />
             <asp:BoundField DataField="Category" HeaderText="Category" SortExpression="Category" />
             <asp:BoundField DataField="COSHH_completed" HeaderText="COSHH Completed" SortExpression="COSHH_completed" />
 
         </Columns>
-        <HeaderStyle CssClass="adminTableStyles" Wrap="False" />
+      
         <RowStyle CssClass="adminTblData" />
     </asp:GridView>
 
