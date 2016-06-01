@@ -22,7 +22,7 @@
            <p><%#Eval("Name")%>"></p>
         </ItemTemplate>
     </asp:ListView>
-    <asp:SqlDataSource ID="SqlDataSourceUser" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [ID], [Name] FROM [User_Research_Equip] WHERE ([ResearchEquipment] = @ResearchEquipment) ORDER BY Name ASC">
+    <asp:SqlDataSource ID="SqlDataSourceUser" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [ID], [Name] FROM [User_Research_Equip] ORDER BY Name ASC">
         <SelectParameters>
             <asp:Parameter DefaultValue="True" Name="ResearchEquipment" Type="Boolean" />
         </SelectParameters>

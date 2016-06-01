@@ -76,6 +76,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin\addEquipment.aspx" />
     <Content Include="admin\adminMain.aspx" />
     <Content Include="admin\chemicalAddition.aspx" />
     <Content Include="admin\chemicalData.aspx" />
@@ -164,6 +165,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin\addEquipment.aspx.cs">
+      <DependentUpon>addEquipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\addEquipment.aspx.designer.cs">
+      <DependentUpon>addEquipment.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\adminMain.aspx.cs">
       <DependentUpon>adminMain.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
