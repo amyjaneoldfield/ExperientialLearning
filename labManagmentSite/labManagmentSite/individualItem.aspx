@@ -138,7 +138,7 @@
                                                     <ul class="footLinks">
                                                 </HeaderTemplate>
                                                 <ItemTemplate>
-                                                    <li class="bullet"><a  href="<%#Eval("path")%>"><%#Eval("name")%></a>
+                                                    <li class="bullet"><a href="<%#Eval("path")%>"><%#Eval("name")%></a>
                                                         <asp:HiddenField ID="hdnField" Value='<%#Eval("name")%>' runat="server" />
                                                         <asp:Button ID="btnAdminDel" runat="server" Text="Delete" CommandName="Delete" CommandArgument='<%#Eval("path")%>' OnCommand="btnAdminDel_Command" Visible="false" CssClass="btn btn-default" />
 
@@ -155,6 +155,17 @@
 
 
                                         </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" href="#collapseCustodian">Custodian</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseCustodian" class="panel-collapse collapse">
+                                        <div class="panel-body"><%#Eval("Custodian")%></div>
                                     </div>
                                 </div>
 

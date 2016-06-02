@@ -48,6 +48,10 @@
                         </ul>
                 </div>
                 <!-- /.nav-collapse -->
+
+          <asp:LoginStatus ID="LoginStatus" runat="server" CssClass="homeCap" />
+          
+          <asp:LoginName ID="LoginName" runat="server" />
             </div>
             <!-- /.container -->
         </nav>
