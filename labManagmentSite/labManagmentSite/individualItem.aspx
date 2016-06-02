@@ -238,21 +238,33 @@
                                         </h4>
                                     </div>
                                     <div id="collapseAdmin" class="panel-collapse collapse">
-                                        <div class ="col-md-6">
-                                        <h5>Add a Document</h5>
-                                            <asp:Label ID="lblFileName" runat="server" Text="Choose a File"></asp:Label>
-                                        <asp:TextBox ID="txtFileName" runat="server"></asp:TextBox>
-
-                                        <asp:FileUpload ID="adminFileControl" runat="server" />
-                                        <asp:Button ID="btnAdminFileUpload" runat="server" Text="Upload" OnClick="btnAdminFileUpload_Click" />
-</div>
                                         <div class="col-md-6">
-                                            <h5>Add an Image</h5>
-                                            <asp:FileUpload ID="adminImageAdd" runat="server" />
-                                            <asp:Button ID="adminImageBtn" runat="server" Text="Add Image" OnClick="adminImageBtn_Click" />
+
+                                            <div class="addDoc">
+                                            <h4 class="reqHeader">Add a Document</h4>
+
+                                                <div class="addDocUpload">
+                                            <asp:Label ID="lblFileName" runat="server" Text="Document Name" CssClass="addDoclbl"></asp:Label>
+                                            <asp:TextBox ID="txtFileName" runat="server" CssClass="addDocTxt"></asp:TextBox>
+</div>
+
+                                            <asp:FileUpload ID="adminFileControl" runat="server" />
+                                            <asp:Button ID="btnAdminFileUpload" runat="server" Text="Upload" OnClick="btnAdminFileUpload_Click" CssClass="btn btn-default"/>
+                                      </div>  
+
+                                        </div>
 
 
-                                            </div>
+                                        <div class="col-md-6">
+
+
+                                            <div class="addImg">
+                                            <h4 class="reqHeader"> Add an Image</h4>
+                                            <asp:FileUpload ID="adminImageAdd" runat="server" CssClass="addImgUpload" />
+                                            <asp:Button ID="adminImageBtn" runat="server" Text="Add Image" OnClick="adminImageBtn_Click" CssClass="btn btn-default" />
+</div>
+
+                                        </div>
                                         <div class="panel-body"></div>
                                     </div>
                                 </div>
