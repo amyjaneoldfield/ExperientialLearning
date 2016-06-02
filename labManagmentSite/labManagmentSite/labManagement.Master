@@ -48,6 +48,8 @@
                         </ul>
                 </div>
                 <!-- /.nav-collapse -->
+
+       
             </div>
             <!-- /.container -->
         </nav>
@@ -98,6 +100,14 @@
                             </li>
                              <li class ="sep"> | </li>
 
+
+                            <li>   <asp:LoginStatus ID="LoginStatus" runat="server" CssClass="homeCap" />
+          
+          <asp:LoginName ID="LoginName" runat="server" /></li>
+
+
+
+                             <li class ="sep"> | </li>
                             <li>
                                 <a href="SiteMap.aspx">Site Map</a>
                             </li>
