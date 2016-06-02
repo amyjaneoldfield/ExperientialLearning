@@ -59,7 +59,7 @@
 
 
                                         <div class="item <%# (Container.ItemIndex == 0 ? "active" : "") %>">
-                                            <img class="slide" src="<%# Eval("path")%>.<%#Eval("ext")%>" height="<%#Eval("height") %>" width="<%#Eval("width")%>" alt="<%#Eval("alt")%>" />
+                                            <img class="slide" src="<%# Eval("path")%><%#Eval("ext")%>" height="<%#Eval("height") %>" width="<%#Eval("width")%>" alt="<%#Eval("alt")%>" />
                                             <div class="container">
                                                 <div class="carousel-caption">
                                                 </div>
@@ -238,13 +238,21 @@
                                         </h4>
                                     </div>
                                     <div id="collapseAdmin" class="panel-collapse collapse">
-
-                                        <asp:Label ID="lblFileName" runat="server" Text="fileName"></asp:Label>
+                                        <div class ="col-md-6">
+                                        <h5>Add a Document</h5>
+                                            <asp:Label ID="lblFileName" runat="server" Text="Choose a File"></asp:Label>
                                         <asp:TextBox ID="txtFileName" runat="server"></asp:TextBox>
 
                                         <asp:FileUpload ID="adminFileControl" runat="server" />
                                         <asp:Button ID="btnAdminFileUpload" runat="server" Text="Upload" OnClick="btnAdminFileUpload_Click" />
+</div>
+                                        <div class="col-md-6">
+                                            <h5>Add an Image</h5>
+                                            <asp:FileUpload ID="adminImageAdd" runat="server" />
+                                            <asp:Button ID="adminImageBtn" runat="server" Text="Add Image" OnClick="adminImageBtn_Click" />
 
+
+                                            </div>
                                         <div class="panel-body"></div>
                                     </div>
                                 </div>

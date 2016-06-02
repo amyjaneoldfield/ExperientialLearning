@@ -86,65 +86,34 @@ namespace labManagmentSite
 
 
             if ((file.PostedFile != null) && (file.PostedFile.ContentLength > 0))
-            {
-                if (extension == ".png" || extension == ".jpg" || extension == ".gif")
-                {
-                    try
-                    {
-                        file.PostedFile.SaveAs(Server.MapPath("~/Images/" + fn));
-                        var images = new Image();
-                        images.path = (Page.ResolveUrl("~/Images/" + fn.Remove(fn.Length - 4)));
-                        images.ext = extension;
-                        images.peiceofEquipment = peice;
-                        //images.height = System.Drawing.Image.FromFile(file.FileName).Height.ToString();
-                        //images.width = System.Drawing.Image.FromFile(file.FileName).Width.ToString();
-                        db.Images.Add(images);
-                        db.SaveChanges();
-
-                        Response.Redirect(HttpContext.Current.Request.Url.AbsoluteUri);
-                    }
-
-                    catch (Exception er)
-                    {
-                        Response.Write("Error" + er.Message);
 
 
-                    }
 
-                }
 
-                else
+
+
+                try
                 {
 
+                    file.PostedFile.SaveAs(Server.MapPath("~/Docs/") + fn);
+                    var doc = new Doc();
+                    doc.name = name.Text;
+                    doc.path = (Page.ResolveUrl("~/Docs/" + fn));
+                    doc.pieceOfEquipment = peice;
+
+                    db.Docs.Add(doc);
+                    db.SaveChanges();
 
 
-
-
-
-
-
-                    try
-                    {
-
-                        file.PostedFile.SaveAs(Server.MapPath("~/Docs/") + fn);
-                        var doc = new Doc();
-                        doc.name = name.Text;
-                        doc.path = (Page.ResolveUrl("~/Docs/" + fn));
-                        doc.pieceOfEquipment = peice;
-
-                        db.Docs.Add(doc);
-                        db.SaveChanges();
-
-                        Response.Redirect(HttpContext.Current.Request.Url.AbsoluteUri);
-
-                    }
-                    catch (Exception ex)
-                    {
-                        Response.Write("Error " + ex.Message);
-                    }
 
                 }
-            }
+                catch (Exception ex)
+                {
+                    Response.Write("Error " + ex.Message);
+                }
+
+
+
             else
             {
                 Response.Write("Please select a file to upload");
@@ -152,10 +121,10 @@ namespace labManagmentSite
 
             }
 
+            Response.Redirect(HttpContext.Current.Request.Url.AbsoluteUri);
+        }
 
-            }
 
-        
 
         protected void rptrDocs_ItemDataBound(object sender, RepeaterItemEventArgs e)
         {
@@ -177,7 +146,7 @@ namespace labManagmentSite
 
         protected void btnAdminDel_Command(object sender, CommandEventArgs e)
         {
-            
+
             var item = (from x in db.Docs where x.path == e.CommandArgument.ToString() select x).First();
             db.Docs.Remove(item);
             db.SaveChanges();
@@ -191,9 +160,52 @@ namespace labManagmentSite
 
             }
 
-            Response.Redirect( HttpContext.Current.Request.Url.AbsoluteUri);
+            Response.Redirect(HttpContext.Current.Request.Url.AbsoluteUri);
 
         }
 
+        protected void adminImageBtn_Click(object sender, EventArgs e)
+        {
+            Button upload = (Button)frmItem.FindControl("adminImagebtn");
+            FileUpload file = (FileUpload)frmItem.FindControl("adminImageAdd");
+            
+
+            String fn = file.FileName;
+            String extension = (System.IO.Path.GetExtension(file.FileName).ToLower());
+            String id = Page.ClientQueryString;
+            String peice = id.TrimStart('I', 'D', '=');
+
+
+
+            if ((file.PostedFile != null) && (file.PostedFile.ContentLength > 0))
+
+                if (extension == ".png" || extension == ".jpg" || extension == ".gif")
+            {
+                try
+                {
+                    file.PostedFile.SaveAs(Server.MapPath("~/Images/" + fn));
+                    var images = new Image();
+                    images.path = (Page.ResolveUrl("~/Images/" + fn.Remove(fn.Length - 4)));
+                    images.ext = extension;
+                    images.peiceofEquipment = peice;
+                    images.height = "400";
+                    images.width = "400";
+                    db.Images.Add(images);
+                    db.SaveChanges();
+
+
+                }
+
+                catch (Exception er)
+                {
+                    Response.Write("Error" + er.Message);
+
+
+                }
+
+            }
+            Response.Redirect(HttpContext.Current.Request.Url.AbsoluteUri);
+
+        }
     }
 }

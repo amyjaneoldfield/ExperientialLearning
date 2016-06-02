@@ -90,11 +90,7 @@
         </p>
 
 
-        <p class="homePara">
-            From here, you will be able to access all the documentation you need, as 
-    well as have access to quartzy to book access to the equipment. you will also
-    be able to contact the departments custodian team for any queries.
-        </p>
+     
 </div>
         <!--
 <a class="twitter-timeline" href="https://twitter.com/UoCSciEng" data-widget-id="734663427679981568">Tweets by @UoCSciEng</a>

@@ -3,6 +3,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
        <div class="container">
+
+           <h1 class="reqHeader">Login</h1>
+
     <p>Please login to gain access to the admin area.</p>
 
     <div id="loginControl">
@@ -40,7 +43,7 @@
                                         
                                         <asp:CheckBox ID="RememberMe" runat="server" Text="Remember me next time." />
 
-                                        <asp:Button ID="LoginButton" runat="server" CommandName="Login" Text="Log In" ValidationGroup="Login1" />
+                                        <asp:Button ID="LoginButton" runat="server" CommandName="Login" Text="Log In" ValidationGroup="Login1" CssClass="btn btn-default"/>
                                         
                                         </div>
             </LayoutTemplate>
