@@ -104,6 +104,17 @@ a:hover{
 .pull-right {
     color: #333;
 }
+.pull-left {
+    
+    float:right;
+
+
+
+}
+    .pull-left a {
+    color:#333;
+    }
+
 /*for back to top link button*/
 .pull li sep {
     display: inline;
