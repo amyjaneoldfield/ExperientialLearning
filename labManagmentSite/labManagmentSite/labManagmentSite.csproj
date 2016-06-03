@@ -94,6 +94,10 @@
     <Content Include="Images\LabImages\SEM.jpg" />
     <Content Include="Images\LabImages\XRD.jpg" />
     <Content Include="Images\logo.png" />
+    <Content Include="Images\maps\hartF.png" />
+    <Content Include="Images\maps\hartG.png" />
+    <Content Include="Images\maps\sanF.png" />
+    <Content Include="Images\maps\sanG.png" />
     <Content Include="Images\moodle.png" />
     <Content Include="Images\Picture1.png" />
     <Content Include="Images\SandfieldFirstFloor.png" />
