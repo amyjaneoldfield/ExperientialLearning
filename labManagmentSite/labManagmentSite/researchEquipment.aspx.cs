@@ -11,7 +11,10 @@ namespace labManagmentSite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+if(Page.ClientQueryString == "")
+            {
 
+            }
 
             //Page.LoadComplete += new EventHandler(Page_LoadComplete);
 
@@ -74,6 +77,11 @@ namespace labManagmentSite
 
 
                 }
+                else if(name == "")
+                {
+                    e.Item.Visible = true;
+                }
+
                 else { e.Item.Visible = false; }
 
 

@@ -11,20 +11,90 @@ namespace labManagmentSite
 {
     public partial class _default : System.Web.UI.Page
     {
+       
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void change_Click(object sender, EventArgs e)
+        protected void Button1_Command(object sender, CommandEventArgs e)
         {
-            image.Src = "Images/Picture1.PNG";
-             
+            System.Web.UI.HtmlControls.HtmlGenericControl image = (System.Web.UI.HtmlControls.HtmlGenericControl)FindControl(e.CommandArgument.ToString());
+
+            image.Visible = true;
+
+
+
+
+
+
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            image.Src = "Images/Slide1.PNG";
+
+            System.Web.UI.HtmlControls.HtmlGenericControl image = hartGround;
+
+            image.Visible = true;
+
+            image = hartFirst;
+
+            image.Visible = false;
+
+            image = sanGround;
+            image.Visible = false;
+
+            image = sanFirst;
+            image.Visible = false;
+
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            System.Web.UI.HtmlControls.HtmlGenericControl image = hartFirst;
+           
+            image.Visible = true;
+
+
+            image = hartGround;
+            image.Visible = false;
+
+            image = sanGround;
+            image.Visible = false;
+
+            image = sanFirst;
+            image.Visible = false;
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            System.Web.UI.HtmlControls.HtmlGenericControl image = sanGround;
+            image.Visible = true;
+
+            image = hartFirst;
+            image.Visible = false;
+
+            image = hartGround;
+            image.Visible = false;
+
+            image = sanFirst;
+            image.Visible = false;
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            System.Web.UI.HtmlControls.HtmlGenericControl image = sanFirst;
+            image.Visible = true;
+
+            image = hartFirst;
+            image.Visible = false;
+
+            image = sanGround;
+            image.Visible = false;
+
+            image = hartGround;
+            image.Visible = false;
         }
     }
 }

@@ -103,79 +103,69 @@
           
         
      
-<img id="image" src="Images/Slide1.PNG" width="960" height="720"  usemap="#labMap" alt="" runat="server" />
-<map name="labMap" id="labMap1">
-<area id="tha061"  title="lab1" alt="" href="individualLab.aspx?Name={Analytical%20Chemistry%20Laboratory}" shape="rect" coords="382,164,509,277" style="outline:none;" target="_self" onclick="exampleMapping(this)" runat="server"  />
-<area id="tha063" title="lab2" shape="rect" coords="386,279,508,352" style="outline:none;" target="_self"/>
-<area id="labThree" title="lab3" shape="rect" coords="382,357,510,395" style="outline:none;" target="_self"/>
-<area id="labFour" title="lab4" shape="rect" coords="383,398,507,468" style="outline:none;" target="_self"/>
-<area id="labFive" title="lab5" shape="rect" coords="384,475,508,545" style="outline:none;" target="_self"/>
-<area id="labSix" title="lab6" shape="rect" coords="385,552,509,622" style="outline:none;" target="_self"/>
-<area shape="rect" coords="958,718,960,720" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
+
+<div id="hartGround" runat="server"  visible="true">
+<img id="Image-Maps-Com-image-maps-2016-06-03-062428" src="Images/maps/hartG.png" border="0" width="400" height="547" orgWidth="400" orgHeight="547" usemap="#image-maps-2016-06-03-062428" alt="" />
+<map name="image-maps-2016-06-03-062428" id="ImageMapsCom-image-maps-2016-06-03-062428">
+<area  alt="" title="" href="researchEquipment.aspx?ID=tha060" shape="rect" coords="155,115,269,213" style="outline:none;" target="_self"     />
+<area  alt="" title="" href="researchEquipment.aspx?ID=tha061" shape="rect" coords="154,216,269,283" style="outline:none;" target="_self"     />
+<area  alt="" title="" href="researchEquipment.aspx?ID=tha062" shape="rect" coords="155,284,270,320" style="outline:none;" target="_self"     />
+<area  alt="" title="063" href="researchEquipment.aspx?ID=tha063" shape="rect" coords="156,322,225,370" style="outline:none;" target="_self"     />
+<area  alt="064" title="064" href="researchEquipment.aspx?ID=tha064" shape="rect" coords="227,323,267,389" style="outline:none;" target="_self"     />
+<area  alt="" title="065" href="researchEquipment.aspx?ID=tha065" shape="rect" coords="178,373,208,397" style="outline:none;" target="_self"     />
+<area  alt="" title="067" href="researchEquipment.aspx?ID=tha067" shape="rect" coords="193,409,266,455" style="outline:none;" target="_self"     />
+<area  alt="" title="" href="researchEquipment.aspx?ID=tha063" shape="rect" coords="153,397,192,456" style="outline:none;" target="_self"     />
+<area  alt="" title="063" href="researchEquipment.aspx?ID=tha063" shape="rect" coords="208,372,228,409" style="outline:none;" target="_self"     />
+<area  alt="" title="063" href="researchEquipment.aspx?ID=tha063" shape="rect" coords="231,390,269,408" style="outline:none;" target="_self"     />
+<area shape="rect" coords="398,545,400,547" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
 </map>
-  
+</div>
 
-        
 
-        <div>
-        <asp:Button ID="change" Text="First Floor" runat="server" OnClick="change_Click" CssClass="btn btn-default" />
-            <asp:Button ID="Button1" Text="Ground Floor" runat="server" OnClick="Button1_Click" CssClass="btn btn-default" />
-   </div>
-        <!--
-<img  src="Images/Picture1.PNG"  width="707" height="1060"  usemap="#labTop" alt="" />
-<map name="labTop" id="labMapTop1">
-<area id="labOneTop" title="labTop1" shape="rect" coords="263,227,456,329" style="outline:none;" target="_self"/>
-<area id="labTwoTop" title="labTop2" shape="rect" coords="264,346,457,448" style="outline:none;" target="_self"/>
-<area id="labThreeTop" title="labtop3" shape="rect" coords="265,464,458,566" style="outline:none;" target="_self"/>
-<area id="labFourTop" title="labTop4" shape="rect" coords="265,585,458,687" style="outline:none;" target="_self"/>
-<area id="labFiveTop" title="labTop5" shape="rect" coords="266,703,459,805" style="outline:none;" target="_self" />
-<area id="labSixTop6" title="labTop6" shape="rect" coords="263,819,456,921" style="outline:none;" target="_self"/>
-<area shape="rect" coords="705,1058,707,1060" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
+<div id="hartFirst" runat="server" visible="false">
+<img id="Image-Maps-Com-image-maps-2016-06-03-064125" src="Images/maps/hartF.png" border="0" width="400" height="584" orgWidth="400" orgHeight="584" usemap="#image-maps-2016-06-03-064125" alt="" />
+<map name="image-maps-2016-06-03-064125" id="ImageMapsCom-image-maps-2016-06-03-064125">
+<area  alt="" title="166" href="researchEquipment.aspx?ID=tha166" shape="rect" coords="162,347,277,406" style="outline:none;" target="_self"     />
+<area shape="rect" coords="398,582,400,584" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
+</map>
+      
+</div>
+
+
+<div id="sanGround" runat="server" visible="false">
+<img id="Image-Maps-Com-image-maps-2016-06-03-062156" src="Images/maps/sanG.png" border="0" width="400" height="547" orgWidth="400" orgHeight="547" usemap="#image-maps-2016-06-03-062156" alt="" />
+<map name="image-maps-2016-06-03-062156" id="ImageMapsCom-image-maps-2016-06-03-062156">
+<area  alt="" title="" href="researchEquipment.aspx?ID=tsa031" shape="rect" coords="164,201,269,261" style="outline:none;" target="_self"     />
+<area  alt="" title="" href="researchEquipment.aspx?ID=tsa027" shape="rect" coords="165,348,268,404" style="outline:none;" target="_self"     />
+<area shape="rect" coords="398,545,400,547" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
+</map>
+</div>
+
+<div id="sanFirst" runat="server" visible="false">
+
+<img id="Image-Maps-Com-image-maps-2016-06-03-070253" src="Images/maps/sanF.png" border="0" width="400" height="547" orgWidth="400" orgHeight="547" usemap="#image-maps-2016-06-03-070253" alt="" />
+<map name="image-maps-2016-06-03-070253" id="ImageMapsCom-image-maps-2016-06-03-070253">
+<area  alt="" title="130" href="researchEquipment.aspx?ID=tsa130" shape="rect" coords="200,123,268,156" style="outline:none;" target="_self"     />
+<area  alt="" title="129" href="researchEquipment.aspx?ID=tsa129" shape="rect" coords="161,127,197,189" style="outline:none;" target="_self"     />
+<area  alt="" title="128" href="researchEquipment.aspx?ID=tsa128" shape="rect" coords="206,161,266,191" style="outline:none;" target="_self"     />
+<area  alt="" title="126" href="researchEquipment.aspx?ID=tsa126" shape="rect" coords="161,202,266,266" style="outline:none;" target="_self"     />
+<area  alt="" title="124" href="researchEquipment.aspx?ID=tsa124" shape="rect" coords="163,276,268,340" style="outline:none;" target="_self"     />
+<area  alt="" title="121" href="researchEquipment.aspx?ID=tsa121" shape="rect" coords="160,353,265,417" style="outline:none;" target="_self"     />
+<area  alt="" title="118" href="researchEquipment.aspx?ID=tsa118" shape="rect" coords="186,430,223,480" style="outline:none;" target="_self"     />
+<area  alt="" title="119" href="researchEquipment.aspx?ID=tsa119" shape="rect" coords="227,431,264,481" style="outline:none;" target="_self"     />
+<area shape="rect" coords="398,545,400,547" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
 </map>
 
-
--->
-
-
-  <!-- 
-        <a class="twitter-grid" href="https://twitter.com/UoCSciEng?ref_src=twsrc%5Etfw">National Park Tweets</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-     <div class="home1">
-            <img class="homeImage" src="Images/pl1.png" alt="place holder for image1" height="200" width="200" />
-
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed augue vel mi suscipit semper. 
-            Sed neque lacus, ultricies ut magna nec, maximus luctus mauris. Praesent mattis, risus at venenatis dapibus, tellus purus sagittis ex, vel aliquam sem ex a tellus. 
-            Suspendisse congue nec purus et consequat.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Visit</a></p>
+</div>
 
 
-        </div>
+        <asp:Button ID="Button1" runat="server" Text="1" CommandArgument="hartGround" Onclick="Button1_Click"/>
 
+        <asp:Button ID="Button2" runat="server" Text="2" CommandArgument="hartFirst" OnClick="Button2_Click" />
 
-        <div class="home1">
-            <img class="homeImage" src="Images/pl1.png" alt="place holder for image2" height="200" width="200" />
-      
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed augue vel mi suscipit semper. 
-            Sed neque lacus, ultricies ut magna nec, maximus luctus mauris. Praesent mattis, risus at venenatis dapibus, tellus purus sagittis ex, vel aliquam sem ex a tellus. 
-            Suspendisse congue nec purus et consequat.</p> 
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Visit</a></p>
-        </div>
+        <asp:Button ID="Button3" runat="server" Text="3" CommandArgument="sanGround" onClick="Button3_Click"/>
 
-        <div class="home1">
-            <img class="homeImage" src="Images/pl1.png" alt="place holder for image3" height="200" width="200" />
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed augue vel mi suscipit semper. 
-            Sed neque lacus, ultricies ut magna nec, maximus luctus mauris. Praesent mattis, risus at venenatis dapibus, tellus purus sagittis ex, vel aliquam sem ex a tellus. 
-            Suspendisse congue nec purus et consequat.
-            </p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Visit</a></p>
-        </div>
-
-        -->
-      
-
-
-
+        <asp:Button ID="Button4" runat="server" Text="4" CommandArgument="sanFirst" onClick="Button4_Click"/>
 
     </div>
 
