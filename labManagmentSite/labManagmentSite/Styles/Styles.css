@@ -104,6 +104,17 @@ a:hover{
 .pull-right {
     color: #333;
 }
+.pull-left {
+    
+    float:right;
+
+
+
+}
+    .pull-left a {
+    color:#333;
+    }
+
 /*for back to top link button*/
 .pull li sep {
     display: inline;
@@ -214,6 +225,36 @@ a:hover{
     height: 400px;
 }
 /*fix for individualitem carousel*/
+
+
+/*ADMIN UPLOAD ON INVIDUAL ITEM PAGE*/
+.addDoc{
+    float: left;
+    display: inline-block;
+}/*for add document enclosed div*/
+
+.addDoclbl{
+    float: left;
+    padding-right: 1%;
+}/*for add document label */
+
+.addDocTxt{
+        width: 100px;
+    float: left;
+}/*for add document textbox field*/
+
+
+ .addImg{
+     float: right;
+     display: inline-block;
+ }
+
+ .addImgUpload{
+     padding-bottom: 8%;
+ }
+
+
+
 
 .twitter-timeline iframe {
     float: right;

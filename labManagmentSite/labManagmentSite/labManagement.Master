@@ -101,12 +101,7 @@
                              <li class ="sep"> | </li>
 
 
-                            <li>   <asp:LoginStatus ID="LoginStatus" runat="server" CssClass="homeCap" />
-          
-          <asp:LoginName ID="LoginName" runat="server" /></li>
-
-
-
+                      
                              <li class ="sep"> | </li>
                             <li>
                                 <a href="SiteMap.aspx">Site Map</a>
@@ -120,6 +115,11 @@
  <p class="copyright">&copy; 2016 The Constabulary</p>   
                     </div>
               <asp:LinkButton ID="LinkButton1" OnClientClick="javascript:scroll(0:0)" runat="server" CssClass="pull-right">Back To Top</asp:LinkButton>
+                  <div class ="pull-left"
+                  <asp:LoginStatus ID="LoginStatus" runat="server" CssClass="pull-Left" />
+          
+          <asp:LoginName ID="LoginName" runat="server" CssClass="pull-left" />
+                      </div>
                          
 
                    </div>   
