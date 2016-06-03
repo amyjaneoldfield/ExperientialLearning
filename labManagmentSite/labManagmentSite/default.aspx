@@ -19,7 +19,7 @@
 
 
 
-    <div class="container">
+    <div id="mainPage" class="container">
 
 
         <!-- Carousel

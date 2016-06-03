@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-
+    <div id="mainPage" class="container">
     <h1 class="reqHeader">Modify Equipment Index </h1>
     <p class="addEquipPara">This page allows you to add, edit and delete data from the current database used to display equipment among the Laboratories index.</p>
 
@@ -79,6 +79,6 @@
         </UpdateParameters>
     </asp:SqlDataSource>
 
-
+        </div>
 
 </asp:Content>

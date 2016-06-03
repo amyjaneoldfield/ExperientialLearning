@@ -8,7 +8,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-    <div class="container">
+    <div id="mainPage" class="container">
 
 
         <h1 class="reqHeader">Add a New Substance to the Chemical Database</h1>
@@ -27,7 +27,7 @@
                     </h4>
                 </div>
                 <div id="collapse2" class="panel-collapse collapse in">
-                    <div class="panel-body">
+                    <div id="chemPanel" class="panel-body">
 
 
 
@@ -90,7 +90,7 @@
                                     <td><%#Eval ("Current_Stock_Level") %></td>
                                     <td><%#Eval ("Summary_of_Hazards") %></td>
                                     <td><%#Eval ("Purpose") %></td>
-                                    <td><%#Eval ("Link_to_MSDS") %></td>
+                                    <td id="msds"><%#Eval ("Link_to_MSDS") %></td>
 
 
                                 </tr>

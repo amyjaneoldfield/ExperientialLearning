@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-       <div class="container">
+       <div id="mainPage" class="container">
     
     <asp:Repeater runat="server" ID="rptrLabs" DataSourceID="sqlDataSourceLabs">
         <HeaderTemplate> <h1>header</h1> </HeaderTemplate>
