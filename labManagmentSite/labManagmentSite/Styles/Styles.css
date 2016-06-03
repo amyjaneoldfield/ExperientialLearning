@@ -45,7 +45,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    width: 500px;
+    width: 650px;
 }
 
 .imageMap{
@@ -172,7 +172,7 @@ body {
 .homePara {
     margin-right: auto;
     margin-left: auto;
-    padding-top: 20px;
+   
 }
 
 .home1 {
@@ -187,7 +187,7 @@ body {
 
 .mapBtns{
     padding-bottom: 1%;
-}
+}/*for map buttons on home page so they dont fit to bottom of container*/
 
 /*Carousel*/
 .carousel-control {
@@ -315,6 +315,11 @@ body {
 
 
 /*RESEARCH EQUIPMENT STYLES*/
+
+
+.equipmentRpt{
+    padding-bottom: 1%;
+}
 .researchPara{
     width: 800px;
     margin-left: auto;
@@ -711,15 +716,24 @@ padding-right: 1%;
 border: solid 1px #6C9B3B;
   background-color: #fff;
 
+  box-shadow: 5px 5px 5px #D3D3D3;
+
+
+
 }
 
     #sideBar ul li {
     text-align:left;
-    
+     
     
     }
     #sideBar a{
-    color: #6C9B3B;
+    color: #6C9B3B; 
+    text-decoration: none;
+    }
+
+    #sideBar a:hover{
+        color: #333;
     }
 
     .sideHeader{
@@ -885,7 +899,7 @@ border: solid 1px #6C9B3B;
 #mainPage{
     background-color: #fff;
     border: solid 1px #6C9B3B;
-
+     box-shadow: 5px 5px 5px #D3D3D3;
 }
 
 

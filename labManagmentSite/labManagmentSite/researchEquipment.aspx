@@ -16,6 +16,8 @@
 
    <p class="researchPara">Below is a grid where you can find pieces of equipment and there current location. To find out further information and specifics for each individual piece of equipment click the name to redirect to a Wiki Information page. </p>
 
+
+           <div class="equipmentRpt">
     <asp:Repeater runat="server" ID="rptrLabs" DataSourceID="sqlDataSourceLabs" OnItemDataBound="rptrLabs_ItemDataBound">
         <HeaderTemplate>  </HeaderTemplate>
         <ItemTemplate>
@@ -47,6 +49,9 @@
         <FooterTemplate></FooterTemplate>
 
     </asp:Repeater> 
+</div>
+
+
 
     <asp:SqlDataSource ID="SqlDataSourceLabs" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT Distinct  User_Research_Equip.Location, LabNames.LabName FROM [User_Research_Equip] INNER JOIN [LabNames] ON User_Research_Equip.Location = LabNames.LabRoom">
         
