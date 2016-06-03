@@ -30,9 +30,7 @@ code for Sandfield ground floor
 
 <img id="Image-Maps-Com-image-maps-2016-06-03-062156" src="Images/maps/sanG.png" border="0" width="400" height="547" orgWidth="400" orgHeight="547" usemap="#image-maps-2016-06-03-062156" alt="" />
 <map name="image-maps-2016-06-03-062156" id="ImageMapsCom-image-maps-2016-06-03-062156">
-<area  alt="" title="" href="http://www.image-maps.com/" shape="rect" coords="166,124,264,191" style="outline:none;" target="_self"     />
 <area  alt="" title="" href="researchEquipment.aspx?ID=tsa031" shape="rect" coords="164,201,269,261" style="outline:none;" target="_self"     />
-<area  alt="" title="" href="http://www.image-maps.com/" shape="rect" coords="163,273,268,333" style="outline:none;" target="_self"     />
 <area  alt="" title="" href="researchEquipment.aspx?ID=tsa027" shape="rect" coords="165,348,268,404" style="outline:none;" target="_self"     />
 <area shape="rect" coords="398,545,400,547" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
 </map>
@@ -46,7 +44,7 @@ code for hartford ground floor
 <area  alt="" title="" href="researchEquipment.aspx?ID=tha061" shape="rect" coords="154,216,269,283" style="outline:none;" target="_self"     />
 <area  alt="" title="" href="researchEquipment.aspx?ID=tha062" shape="rect" coords="155,284,270,320" style="outline:none;" target="_self"     />
 <area  alt="" title="063" href="researchEquipment.aspx?ID=tha063" shape="rect" coords="156,322,225,370" style="outline:none;" target="_self"     />
-<area  alt="" title="064" href="researchEquipment.aspx?ID=tha064" shape="rect" coords="227,323,267,389" style="outline:none;" target="_self"     />
+<area  alt="064" title="064" href="researchEquipment.aspx?ID=tha064" shape="rect" coords="227,323,267,389" style="outline:none;" target="_self"     />
 <area  alt="" title="065" href="researchEquipment.aspx?ID=tha065" shape="rect" coords="178,373,208,397" style="outline:none;" target="_self"     />
 <area  alt="" title="067" href="researchEquipment.aspx?ID=tha067" shape="rect" coords="193,409,266,455" style="outline:none;" target="_self"     />
 <area  alt="" title="" href="researchEquipment.aspx?ID=tha063" shape="rect" coords="153,397,192,456" style="outline:none;" target="_self"     />
@@ -60,11 +58,11 @@ code for hartford first floor
 
 <img id="Image-Maps-Com-image-maps-2016-06-03-064125" src="Images/maps/hartF.png" border="0" width="400" height="584" orgWidth="400" orgHeight="584" usemap="#image-maps-2016-06-03-064125" alt="" />
 <map name="image-maps-2016-06-03-064125" id="ImageMapsCom-image-maps-2016-06-03-064125">
-<area  alt="" title="160" href="http://www.image-maps.com/" shape="rect" coords="164,139,279,198" style="outline:none;" target="_self"     />
-<area  alt="" title="consumables" href="http://www.image-maps.com/" shape="rect" coords="162,208,277,267" style="outline:none;" target="_self"     />
-<area  alt="165" title="" href="http://www.image-maps.com/" shape="rect" coords="162,277,277,336" style="outline:none;" target="_self"     />
-<area  alt="" title="166/7" href="http://www.image-maps.com/" shape="rect" coords="162,347,277,406" style="outline:none;" target="_self"     />
-<area  alt="" title="168" href="http://www.image-maps.com/" shape="rect" coords="164,414,279,473" style="outline:none;" target="_self"     />
+<area  alt="" title="160" href="" shape="rect" coords="164,139,279,198" style="outline:none;" target="_self"     />
+<area  alt="" title="consumables" href="" shape="rect" coords="162,208,277,267" style="outline:none;" target="_self"     />
+<area  alt="165" title="" href="" shape="rect" coords="162,277,277,336" style="outline:none;" target="_self"     />
+<area  alt="" title="166" href="researchEquipment.aspx?ID=tha166" shape="rect" coords="162,347,277,406" style="outline:none;" target="_self"     />
+<area  alt="" title="168" href="" shape="rect" coords="164,414,279,473" style="outline:none;" target="_self"     />
 <area shape="rect" coords="398,582,400,584" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
 </map>
 
