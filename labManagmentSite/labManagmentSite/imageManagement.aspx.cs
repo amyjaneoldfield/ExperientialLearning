@@ -12,6 +12,22 @@ namespace labManagmentSite
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if (!IsPostBack)
+            {
+                ViewState["RefUrl"] = Request.UrlReferrer.ToString();
+
+            }
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            object refurl = ViewState["RefUrl"];
+            if (refurl != null)
+            {
+
+                Response.Redirect((string)refurl);
+            }
         }
     }
 }

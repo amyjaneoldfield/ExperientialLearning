@@ -3,10 +3,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+      <div id="mainPage" class="container">
 
-    <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSourceImage" AutoGenerateColumns="False" DataKeyNames="Id">
+          <h3 class="reqHeader">Manage Images</h3>
+          <p>Below is a grid view of all the current images being disiplayed on the database and the page previously for the carousel</p>
+    <div class="imageGrid">
+    <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSourceImage" AutoGenerateColumns="False" DataKeyNames="Id" CssClass="imageGridView">
         <Columns>
-            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ButtonType="Button">
+                   <ControlStyle CssClass="btn btn-default" />
+                 </asp:CommandField>
             <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
             <asp:BoundField DataField="path" HeaderText="path" SortExpression="path" />
             <asp:BoundField DataField="ext" HeaderText="ext" SortExpression="ext" />
@@ -16,6 +22,9 @@
             <asp:BoundField DataField="alt" HeaderText="alt" SortExpression="alt" />
         </Columns>
     </asp:GridView>
+</div>
+          <asp:Button ID="Button1" runat="server" Text="Back" OnClick="Button1_Click" CssClass="btn btn-default" />
+
 
     <asp:SqlDataSource ID="SqlDataSourceImage" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT * FROM [Images] WHERE ([peiceofEquipment] = @peiceofEquipment)" ConflictDetection="CompareAllValues" DeleteCommand="DELETE FROM [Images] WHERE [Id] = @original_Id AND (([path] = @original_path) OR ([path] IS NULL AND @original_path IS NULL)) AND (([ext] = @original_ext) OR ([ext] IS NULL AND @original_ext IS NULL)) AND (([peiceofEquipment] = @original_peiceofEquipment) OR ([peiceofEquipment] IS NULL AND @original_peiceofEquipment IS NULL)) AND [height] = @original_height AND [width] = @original_width AND (([alt] = @original_alt) OR ([alt] IS NULL AND @original_alt IS NULL))" InsertCommand="INSERT INTO [Images] ([path], [ext], [peiceofEquipment], [height], [width], [alt]) VALUES (@path, @ext, @peiceofEquipment, @height, @width, @alt)" OldValuesParameterFormatString="original_{0}" UpdateCommand="UPDATE [Images] SET [path] = @path, [ext] = @ext, [peiceofEquipment] = @peiceofEquipment, [height] = @height, [width] = @width, [alt] = @alt WHERE [Id] = @original_Id AND (([path] = @original_path) OR ([path] IS NULL AND @original_path IS NULL)) AND (([ext] = @original_ext) OR ([ext] IS NULL AND @original_ext IS NULL)) AND (([peiceofEquipment] = @original_peiceofEquipment) OR ([peiceofEquipment] IS NULL AND @original_peiceofEquipment IS NULL)) AND [height] = @original_height AND [width] = @original_width AND (([alt] = @original_alt) OR ([alt] IS NULL AND @original_alt IS NULL))">
         <DeleteParameters>
@@ -55,6 +64,6 @@
         </UpdateParameters>
     </asp:SqlDataSource>
 
-
+          </div>
 
 </asp:Content>

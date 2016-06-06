@@ -701,6 +701,23 @@ width: 500px;
 }
 /*for when hovering*/
 
+.reqHeaderRight{
+    color: #6C9B3B;
+    margin-right: 350px;
+}/*admin doc header*/
+
+.docRight{
+    display: inline-block;
+    float: left;
+}
+
+.fileRight{
+    float: left;
+    display: inline-block;
+}
+
+
+
 .equipReqVal{
     color: red;
     font-weight: bold;
@@ -746,6 +763,7 @@ border: solid 1px #6C9B3B;
   background-color: #fff;
 
   box-shadow: 5px 5px 5px #D3D3D3;
+  z-index:10000;
 
 
 
@@ -888,9 +906,21 @@ border: solid 1px #6C9B3B;
 
 
 
+/*CSS FOR IMAGE MANAMGEMNT PAGE*/
+.imageGrid{
+       padding-top: 1%;
+    padding-bottom: 1%;
+}
 
+.imageGridView{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
 
-
+.imageGridView th{
+        color: #6C9B3B;
+}
 
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -951,5 +981,12 @@ border: solid 1px #6C9B3B;
 
     .cover-container {
         width: 700px;
+    }
+}
+
+
+@media(max-width: 1688px){
+    #sideBar{
+        display:none;
     }
 }
