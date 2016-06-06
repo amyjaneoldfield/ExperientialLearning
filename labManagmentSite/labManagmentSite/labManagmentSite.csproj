@@ -106,7 +106,7 @@
     <Content Include="Images\test.jpg" />
     <Content Include="Images\pl1.png" />
     <Content Include="Images\test1.jpg" />
-    <Content Include="Images\th.png" />
+    <Content Include="Images\th.ico" />
     <Content Include="Images\twitter.png" />
     <Content Include="individualItem.aspx" />
     <Content Include="individualLab.aspx" />
