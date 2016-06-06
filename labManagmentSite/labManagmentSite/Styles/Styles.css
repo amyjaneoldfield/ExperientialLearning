@@ -246,6 +246,11 @@ body {
     overflow: hidden;
     height: 400px;
 }
+
+#indImageMan{
+    color: #6C9B3B;
+}
+
 /*fix for individualitem carousel*/
 
 
