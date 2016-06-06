@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
   
-           <div id="sideBar">
+          <div id="sideBar">
                
                 <ul>
 
@@ -297,7 +297,7 @@
 
                                 
 
-        <asp:SqlDataSource ID="sqlDataSourceSide" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [Name], [ID] FROM [User_Research_Equip]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="sqlDataSourceSide" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [Name], [ID] FROM [User_Research_Equip] ORDER BY [Name]"></asp:SqlDataSource>
         <!-- /#page-content-wrapper -->
     </div>
     <script src="js/jquery.js"></script>
