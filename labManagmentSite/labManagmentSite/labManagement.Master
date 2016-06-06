@@ -117,8 +117,7 @@
               <asp:LinkButton ID="LinkButton1" OnClientClick="javascript:scroll(0:0)" runat="server" CssClass="pull-right">Back To Top</asp:LinkButton></div>
                   <div class ="pull-left">
                   <asp:LoginStatus ID="LoginStatus" runat="server" CssClass="pull-Left" />
-          
-          <asp:LoginName ID="LoginName" runat="server" CssClass="pull-left" />
+    <asp:LoginName ID="LoginName" runat="server" CssClass="loginAdminName" />
                       </div>
                          
 
@@ -132,15 +131,6 @@
         <script src="js/bootstrap.js"></script>
 
 <script src="js/jquery.js"></script>
-
-
-  <!--      <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-</script> -->
-
 
     </form>
 </body>

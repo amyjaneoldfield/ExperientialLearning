@@ -335,7 +335,7 @@ body {
     text-align: center;
     border: 1px solid black;
     width: 400px;
-    height: 200px;
+    height: 300px;
     vertical-align: top;
     margin-top: 5px;
 }
@@ -570,6 +570,7 @@ width: 500px;
     width: 400px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 1%;
 }
 
 .loginText {
@@ -586,6 +587,10 @@ width: 500px;
     text-align: left;
     padding-top: 10px;
     padding-bottom: 5px;
+}
+
+.loginAdminName{
+    color: #6C9B3B;
 }
 
 /*ADMIN CONTROL PAGE STYLES (FOR AFTER LOGGING IN)*/

@@ -92,17 +92,6 @@
 
 
         </div>
-        <!--
-<a class="twitter-timeline" href="https://twitter.com/UoCSciEng" data-widget-id="734663427679981568">Tweets by @UoCSciEng</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-
-        <div class="fb-page" data-href="https://www.facebook.com/UoCSciEng" data-tabs="timeline" data-width="500" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/UoCSciEng"><a href="https://www.facebook.com/UoCSciEng">Faculty of Science and Engineering</a></blockquote></div></div>
-
-        -->
-
-
-
 
         <div id="hartGround" runat="server" visible="true">
             <img id="Image-Maps-Com-image-maps-2016-06-03-062428" src="Images/maps/hartG.png" border="0" width="400" height="547" orgwidth="400" orgheight="547" usemap="#image-maps-2016-06-03-062428" alt="" />
@@ -175,52 +164,5 @@
             document.getElementById('theImage').src = 'Images/Picture1.PNG';
         }
     </script>
-
-
-    <!--       /*script one/*
-
-<script>
-(function() {
-   'use strict';
-
-function init(){ 
-
-    var el,flag=0;
-
-    el=document.getElementById('image');
-
-    document.getElementById('clickme').onclick = function () {
-
-   flag==0?
-  (flag = 1, el.src = 'Images/Slide1.PNG', el.alt = 'my dog') :
-  (flag = 0, el.src = 'Images/Picture1.PNG', el.alt = 'my cat');
-
-  }
- }
-   window.addEventListener('load',init,false);
-})();
-</script>
-  
-        /*script two/*
- 
-
-  <script>
-(function() {
-   'use strict';
-
-function init(){ 
-
-    var el=document.getElementById('image');
-
-    document.getElementById('clickme').onclick = function () {
-        el.id == 'image' ?
-
-       (el.id = 'image', el.src = 'Images/Slide1.PNG', el.alt = 'my cat') :
-        (el.id = 'lab', el.src = 'Images/Picture1.PNG', el.alt = 'my dog');
-    }
- }
-   window.addEventListener('load',init,false);
-})();
-</script> -->
 
 </asp:Content>
