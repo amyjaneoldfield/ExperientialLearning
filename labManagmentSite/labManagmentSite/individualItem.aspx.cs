@@ -40,8 +40,11 @@ namespace labManagmentSite
             if (Context.User.IsInRole("Admin") && Page.ClientQueryString != "")
             {
                 accordian.Visible = true;
+               
 
             }
+
+         
         }
 
 

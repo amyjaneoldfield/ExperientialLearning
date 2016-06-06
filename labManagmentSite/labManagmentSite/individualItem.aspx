@@ -245,6 +245,8 @@
 
                                             <asp:FileUpload ID="adminFileControl" runat="server" />
                                             <asp:Button ID="btnAdminFileUpload" runat="server" Text="Upload" OnClick="btnAdminFileUpload_Click" CssClass="btn btn-default"/>
+
+                                                <a id="manageImages" class="indImageMan" href="<%#Eval("ID", "imageManagement.aspx?ID={0}")%>"> Manage Images </a>
                                       </div>  
 
                                         </div>
@@ -267,9 +269,12 @@
 
 
                             </div>
+
+                            
+
                             </div>
     </div>
-
+                                            
                         </ItemTemplate>
 
 
@@ -290,6 +295,7 @@
             </div>
         </div>
 
+                                
 
         <asp:SqlDataSource ID="sqlDataSourceSide" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [Name], [ID] FROM [User_Research_Equip]"></asp:SqlDataSource>
         <!-- /#page-content-wrapper -->

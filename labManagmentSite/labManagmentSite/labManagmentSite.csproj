@@ -86,6 +86,7 @@
     <Content Include="custodians.aspx" />
     <Content Include="equipmentRequest.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="imageManagement.aspx" />
     <Content Include="Images\banner.jpg" />
     <Content Include="Images\banner1.jpg" />
     <Content Include="Images\banner2.jpg" />
@@ -254,6 +255,13 @@
     </Compile>
     <Compile Include="Image.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="imageManagement.aspx.cs">
+      <DependentUpon>imageManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="imageManagement.aspx.designer.cs">
+      <DependentUpon>imageManagement.aspx</DependentUpon>
     </Compile>
     <Compile Include="individualItem.aspx.cs">
       <DependentUpon>individualItem.aspx</DependentUpon>
