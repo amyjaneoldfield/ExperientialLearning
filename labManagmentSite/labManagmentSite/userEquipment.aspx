@@ -16,12 +16,16 @@
         
 
     </asp:Repeater>
-
+           <ul class="indItem">
     <asp:ListView ID="ListView1" runat="server">
+       
         <ItemTemplate>
-           <p><%#Eval("Name")%>"></p>
+           <li class =" equipList"><%#Eval("indexVal")%></li>
         </ItemTemplate>
     </asp:ListView>
+
+
+           </ul>
     <asp:SqlDataSource ID="SqlDataSourceUser" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [ID], [Name] FROM [User_Research_Equip] ORDER BY Name ASC">
         <SelectParameters>
             <asp:Parameter DefaultValue="True" Name="ResearchEquipment" Type="Boolean" />
