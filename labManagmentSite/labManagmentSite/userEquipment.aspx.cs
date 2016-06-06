@@ -13,6 +13,11 @@ namespace labManagmentSite
     {
         db_1421049_LabManagementEntities db = new db_1421049_LabManagementEntities();
 
+        public class SortedElements
+        {
+            public string Letter { get; set; }
+            public IList<User_Research_Equip> Elements { get; set; }
+        }
 
         public class Index
         {
@@ -51,7 +56,12 @@ namespace labManagmentSite
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            Index equipList = new Index();
+            var grouped = db.User_Research_Equip.GroupBy(x => x.Name.Substring(0, 1).ToUpper(), (letter, subList) => new SortedElements { Letter = letter, Elements = subList.OrderBy(x => x.Name).ToList() }).OrderBy(x => x.Letter).ToList();
+
+            rptrLetter.DataSource = grouped;
+            rptrLetter.DataBind();
+
+            /*Index equipList = new Index();
 
 
             var start = "A";
@@ -71,10 +81,7 @@ namespace labManagmentSite
             {
 
                 {
-                    //A
-                    //AFM
 
-                    //Atmospheric
 
 
 
@@ -82,17 +89,15 @@ namespace labManagmentSite
 
                     if (f.StartsWith(start)) // check what f starts with 
                     {
-                        //check if the last element that was added is a header
-                        //if (index.ElementAt((index.Count() - 1)).indexVal.Length == 1)
-                       // {
 
-                            index.Add(new Index(f));// if so add element 
 
-                      //  }
-
-                       
+                        index.Add(new Index(f));// if so add element 
 
                     }
+
+
+
+
 
                     else
                     {
@@ -117,7 +122,7 @@ namespace labManagmentSite
             }
             ListView1.DataSource = index;
             ListView1.DataBind();
-
+            */
 
 
 

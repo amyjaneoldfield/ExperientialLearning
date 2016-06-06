@@ -1,4 +1,8 @@
-﻿html,
+﻿body {
+font-family: Ariel Arial, Helvetica, sans-serif;
+
+}
+html,
 ul {
     padding-left: 0;
 }
@@ -705,6 +709,7 @@ width: 500px;
 .indItem {
     text-align: left;
     padding-left: 18%;
+   
 }
 
 #EquipmentInner {
