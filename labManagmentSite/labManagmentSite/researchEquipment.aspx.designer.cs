@@ -13,24 +13,6 @@ namespace labManagmentSite {
     public partial class researchEquipment {
         
         /// <summary>
-        /// image control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlImage image;
-        
-        /// <summary>
-        /// THA061 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlArea THA061;
-        
-        /// <summary>
         /// rptrLabs control.
         /// </summary>
         /// <remarks>

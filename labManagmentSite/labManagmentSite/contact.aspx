@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-       <div class="container">
+       <div id="mainPage" class="container">
 
     <h1 class="reqHeader">Contact </h1>
             <p class="para">If you have any problems, or queires regarding the website, equipment or anything related to this site please contact us below enusring you correctly fill out all the required fields. We aim to respond to all emails within 48 hours of working days.</p>

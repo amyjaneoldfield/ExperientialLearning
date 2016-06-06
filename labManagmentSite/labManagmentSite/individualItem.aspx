@@ -4,20 +4,15 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="container">
-        <div id="wrapper" class="active">
-
-            <!-- Sidebar -->
-            <!-- Sidebar -->
-            <div id="sidebar-wrapper">
-                <ul id="sidebar_menu" class="sidebar-nav">
-                    <li class="sidebar-brand"><a id="menu-toggle" href="#">Equipment<span id="main_icon" class="glyphicon glyphicon-align-justify"></span></a></li>
-                </ul>
-                <ul class="sidebar-nav" id="sidebar">
+  
+           <div id="sideBar">
+               
+                <ul>
 
 
                     <asp:Repeater ID="rptrSidebar" runat="server" DataSourceID="sqlDataSourceSide">
                         <HeaderTemplate>
+                            <h3 class="sideHeader">Other Equipment</h3>
                             <ul class="bullet">
                         </HeaderTemplate>
                         <ItemTemplate>
@@ -31,8 +26,8 @@
                     </asp:Repeater>
                 </ul>
             </div>
-        </div>
-
+       
+    <div id="mainPage" class="container">
 
 
         <!-- Page Content -->

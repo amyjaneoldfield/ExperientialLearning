@@ -5,7 +5,7 @@ ul {
 
 body {
     height: 100%;
-    background-color: #fff;
+        background-color: #f5f5f5;
 }
 /*main colour use*/
 body {
@@ -18,10 +18,6 @@ body {
     color: #6C9B3B;
 }
 
-a:hover{
-    color: #333;
-    text-decoration:none;
-}
 
 
 /*Nav Bar CSS*/
@@ -49,7 +45,7 @@ a:hover{
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    width: 500px;
+    width: 650px;
 }
 
 .imageMap{
@@ -68,7 +64,7 @@ a:hover{
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
-    background-color: #f5f5f5;
+    background-color: #333;
     border-color: #ddd;
     border: 1px solid transparent;
     border-radius: 4px;
@@ -77,7 +73,7 @@ a:hover{
 }
 /*footer setup*/
 .copyright {
-    color: #333;
+    color: #fff;
 }
 /*for copyright text in footer*/
 .Social {
@@ -102,8 +98,30 @@ a:hover{
 }
 /*for header links decor*/
 .pull-right {
-    color: #333;
+    color: #fff;
 }
+
+.pull-right a:hover{
+    color: #6C9B3B;
+    text-decoration: none;
+}
+
+.pull-left {
+    
+    float:right;
+
+
+
+}
+    .pull-left a {
+    color:#fff;
+    }
+
+    .pull-left a:hover{
+        color: #6C9B3B;
+        text-decoration: none;
+    }
+
 /*for back to top link button*/
 .pull li sep {
     display: inline;
@@ -123,10 +141,15 @@ a:hover{
 
 .footLinks li > a:hover,
 .footLinks li > a:focus {
-    color: #333;
+    color: #fff;
+    text-decoration: none;
 }
 /*footer hover colour */
 .sep {
+    color: #fff;
+}
+
+.sep1 {
     color: #333;
 }
 /*seperation | among links in footer colour*/
@@ -149,7 +172,7 @@ a:hover{
 .homePara {
     margin-right: auto;
     margin-left: auto;
-    padding-top: 20px;
+   
 }
 
 .home1 {
@@ -160,6 +183,11 @@ a:hover{
     vertical-align: top;
 }
 /*for the home page threee images layout*/
+
+
+.mapBtns{
+    padding-bottom: 1%;
+}/*for map buttons on home page so they dont fit to bottom of container*/
 
 /*Carousel*/
 .carousel-control {
@@ -206,6 +234,11 @@ a:hover{
         opacity: .9;
     }
 /*for arrow hover*/
+
+
+.carousel{
+        padding-top: 1%;
+}
 
 #individualitem {
     position: relative;
@@ -282,6 +315,11 @@ a:hover{
 
 
 /*RESEARCH EQUIPMENT STYLES*/
+
+
+.equipmentRpt{
+    padding-bottom: 1%;
+}
 .researchPara{
     width: 800px;
     margin-left: auto;
@@ -481,7 +519,11 @@ a:hover{
 .adminTblData{
     text-align: left;
 }
+#chemPanel {
+padding:unset;
 
+
+}
 
 
 /*SITEMAP STYLES*/
@@ -638,7 +680,7 @@ width: 500px;
 
 .indItem {
     text-align: left;
-    padding-left: 40%;
+    padding-left: 18%;
 }
 
 #EquipmentInner {
@@ -665,7 +707,39 @@ width: 500px;
 
 /* SIDEBAR STYLES*/
 
+#sideBar {
+display:block;
+float: left;
+height:auto;
+padding-left:1%;
+padding-right: 1%;
+border: solid 1px #6C9B3B;
+  background-color: #fff;
 
+  box-shadow: 5px 5px 5px #D3D3D3;
+
+
+
+}
+
+    #sideBar ul li {
+    text-align:left;
+     
+    
+    }
+    #sideBar a{
+    color: #6C9B3B; 
+    text-decoration: none;
+    }
+
+    #sideBar a:hover{
+        color: #333;
+    }
+
+    .sideHeader{
+        text-align: left;
+        padding-left: 1%;
+    }/*for sidebar header*/
 
 
 
@@ -707,6 +781,12 @@ width: 500px;
     }
 
 
+
+    .indexPara{
+            width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    }/*For Equipment index paragraph styling*/
 
 
 #sidebar-wrapper {
@@ -814,6 +894,14 @@ width: 500px;
 }
 /* Sticky footer styles
 -------------------------------------------------- */
+
+
+#mainPage{
+    background-color: #fff;
+    border: solid 1px #6C9B3B;
+     box-shadow: 5px 5px 5px #D3D3D3;
+}
+
 
 
 @media (min-width: 768px) {
