@@ -236,15 +236,16 @@
                                         <div class="col-md-6">
 
                                             <div class="addDoc">
-                                           <div class="addDocUpload"> <h4 class="reqHeader">Add a Document</h4>
+                                           <div class="addDocUpload"> <h4 class="reqHeaderRight">Add a Document</h4>
 
-                                                
+                                                <div class="docRight">
                                             <asp:Label ID="lblFileName" runat="server" Text="Document Name" CssClass="addDoclbl"></asp:Label>
                                             <asp:TextBox ID="txtFileName" runat="server" CssClass="addDocTxt"></asp:TextBox>
+</div>
 
-
+                                               <div class="fileRight">
                                             <asp:FileUpload ID="adminFileControl" runat="server" />
-                                            <asp:Button ID="btnAdminFileUpload" runat="server" Text="Upload" OnClick="btnAdminFileUpload_Click" CssClass="btn btn-default"/>
+                                            <asp:Button ID="btnAdminFileUpload" runat="server" Text="Upload" OnClick="btnAdminFileUpload_Click" CssClass="btn btn-default"/></div>
 </div>
                                       <div class="imageAltLink">    <div class="btn btn-default">  <a id="manageImages" class="indImageMan" href="<%#Eval("ID", "imageManagement.aspx?ID={0}")%>"> Manage Images </a></div>   </div> 
                                       </div>  
@@ -297,7 +298,7 @@
 
                                 
 
-        <asp:SqlDataSource ID="sqlDataSourceSide" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [Name], [ID] FROM [User_Research_Equip]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="sqlDataSourceSide" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [Name], [ID] FROM [User_Research_Equip] ORDER BY [Name]"></asp:SqlDataSource>
         <!-- /#page-content-wrapper -->
     </div>
     <script src="js/jquery.js"></script>
