@@ -9,7 +9,7 @@
            </p>
 
 
-         
+       <!--  
      <asp:Repeater ID="rptrUser" runat="server" DataSourceID="SqlDataSourceUser">
 
          
@@ -22,7 +22,8 @@
         
 
     </asp:Repeater>
-           <ul class="indItem">
+         
+             <ul class="indItem">
     <asp:ListView ID="ListView1" runat="server">
        
         <ItemTemplate>
@@ -33,10 +34,30 @@
 
 
            </ul>
+           
     <asp:SqlDataSource ID="SqlDataSourceUser" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [ID], [Name] FROM [User_Research_Equip] ORDER BY Name ASC">
         <SelectParameters>
             <asp:Parameter DefaultValue="True" Name="ResearchEquipment" Type="Boolean" />
         </SelectParameters>
     </asp:SqlDataSource>
+           </div>
+    -->
+    <asp:Repeater ID="rptrLetter" runat="server" ItemType="labManagmentSite.userEquipment+SortedElements">
+        <HeaderTemplate><ul class="indItem"></HeaderTemplate>
+
+        <ItemTemplate>
+            <h2><%# Item.Letter %></h2>
+
+            <asp:Repeater ID="rptrElement" runat="server" DataSource="<%# Item.Elements %>">
+                <ItemTemplate>
+                   <li class ="equipList">  <a href="<%#Eval("ID","individualItem.aspx?ID={0}") %>"><%#Eval("Name") %></a></li>
+                </ItemTemplate>
+            </asp:Repeater>
+        </ItemTemplate>
+
+        <FooterTemplate>
+            </ul>
+        </FooterTemplate>
+    </asp:Repeater>
            </div>
 </asp:Content>

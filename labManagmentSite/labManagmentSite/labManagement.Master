@@ -24,57 +24,58 @@
         <!-- image logo NEED TO SET INTO CSS -->
 
 
-
-        <nav class="navbar navbar-fixed-top navbar-inverse">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+        
+          <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
                     <a class="navbar-brand" href="default.aspx"></a>
-                </div>
-                <div id="navbar" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
 
                         <li>
                             <img src="~/Images/logo.png" runat="server" alt="" width="250" height="60" /></li>
                         <!-- TAKE OUT LI FOR JACK  -->
 
-
+                        
                         <li class="navpad"><a href="~/default.aspx" runat="server">Home</a></li>
                         <li class="navpad"><a href="~/userEquipment.aspx" runat="server">Equipment Index</a></li>
                         <li class="navpad"><a href="~/researchEquipment.aspx" runat="server">Laboratories</a></li>
-                        <li class="navpad"><a href="~/equipmentRequest.aspx" runat="server">Equipment Booking</a></li>
+                        <li class="navpad"><a href="~/equipmentRequest.aspx" runat="server">Room Request</a></li>
+                        
                         <!--<li class="navpad"><a href="~/coshhDocs.aspx" runat="server">COSHH Documents</a></li>-->
-                    </ul>
+                        </ul>
                 </div>
                 <!-- /.nav-collapse -->
 
-
+       
             </div>
             <!-- /.container -->
         </nav>
         <!-- /.navbar -->
 
 
-
-        <div class="site-wrapper">
+  
+      <div class="site-wrapper">
 
             <div class="site-wrapper-inner">
-            </div>
+               </div> 
 
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+               
+                </div> 
 
-        </div>
-
-
-        <footer class="footer">
-            <div class="container">
-                <!--          <div class="Social">
+      
+          <footer class="footer">
+              <div class="container">
+                      <!--          <div class="Social">
                                     <a href="www.https://www.facebook.com/UoCSciEng">
                                         <img src="~/Images/facebook.png" runat="server" alt="" width="30" height="30" /></a>
                                    
@@ -91,49 +92,49 @@
 -->
 
                 <div class="inner">
-                    <ul class="footLinks">
-                        <li>
-                            <a href="~/admin/adminMain.aspx" runat="server">Admin</a>
-                        </li>
+                        <ul class="footLinks">
+                            <li>
+                                <a href="~/admin/adminMain.aspx" runat="server">Admin</a>
+                            </li>
                         <li class="sep">| </li>
 
-                        <li>
-                            <a href="~/contact.aspx" runat="server">Contact Us</a>
-                        </li>
+                     <li>
+                                <a href="~/contact.aspx" runat="server">Contact Us</a>
+                            </li>
                         <li class="sep">| </li>
 
 
+                      
+                            <li>
+                                <a href="SiteMap.aspx">Site Map</a>
+                            </li>
 
-                        <li>
-                            <a href="SiteMap.aspx">Site Map</a>
-                        </li>
-
-
-
-
-
-                    </ul>
-                    <p class="copyright">&copy; 2016 The Constabulary</p>
-                </div>
-                <div class="pull-right">
+                           
+                           
+                            
+                                
+                        </ul>
+ <p class="copyright">&copy; 2016 The Constabulary</p>   
+                    </div>
+                  <div class="pull-right">
                     <asp:LinkButton ID="LinkButton1" OnClientClick="javascript:scroll(0:0)" runat="server" CssClass="pull-right">Back To Top</asp:LinkButton>
                 </div>
                 <div class="pull-left">
-                    <asp:LoginStatus ID="LoginStatus" runat="server" CssClass="pull-Left" />
-                    <asp:LoginName ID="LoginName" runat="server" CssClass="loginAdminName" />
-                </div>
+                  <asp:LoginStatus ID="LoginStatus" runat="server" CssClass="pull-Left" />
+    <asp:LoginName ID="LoginName" runat="server" CssClass="loginAdminName" />
+                      </div>
+                         
 
+                   </div>   
+         </footer>
+      
 
-            </div>
-        </footer>
-
-
-
+         
 
         <script src="js/jquery-2.2.3.js"></script>
         <script src="js/bootstrap.js"></script>
 
-        <script src="js/jquery.js"></script>
+<script src="js/jquery.js"></script>
 
     </form>
 </body>
