@@ -5,6 +5,7 @@ using System.Net.Mail;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.IO;
 
 namespace labManagmentSite
 {
@@ -110,6 +111,12 @@ namespace labManagmentSite
             "Risk Inherent to This Activity: " + txtRequestRisks.Text + Environment.NewLine + Environment.NewLine + Environment.NewLine +
             "The senders email address is: " + txtRequestEmail.Text;
 
+
+            if (riskAssessUpload.HasFile)
+            {
+                String riskAssessFileName = Path.GetFileName(riskAssessUpload.PostedFile.FileName);
+                msg.Attachments.Add(new Attachment(riskAssessUpload.PostedFile.InputStream, riskAssessFileName));
+            }
 
             smtpClient.Send(msg);
 
