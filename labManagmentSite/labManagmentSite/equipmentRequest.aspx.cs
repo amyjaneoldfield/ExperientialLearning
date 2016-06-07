@@ -18,8 +18,11 @@ namespace labManagmentSite
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            sendRequest();
-            clear();
+            if (Page.IsValid)
+            {
+                sendRequest();
+                clear();
+            }
 
         }
 
