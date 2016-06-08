@@ -21,10 +21,10 @@
             <li>
                 <a href="~/admin/addEquipment.aspx" runat="server">Add Equipment </a></li>
 
-            <li class="sep1">| </li>
+            <!--<li class="sep1">| </li>
 
         <li>
-    <a href="~/admin/chemicalAddition.aspx" runat="server">Add a new chemical </a></li>
+    <a href="~/admin/chemicalAddition.aspx" runat="server">Add a new chemical </a></li>-->
 </ul>
 
     <p class="adminPara">Use the links above to nagivate to the secure admin sections where you can update, edit and delete admin users and current information being displayed in the databases as well as being displayed on the site</p>

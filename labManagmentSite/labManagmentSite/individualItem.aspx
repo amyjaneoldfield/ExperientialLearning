@@ -4,29 +4,29 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-  
-          <div id="sideBar">
-               
-                <ul>
+
+    <div id="sideBar">
+
+        <ul>
 
 
-                    <asp:Repeater ID="rptrSidebar" runat="server" DataSourceID="sqlDataSourceSide">
-                        <HeaderTemplate>
-                            <h3 class="sideHeader">Other Equipment</h3>
-                            <ul class="bullet">
-                        </HeaderTemplate>
-                        <ItemTemplate>
+            <asp:Repeater ID="rptrSidebar" runat="server" DataSourceID="sqlDataSourceSide">
+                <HeaderTemplate>
+                    <h3 class="sideHeader">Other Equipment</h3>
+                    <ul class="bullet">
+                </HeaderTemplate>
+                <ItemTemplate>
 
-                            <li><a href="<%#Eval("ID","individualItem.aspx?ID={0}") %>"><%#Eval ("Name")%></a></li>
-                        </ItemTemplate>
-                        <FooterTemplate>
-                            </ul>  
-                        </FooterTemplate>
+                    <li><a href="<%#Eval("ID","individualItem.aspx?ID={0}") %>"><%#Eval ("Name")%></a></li>
+                </ItemTemplate>
+                <FooterTemplate>
+                    </ul>  
+                </FooterTemplate>
 
-                    </asp:Repeater>
-                </ul>
-            </div>
-       
+            </asp:Repeater>
+        </ul>
+    </div>
+
     <div id="mainPage" class="container">
 
 
@@ -214,12 +214,16 @@
 
 
 
+                                            <div class="logbookControls">
+                                                <asp:Label ID="lblLogUser" runat="server" Text="User" AssociatedControlID="txtLogUser"></asp:Label></div>
+                                                 <div class="logbookControls"><asp:TextBox ID="txtLogUser" runat="server"></asp:TextBox></div>
+                                            
+                                            
 
-                                            <asp:Label ID="lblLogUser" runat="server" Text="User" AssociatedControlID="txtLogUser"></asp:Label>
-                                            <asp:TextBox ID="txtLogUser" runat="server"></asp:TextBox>
-                                            <asp:Label ID="lblLogComment" runat="server" Text="Comment" AssociatedControlID="txtLogComment"></asp:Label>
-                                            <asp:TextBox ID="txtLogComment" runat="server"></asp:TextBox>
-
+                                            <div class="logbookControls">
+                                                <asp:Label ID="lblLogComment" runat="server" Text="Comment" AssociatedControlID="txtLogComment"></asp:Label></div>
+                                                <div id="logComment" class="logbookControls"> <asp:TextBox ID="txtLogComment" runat="server" TextMode="MultiLine"></asp:TextBox>
+                                            </div>
                                             <asp:Button ID="btnLogSubmit" runat="server" Text="Submit" CssClass="btn btn-default" OnClick="btnLogSubmit_Click" />
 
                                         </div>
@@ -233,34 +237,39 @@
                                         </h4>
                                     </div>
                                     <div id="collapseAdmin" class="panel-collapse collapse">
-                                        <div class="col-md-6">
+                                        <div class="col-md-4">
 
                                             <div class="addDoc">
-                                           <div class="addDocUpload"> <h4 class="reqHeaderRight">Add a Document</h4>
+                                                <div class="addDocUpload">
+                                                    <h4 class="reqHeaderRight">Add a Document</h4>
 
-                                                <div class="docRight">
-                                            <asp:Label ID="lblFileName" runat="server" Text="Document Name" CssClass="addDoclbl"></asp:Label>
-                                            <asp:TextBox ID="txtFileName" runat="server" CssClass="addDocTxt"></asp:TextBox>
-</div>
+                                                    <div class="docRight">
+                                                        <asp:Label ID="lblFileName" runat="server" Text="Document Name" CssClass="addDoclbl"></asp:Label>
+                                                        <asp:TextBox ID="txtFileName" runat="server" CssClass="addDocTxt"></asp:TextBox>
+                                                    </div>
 
-                                               <div class="fileRight">
-                                            <asp:FileUpload ID="adminFileControl" runat="server" />
-                                            <asp:Button ID="btnAdminFileUpload" runat="server" Text="Upload" OnClick="btnAdminFileUpload_Click" CssClass="btn btn-default"/></div>
-</div>
-                                      <div class="imageAltLink">    <div class="btn btn-default">  <a id="manageImages" class="indImageMan" href="<%#Eval("ID", "imageManagement.aspx?ID={0}")%>"> Manage Images </a></div>   </div> 
-                                      </div>  
+                                                    <div class="fileRight">
+                                                        <asp:FileUpload ID="adminFileControl" runat="server" />
+                                                        <asp:Button ID="btnAdminFileUpload" runat="server" Text="Upload" OnClick="btnAdminFileUpload_Click" CssClass="btn btn-default" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="imageAltLink">
+                                                    <div class="btn btn-default"><a id="manageImages" class="indImageMan" href="<%#Eval("ID", "imageManagement.aspx?ID={0}")%>">Manage Images </a></div>
+                                                </div>
+                                            </div>
 
                                         </div>
 
 
-                                        <div class="col-md-6">
+                                        <div class="col-md-4">
 
 
                                             <div class="addImg">
-                                            <h4 class="reqHeader"> Add an Image</h4>
-                                            <asp:FileUpload ID="adminImageAdd" runat="server" CssClass="addImgUpload" />
-                                            <asp:Button ID="adminImageBtn" runat="server" Text="Add Image" OnClick="adminImageBtn_Click" CssClass="btn btn-default" />
-</div>
+                                                <h4 class="reqHeader">Add an Image</h4>
+                                                <asp:FileUpload ID="adminImageAdd" runat="server" CssClass="addImgUpload" />
+                                                <asp:Button ID="adminImageBtn" runat="server" Text="Add Image" OnClick="adminImageBtn_Click" CssClass="btn btn-default" />
+                                            </div>
 
                                         </div>
                                         <div class="panel-body"></div>
@@ -271,7 +280,7 @@
 
                             </div>
 
-                            
+
 
                             </div>
     </div>
@@ -296,7 +305,7 @@
             </div>
         </div>
 
-                                
+
 
         <asp:SqlDataSource ID="sqlDataSourceSide" runat="server" ConnectionString="<%$ ConnectionStrings:db_1421049_LabManagementConnectionString %>" SelectCommand="SELECT [Name], [ID] FROM [User_Research_Equip] ORDER BY [Name]"></asp:SqlDataSource>
         <!-- /#page-content-wrapper -->

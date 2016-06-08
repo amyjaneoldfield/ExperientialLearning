@@ -47,6 +47,7 @@
                         <li class="navpad"><a href="~/userEquipment.aspx" runat="server">Equipment Index</a></li>
                         <li class="navpad"><a href="~/researchEquipment.aspx" runat="server">Laboratories</a></li>
                         <li class="navpad"><a href="~/equipmentRequest.aspx" runat="server">Room Request</a></li>
+                        <li class="navpad"> <a href="~/chemSearch.aspx" runat="server">Search Chemicals</a></li>
                         </ul>
                 </div>
                 <!-- /.nav-collapse -->

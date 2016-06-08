@@ -471,6 +471,47 @@ body {
  
 }
 
+/*CREDITS PAGE STYLES BELOW*/
+.credits  {
+    
+
+
+}
+.person-wrapper {
+
+
+
+
+}
+
+
+.personName h1 {
+text-align:center;
+
+
+}
+.personInfo p {
+text-wrap:normal;
+
+
+}
+.personLinks  ul {
+    list-style-type:none;
+
+    
+
+    
+}
+.personLinks li {
+color:green;
+text-decoration:none;
+display:inline;
+
+
+}
+
+
+
 
 /*ADMIN REGISTER STYLES BELOW*/
 #register { 
@@ -813,6 +854,15 @@ border: solid 1px #6C9B3B;
 .table-bordered {
     width: 100%;
 }
+/*logbook comments*/
+.logbookControls textarea {
+    width:200px;
+    height:100px;
+
+
+
+}
+
 
 /*FOR INDIVDUAL PAGE WRAPPERS CONTENT */
 #wrapper {
