@@ -113,7 +113,7 @@
                             
                                 
                         </ul>
- <p class="copyright">&copy; 2016 The Constabulary</p>   
+ <a href="~/credits.aspx" class="copyright" runat="server">&copy; 2016 The Constabulary</a>   
                     </div>
                   <div class="pull-right">
                     <asp:LinkButton ID="LinkButton1" OnClientClick="javascript:scroll(0:0)" runat="server" CssClass="pull-right">Back To Top</asp:LinkButton>

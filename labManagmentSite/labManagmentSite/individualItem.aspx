@@ -215,14 +215,18 @@
 
 
                                             <div class="logbookControls">
-                                                <asp:Label ID="lblLogUser" runat="server" Text="User" AssociatedControlID="txtLogUser"></asp:Label></div>
-                                                 <div class="logbookControls"><asp:TextBox ID="txtLogUser" runat="server"></asp:TextBox></div>
-                                            
-                                            
+                                                <asp:Label ID="lblLogUser" runat="server" Text="User" AssociatedControlID="txtLogUser"></asp:Label>
+                                            </div>
+                                            <div class="logbookControls">
+                                                <asp:TextBox ID="txtLogUser" runat="server"></asp:TextBox></div>
+
+
 
                                             <div class="logbookControls">
-                                                <asp:Label ID="lblLogComment" runat="server" Text="Comment" AssociatedControlID="txtLogComment"></asp:Label></div>
-                                                <div id="logComment" class="logbookControls"> <asp:TextBox ID="txtLogComment" runat="server" TextMode="MultiLine"></asp:TextBox>
+                                                <asp:Label ID="lblLogComment" runat="server" Text="Comment" AssociatedControlID="txtLogComment"></asp:Label>
+                                            </div>
+                                            <div id="logComment" class="logbookControls">
+                                                <asp:TextBox ID="txtLogComment" runat="server" TextMode="MultiLine"></asp:TextBox>
                                             </div>
                                             <asp:Button ID="btnLogSubmit" runat="server" Text="Submit" CssClass="btn btn-default" OnClick="btnLogSubmit_Click" />
 
@@ -237,44 +241,51 @@
                                         </h4>
                                     </div>
                                     <div id="collapseAdmin" class="panel-collapse collapse">
-                                        <div class="col-md-4">
+                                        <div class="panel-body">
+                                            <div class="col-md-4">
 
-                                            <div class="addDoc">
-                                                <div class="addDocUpload">
-                                                    <h4 class="reqHeaderRight">Add a Document</h4>
+                                                <div class="addDoc">
+                                                    <div class="addDocUpload">
+                                                        <h4 class="reqHeaderRight">Add a Document</h4>
 
-                                                    <div class="docRight">
-                                                        <asp:Label ID="lblFileName" runat="server" Text="Document Name" CssClass="addDoclbl"></asp:Label>
-                                                        <asp:TextBox ID="txtFileName" runat="server" CssClass="addDocTxt"></asp:TextBox>
-                                                    </div>
+                                                        <div class="docRight">
+                                                            <asp:Label ID="lblFileName" runat="server" Text="Document Name" CssClass="addDoclbl"></asp:Label>
+                                                            <asp:TextBox ID="txtFileName" runat="server" CssClass="addDocTxt"></asp:TextBox>
+                                                        </div>
 
-                                                    <div class="fileRight">
-                                                        <asp:FileUpload ID="adminFileControl" runat="server" />
-                                                        <asp:Button ID="btnAdminFileUpload" runat="server" Text="Upload" OnClick="btnAdminFileUpload_Click" CssClass="btn btn-default" />
+                                                        <div class="fileRight">
+                                                            <asp:FileUpload ID="adminFileControl" runat="server" />
+                                                            <asp:Button ID="btnAdminFileUpload" runat="server" Text="Upload" OnClick="btnAdminFileUpload_Click" CssClass="btn btn-default" />
+                                                        </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="imageAltLink">
-                                                    <div class="btn btn-default"><a id="manageImages" class="indImageMan" href="<%#Eval("ID", "imageManagement.aspx?ID={0}")%>">Manage Images </a></div>
+                                            </div>
+                                                <div class="col-md-4">
+                                                    <div class="imageAltLink">
+                                                        <div class="btn btn-default"><a id="manageImages" class="indImageMan" href="<%#Eval("ID", "imageManagement.aspx?ID={0}")%>">Manage Images </a></div>
+                                                    </div>
+
+
                                                 </div>
+                                            
+
+
+
+
+                                            <div class="col-md-4">
+
+
+                                                <div class="addImg">
+                                                    <h4 class="reqHeader">Add an Image</h4>
+                                                    <asp:FileUpload ID="adminImageAdd" runat="server" CssClass="addImgUpload" />
+                                                    <asp:Button ID="adminImageBtn" runat="server" Text="Add Image" OnClick="adminImageBtn_Click" CssClass="btn btn-default" />
+                                                </div>
+
                                             </div>
-
                                         </div>
-
-
-                                        <div class="col-md-4">
-
-
-                                            <div class="addImg">
-                                                <h4 class="reqHeader">Add an Image</h4>
-                                                <asp:FileUpload ID="adminImageAdd" runat="server" CssClass="addImgUpload" />
-                                                <asp:Button ID="adminImageBtn" runat="server" Text="Add Image" OnClick="adminImageBtn_Click" CssClass="btn btn-default" />
-                                            </div>
-
-                                        </div>
-                                        <div class="panel-body"></div>
-                                    </div>
                                 </div>
+                            </div>
 
 
 
