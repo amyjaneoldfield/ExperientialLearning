@@ -33,8 +33,8 @@
                 <div>
                     <asp:TextBox ID="txtRequestEmail" runat="server"></asp:TextBox>
                 </div>
-                <asp:RequiredFieldValidator ID="reqValRequestEmail" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestEmail" CssClass="validation"></asp:RequiredFieldValidator>
-
+                <asp:RequiredFieldValidator ID="reqValRequestEmail" runat="server" ErrorMessage="* Error incorrect field entered, don't leave empty." ControlToValidate="txtRequestEmail" CssClass="validation" Display="Dynamic"></asp:RequiredFieldValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="* you have not entered a valid email" ControlToValidate="txtRequestEmail" CssClass="validation" ValidationExpression="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" Display="Dynamic"></asp:RegularExpressionValidator>
 
 
                 <div class="bookingLabels">

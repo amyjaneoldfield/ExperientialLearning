@@ -160,10 +160,22 @@ body {
 .footLinks {
     padding-left: 0px;
 }
+#listDocs li  a:hover {
+    color:#333
+
+}
+
+#listDocs li a:focus{
+    color:#6C9B3B;
+}
 
 
 .bullet{
     list-style-type: none;
+}
+
+.bullet li a:hover{
+    #333;
 }
 /*HOME / DEFAULT PAGE STYLES BELOW*/
 
@@ -790,6 +802,12 @@ width: 500px;
 
 #menu-toggle {
     float: right;
+}
+
+#locationBody {
+height:50px;
+
+
 }
 
 /* SIDEBAR STYLES*/

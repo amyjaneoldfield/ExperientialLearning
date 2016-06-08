@@ -113,7 +113,7 @@
                                         </h4>
                                     </div>
                                     <div id="collapseLocation" class="panel-collapse collapse">
-                                        <div class="panel-body"><%#Eval("Location")%></div>
+                                        <div id="locationBody" class="panel-body"><%#Eval("Location")%></div>
                                     </div>
                                 </div>
 
@@ -130,7 +130,7 @@
 
                                             <asp:Repeater ID="rptrDocs" runat="server" DataSourceID="SqlDataSourceDocs" OnItemDataBound="rptrDocs_ItemDataBound">
                                                 <HeaderTemplate>
-                                                    <ul class="footLinks">
+                                                    <ul id="listDocs" class="footLinks">
                                                 </HeaderTemplate>
                                                 <ItemTemplate>
                                                     <li class="bullet"><a href="<%#Eval("path")%>"><%#Eval("name")%></a>

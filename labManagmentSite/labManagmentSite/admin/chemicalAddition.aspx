@@ -179,7 +179,7 @@
                             <!-- 5. -->
                             <div class="request1">
                                 <div>
-                                    <asp:Label ID="lblTriggerLevel" runat="server" Text="Trigger Label" CssClass="lblChemical" AssociatedControlID="txtTriggerLevel"></asp:Label>
+                                    <asp:Label ID="lblTriggerLevel" runat="server" Text="Trigger Level" CssClass="lblChemical" AssociatedControlID="txtTriggerLevel"></asp:Label>
                                 </div>
 
                                 <div>

@@ -108,6 +108,8 @@ namespace labManagmentSite.admin
             {
                 add();          //chemicalAddition of data when button clicked
                 clear();
+
+
                 
 
 

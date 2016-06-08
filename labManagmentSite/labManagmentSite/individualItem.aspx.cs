@@ -18,7 +18,7 @@ namespace labManagmentSite
 
         protected void btnLogSubmit_Click(object sender, EventArgs e)
         {
-
+             
             TextBox comment = (TextBox)frmItem.FindControl("txtLogComment");
 
             TextBox user = (TextBox)frmItem.FindControl("txtLogUser");

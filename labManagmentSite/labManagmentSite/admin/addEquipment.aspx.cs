@@ -16,8 +16,12 @@ namespace labManagmentSite.admin
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            add();
-            clear();
+            if (Page.IsValid)
+            {
+                add();
+                clear();
+                Response.Redirect(HttpContext.Current.Request.Url.AbsoluteUri);
+            }
         }
 
         private void add()
